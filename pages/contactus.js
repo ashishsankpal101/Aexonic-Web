@@ -48,11 +48,12 @@ const contactus = () => {
                                 <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#h5-info" aria-expanded="false" aria-label="Toggle navigation"><span className="ti-menu"></span></button>
                                 <div className="collapse navbar-collapse" id="h5-info">
                                     <ul className="navbar-nav">
-                                        <li className="nav-item dropdown mega-dropdown"> <a className="nav-link dropdown-toggle" id="h6-mega-dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                            Home
-
-                                        </a>
-
+                                        <li className="nav-item dropdown mega-dropdown">
+                                            <Link href="/">
+                                                <a className="nav-link dropdown-toggle" id="h6-mega-dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                    Home
+                                                </a>
+                                            </Link>
                                         </li>
                                         <li className="nav-item dropdown mega-dropdown"> <a className="nav-link dropdown-toggle" href="#" id="h6-mega-dropdown1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                             Our Offering <i className="fa fa-angle-down m-l-5"></i>
@@ -130,6 +131,14 @@ const contactus = () => {
                                             </div>
                                         </li>
 
+                                        <li className="nav-item dropdown">
+                                            <Link href="/industry">
+                                                <a className="nav-link dropdown-toggle" id="h6-dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                    Industries
+                                                </a>
+                                            </Link>
+
+                                        </li>
 
                                         <li className="nav-item dropdown">
                                             <Link href="/careers">
@@ -152,8 +161,8 @@ const contactus = () => {
                                         </a>
                                             <ul className="b-none dropdown-menu font-14 animated fadeInUp">
 
-                                                <li>
-                                                    <Link href="/aboutus">
+                                            <li>
+                                                    <Link href="/life-at-aexonic">
                                                         <a className="dropdown-item">Life@aexonic</a>
                                                     </Link>
                                                 </li>

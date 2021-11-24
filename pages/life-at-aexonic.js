@@ -4,7 +4,7 @@ import Image from 'next/image'
 import Link from "next/link";
 
 
-const careers = () => {
+const LifeAtAexonic = () => {
     return (
         <div>
             <Head>
@@ -16,7 +16,7 @@ const careers = () => {
                 <meta name="author" content="" />
                 {/* <!-- Favicon icon --> */}
                 <link rel="icon" type="image/png" sizes="16x16" href="images/favicon.png" />
-                <title>Aexonic : Career</title>
+                <title>Aexonic : Life At Aexonic</title>
             </Head>
 
 
@@ -140,7 +140,7 @@ const careers = () => {
                                         </li>
                                         <li className="nav-item dropdown">
                                             <Link href="/careers">
-                                                <a className="nav-link dropdown-toggle active" id="h6-dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                <a className="nav-link dropdown-toggle" id="h6-dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                                     Careers
                                                 </a>
                                             </Link>
@@ -158,14 +158,14 @@ const careers = () => {
                                                 </a>
                                             </Link>
                                         </li>
-                                        <li className="nav-item dropdown"> <a className="nav-link dropdown-toggle" href="#" id="h6-dropdown1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <li className="nav-item dropdown"> <a className="nav-link dropdown-toggle active" href="#" id="h6-dropdown1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                             More <i className="fa fa-angle-down m-l-5"></i>
                                         </a>
                                             <ul className="b-none dropdown-menu font-14 animated fadeInUp">
 
-                                            <li>
+                                                <li>
                                                     <Link href="/life-at-aexonic">
-                                                        <a className="dropdown-item">Life@aexonic</a>
+                                                        <a className="dropdown-item active_menu">Life@aexonic</a>
                                                     </Link>
                                                 </li>
                                                 <li>
@@ -207,7 +207,7 @@ const careers = () => {
                             <div className="row justify-content-center ">
                                 {/* <!-- Column --> */}
                                 <div className="col-md-6 align-self-center text-center" data-aos="fade-down" data-aos-duration="1200">
-                                    <h1 className="title banner-text">Careers</h1>
+                                    <h1 className="title banner-text">Life@Aexonic</h1>
                                     <h6 className="subtitle op-8 banner-text">We are a team of passionate people who love what we do.</h6>
                                 </div>
                                 {/* <!-- Column --> */}
@@ -218,267 +218,214 @@ const careers = () => {
             <!-- Testimonial 9 -->
             <!-- ============================================================== --> */}
 
-                    <div className="spacer feature12">
+                    <div className="spacer team4">
                         <div className="container">
-                            <div className="row">
-                                <div className="col-lg-7">
-                                    {/* <!-- <div className="col-md-12 text-center m-b-40"><img src="images/services.jpg" alt="wrapkit" className="img-fluid" /></div> --> */}
-                                    <h2 className="m-b-30 m-t-20">Our Culture</h2>
-                                    <h6 className="subtitle">If you like working in a comfortable environment along with global clients then this is the place for you. We work hard, we play hard, and we have fun.  We are on a mission to provide clients with strategically sound, artfully designed, amazingly and innovative digital solutions.
-                                        We are a diversified lot but our commitment to provide outstanding service to our clients’ ties us together.<br /> We are dedicated to a culture that fosters innovation, creativity, excellence and community. We believe in our people and understand that the quality and happiness of their lives has a direct relationship to the quality of our work
-                                        If you are looking for a fun, fast-paced atmosphere that you can thrive and develop your professional skills then Aexonic is the place for you. </h6>
-                                    {/* <div className="row">
-                                        <div className="col-md-6 m-t-30">
-                                            <div className="d-flex no-block">
-                                                <div className="display-5"><i className="icon-Eyeglasses-Smiley"></i></div>
-                                                <div className="m-l-20">
-                                                    <h1 className="font-light counter m-b-0">80</h1>
-
-                                                    <h6 className="text-muted font-13 text-uppercase">Happy Clients</h6>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div className="col-md-6 m-t-30">
-                                            <div className="d-flex no-block">
-                                                <div className="display-5"><i className="icon-Coffee"></i></div>
-                                                <div className="m-l-20">
-                                                    <h1 className="font-light counter m-b-0">300</h1>
-                                                    <h6 className="text-muted font-13 text-uppercase">Projects Delivered
-                                                    </h6>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div className="col-md-6 m-t-30">
-                                            <div className="d-flex no-block">
-                                                <div className="display-5"><i className="icon-Business-ManWoman"></i></div>
-                                                <div className="m-l-20">
-                                                    <h1 className="font-light counter m-b-0">200</h1>
-                                                    <h6 className="text-muted font-13 text-uppercase">Clients Served
-                                                    </h6>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div className="col-md-6 m-t-30">
-                                            <div className="d-flex no-block">
-                                                <div className="display-5"><i className="icon-Flag-2"></i></div>
-                                                <div className="m-l-20">
-                                                    <h1 className="font-light counter m-b-0">15</h1>
-                                                    <h6 className="text-muted font-13 text-uppercase">Countries Reached
-                                                    </h6>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                    </div> */}
+                            <div className="row justify-content-center m-b-30">
+                                <div className="col-md-7 text-center">
+                                    {/* <span className="label label-success label-rounded">Team 4</span> */}
+                                    <h2 className="title">Experienced & Professional Team</h2>
+                                    <h6 className="subtitle">You can relay on our amazing features list and also our customer services will be great experience for you without doubt and in no-time</h6>
                                 </div>
-                                <div className="col-lg-5">
-                                    <div className="row wrap-feature-12">
+                            </div>
+                            <div className="row m-t-30">
+                                {/* <!-- column  --> */}
+                                <div className="col-lg-3 m-b-30">
+                                    {/* <!-- Row --> */}
+                                    <div className="row">
+                                        <div className="col-md-12 pro-pic">
+                                            <img src="./images/team/t1.jpg" alt="wrapkit" className="img-responsive" />
+                                        </div>
                                         <div className="col-md-12">
-                                            <img src="./images/graphic-designing.png" className="rounded img-responsive m-t-3" alt="wrapkit " />
+                                            <div className="p-t-10">
+                                                <h5 className="title font-medium">Vikas Ranjan</h5>
+                                                <h6 className="subtitle">Chief Technology Officer</h6>
+                                                <p>You can relay on our amazing features list and also our customer services will be great experience.</p>
+                                                <ul className="list-inline">
+                                                    <li className="list-inline-item"><a ><i className="fa fa-facebook"></i></a></li>
+                                                    <li className="list-inline-item"><a ><i className="fa fa-twitter"></i></a></li>
+                                                    <li className="list-inline-item"><a ><i className="fa fa-instagram"></i></a></li>
+                                                    <li className="list-inline-item"><a ><i className="fa fa-behance"></i></a></li>
+                                                </ul>
+                                            </div>
                                         </div>
-
                                     </div>
+                                    {/* <!-- Row --> */}
                                 </div>
-
+                                {/* <!-- column  -->
+                            <!-- column  --> */}
+                                <div className="col-lg-3 m-b-30">
+                                    {/* <!-- Row --> */}
+                                    <div className="row">
+                                        <div className="col-md-12 pro-pic">
+                                            <img src="./images/team/t2.jpg" alt="wrapkit" className="img-responsive" />
+                                        </div>
+                                        <div className="col-md-12">
+                                            <div className="p-t-10">
+                                                <h5 className="title font-medium">Aprajita Sinha</h5>
+                                                <h6 className="subtitle">Director</h6>
+                                                <p>You can relay on our amazing features list and also our customer services will be great experience.</p>
+                                                <ul className="list-inline">
+                                                    <li className="list-inline-item"><a ><i className="fa fa-facebook"></i></a></li>
+                                                    <li className="list-inline-item"><a ><i className="fa fa-twitter"></i></a></li>
+                                                    <li className="list-inline-item"><a ><i className="fa fa-instagram"></i></a></li>
+                                                    <li className="list-inline-item"><a ><i className="fa fa-behance"></i></a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    {/* <!-- Row --> */}
+                                </div>
+                                {/* <!-- column  -->
+                            <!-- column  --> */}
+                                <div className="col-lg-3 m-b-30">
+                                    {/* <!-- Row --> */}
+                                    <div className="row">
+                                        <div className="col-md-12 pro-pic">
+                                            <img src="./images/team/t3.jpg" alt="wrapkit" className="img-responsive" />
+                                        </div>
+                                        <div className="col-md-12">
+                                            <div className="p-t-10">
+                                                <h5 className="title font-medium">Abhishek Prasad</h5>
+                                                <h6 className="subtitle">Director</h6>
+                                                <p>You can relay on our amazing features list and also our customer services will be great experience.</p>
+                                                <ul className="list-inline">
+                                                    <li className="list-inline-item"><a ><i className="fa fa-facebook"></i></a></li>
+                                                    <li className="list-inline-item"><a ><i className="fa fa-twitter"></i></a></li>
+                                                    <li className="list-inline-item"><a ><i className="fa fa-instagram"></i></a></li>
+                                                    <li className="list-inline-item"><a ><i className="fa fa-behance"></i></a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    {/* <!-- Row --> */}
+                                </div>
+                                {/* <!-- column  -->
+                            <!-- column  --> */}
+                                <div className="col-lg-3 m-b-30">
+                                    {/* <!-- Row --> */}
+                                    <div className="row">
+                                        <div className="col-md-12 pro-pic">
+                                            <img src="./images/team/t4.jpg" alt="wrapkit" className="img-responsive" />
+                                        </div>
+                                        <div className="col-md-12">
+                                            <div className="p-t-10">
+                                                <h5 className="title font-medium">Michael Doe</h5>
+                                                <h6 className="subtitle">Property Specialist</h6>
+                                                <p>You can relay on our amazing features list and also our customer services will be great experience.</p>
+                                                <ul className="list-inline">
+                                                    <li className="list-inline-item"><a ><i className="fa fa-facebook"></i></a></li>
+                                                    <li className="list-inline-item"><a ><i className="fa fa-twitter"></i></a></li>
+                                                    <li className="list-inline-item"><a ><i className="fa fa-instagram"></i></a></li>
+                                                    <li className="list-inline-item"><a ><i className="fa fa-behance"></i></a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    {/* <!-- Row --> */}
+                                </div>
                             </div>
                         </div>
                     </div>
-
-                    <div className="spacer feature43 bg-light">
-                        <div className="container">
-                            <div className="row">
-                                <div className="col-lg-5" data-aos="fade-right" data-aos-duration="1200">
-                                    <h2 className="title">What we look for</h2>
-                                    <h6 className="subtitle">You can relay on our amazing features list and also our customer services will be great experience for you without doubt and in no-time If you are looking for a fun, fast-paced atmosphere that you can thrive and develop your professional skills then Aexonic is the place for you. </h6>  </div>
-                                <div className="col-lg-6 ml-auto">
-                                    <div className="row wrap-feature43-box">
-                                        <div className="col-md-6" data-aos="fade-right" data-aos-duration="1200">
-                                            <h2 className="text-success-gradiant display-5"><i className="icon-Car-Wheel"></i></h2>
-                                            <h5 className="title">Dedication </h5>
-                                            <h6 className="subtitle">You can relay on our amazing features list and also our.</h6>
-                                        </div>
-                                        <div className="col-md-6" data-aos="fade-left" data-aos-duration="1200">
-                                            <h2 className="text-success-gradiant display-5"><i className="icon-Target"></i></h2>
-                                            <h5 className="title">Hard work</h5>
-                                            <h6 className="subtitle">You can relay on our amazing features list and also our.</h6>
-                                        </div>
-                                        <div className="col-md-6" data-aos="fade-right" data-aos-duration="1200">
-                                            <h2 className="text-success-gradiant display-5"><i className="icon-Mouse-3"></i></h2>
-                                            <h5 className="title">Self-Motivated</h5>
-                                            <h6 className="subtitle">You can relay on our amazing features list and also our.</h6>
-                                        </div>
-                                        <div className="col-md-6" data-aos="fade-left" data-aos-duration="1200">
-                                            <h2 className="text-success-gradiant display-5"><i className="icon-Car-Wheel"></i></h2>
-                                            <h5 className="title">Bright &amp; energetic</h5>
-                                            <h6 className="subtitle">You can relay on our amazing features list and also our.</h6>
-                                        </div>
-                                    </div>
-                                </div>
-
-                            </div>
-                        </div>
-                    </div>
-
-                    {/* <!-- ============================================================== -->
-                <!-- Features 21  -->
-                <!-- ============================================================== --> */}
-                    {/* <div className="spacer feature21 wrap-feature21-box" style="background-image:url(images/bg1.jpg)"> */}
-                    <div className="spacer feature21 wrap-feature21-box" style={{ backgroundImage: "url(images/bg1.jpg)" }}>
+                    <div className=" spacer feature13 bg-light">
                         <div className="container">
                             {/* <!-- Row  --> */}
-                            <div className="row text-white">
-                                {/* <!-- Column --> */}
-                                <div className="col-md-5 both-space">
-                                    <div className="" data-aos="fade-right" data-aos-duration="1200">
-                                        <h2 className="text-white m-t-20 m-b-30">Don&apos;t go by Queue, Create your Own Way Faster</h2>
-                                        <p className="op-8">You can relay on our amazing features list and also our customer services will be great experience.</p> <a className="btn btn-info-gradiant btn-md btn-arrow m-t-20" data-toggle="collapse" href="#"><span>Join Us <i className="ti-arrow-right"></i></span></a> </div>
+                            <div className="row justify-content-center">
+                                <div className="col-md-7 text-center">
+                                    {/* <!-- <span className="label label-success label-rounded">Feature 13</span> --> */}
+                                    <h2 className="title">Our Values</h2>
+                                    <h6 className="subtitle">You can relay on our amazing features list and also our customer services will be great experience for you without doubt and in no-time</h6>
                                 </div>
                             </div>
-                        </div>
-                    </div>
-                    {/* <!-- ============================================================== -->
-                <!-- Features 21  -->
-                <!-- ============================================================== --> */}
-                    <div className="spacer feature24 bg-light ">
-                        <div className="container ">
-                            {/* <!-- Row --> */}
-                            <div className="row justify-content-center ">
-                                <div className="col-md-7 text-center ">
-                                    {/* <!-- <span className="label label-success label-rounded ">Feature 24</span> --> */}
-                                    <h2 className="title ">Why work with us</h2>
-                                    <h6 className="subtitle ">You can relay on our amazing features list and also our customer services will be great experience for you without doubt and in no-time</h6>
-                                </div>
-                            </div>
-                            {/* <!-- Row --> */}
-                            <div className="row wrap-feature-24 ">
+                            {/* <!-- Row  --> */}
+                            <div className="row m-t-40">
                                 {/* <!-- Column --> */}
-                                <div className="col-lg-3 col-md-6 ">
-                                    <div className="card card-shadow ">
-                                        <a className="service-24 "> <i className="icon-Target "></i>
-                                            <h6 className="ser-title ">Fantastic Co-workers</h6>
-                                        </a>
-                                    </div>
-                                </div>
-                                {/* <!-- Column -->
-                        <!-- Column --> */}
-                                <div className="col-lg-3 col-md-6 ">
-                                    <div className="card card-shadow ">
-                                        <a className="service-24 "> <i className="icon-Car-Wheel "></i>
-                                            <h6 className="ser-title ">Digital Marketing</h6>
-                                        </a>
-                                    </div>
-                                </div>
-                                {/* <!-- Column -->
-                        <!-- Column --> */}
-                                <div className="col-lg-3 col-md-6 ">
-                                    <div className="card card-shadow ">
-                                        <a className="service-24 "> <i className="icon-Mouse-3 "></i>
-                                            <h6 className="ser-title ">SEO Techniques</h6>
-                                        </a>
-                                    </div>
-                                </div>
-                                {/* <!-- Column -->
-                        <!-- Column --> */}
-                                <div className="col-lg-3 col-md-6 ">
-                                    <div className="card card-shadow ">
-                                        <a className="service-24 "> <i className="icon-Eyeglasses-Smiley "></i>
-                                            <h6 className="ser-title ">Client Management</h6>
-                                        </a>
-                                    </div>
-                                </div>
-                                {/* <!-- Column -->
-                        <!-- Column --> */}
-                                <div className="col-lg-3 col-md-6 ">
-                                    <div className="card card-shadow ">
-                                        <a className="service-24 "> <i className="icon-Target-Market "></i>
-                                            <h6 className="ser-title ">Email Campaign</h6>
-                                        </a>
-                                    </div>
-                                </div>
-                                {/* <!-- Column -->
-                        <!-- Column --> */}
-                                <div className="col-lg-3 col-md-6 ">
-                                    <div className="card card-shadow ">
-                                        <a className="service-24 "> <i className="icon-Laptop-Phone "></i>
-                                            <h6 className="ser-title ">Website Strategy</h6>
-                                        </a>
-                                    </div>
-                                </div>
-                                {/* <!-- Column -->
-                        <!-- Column --> */}
-                                <div className="col-lg-3 col-md-6 ">
-                                    <div className="card card-shadow ">
-                                        <a className="service-24 "> <i className="icon-Full-Bag "></i>
-                                            <h6 className="ser-title ">eCommerce Shop</h6>
-                                        </a>
-                                    </div>
-                                </div>
-                                {/* <!-- Column -->
-                        <!-- Column --> */}
-                                <div className="col-lg-3 col-md-6 ">
-                                    <div className="card card-shadow ">
-                                        <a className="service-24 "> <i className="icon-Eyeglasses-Smiley "></i>
-                                            <h6 className="ser-title ">Cloud Hosting</h6>
-                                        </a>
+                                <div className="col-lg-6 wrap-feature13-box">
+                                    <div className="card card-shadow" data-aos="fade-right" data-aos-duration="1200">
+                                        <ul className="img-inline">
+                                            <li className="half-width"><img src="./images/services/1.png" alt="wrapkit" className="img-responsive rounded" /></li>
+                                            <li className="p-20 half-width">
+                                                <h5 className="font-medium m-t-10"><a className="linking">Optimum Client Satisfaction</a></h5>
+                                                <p className="m-t-20">You can relay on our amazing.</p>
+                                            </li>
+                                        </ul>
                                     </div>
                                 </div>
                                 {/* <!-- Column --> */}
-
+                                <div className="col-lg-6 wrap-feature13-box">
+                                    <div className="card card-shadow" data-aos="fade-left" data-aos-duration="1200">
+                                        <ul className="img-inline">
+                                            <li className="half-width"><img src="./images/services/3.png" alt="wrapkit" className="img-responsive rounded" /></li>
+                                            <li className="p-20 half-width">
+                                                <h5 className="font-medium m-t-10"><a className="linking">Result-oriented Approach</a></h5>
+                                                <p className="m-t-20">You can relay on our amazing.</p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                {/* <!-- Column -->
+                            <!-- Column --> */}
+                                <div className="col-lg-6 wrap-feature13-box">
+                                    <div className="card card-shadow" data-aos="fade-right" data-aos-duration="1200">
+                                        <ul className="img-inline">
+                                            <li className="half-width"><img src="./images/services/2.png" alt="wrapkit" className="img-responsive rounded" /></li>
+                                            <li className="p-20 half-width">
+                                                <h5 className="font-medium m-t-10"><a className="linking"> Integrity in Everything</a></h5>
+                                                <p className="m-t-20">You can relay on our amazing.</p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                {/* <!-- Column --> */}
+                                <div className="col-lg-6 wrap-feature13-box">
+                                    <div className="card card-shadow" data-aos="fade-left" data-aos-duration="1200">
+                                        <ul className="img-inline">
+                                            <li className="half-width"><img src="./images/services/4.png" alt="wrapkit" className="img-responsive rounded" /></li>
+                                            <li className="p-20 half-width">
+                                                <h5 className="font-medium m-t-10"><a className="linking">Great Place to Work </a></h5>
+                                                <p className="m-t-20">You can relay on our amazing.</p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
 
                     <div className="spacer feature1">
-                    <div className="container">
-                        {/* <!-- Row  --> */}
-                        <div className="row justify-content-center">
-                            <div className="col-md-7 text-center">
-                                <h2 className="title">Our Workspace</h2>
-                                <h6 className="subtitle">You can relay on our amazing features list and also our customer services will be great experience for you without doubt and in no-time</h6>
-                            </div>
-                        </div>
-                        {/* <!-- Row  --> */}
-                        <div className="row m-t-40">
-                            <div className="col-lg-12" data-aos="flip-up" data-aos-duration="1200"> <img src="images/about.png" className="rounded img-responsive" alt="wrapkit" /> </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div className="testimonial9 spacer bg-light">
                         <div className="container">
-                            <div className="row">
-                                <div className="col-lg-5 col-md-6">
-                                    <h2 className="m-t-40">What Our Employee&apos;s Say</h2>
-                                    <span className="devider bg-danger"></span>
-                                    <h6 className="subtitle ">You can relay on our amazing features list and also our customer services will be great experience for you without doubt and in no-time</h6>
+                            {/* <!-- Row  --> */}
+                            <div className="row justify-content-center">
+                                <div className="col-md-7 text-center">
+                                    <h2 className="title">How We Work</h2>
+                                    <h6 className="subtitle">You can relay on our amazing features list and also our customer services will be great experience for you without doubt and in no-time</h6>
                                 </div>
-                                <div className="col-lg-6 col-md-6 ml-auto">
-                                    <div className="owl-carousel owl-theme testi9">
-                                        {/* <!-- item --> */}
-                                        <div className="item">
-                                            <div className="card card-shadow testimonial-color">
-                                                <div className="p-40">
-                                                    <p>We care what our customers think of us and so should you. We are partners in your business and your success is ours in your business.</p>
-                                                </div>
-                                            </div>
-                                            <div className="d-flex no-block align-items-center">
-                                                <div className="customer-thumb"><img src="images/1.jpg" alt="wrapkit" className="circle" /></div>
-                                                <div className="">
-                                                    <h6 className="font-bold m-b-0">Ashish Sankpal</h6><span className="font-13">Front End Developer</span></div>
-                                            </div>
-                                        </div>
-                                        {/* <!-- item -->
-                                    <!-- item --> */}
-
-                                        {/* <!-- item -->
-                                    <!-- item --> */}
-
-                                        {/* <!-- item --> */}
-                                    </div>
-                                </div>
+                            </div>
+                            {/* <!-- Row  --> */}
+                            <div className="row m-t-40">
+                                <div className="col-lg-12" data-aos="flip-up" data-aos-duration="1200"> <img src="images/how_we_work.png" className="rounded img-responsive" alt="wrapkit" /> </div>
                             </div>
                         </div>
                     </div>
+
+                    <div className="spacer bg-light feature1">
+                        <div className="container">
+                            {/* <!-- Row  --> */}
+                            <div className="row justify-content-center">
+                                <div className="col-md-7 text-center">
+                                    <h2 className="title">Celebrations at Aexonic</h2>
+                                    <h6 className="subtitle">You can relay on our amazing features list and also our customer services will be great experience for you without doubt and in no-time</h6>
+                                </div>
+                            </div>
+                            {/* <!-- Row  --> */}
+                            <div className="row m-t-40">
+                                <div className="col-lg-12" data-aos="flip-up" data-aos-duration="1200"> <img src="images/about.png" className="rounded img-responsive" alt="wrapkit" /> </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
 
                     {/* <!-- ============================================================== -->
             <!-- footer 4  -->
@@ -558,4 +505,4 @@ const careers = () => {
     )
 }
 
-export default careers;
+export default LifeAtAexonic;

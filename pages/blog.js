@@ -2,9 +2,49 @@ import Head from 'next/head'
 import React from "react";
 import Image from 'next/image'
 import Link from "next/link";
+import { GraphQLClient, gql } from 'graphql-request'
 
 
-const Blog = () => {
+export const getStaticProps = async () => {
+    const endpoint = 'https://api-ap-northeast-1.graphcms.com/v2/ckwd1jfl7534301xphe7uasbp/master'
+    const graphQLClient = new GraphQLClient(endpoint);
+    const query = gql`
+    {
+        posts{
+          title
+          slug
+          date
+          excerpt
+          content{
+            markdown
+          }
+          coverImage {
+            url
+            width
+            height
+          }
+          seo {
+            id
+          }
+          
+          tags
+          author {
+            id
+          }
+        }
+      }
+  `
+  const data = await graphQLClient.request(query)
+    return {
+        props: {
+            data,
+        }
+    }
+}
+export function Blog ({data})  {
+
+    console.log(data)
+
     return (
         <div>
             <Head>
@@ -39,9 +79,12 @@ const Blog = () => {
                                 <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#h5-info" aria-expanded="false" aria-label="Toggle navigation"><span className="ti-menu"></span></button>
                                 <div className="collapse navbar-collapse" id="h5-info">
                                     <ul className="navbar-nav">
-                                        <li className="nav-item dropdown mega-dropdown"> <a className="nav-link dropdown-toggle"  id="h6-mega-dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                            Home
-                                        </a>
+                                        <li className="nav-item dropdown mega-dropdown">
+                                            <Link href="/">
+                                                <a className="nav-link dropdown-toggle" id="h6-mega-dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                    Home
+                                                </a>
+                                            </Link>
                                         </li>
                                         <li className="nav-item dropdown mega-dropdown"> <a className="nav-link dropdown-toggle" id="h6-mega-dropdown1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                             Our Offering <i className="fa fa-angle-down m-l-5"></i>
@@ -58,12 +101,12 @@ const Blog = () => {
                                                             <li>
                                                                 <h6>Headers &amp; Footers</h6>
                                                             </li>
-                                                            <li><a  target="_blank">Banners</a></li>
-                                                            <li><a  target="_blank">Form Banners</a></li>
-                                                            <li><a  target="_blank">Navigation 1-10</a></li>
-                                                            <li><a  target="_blank">Navigation 11-20</a></li>
-                                                            <li><a  target="_blank">Footers</a></li>
-                                                            <li><a  target="_blank">Call to Actions</a></li>
+                                                            <li><a target="_blank">Banners</a></li>
+                                                            <li><a target="_blank">Form Banners</a></li>
+                                                            <li><a target="_blank">Navigation 1-10</a></li>
+                                                            <li><a target="_blank">Navigation 11-20</a></li>
+                                                            <li><a target="_blank">Footers</a></li>
+                                                            <li><a target="_blank">Call to Actions</a></li>
                                                         </ul>
                                                     </div>
                                                     <div className="col-lg-1 col-md-4">
@@ -71,11 +114,11 @@ const Blog = () => {
                                                             <li>
                                                                 <h6>Sliders</h6>
                                                             </li>
-                                                            <li><a  target="_blank">Slider1</a></li>
-                                                            <li><a  target="_blank">Slider2</a></li>
-                                                            <li><a  target="_blank">Slider3</a></li>
-                                                            <li><a  target="_blank">Slider4</a></li>
-                                                            <li><a  target="_blank">Slider5</a></li>
+                                                            <li><a target="_blank">Slider1</a></li>
+                                                            <li><a target="_blank">Slider2</a></li>
+                                                            <li><a target="_blank">Slider3</a></li>
+                                                            <li><a target="_blank">Slider4</a></li>
+                                                            <li><a target="_blank">Slider5</a></li>
                                                         </ul>
                                                     </div>
                                                     <div className="col-lg-1 col-md-4">
@@ -83,11 +126,11 @@ const Blog = () => {
                                                             <li>
                                                                 <h6>&nbsp;</h6>
                                                             </li>
-                                                            <li><a  target="_blank">Slider6</a></li>
-                                                            <li><a  target="_blank">Slider7</a></li>
-                                                            <li><a  target="_blank">Slider8</a></li>
-                                                            <li><a  target="_blank">Slider9</a></li>
-                                                            <li><a  target="_blank">Slider10</a></li>
+                                                            <li><a target="_blank">Slider6</a></li>
+                                                            <li><a target="_blank">Slider7</a></li>
+                                                            <li><a target="_blank">Slider8</a></li>
+                                                            <li><a target="_blank">Slider9</a></li>
+                                                            <li><a target="_blank">Slider10</a></li>
                                                         </ul>
                                                     </div>
                                                     <div className="col-lg-2 col-md-4">
@@ -95,12 +138,12 @@ const Blog = () => {
                                                             <li>
                                                                 <h6>Other Sections</h6>
                                                             </li>
-                                                            <li><a  target="_blank">Contacts</a></li>
+                                                            <li><a target="_blank">Contacts</a></li>
                                                             <li><a target="_blank">Blogs</a></li>
-                                                            <li><a  target="_blank">Pricing</a></li>
-                                                            <li><a  target="_blank">Popups / Modals</a></li>
-                                                            <li><a  target="_blank">Teams</a></li>
-                                                            <li><a  target="_blank">Testimonials</a></li>
+                                                            <li><a target="_blank">Pricing</a></li>
+                                                            <li><a target="_blank">Popups / Modals</a></li>
+                                                            <li><a target="_blank">Teams</a></li>
+                                                            <li><a target="_blank">Testimonials</a></li>
                                                         </ul>
                                                     </div>
                                                     <div className="col-lg-2 col-md-4">
@@ -109,14 +152,23 @@ const Blog = () => {
                                                                 <h6>Features</h6>
                                                             </li>
                                                             <li><a target="_blank">Features 1-10</a></li>
-                                                            <li><a  target="_blank">Features 11-20</a></li>
-                                                            <li><a  target="_blank">Features 21-30</a></li>
-                                                            <li><a  target="_blank">Features 31-40</a></li>
-                                                            <li><a  target="_blank">Features 41-50</a></li>
+                                                            <li><a target="_blank">Features 11-20</a></li>
+                                                            <li><a target="_blank">Features 21-30</a></li>
+                                                            <li><a target="_blank">Features 31-40</a></li>
+                                                            <li><a target="_blank">Features 41-50</a></li>
                                                         </ul>
                                                     </div>
                                                 </div>
                                             </div>
+                                        </li>
+
+                                        <li className="nav-item dropdown">
+                                            <Link href="/industry">
+                                                <a className="nav-link dropdown-toggle" id="h6-dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                    Industries
+                                                </a>
+                                            </Link>
+
                                         </li>
 
                                         <li className="nav-item dropdown">
@@ -141,7 +193,7 @@ const Blog = () => {
                                             <ul className="b-none dropdown-menu font-14 animated fadeInUp">
 
                                                 <li>
-                                                    <Link href="/aboutus">
+                                                    <Link href="/life-at-aexonic">
                                                         <a className="dropdown-item">Life@aexonic</a>
                                                     </Link>
                                                 </li>
@@ -185,94 +237,42 @@ const Blog = () => {
                     </div>
 
                     <div className="container-fluid">
-                {/* <!-- ============================================================== -->
+                        {/* <!-- ============================================================== -->
                 <!-- Blog example  -->
                 <!-- ============================================================== --> */}
-                <div className="spacer">
-                    <div className="container">
-                        {/* <!-- Row  --> */}
-                        <div className="row justify-content-center">
-                            <div className="col-md-8">
-                                {/* <!-- Blog  --> */}
-                                <div className="mini-spacer">
-                                    <a><img src="/images/innerpage/blog1.jpg" alt="wrapkit" className="img-fluid"/></a>
-                                    <ul className="text-uppercase m-t-40 list-inline font-13 font-medium">
-                                        <li><a>John Deo</a></li>
-                                        <li><a>&nbsp;NOV 08, 2018</a></li>
-                                        <li><a className="text-info"> &nbsp;NEWS</a></li>
-                                    </ul>
-                                    <h2 className="title font-light"><a className="link">Wrapkit is about to release and we are really very excited about it</a></h2>
-                                    <p className="m-t-30 m-b-30">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis nec facilisis nullano volutpat justo. Nulla tempus ultricies feugiat. Duis magna risus, luctus id urna dapibus condimentum dui. Maecenas tempor non ex eu vehicula. Sed sit placerat velit,</p>
-                                    <Link href="/blog-details">
-                                   
-                                    <a className="font-13">CONTINUE READING</a>
-                                    </Link>
-                                </div>
-                                {/* <!-- Blog  --> */}
-                                <hr className="op-5" />
-                                {/* <!-- Blog  --> */}
-                                <div className="mini-spacer">
-                                    <ul className="text-uppercase list-inline font-13 font-medium">
-                                    <li><a>John Deo</a></li>
-                                        <li><a>&nbsp;NOV 08, 2018</a></li>
-                                        <li><a className="text-info"> &nbsp;NEWS</a></li>
-                                    </ul>
-                                    <h2 className="title font-light"><a className="link">Wrapkit is about to release and we are really very excited about it</a></h2>
-                                    <p className="m-t-30 m-b-30">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis nec facilisis nullano volutpat justo. Nulla tempus ultricies feugiat. Duis magna risus, luctus id urna dapibus condimentum dui. Maecenas tempor non ex eu vehicula. Sed sit placerat velit,</p>
-                                    <Link href="/blog-details">
-                                   
-                                    <a className="font-13">CONTINUE READING</a>
-                                    </Link>
-                                </div>
-                                {/* <!-- Blog  --> */}
-                                <hr className="op-5" />
-                                {/* <!-- Blog  --> */}
-                                <div className="mini-spacer">
-                                    <ul className="text-uppercase list-inline font-13 font-medium">
-                                    <li><a>John Deo</a></li>
-                                        <li><a>&nbsp;NOV 08, 2018</a></li>
-                                        <li><a className="text-info"> &nbsp;NEWS</a></li>
-                                    </ul>
-                                    <div className="m-t-40 m-b-10"><i className="display-5 text-muted op-5 fa fa-quote-left"></i></div>
-                                    <h2 className="font-light">
-                                        <a className="link"> Aliquam diam quis dolor aliquam lobortis. Aenean in tortor et eros faucibus porta sit amet sed ipsum Nullam hendrerit dui id diam suscipit.</a>
-                                    </h2>
-                                    <h6 className="font-13 m-t-30">STEVE JOBS</h6>
-                                </div>
-                                {/* <!-- Blog  --> */}
-                                <hr className="op-5" />
-                                {/* <!-- Blog  --> */}
-                                <div className="mini-spacer">
-                                    <a><img src="/images/innerpage/blog2.jpg" alt="wrapkit" className="img-fluid"/></a>
-                                    <ul className="text-uppercase m-t-40 list-inline font-13 font-medium">
-                                    <li><a>John Deo</a></li>
-                                        <li><a>&nbsp;NOV 08, 2018</a></li>
-                                        <li><a className="text-info"> &nbsp;NEWS</a></li>
-                                    </ul>
-                                    <h2 className="title font-light"><a className="link">Wrapkit is about to release and we are really very excited about it</a></h2>
-                                    <p className="m-t-30 m-b-30">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis nec facilisis nullano volutpat justo. Nulla tempus ultricies feugiat. Duis magna risus, luctus id urna dapibus condimentum dui. Maecenas tempor non ex eu vehicula. Sed sit placerat velit,</p>
-                                    <Link href="/blog-details">
-                                   
-                                    <a className="font-13">CONTINUE READING</a>
-                                    </Link>
-                                </div>
-                                {/* <!-- Blog  --> */}
-                                <hr className="op-5" />
-                                <div className="mini-spacer">
-                                    <div className="d-flex no-block font-13">
-                                        <a className="link font-medium"><i className="ti-arrow-left m-r-10"></i> PREVIOUS</a>
-                                        <a className="link ml-auto font-medium"> NEXT <i className="ti-arrow-right m-l-10 "></i></a>
+                        <div className="spacer">
+                            <div className="container">
+                                {/* <!-- Row  --> */}
+                                {data?.posts?.map ((item) => (
+                                <div key={item.title} className="row justify-content-center">
+                                    <div className="col-md-8">
+                                        {/* <!-- Blog  --> */}
+                                        <div className="mini-spacer">
+                                            {/* <a><img src="/images/innerpage/blog1.jpg" alt="wrapkit" className="img-fluid" /></a> */}
+                                            <a><img src={item.coverImage.url} alt="wrapkit" className="img-fluid" /></a>
+                                            <ul className="text-uppercase m-t-40 list-inline font-13 font-medium">
+                                                <li><a>{item.slug} </a></li>
+                                                <li><a>&nbsp;&nbsp;/ {item.date}</a></li>
+                                                <li><a className="text-info"> &nbsp;&nbsp; / NEWS</a></li>
+                                            </ul>
+                                            <h2 className="title font-light">{item.title}<a className="link"></a></h2>
+                                            <p className="m-t-30 m-b-30">{item.content.markdown}</p>
+                                            {/* <Link href="/blog-details">
+
+                                                <a className="font-13">CONTINUE READING</a>
+                                            </Link> */}
+                                        </div>
+                                      
                                     </div>
                                 </div>
+                              
+                                ))}
                             </div>
                         </div>
-                        {/* <!-- Row  --> */}
-                    </div>
-                </div>
-                {/* <!-- ============================================================== -->
+                        {/* <!-- ============================================================== -->
                 <!-- End Blog example -->
                 <!-- ============================================================== --> */}
-            </div>
+                    </div>
                     {/* <!-- footer 4  --> */}
 
                     <div className="footer4 spacer ">
@@ -289,15 +289,15 @@ const Blog = () => {
                                 </div>
                                 <div className="col-lg-3 col-md-6 m-b-30 ">
                                     <h5 className="m-b-20 ">Email</h5>
-                                    <p>Office : <a  className="link ">info@aexonic.com</a>
-                                        <br />Site : <a  className="link ">http://www.aexonic.com/</a></p>
+                                    <p>Office : <a className="link ">info@aexonic.com</a>
+                                        <br />Site : <a className="link ">http://www.aexonic.com/</a></p>
                                 </div>
                                 <div className="col-lg-3 col-md-6 ">
                                     <h5 className="m-b-20 ">Social</h5>
                                     <div className="round-social light ">
-                                        <a  className="link "><i className="fa fa-facebook "></i></a>
-                                        <a  className="link "><i className="fa fa-twitter "></i></a>
-                                        <a  className="link "><i className="fa fa-linkedin "></i></a>
+                                        <a className="link "><i className="fa fa-facebook "></i></a>
+                                        <a className="link "><i className="fa fa-twitter "></i></a>
+                                        <a className="link "><i className="fa fa-linkedin "></i></a>
                                     </div>
                                 </div>
                             </div>

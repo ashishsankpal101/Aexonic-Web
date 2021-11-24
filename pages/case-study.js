@@ -39,9 +39,12 @@ const CaseStudy = () => {
                                 <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#h5-info" aria-expanded="false" aria-label="Toggle navigation"><span className="ti-menu"></span></button>
                                 <div className="collapse navbar-collapse" id="h5-info">
                                     <ul className="navbar-nav">
-                                        <li className="nav-item dropdown mega-dropdown"> <a className="nav-link dropdown-toggle"  id="h6-mega-dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                            Home
-                                        </a>
+                                        <li className="nav-item dropdown mega-dropdown">
+                                            <Link href="/">
+                                                <a className="nav-link dropdown-toggle" id="h6-mega-dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                    Home
+                                                </a>
+                                            </Link>
                                         </li>
                                         <li className="nav-item dropdown mega-dropdown"> <a className="nav-link dropdown-toggle" href="#" id="h6-mega-dropdown1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                             Our Offering <i className="fa fa-angle-down m-l-5"></i>
@@ -120,6 +123,15 @@ const CaseStudy = () => {
                                         </li>
 
                                         <li className="nav-item dropdown">
+                                            <Link href="/industry">
+                                                <a className="nav-link dropdown-toggle" id="h6-dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                    Industries
+                                                </a>
+                                            </Link>
+
+                                        </li>
+
+                                        <li className="nav-item dropdown">
                                             <Link href="/careers">
                                                 <a className="nav-link dropdown-toggle" id="h6-dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                                     Careers
@@ -140,8 +152,8 @@ const CaseStudy = () => {
                                         </a>
                                             <ul className="b-none dropdown-menu font-14 animated fadeInUp">
 
-                                                <li>
-                                                    <Link href="/aboutus">
+                                            <li>
+                                                    <Link href="/life-at-aexonic">
                                                         <a className="dropdown-item">Life@aexonic</a>
                                                     </Link>
                                                 </li>
@@ -185,100 +197,100 @@ const CaseStudy = () => {
                     </div>
 
                     <div className="container-fluid">
-                {/* <!-- ============================================================== -->
+                        {/* <!-- ============================================================== -->
                 <!-- Blog example  -->
                 <!-- ============================================================== --> */}
-             <div className="spacer feature7">
-                    <div className="container">
-                        {/* <!-- Row  --> */}
-                        <div className="row justify-content-center">
-                            <div className="col-md-7 text-center">
-                                {/* <span className="label label-info label-rounded">Feature 7</span> */}
-                                <h2 className="title">More About Our Success Stories</h2>
-                                <h6 className="subtitle">Look at our innovative solutions to resolve complicated business problems of our clients.</h6>
+                        <div className="spacer feature7 bg-light">
+                            <div className="container">
+                                {/* <!-- Row  --> */}
+                                <div className="row justify-content-center">
+                                    <div className="col-md-7 text-center">
+                                        {/* <span className="label label-info label-rounded">Feature 7</span> */}
+                                        <h2 className="title">More About Our Success Stories</h2>
+                                        <h6 className="subtitle">Look at our innovative solutions to resolve complicated business problems of our clients.</h6>
+                                    </div>
+                                </div>
+                                {/* <!-- Row  --> */}
+                                <div className="row m-t-40">
+                                    {/* <!-- Column --> */}
+                                    <div className="col-md-4 wrap-feature7-box">
+                                        <div className="" data-aos="flip-left" data-aos-duration="1200">
+                                            <img className="rounded img-responsive" src="/images/features/market.jpg" alt="wrappixel kit" />
+                                            <div className="m-t-30">
+                                                <h5 className="font-medium">Retargeting Market</h5>
+                                                <p className="m-t-20">You can relay on our amazing features list and also our customer services will be great experience.</p>
+                                                <a href="#top" className="linking">Learn More <i className="ti-arrow-right"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    {/* <!-- Column --> */}
+                                    <div className="col-md-4 wrap-feature7-box">
+                                        <div className="" data-aos="flip-up" data-aos-duration="1200">
+                                            <img className="rounded img-responsive" src="/images/features/fruit.jpg" alt="wrappixel kit" />
+                                            <div className="m-t-30">
+                                                <h5 className="font-medium">Fruitful Results</h5>
+                                                <p className="m-t-20">You can relay on our amazing features list and also our customer services will be great experience.</p>
+                                                <a href="#top" className="linking">Learn More <i className="ti-arrow-right"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    {/* <!-- Column --> */}
+                                    <div className="col-md-4 wrap-feature7-box">
+                                        <div className="" data-aos="flip-right" data-aos-duration="1200">
+                                            <img className="rounded img-responsive" src="/images/features/instant.jpg" alt="wrappixel kit" />
+                                            <div className="m-t-30">
+                                                <h5 className="font-medium">Instant Solutions</h5>
+                                                <p className="m-t-20">You can relay on our amazing features list and also our customer services will be great experience.</p>
+                                                <a href="#top" className="linking">Learn More <i className="ti-arrow-right"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                </div>
+                                <div className="row m-t-40">
+                                    {/* <!-- Column --> */}
+                                    <div className="col-md-4 wrap-feature7-box">
+                                        <div className="" data-aos="flip-left" data-aos-duration="1200">
+                                            <img className="rounded img-responsive" src="/images/features/market.jpg" alt="wrappixel kit" />
+                                            <div className="m-t-30">
+                                                <h5 className="font-medium">Retargeting Market</h5>
+                                                <p className="m-t-20">You can relay on our amazing features list and also our customer services will be great experience.</p>
+                                                <a href="#top" className="linking">Learn More <i className="ti-arrow-right"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    {/* <!-- Column --> */}
+                                    <div className="col-md-4 wrap-feature7-box">
+                                        <div className="" data-aos="flip-up" data-aos-duration="1200">
+                                            <img className="rounded img-responsive" src="/images/features/fruit.jpg" alt="wrappixel kit" />
+                                            <div className="m-t-30">
+                                                <h5 className="font-medium">Fruitful Results</h5>
+                                                <p className="m-t-20">You can relay on our amazing features list and also our customer services will be great experience.</p>
+                                                <a href="#top" className="linking">Learn More <i className="ti-arrow-right"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    {/* <!-- Column --> */}
+                                    <div className="col-md-4 wrap-feature7-box">
+                                        <div className="" data-aos="flip-right" data-aos-duration="1200">
+                                            <img className="rounded img-responsive" src="/images/features/instant.jpg" alt="wrappixel kit" />
+                                            <div className="m-t-30">
+                                                <h5 className="font-medium">Instant Solutions</h5>
+                                                <p className="m-t-20">You can relay on our amazing features list and also our customer services will be great experience.</p>
+                                                <a href="#top" className="linking">Learn More <i className="ti-arrow-right"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                </div>
                             </div>
                         </div>
-                        {/* <!-- Row  --> */}
-                        <div className="row m-t-40">
-                            {/* <!-- Column --> */}
-                            <div className="col-md-4 wrap-feature7-box">
-                                <div className="" data-aos="flip-left" data-aos-duration="1200">
-                                    <img className="rounded img-responsive" src="/images/features/market.jpg" alt="wrappixel kit" />
-                                    <div className="m-t-30">
-                                        <h5 className="font-medium">Retargeting Market</h5>
-                                        <p className="m-t-20">You can relay on our amazing features list and also our customer services will be great experience.</p>
-                                        <a href="#top" className="linking">Learn More <i className="ti-arrow-right"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                            {/* <!-- Column --> */}
-                            <div className="col-md-4 wrap-feature7-box">
-                                <div className="" data-aos="flip-up" data-aos-duration="1200">
-                                    <img className="rounded img-responsive" src="/images/features/fruit.jpg" alt="wrappixel kit" />
-                                    <div className="m-t-30">
-                                        <h5 className="font-medium">Fruitful Results</h5>
-                                        <p className="m-t-20">You can relay on our amazing features list and also our customer services will be great experience.</p>
-                                        <a href="#top" className="linking">Learn More <i className="ti-arrow-right"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                            {/* <!-- Column --> */}
-                            <div className="col-md-4 wrap-feature7-box">
-                                <div className="" data-aos="flip-right" data-aos-duration="1200">
-                                    <img className="rounded img-responsive" src="/images/features/instant.jpg" alt="wrappixel kit" />
-                                    <div className="m-t-30">
-                                        <h5 className="font-medium">Instant Solutions</h5>
-                                        <p className="m-t-20">You can relay on our amazing features list and also our customer services will be great experience.</p>
-                                        <a href="#top" className="linking">Learn More <i className="ti-arrow-right"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                            
-                            
-                        </div>
-                        <div className="row m-t-40">
-                            {/* <!-- Column --> */}
-                            <div className="col-md-4 wrap-feature7-box">
-                                <div className="" data-aos="flip-left" data-aos-duration="1200">
-                                    <img className="rounded img-responsive" src="/images/features/market.jpg" alt="wrappixel kit" />
-                                    <div className="m-t-30">
-                                        <h5 className="font-medium">Retargeting Market</h5>
-                                        <p className="m-t-20">You can relay on our amazing features list and also our customer services will be great experience.</p>
-                                        <a href="#top" className="linking">Learn More <i className="ti-arrow-right"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                            {/* <!-- Column --> */}
-                            <div className="col-md-4 wrap-feature7-box">
-                                <div className="" data-aos="flip-up" data-aos-duration="1200">
-                                    <img className="rounded img-responsive" src="/images/features/fruit.jpg" alt="wrappixel kit" />
-                                    <div className="m-t-30">
-                                        <h5 className="font-medium">Fruitful Results</h5>
-                                        <p className="m-t-20">You can relay on our amazing features list and also our customer services will be great experience.</p>
-                                        <a href="#top" className="linking">Learn More <i className="ti-arrow-right"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                            {/* <!-- Column --> */}
-                            <div className="col-md-4 wrap-feature7-box">
-                                <div className="" data-aos="flip-right" data-aos-duration="1200">
-                                    <img className="rounded img-responsive" src="/images/features/instant.jpg" alt="wrappixel kit" />
-                                    <div className="m-t-30">
-                                        <h5 className="font-medium">Instant Solutions</h5>
-                                        <p className="m-t-20">You can relay on our amazing features list and also our customer services will be great experience.</p>
-                                        <a href="#top" className="linking">Learn More <i className="ti-arrow-right"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                            
-                            
-                        </div>
-                    </div>
-                </div>
-                {/* <!-- ============================================================== -->
+                        {/* <!-- ============================================================== -->
                 <!-- End Blog example -->
                 <!-- ============================================================== --> */}
-            </div>
+                    </div>
                     {/* <!-- footer 4  --> */}
 
                     <div className="footer4 spacer ">

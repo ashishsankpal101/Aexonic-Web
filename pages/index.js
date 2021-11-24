@@ -130,6 +130,14 @@ export default function Home() {
                                             </div>
                                         </li>
 
+                                        <li className="nav-item dropdown">
+                                            <Link href="/industry">
+                                                <a className="nav-link dropdown-toggle" id="h6-dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                    Industries
+                                                </a>
+                                            </Link>
+
+                                        </li>
 
                                         <li className="nav-item dropdown">
                                             <Link href="/careers">
@@ -163,8 +171,8 @@ export default function Home() {
                                         </a>
                                             <ul className="b-none dropdown-menu font-14 animated fadeInUp">
 
-                                                <li>
-                                                    <Link href="/aboutus">
+                                            <li>
+                                                    <Link href="/life-at-aexonic">
                                                         <a className="dropdown-item">Life@aexonic</a>
                                                     </Link>
                                                 </li>
@@ -543,7 +551,7 @@ export default function Home() {
               <div className="col-md-7 text-center">
                 <h2 className="title">Seo Techniques Off / On Page</h2>
                 <h6 className="subtitle">Effective search engine optimisation requires experience and expertise.</h6>
-                <a href="javascript:void(0)" data-toggle="modal" data-target="#exampleModal" className="btn btn-outline-light btn-rounded m-t-20">Watch video <span className="btn-devider"><i className="fa fa-play"></i></span></a>
+                <a  data-toggle="modal" data-target="#exampleModal" className="btn btn-outline-light btn-rounded m-t-20">Watch video <span className="btn-devider"><i className="fa fa-play"></i></span></a>
                 <div className="modal fade" id="exampleModal">
                   <div className="modal-dialog" role="document">
                     <div className="modal-content">
