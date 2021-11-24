@@ -34,16 +34,17 @@ export const getStaticProps = async () => {
         }
       }
   `
-  const data = await graphQLClient.request(query)
+    const data = await graphQLClient.request(query)
     return {
         props: {
             data,
         }
     }
 }
-export function Blog ({data})  {
+export function Blog({ data }) {
 
     console.log(data)
+    const [show, setShow] = React.useState();
 
     return (
         <div>
@@ -243,29 +244,31 @@ export function Blog ({data})  {
                         <div className="spacer">
                             <div className="container">
                                 {/* <!-- Row  --> */}
-                                {data?.posts?.map ((item) => (
-                                <div key={item.title} className="row justify-content-center">
-                                    <div className="col-md-8">
-                                        {/* <!-- Blog  --> */}
-                                        <div className="mini-spacer">
-                                            {/* <a><img src="/images/innerpage/blog1.jpg" alt="wrapkit" className="img-fluid" /></a> */}
-                                            <a><img src={item.coverImage.url} alt="wrapkit" className="img-fluid" /></a>
-                                            <ul className="text-uppercase m-t-40 list-inline font-13 font-medium">
-                                                <li><a>{item.slug} </a></li>
-                                                <li><a>&nbsp;&nbsp;/ {item.date}</a></li>
-                                                <li><a className="text-info"> &nbsp;&nbsp; / NEWS</a></li>
-                                            </ul>
-                                            <h2 className="title font-light">{item.title}<a className="link"></a></h2>
-                                            <p className="m-t-30 m-b-30">{item.content.markdown}</p>
-                                            {/* <Link href="/blog-details">
+                                {data?.posts?.map((item) => (
+                                    <div key={item.title} className="row justify-content-center">
+                                        <div className="col-md-8">
+                                            {/* <!-- Blog  --> */}
+                                            <div className="mini-spacer">
+                                                {/* <a><img src="/images/innerpage/blog1.jpg" alt="wrapkit" className="img-fluid" /></a> */}
+                                                <a><img src={item.coverImage.url} alt="wrapkit" className="img-fluid" /></a>
+                                                <ul className="text-uppercase m-t-40 list-inline font-13 font-medium">
+                                                    <li><a>{item.slug} </a></li>
+                                                    <li><a>&nbsp;&nbsp;/ {item.date}</a></li>
+                                                    <li><a className="text-info"> &nbsp;&nbsp; / NEWS</a></li>
+                                                </ul>
+                                                <h2 className="title font-light">{item.title}<a className="link"></a></h2>
+                                                <p style={{ height: "200px", overflow: "hidden" }} className="m-t-30 m-b-30">{item.content.markdown}</p>
 
-                                                <a className="font-13">CONTINUE READING</a>
-                                            </Link> */}
+                                                <Link href="">
+                                                    <a className="font-13">CONTINUE READING</a>
+                                                </Link>
+
+
+                                            </div>
+
                                         </div>
-                                      
                                     </div>
-                                </div>
-                              
+
                                 ))}
                             </div>
                         </div>
