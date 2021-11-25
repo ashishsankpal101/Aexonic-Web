@@ -46,78 +46,62 @@ const CaseStudy = () => {
                                                 </a>
                                             </Link>
                                         </li>
-                                        <li className="nav-item dropdown mega-dropdown"> <a className="nav-link dropdown-toggle" href="#" id="h6-mega-dropdown1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                            Our Offering <i className="fa fa-angle-down m-l-5"></i>
+                                        <li className="nav-item dropdown mega-dropdown"> <a className="nav-link dropdown-toggle" id="h6-mega-dropdown1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            Services <i className="fa fa-angle-down m-l-5"></i>
                                         </a>
                                             <div className="dropdown-menu b-none font-14 animated fadeInUp" aria-labelledby="h6-mega-dropdown1">
                                                 <div className="row">
-                                                    <div className="col-lg-4 inside-bg hidden-md-down">
+                                                    <div className="col-lg-3 inside-bg hidden-md-down">
                                                         <div className="bg-img" style={{ backgroundImage: "url(images/mega-bg2.jpg)" }}>
                                                             <h3 className="text-white font-light">Create anything <br />with our amazing <br />sections</h3>
                                                         </div>
                                                     </div>
-                                                    <div className="col-lg-2 col-md-4">
+                                                    <div className="col-lg-3 col-md-4">
                                                         <ul className="list-style-none">
                                                             <li>
-                                                                <h6>Headers &amp; Footers</h6>
+                                                                <h6 className="f-w-500">Product Engineering</h6>
                                                             </li>
-                                                            <li><a href="../../wrapkit/sliders-static.html" target="_blank">Banners</a></li>
-                                                            <li><a href="../../wrapkit/form-banners.html" target="_blank">Form Banners</a></li>
-                                                            <li><a href="../../wrapkit/headers1.html" target="_blank">Navigation 1-10</a></li>
-                                                            <li><a href="../../wrapkit/headers2.html" target="_blank">Navigation 11-20</a></li>
-                                                            <li><a href="../../wrapkit/footers.html" target="_blank">Footers</a></li>
-                                                            <li><a href="../../wrapkit/call-to-action.html" target="_blank">Call to Actions</a></li>
+                                                            <li><a target="_blank">SaaS Platforms</a></li>
+                                                            <li><a target="_blank">Software Engineering</a></li>
+                                                            <li><a target="_blank">Mobile and Web Apps</a></li>
+                                                            <li><a target="_blank">API Ecosystem</a></li>
+                                                         
                                                         </ul>
                                                     </div>
-                                                    <div className="col-lg-1 col-md-4">
+                                                    <div className="col-lg-3 col-md-4">
                                                         <ul className="list-style-none">
                                                             <li>
-                                                                <h6>Sliders</h6>
+                                                                <h6 className="f-w-500">Digital Transformation</h6>
                                                             </li>
-                                                            <li><a href="../../wrapkit/slider1.html" target="_blank">Slider1</a></li>
-                                                            <li><a href="../../wrapkit/slider2.html" target="_blank">Slider2</a></li>
-                                                            <li><a href="../../wrapkit/slider3.html" target="_blank">Slider3</a></li>
-                                                            <li><a href="../../wrapkit/slider4.html" target="_blank">Slider4</a></li>
-                                                            <li><a href="../../wrapkit/slider5.html" target="_blank">Slider5</a></li>
+                                                            <li><a target="_blank">Machine Learning & AI</a></li>
+                                                            <li><a target="_blank">Data and Analytics</a></li>
+                                                            <li><a target="_blank">Internet of Things (IoT)</a></li>
+                                                            <li><a target="_blank">Chatbot and Automation</a></li>
+                                                            <li><a target="_blank">Cloud and DevOps</a></li>
+                                                            <li><a target="_blank">Technology Consulting</a></li>
                                                         </ul>
                                                     </div>
-                                                    <div className="col-lg-1 col-md-4">
+                                                    {/* <div className="col-lg-2 col-md-4">
+                                                        <ul className="list-style-none">
+                                                            
+                                                          
+                                                        </ul>
+                                                    </div> */}
+                                                    <div className="col-lg-3 col-md-4">
                                                         <ul className="list-style-none">
                                                             <li>
-                                                                <h6>&nbsp;</h6>
+                                                                <h6 className="f-w-500">Staff Augmentation</h6>
                                                             </li>
-                                                            <li><a href="../../wrapkit/slider6.html" target="_blank">Slider6</a></li>
-                                                            <li><a href="../../wrapkit/slider7.html" target="_blank">Slider7</a></li>
-                                                            <li><a href="../../wrapkit/slider8.html" target="_blank">Slider8</a></li>
-                                                            <li><a href="../../wrapkit/slider9.html" target="_blank">Slider9</a></li>
-                                                            <li><a href="../../wrapkit/slider10.html" target="_blank">Slider10</a></li>
-                                                        </ul>
-                                                    </div>
-                                                    <div className="col-lg-2 col-md-4">
-                                                        <ul className="list-style-none">
+                                                            <li><a target="_blank">Onshore</a></li>
+                                                            <li><a target="_blank">Offshore</a></li>
+                                                            <li><a target="_blank">Nearshore</a></li>
                                                             <li>
-                                                                <h6>Other Sections</h6>
+                                                                <h6 className="f-w-500">Enterprise Solutions</h6>
                                                             </li>
-                                                            <li><a href="../../wrapkit/contacts-forms.html" target="_blank">Contacts</a></li>
-                                                            <li><a href="../../wrapkit/blog-homepage.html" target="_blank">Blogs</a></li>
-                                                            <li><a href="../../wrapkit/pricing.html" target="_blank">Pricing</a></li>
-                                                            <li><a href="../../wrapkit/ui-custom-modals.html" target="_blank">Popups / Modals</a></li>
-                                                            <li><a href="../../wrapkit/team.html" target="_blank">Teams</a></li>
-                                                            <li><a href="../../wrapkit/testimonial.html" target="_blank">Testimonials</a></li>
+                                                            <li><a target="_blank">SAP</a></li>
                                                         </ul>
                                                     </div>
-                                                    <div className="col-lg-2 col-md-4">
-                                                        <ul className="list-style-none">
-                                                            <li>
-                                                                <h6>Features</h6>
-                                                            </li>
-                                                            <li><a href="../../wrapkit/feature1.html" target="_blank">Features 1-10</a></li>
-                                                            <li><a href="../../wrapkit/feature2.html" target="_blank">Features 11-20</a></li>
-                                                            <li><a href="../../wrapkit/feature3.html" target="_blank">Features 21-30</a></li>
-                                                            <li><a href="../../wrapkit/feature4.html" target="_blank">Features 31-40</a></li>
-                                                            <li><a href="../../wrapkit/feature5.html" target="_blank">Features 41-50</a></li>
-                                                        </ul>
-                                                    </div>
+                                                   
                                                 </div>
                                             </div>
                                         </li>
