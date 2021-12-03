@@ -556,13 +556,21 @@ Feature 9
     color: #1BA7FD !important;
 }
 
-.show{
-    height: 200px !important;
-    overflow: hidden;
-}
+// .show{
+//     height: 200px !important;
+//     overflow: hidden;
+// }
 
 .f-w-500{
     font-weight: 500;
+}
+
+.blog_image{
+    height: 205px;
+    object-fit: contain;
+}
+.blog_card_height{
+    height: 382px;
 }
 /*******************
 Feature 24
@@ -608,3 +616,49 @@ Feature 24
         }
     }
 }
+
+
+
+.custom_container {
+    position: relative;
+    width: 50%;
+  }
+  
+  .image {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #188ef4e8;
+  }
+  
+  .custom_container:hover .overlay {
+    opacity: 1;
+  }
+  
+  .text {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+
+  .m-b-0{
+      margin-bottom:0px !important ;
+  }

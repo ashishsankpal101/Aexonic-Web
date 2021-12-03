@@ -68,7 +68,7 @@ const contactus = () => {
                                                     <div className="col-lg-3 col-md-4">
                                                         <ul className="list-style-none">
                                                             <li>
-                                                                <h6 className="f-w-500">Product Engineering</h6>
+                                                                <h6 className="f-w-500"><span class="fa fa-cogs custom-icon"></span> Product Engineering</h6>
                                                             </li>
                                                             <li><a target="_blank">SaaS Platforms</a></li>
                                                             <li><a target="_blank">Software Engineering</a></li>
@@ -80,7 +80,7 @@ const contactus = () => {
                                                     <div className="col-lg-3 col-md-4">
                                                         <ul className="list-style-none">
                                                             <li>
-                                                                <h6 className="f-w-500">Digital Transformation</h6>
+                                                                <h6 className="f-w-500"><span class="fa fa-sitemap custom-icon"></span> Digital Transformation</h6>
                                                             </li>
                                                             <li><a target="_blank">Machine Learning & AI</a></li>
                                                             <li><a target="_blank">Data and Analytics</a></li>
@@ -99,13 +99,13 @@ const contactus = () => {
                                                     <div className="col-lg-3 col-md-4">
                                                         <ul className="list-style-none">
                                                             <li>
-                                                                <h6 className="f-w-500">Staff Augmentation</h6>
+                                                                <h6 className="f-w-500"><span class="fa fa-users custom-icon"></span> Staff Augmentation</h6>
                                                             </li>
                                                             <li><a target="_blank">Onshore</a></li>
                                                             <li><a target="_blank">Offshore</a></li>
                                                             <li><a target="_blank">Nearshore</a></li>
                                                             <li>
-                                                                <h6 className="f-w-500">Enterprise Solutions</h6>
+                                                                <h6 className="f-w-500"><span class="fa fa-gear custom-icon"></span> Enterprise Solutions</h6>
                                                             </li>
                                                             <li><a target="_blank">SAP</a></li>
                                                         </ul>

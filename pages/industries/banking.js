@@ -4,7 +4,7 @@ import Image from 'next/image'
 import Link from "next/link";
 
 
-const Industries = () => {
+const Banking = () => {
     return (
         <div>
             <Head>
@@ -15,8 +15,8 @@ const Industries = () => {
                 <meta name="description" content="" />
                 <meta name="author" content="" />
                 {/* <!-- Favicon icon --> */}
-                <link rel="icon" type="image/png" sizes="16x16" href="images/favicon.png" />
-                <title>Aexonic : Industries</title>
+                <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon.png" />
+                <title>Aexonic : Industries / Banking</title>
             </Head>
 
 
@@ -44,7 +44,7 @@ const Industries = () => {
                     <div className="header5">
                         <div className="container po-relative">
                             <nav className="navbar navbar-expand-lg hover-dropdown h5-nav-bar">
-                                <a className="navbar-brand"><img className="header-icon" src="images/aexonic-logo_8.png" alt="Aexonic" /></a>
+                                <a className="navbar-brand"><img className="header-icon" src="/images/aexonic-logo_8.png" alt="Aexonic" /></a>
                                 <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#h5-info" aria-expanded="false" aria-label="Toggle navigation"><span className="ti-menu"></span></button>
                                 <div className="collapse navbar-collapse" id="h5-info">
                                     <ul className="navbar-nav">
@@ -185,13 +185,13 @@ const Industries = () => {
                 <!-- Static Slider 10  -->
                 <!-- ============================================================== --> */}
                     {/* <div className="banner-innerpage" style="background-image:url(images/services/Banner/support.jpeg)"> */}
-                    <div className="banner-innerpage" style={{ backgroundImage: "url(images/services/Banner/team_aug.jpeg)" }}>
+                    <div className="banner-innerpage" style={{ backgroundImage: "url(/images/services/Banner/team_aug.jpeg)" }}>
                         <div className="container">
                             {/* <!-- Row  --> */}
                             <div className="row justify-content-center ">
                                 {/* <!-- Column --> */}
                                 <div className="col-md-6 align-self-center text-center" data-aos="fade-down" data-aos-duration="1200">
-                                    <h1 className="title banner-text">Industries</h1>
+                                    <h1 className="title banner-text">Banking and FinTech</h1>
                                     <h6 className="subtitle op-8 banner-text">We are a team of passionate people who love what we do.</h6>
                                 </div>
                                 {/* <!-- Column --> */}
@@ -199,129 +199,257 @@ const Industries = () => {
                         </div>
                     </div>
                     {/* <!-- ============================================================== -->
-            <!-- Testimonial 9 -->
-            <!-- ============================================================== --> */}
+                        <!-- Testimonial 9 -->
+                        <!-- ============================================================== --> */}
+                    <div className="">
+                        <div className="row">
+                            <div className="col-12">
+                                <div className="">
+                                    <ol style={{ borderRadius: "0 !important" }} className="breadcrumb">
+                                        <li style={{ cursor: "pointer" }} className="breadcrumb-item">
+                                            <Link href="/industry">
+                                                <a>Industries</a>
+                                            </Link>
+                                        </li>
+                                        <li className="breadcrumb-item active">Banking and FinTech</li>
+                                    </ol>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="spacer feature9">
+                        <div className="container">
 
-                    <div className="bg-light feature28">
-                        <div className="row justify-content-center spacer">
-                            <div className="col-md-7 text-center">
-                                {/* <h2 className="title">Industries We Serve</h2> */}
-                                <h6 className="subtitle">You can relay on our amazing features list and also our customer services will be great experience for you without doubt and in no-time</h6>
-                            </div>
-                        </div>
-                        <div className="wrap-feature-28s row">
-                            {/* <div className="col-lg-6 bg-cover" style="background-image:url(../assets/images/features/feature28/img1.jpg)"></div> */}
-                            <div className="col-lg-6 bg-cover" style={{ backgroundImage: "url(images/industry/Banking.jpg)" }}></div>
-                            <div className="col-lg-6">
-                                <div className="side-content both-space">
-                                    {/* <span className="label label-info label-rounded">Great Feature 28</span> */}
-                                    <h2 className="title">Banking and FinTech</h2>
-                                    <h6 className="subtitle">You can relay on our amazing features list and also our customer services will be great experience for you without doubt and in no-time and with great quality.</h6>
-                                    <Link href="/industries/banking"><a className="btn btn-info-gradiant btn-md btn-arrow m-t-20" data-toggle="collapse"> <span>View More <i className="ti-arrow-right"></i></span></a></Link>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="wrap-feature-28 row">
-                            <div className="col-lg-6">
-                                <div className="side-content both-space text-right pull-right">
-                                    {/* <span className="label label-info label-rounded">Great Feature 28</span> */}
-                                    <h2 className="title">Supply Chain and Logistics</h2>
-                                    <h6 className="subtitle">You can relay on our amazing features list and also our customer services will be great experience for you without doubt and in no-time and with great quality.</h6>
-                                    <Link href="/industries/supplychain"><a className="btn btn-info-gradiant btn-md btn-arrow m-t-20" data-toggle="collapse"> <span>View More <i className="ti-arrow-right"></i></span></a></Link>
-                                </div>
-                            </div>
-                            {/* <div className="col-lg-6 bg-cover" style="background-image:url(../assets/images/features/feature28/img2.jpg)"></div> */}
-                            <div className="col-lg-6 bg-cover" style={{ backgroundImage: "url(images/industry/SupplyChain.jpg)" }}></div>
-                            <div className="col-md-12 text-center">
+                            <div className="row justify-content-center">
+                                <div className="col-md-7 text-center">
 
-                            </div>
-                        </div>
-                        <div className="wrap-feature-28s row">
-                            {/* <div className="col-lg-6 bg-cover" style="background-image:url(../assets/images/features/feature28/img1.jpg)"></div> */}
-                            <div className="col-lg-6 bg-cover" style={{ backgroundImage: "url(images/industry/Hospitality.jpg)" }}></div>
-                            <div className="col-lg-6">
-                                <div className="side-content both-space">
-                                    {/* <span className="label label-info label-rounded">Great Feature 28</span> */}
-                                    <h2 className="title">Hospitality and Travel</h2>
-                                    <h6 className="subtitle">You can relay on our amazing features list and also our customer services will be great experience for you without doubt and in no-time and with great quality.</h6>
-                                    <Link href="/industries/hospitality"><a className="btn btn-info-gradiant btn-md btn-arrow m-t-20" data-toggle="collapse"> <span>View More <i className="ti-arrow-right"></i></span></a></Link>
+                                    <h2 className="title">Value We Delivered</h2>
+                                    <h6 className="subtitle">You can relay on our amazing features list and also our customer services will be great experience for you without doubt and in no-time</h6>
                                 </div>
                             </div>
-                        </div>
-                        <div className="wrap-feature-28 row">
-                            <div className="col-lg-6">
-                                <div className="side-content both-space text-right pull-right">
-                                    {/* <span className="label label-info label-rounded">Great Feature 28</span> */}
-                                    <h2 className="title">Healthcare</h2>
-                                    <h6 className="subtitle">You can relay on our amazing features list and also our customer services will be great experience for you without doubt and in no-time and with great quality.</h6>
-                                    <Link href="/industries/healthcare"><a className="btn btn-info-gradiant btn-md btn-arrow m-t-20" data-toggle="collapse"> <span>View More <i className="ti-arrow-right"></i></span></a></Link>
-                                </div>
-                            </div>
-                            {/* <div className="col-lg-6 bg-cover" style="background-image:url(../assets/images/features/feature28/img2.jpg)"></div> */}
-                            <div className="col-lg-6 bg-cover" style={{ backgroundImage: "url(images/industry/HealtCare.jpg)" }}></div>
-                            <div className="col-md-12 text-center">
 
-                            </div>
-                        </div>
-                        <div className="wrap-feature-28s row">
-                            {/* <div className="col-lg-6 bg-cover" style="background-image:url(../assets/images/features/feature28/img1.jpg)"></div> */}
-                            <div className="col-lg-6 bg-cover" style={{ backgroundImage: "url(images/industry/Manufacturing.jpg)" }}></div>
-                            <div className="col-lg-6">
-                                <div className="side-content both-space">
-                                    {/* <span className="label label-info label-rounded">Great Feature 28</span> */}
-                                    <h2 className="title">Manufacturing</h2>
-                                    <h6 className="subtitle">You can relay on our amazing features list and also our customer services will be great experience for you without doubt and in no-time and with great quality.</h6>
-                                    <Link href="/industries/manifacturing"><a className="btn btn-info-gradiant btn-md btn-arrow m-t-20" data-toggle="collapse"> <span>View More <i className="ti-arrow-right"></i></span></a></Link>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="wrap-feature-28 row">
-                            <div className="col-lg-6">
-                                <div className="side-content both-space text-right pull-right">
-                                    {/* <span className="label label-info label-rounded">Great Feature 28</span> */}
-                                    <h2 className="title">Retail and e-commerce</h2>
-                                    <h6 className="subtitle">You can relay on our amazing features list and also our customer services will be great experience for you without doubt and in no-time and with great quality.</h6>
-                                    <Link href="/industries/retail"><a className="btn btn-info-gradiant btn-md btn-arrow m-t-20" data-toggle="collapse"> <span>View More <i className="ti-arrow-right"></i></span></a></Link>
-                                </div>
-                            </div>
-                            {/* <div className="col-lg-6 bg-cover" style="background-image:url(../assets/images/features/feature28/img2.jpg)"></div> */}
-                            <div className="col-lg-6 bg-cover" style={{ backgroundImage: "url(images/industry/e-commerce.jpg)" }}></div>
-                            <div className="col-md-12 text-center">
+                            <div className="row m-t-40">
 
-                            </div>
-                        </div>
-                        <div className="wrap-feature-28s row">
-                            {/* <div className="col-lg-6 bg-cover" style="background-image:url(../assets/images/features/feature28/img1.jpg)"></div> */}
-                            <div className="col-lg-6 bg-cover" style={{ backgroundImage: "url(images/industry/Technology.jpg)" }}></div>
-                            <div className="col-lg-6">
-                                <div className="side-content both-space">
-                                    {/* <span className="label label-info label-rounded">Great Feature 28</span> */}
-                                    <h2 className="title">Technology and Software</h2>
-                                    <h6 className="subtitle">You can relay on our amazing features list and also our customer services will be great experience for you without doubt and in no-time and with great quality.</h6>
-                                    <Link href="/industries/technology"><a className="btn btn-info-gradiant btn-md btn-arrow m-t-20" data-toggle="collapse"> <span>View More <i className="ti-arrow-right"></i></span></a></Link>
+                                <div className="col-md-6 wrap-feature9-box b-r b-b">
+                                    <div className="card" data-aos="fade-left" data-aos-duration="1200">
+                                        <div className="card-body d-flex">
+                                            <div className="icon-space align-self-center"><i className="icon-Computer-Secure display-4 text-info-gradiant"></i></div>
+                                            <div className="align-self-center">
+                                                <h5 className="font-medium"><a className="linking">Ownership </a></h5>
+                                                <p className="m-t-20">You can relay on our amazing features list and also our customer services will be great experience.</p>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
-                            </div>
-                        </div>
-                        <div className="wrap-feature-28 row">
-                            <div className="col-lg-6">
-                                <div className="side-content both-space text-right pull-right">
-                                    {/* <span className="label label-info label-rounded">Great Feature 28</span> */}
-                                    <h2 className="title">Professional Services</h2>
-                                    <h6 className="subtitle">You can relay on our amazing features list and also our customer services will be great experience for you without doubt and in no-time and with great quality.</h6>
-                                    <Link href="/industries/professional_service"><a className="btn btn-info-gradiant btn-md btn-arrow m-t-20" data-toggle="collapse"> <span>View More <i className="ti-arrow-right"></i></span></a></Link>
+
+                                <div className="col-md-6 wrap-feature9-box b-b">
+                                    <div className="card" data-aos="fade-left" data-aos-duration="1200">
+                                        <div className="card-body d-flex">
+                                            <div className="icon-space align-self-center"><i className="icon-Computer-Secure display-4 text-info-gradiant"></i></div>
+                                            <div className="align-self-center">
+                                                <h5 className="font-medium"><a className="linking">Transparency </a></h5>
+                                                <p className="m-t-20">You can relay on our amazing features list and also our customer services will be great experience.</p>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
-                            </div>
-                            {/* <div className="col-lg-6 bg-cover" style="background-image:url(../assets/images/features/feature28/img2.jpg)"></div> */}
-                            <div className="col-lg-6 bg-cover" style={{ backgroundImage: "url(images/industry/Professional.jpg)" }}></div>
-                            <div className="col-md-12 text-center">
+
+                                <div className="col-md-6 wrap-feature9-box b-r">
+                                    <div className="card" data-aos="fade-right" data-aos-duration="1200">
+                                        <div className="card-body d-flex">
+                                            <div className="icon-space align-self-center"><i className="icon-Cloud-Smartphone display-4 text-info-gradiant"></i></div>
+                                            <div className="align-self-center">
+                                                <h5 className="font-medium"><a className="linking">Trust </a></h5>
+                                                <p className="m-t-20">You can relay on our amazing features list and also our customer services will be great experience.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div className="col-md-6 wrap-feature9-box">
+                                    <div className="card" data-aos="fade-left" data-aos-duration="1200">
+                                        <div className="card-body d-flex">
+                                            <div className="icon-space align-self-center"><i className="icon-Business-ManWoman display-4 text-info-gradiant"></i></div>
+                                            <div className="align-self-center">
+                                                <h5 className="font-medium"><a className="linking">Empathy </a></h5>
+                                                <p className="m-t-20">You can relay on our amazing features list and also our customer services will be great experience.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                {/* <!-- Column --> */}
 
                             </div>
                         </div>
                     </div>
 
-                    {/* <!-- ============================================================== -->
-            <!-- footer 4  -->
-            <!-- ============================================================== --> */}
+                    <div className="testimonial9 spacer bg-light">
+                        <div className="container">
+                            <div className="row">
+                                <div className="col-lg-5 col-md-6">
+                                    <h2 className="m-t-40">What Our Customers Say</h2>
+                                    <span className="devider bg-danger"></span>
+                                    <h6 className="subtitle ">You can relay on our amazing features list and also our customer services will be great experience for you without doubt and in no-time</h6>
+                                </div>
+                                <div className="col-lg-6 col-md-6 ml-auto">
+                                    <div className="owl-carousel owl-theme testi9">
+                                        {/* <!-- item --> */}
+                                        <div className="item">
+                                            <div className="card card-shadow testimonial-color">
+                                                <div className="p-40">
+                                                    <p>We care what our customers think of us and so should you. We are partners in your business and your success is ours in your business.</p>
+                                                </div>
+                                            </div>
+                                            <div className="d-flex no-block align-items-center">
+                                                <div className="customer-thumb"><img src="/images/1.jpg" alt="wrapkit" className="circle" /></div>
+                                                <div className="">
+                                                    <h6 className="font-bold m-b-0">Michael Anderson</h6><span className="font-13">Project client</span></div>
+                                            </div>
+                                        </div>
+                                        {/* <!-- item -->
+                                    <!-- item --> */}
+
+                                        {/* <!-- item -->
+                                    <!-- item --> */}
+
+                                        {/* <!-- item --> */}
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div className="spacer feature17">
+                        <div className="container">
+
+                            <div className="row justify-content-center">
+                                <div className="col-md-7 text-center">
+                                    <h2 className="title">Some of our works</h2>
+                                    <h6 className="subtitle">You can relay on our amazing features list and also our customer services will be great experience for you without doubt and in no-time</h6>
+                                </div>
+                            </div>
+
+                            <div className="card-group m-t-30 wrap-feature-17-box">
+
+                                <div className="card m-b-0">
+                                    <div className="card-body text-center">
+                                        <div className="p-20">
+                                            <div className="icon-space"><i className="display-5 text-info-gradiant icon-Target"></i></div>
+                                            <h4 className="font-medium">Retargeting Market</h4>
+                                            <p>You can relay on our amazing features list and also our customer services will be great experience worth taking.</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div className="card m-b-0 custom_container">
+                                    <img src="/images/features/feature17/img1.jpg" className="image" alt="wrapkit" />
+                                    <div className="overlay">
+                                        <div className="text">E-Pin System</div>
+                                    </div>
+                                </div>
+
+                                <div className="card m-b-0">
+                                    <div className="card-body text-center">
+                                        <div className="p-20">
+                                            <div className="icon-space"><i className="display-5 text-info-gradiant icon-Mouse-3"></i></div>
+                                            <h4 className="font-medium">Instant Solutions</h4>
+                                            <p>You can relay on our amazing features list and also our customer services will be great experience worth taking.</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div className="card-group wrap-feature-17-box">
+
+                                <div className="card custom_container">
+                                    <img src="/images/features/feature17/img2.jpg" className="image" alt="wrapkit" />
+                                    <div className="overlay">
+                                        <div className="text">Payment Gateway</div>
+                                    </div>
+                                </div>
+
+                                <div className="card">
+                                    <div className="card-body text-center">
+                                        <div className="p-20">
+                                            <div className="icon-space"><i className="display-5 text-info-gradiant icon-Car-Wheel"></i></div>
+                                            <h4 className="font-medium">Fruitful Results</h4>
+                                            <p>You can relay on our amazing features list and also our customer services will be great experience worth taking.</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div className="card custom_container">
+                                    <img src="/images/features/feature17/img3.jpg" className="image" alt="wrapkit" />
+                                    <div className="overlay">
+                                        <div className="text">Gift card system</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+
+                    <div className="blog-home1 spacer bg-light ">
+                        <div className="container ">
+
+                            <div className="row justify-content-center ">
+
+                                <div className="col-md-8 text-center ">
+                                    <h2 className="title ">News</h2>
+                                    <h6 className="subtitle ">You can relay on our amazing features list and also our customer services will be great experience for you without doubt and in no-time</h6>
+                                </div>
+
+                            </div>
+                            <div className="row m-t-40 ">
+
+                                <div className="col-md-4 ">
+                                    <div className="card card-shadow " data-aos="flip-left " data-aos-duration="1200 ">
+                                        <a href="# "><img className="card-img-top " src="/images/blog/img3.jpg " alt="wrappixel kit " /></a>
+                                        <div className="p-30 ">
+                                            <div className="d-flex no-block font-14 ">
+                                                <a href="# ">Digital Marketing</a>
+                                                <span className="ml-auto ">Sept 18, 2017</span>
+                                            </div>
+                                            <h5 className="font-medium m-t-20 "><a href="# " className="link ">Digital Marketing becomes very Essential for any site</a></h5>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div className="col-md-4 ">
+                                    <div className="card card-shadow " data-aos="flip-up " data-aos-duration="1200 ">
+                                        <a href="# "><img className="card-img-top " src="/images/blog/img2.jpg " alt="wrappixel kit " /></a>
+                                        <div className="p-30 ">
+                                            <div className="d-flex no-block font-14 ">
+                                                <a href="# ">Search Engine </a>
+                                                <span className="ml-auto ">Sept 18, 2017</span>
+                                            </div>
+                                            <h5 className="font-medium m-t-20 "><a href="# " className="link ">Rank your site on First Page of Google seems easier now</a></h5>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div className="col-md-4 ">
+                                    <div className="card card-shadow " data-aos="flip-right " data-aos-duration="1200 ">
+                                        <a href="# "><img className="card-img-top " src="/images/blog/img1.jpg " alt="wrappixel kit " /></a>
+                                        <div className="p-30 ">
+                                            <div className="d-flex no-block font-14 ">
+                                                <a href="# ">Search Engine</a>
+                                                <span className="ml-auto ">Sept 18, 2017</span>
+                                            </div>
+                                            <h5 className="font-medium m-t-20 "><a href="# " className="link ">We have just launched our new Admin template</a></h5>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    {/*  <!-- ============================================================== -->
+                         <!-- footer 4  -->
+                         <!-- ============================================================== --> */}
                     <div className="footer4 spacer ">
                         <div className="container ">
                             <div className="row ">
@@ -356,7 +484,7 @@ const Industries = () => {
                                         <hr />
 
                                         <nav style={{ paddingLeft: "0px !important" }} className="navbar navbar-expand-lg h1-nav ">
-                                            <a className="navbar-brand m-b-11 " href="# "><img src="./images/aexonic-logo_5.png " alt="Aexonic " width="120 " /></a>
+                                            <a className="navbar-brand m-b-11 " href="# "><img src="/images/aexonic-logo_5.png " alt="Aexonic " width="120 " /></a>
                                             <button className="navbar-toggler " type="button " data-toggle="collapse " data-target="#header1 " aria-expanded="false " aria-label="Toggle navigation ">
                                                 <span className="ti-menu "></span>
                                             </button>
@@ -397,4 +525,4 @@ const Industries = () => {
     )
 }
 
-export default Industries;
+export default Banking;
