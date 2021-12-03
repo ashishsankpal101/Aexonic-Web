@@ -255,7 +255,7 @@ const Technology = () => {
                                                 <ul className="navbar-nav ml-auto mt-2 mt-lg-0 ">
                                                     <li className="nav-item"><a className="nav-link " href="# ">Home</a></li>
                                                     <li className="nav-item "><a className="nav-link " href="# ">Services</a></li>
-                                                    <li className="nav-item "><a className="nav-link " href="# ">Industries</a></li>
+                                                    <li className="nav-item "><a className="nav-link active" href="# ">Industries</a></li>
                                                     <li className="nav-item "><a className="nav-link " href="# ">Careers</a></li>
                                                     <li className="nav-item "><a className="nav-link " href="# ">About Us</a></li>
                                                     <li className="nav-item "><a className="nav-link " href="# ">More</a></li>
