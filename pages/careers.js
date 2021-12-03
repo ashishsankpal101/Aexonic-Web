@@ -508,10 +508,11 @@ const careers = () => {
                                             <div className="collapse navbar-collapse " id="header1 ">
                                                 <span className="hidden-lg-down ">© 2020 All rights reserved.</span>
                                                 <ul className="navbar-nav ml-auto mt-2 mt-lg-0 ">
-                                                    <li className="nav-item active "><a className="nav-link " href="# ">Home</a></li>
+                                                    <li className="nav-item"><a className="nav-link " href="# ">Home</a></li>
                                                     <li className="nav-item "><a className="nav-link " href="# ">Services</a></li>
-                                                    <li className="nav-item "><a className="nav-link " href="# ">Our Work</a></li>
-                                                    <li className="nav-item "><a className="nav-link " href="# ">Technology</a></li>
+                                                    <li className="nav-item "><a className="nav-link " href="# ">Industries</a></li>
+                                                    <li className="nav-item "><a className="nav-link active" href="# ">Careers</a></li>
+                                                    <li className="nav-item "><a className="nav-link " href="# ">About Us</a></li>
                                                     <li className="nav-item "><a className="nav-link " href="# ">More</a></li>
                                                     <li className="nav-item "><a className="nav-link " href="# ">Contact Us</a></li>
                                                 </ul>

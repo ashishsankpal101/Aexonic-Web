@@ -61,7 +61,7 @@ const SupplyChain = () => {
                                             <div className="dropdown-menu b-none font-14 animated fadeInUp" aria-labelledby="h6-mega-dropdown1">
                                                 <div className="row">
                                                     <div className="col-lg-3 inside-bg hidden-md-down">
-                                                        <div className="bg-img" style={{ backgroundImage: "url(images/mega-bg2.jpg)" }}>
+                                                        <div className="bg-img" style={{ backgroundImage: "url(/images/mega-bg2.jpg)" }}>
                                                             <h3 className="text-white font-light">Create anything <br />with our amazing <br />sections</h3>
                                                         </div>
                                                     </div>

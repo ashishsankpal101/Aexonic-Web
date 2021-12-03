@@ -343,12 +343,13 @@ export function Blog({ data }) {
                                             <div className="collapse navbar-collapse " id="header1 ">
                                                 <span className="hidden-lg-down ">© 2020 All rights reserved.</span>
                                                 <ul className="navbar-nav ml-auto mt-2 mt-lg-0 ">
-                                                    <li className="nav-item active "><a className="nav-link " >Home</a></li>
-                                                    <li className="nav-item "><a className="nav-link " >Our Offering</a></li>
-                                                    <li className="nav-item "><a className="nav-link " >Careers</a></li>
-                                                    <li className="nav-item "><a className="nav-link " >About US</a></li>
-                                                    <li className="nav-item "><a className="nav-link active_menu" >More</a></li>
-                                                    <li className="nav-item "><a className="nav-link " >Contact Us</a></li>
+                                                    <li className="nav-item"><a className="nav-link " href="# ">Home</a></li>
+                                                    <li className="nav-item "><a className="nav-link " href="# ">Services</a></li>
+                                                    <li className="nav-item "><a className="nav-link " href="# ">Industries</a></li>
+                                                    <li className="nav-item "><a className="nav-link " href="# ">Careers</a></li>
+                                                    <li className="nav-item "><a className="nav-link " href="# ">About Us</a></li>
+                                                    <li className="nav-item "><a className="nav-link active" href="# ">More</a></li>
+                                                    <li className="nav-item "><a className="nav-link " href="# ">Contact Us</a></li>
                                                 </ul>
                                             </div>
                                         </nav>
