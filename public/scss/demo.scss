@@ -596,7 +596,7 @@ Feature 24
             -webkit-background-clip: text;
             background-clip: text;
             -webkit-text-fill-color: transparent;
-            text-fill-color:transparent;
+            // text-fill-color:transparent;
             font-size:50px;
         }
         .ser-title{
@@ -607,7 +607,7 @@ Feature 24
             @include linear-gradient (to right, $info 0%, $info-dark 100%);
             i, .ser-title{
                 color:$white;
-                text-fill-color:$white;
+                // text-fill-color:$white;
                 -webkit-text-fill-color:$white;
             }
             i{
@@ -740,9 +740,9 @@ Features 41
 
 
     li a {
-        display      : -webkit-box;
-        display      : -webkit-flex;
-        display      : -ms-flexbox;
+        // display      : -webkit-box;
+        // display      : -webkit-flex;
+        // display      : -ms-flexbox;
         display      : flex;
         margin-bottom: 20px;
         padding      : 25px;
@@ -780,7 +780,7 @@ Features 41
         -webkit-background-clip: text;
         background-clip        : text;
         -webkit-text-fill-color: transparent;
-        text-fill-color        : transparent;
+        // text-fill-color        : transparent;
     }
 }
 
