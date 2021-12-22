@@ -82,7 +82,7 @@ const RetailEcommoerce = () => {
                                                             <li>
                                                                 <h6 className="f-w-500 active cursor-pointer">Digital Transformation</h6>
                                                             </li>
-                                                            <li><a className='cursor-pointer dropdown-item' target="_blank">Machine Learning & AI</a></li>
+                                                            <li><a className='cursor-pointer dropdown-item' target="_blank">Machine Learning &amp; AI</a></li>
                                                             <li><a className='cursor-pointer dropdown-item' target="_blank">Data and Analytics</a></li>
                                                             <li><a className='cursor-pointer dropdown-item' target="_blank">Internet of Things (IoT)</a></li>
                                                             <li><a className='cursor-pointer dropdown-item' target="_blank">Chatbot and Automation</a></li>
@@ -326,7 +326,7 @@ const RetailEcommoerce = () => {
                                         <div className="d-flex no-block m-b-40">
                                             <div className="display-4 m-r-20"><i className="icon-Google-Drive text-success-gradiant"></i></div>
                                             <div>
-                                                <h4>Language & Input Tools</h4>
+                                                <h4>Language &amp; Input Tools</h4>
                                                 <h6 className="subtitle">You can relay on our amazing features</h6>
                                             </div>
                                         </div> <a className="btn btn-success-gradiant btn-md btn-arrow" data-toggle="collapse" href="#f39"><span>View Feature39 code <i className="ti-arrow-right"></i></span></a>

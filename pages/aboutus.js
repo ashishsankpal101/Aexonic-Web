@@ -82,7 +82,7 @@ const aboutus = () => {
                                                             <li>
                                                                 <h6 className="f-w-500 active cursor-pointer">Digital Transformation</h6>
                                                             </li>
-                                                            <li><a className='cursor-pointer dropdown-item' target="_blank">Machine Learning & AI</a></li>
+                                                            <li><a className='cursor-pointer dropdown-item' target="_blank">Machine Learning &amp; AI</a></li>
                                                             <li><a className='cursor-pointer dropdown-item' target="_blank">Data and Analytics</a></li>
                                                             <li><a className='cursor-pointer dropdown-item' target="_blank">Internet of Things (IoT)</a></li>
                                                             <li><a className='cursor-pointer dropdown-item' target="_blank">Chatbot and Automation</a></li>
@@ -243,7 +243,7 @@ const aboutus = () => {
                                 <div className="card max-700">
                                     <div className="card-body">
                                         <h2 className="title text-uppercase">Our Story</h2>
-                                        <h6 className="subtitle">Aexonic’s founders left their Fortune 500 careers to form a new technology services firm based on superior client service and a unique, inspirational corporate culture.<br /> Since incorporation we have grown a diverse client base, attracted global talent, and developed into a highly successful professional services company. We have formed a culture of continuous learning and innovations. Our professionals have consulted for a number of industry leaders, such as Bank of America, Aflac, Hewlett Packard, Basf, AT&T, Cameron, Spirit AeroSystems, Timken, and Teleflex. Our team has an overall passion for technology and how it can improve the way companies do business.</h6>
+                                        <h6 className="subtitle">Aexonic’s founders left their Fortune 500 careers to form a new technology services firm based on superior client service and a unique, inspirational corporate culture.<br /> Since incorporation we have grown a diverse client base, attracted global talent, and developed into a highly successful professional services company. We have formed a culture of continuous learning and innovations. Our professionals have consulted for a number of industry leaders, such as Bank of America, Aflac, Hewlett Packard, Basf, AT&amp;T, Cameron, Spirit AeroSystems, Timken, and Teleflex. Our team has an overall passion for technology and how it can improve the way companies do business.</h6>
 
                                     </div>
                                 </div>
@@ -551,7 +551,7 @@ const aboutus = () => {
                             <div className="row justify-content-center m-b-30">
                                 <div className="col-md-7 text-center">
                                     {/* <span className="label label-success label-rounded">Team 4</span> */}
-                                    <h2 className="title">Experienced & Professional Team</h2>
+                                    <h2 className="title">Experienced &amp; Professional Team</h2>
                                     <h6 className="subtitle">You can relay on our amazing features list and also our customer services will be great experience for you without doubt and in no-time</h6>
                                 </div>
                             </div>

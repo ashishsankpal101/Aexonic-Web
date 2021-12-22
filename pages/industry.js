@@ -82,7 +82,7 @@ const Industries = () => {
                                                             <li>
                                                                 <h6 className="f-w-500 active cursor-pointer">Digital Transformation</h6>
                                                             </li>
-                                                            <li><a className='cursor-pointer dropdown-item' target="_blank">Machine Learning & AI</a></li>
+                                                            <li><a className='cursor-pointer dropdown-item' target="_blank">Machine Learning &amp; AI</a></li>
                                                             <li><a className='cursor-pointer dropdown-item' target="_blank">Data and Analytics</a></li>
                                                             <li><a className='cursor-pointer dropdown-item' target="_blank">Internet of Things (IoT)</a></li>
                                                             <li><a className='cursor-pointer dropdown-item' target="_blank">Chatbot and Automation</a></li>

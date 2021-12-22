@@ -81,7 +81,7 @@ export default function Home() {
                                                             <li>
                                                                 <h6 className="f-w-500 active cursor-pointer">Digital Transformation</h6>
                                                             </li>
-                                                            <li><a className='cursor-pointer dropdown-item' target="_blank">Machine Learning & AI</a></li>
+                                                            <li><a className='cursor-pointer dropdown-item' target="_blank">Machine Learning &amp; AI</a></li>
                                                             <li><a className='cursor-pointer dropdown-item' target="_blank">Data and Analytics</a></li>
                                                             <li><a className='cursor-pointer dropdown-item' target="_blank">Internet of Things (IoT)</a></li>
                                                             <li><a className='cursor-pointer dropdown-item' target="_blank">Chatbot and Automation</a></li>
@@ -517,7 +517,7 @@ export default function Home() {
                 <div className="card card-shadow" data-aos="flip-right" data-aos-duration="1200">
                   <a href="#" className="img-ho"><img className="card-img-top" src="images/portfolio/img3.jpg" alt="wrappixel kit" /></a>
                   <div className="card-body">
-                    <h5 className="font-medium m-b-0">Branding & Co Agency</h5>
+                    <h5 className="font-medium m-b-0">Branding &amp; Co Agency</h5>
                     <p className="m-b-0 font-14">Admin templates</p>
                   </div>
                 </div>

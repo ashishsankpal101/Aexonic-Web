@@ -82,7 +82,7 @@ const LifeAtAexonic = () => {
                                                             <li>
                                                                 <h6 className="f-w-500 active cursor-pointer">Digital Transformation</h6>
                                                             </li>
-                                                            <li><a className='cursor-pointer dropdown-item' target="_blank">Machine Learning & AI</a></li>
+                                                            <li><a className='cursor-pointer dropdown-item' target="_blank">Machine Learning &amp; AI</a></li>
                                                             <li><a className='cursor-pointer dropdown-item' target="_blank">Data and Analytics</a></li>
                                                             <li><a className='cursor-pointer dropdown-item' target="_blank">Internet of Things (IoT)</a></li>
                                                             <li><a className='cursor-pointer dropdown-item' target="_blank">Chatbot and Automation</a></li>
@@ -240,7 +240,7 @@ const LifeAtAexonic = () => {
                             <div className="row justify-content-center m-b-30">
                                 <div className="col-md-7 text-center">
                                     {/* <span className="label label-success label-rounded">Team 4</span> */}
-                                    <h2 className="title">Experienced & Professional Team</h2>
+                                    <h2 className="title">Experienced &amp; Professional Team</h2>
                                     <h6 className="subtitle">You can relay on our amazing features list and also our customer services will be great experience for you without doubt and in no-time</h6>
                                 </div>
                             </div>
