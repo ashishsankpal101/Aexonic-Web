@@ -315,13 +315,7 @@ const Banking = () => {
                                                     <h6 className="font-bold m-b-0">Michael Anderson</h6><span className="font-13">Project client</span></div>
                                             </div>
                                         </div>
-                                        {/* <!-- item -->
-                                    <!-- item --> */}
-
-                                        {/* <!-- item -->
-                                    <!-- item --> */}
-
-                                        {/* <!-- item --> */}
+                                     
                                     </div>
                                 </div>
                             </div>
@@ -464,7 +458,7 @@ const Banking = () => {
                             <div className="row ">
                                 <div className="col-lg-3 col-md-6 m-b-30 ">
                                     <h5 className="m-b-20 ">Address</h5>
-                                    <p> 503, Pride Icon, Kharadi, Pune, India – 411014</p>
+                                    <p> 503, Pride Icon, Kharadi, Pune, India  411014</p>
                                 </div>
                                 <div className="col-lg-3 col-md-6 m-b-30 ">
                                     <h5 className="m-b-20 ">Phone</h5>

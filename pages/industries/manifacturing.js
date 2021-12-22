@@ -260,7 +260,7 @@ const Manufacturing = () => {
                                         </div>
                                         <div className="col-md-6" data-aos="fade-left" data-aos-duration="1200">
                                             <h2 className="text-success-gradiant display-5"><i className="icon-Car-Wheel"></i></h2>
-                                            <h5 className="title">Secured & Trendy</h5>
+                                            <h5 className="title">Secured &amp; Trendy</h5>
                                             <h6 className="subtitle">You can relay on our amazing features list and also our customer services.</h6>
                                         </div>
                                     </div>
@@ -501,7 +501,7 @@ const Manufacturing = () => {
                             <div className="row ">
                                 <div className="col-lg-3 col-md-6 m-b-30 ">
                                     <h5 className="m-b-20 ">Address</h5>
-                                    <p> 503, Pride Icon, Kharadi, Pune, India – 411014</p>
+                                    <p> 503, Pride Icon, Kharadi, Pune, India  411014</p>
                                 </div>
                                 <div className="col-lg-3 col-md-6 m-b-30 ">
                                     <h5 className="m-b-20 ">Phone</h5>

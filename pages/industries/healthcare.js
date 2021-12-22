@@ -341,7 +341,7 @@ const Healthcare = () => {
                             <div className="row justify-content-center">
                                 <div className="col-md-7 text-center">
                                     <h2 className="title">Our Thinking</h2>
-                                    <h6 className="subtitle">You can relay on our amazi sdsdng features list and also our customer services will be great experience for you without doubt and in no-time</h6>
+                                    <h6 className="subtitle">You can relay on our amazi sdsdng features list and also our customer erer services will be great experience for you without doubt and in no-time</h6>
                                 </div>
                             </div>
                             {/* <!-- Row  --> */}
@@ -393,7 +393,7 @@ const Healthcare = () => {
                             <div className="row ">
                                 <div className="col-lg-3 col-md-6 m-b-30 ">
                                     <h5 className="m-b-20 ">Address</h5>
-                                    <p> 503, Pride Icon, Kharadi, Pune, India – 411014</p>
+                                    <p> 503, Pride Icon, Kharadi, Pune, India  411014</p>
                                 </div>
                                 <div className="col-lg-3 col-md-6 m-b-30 ">
                                     <h5 className="m-b-20 ">Phone</h5>

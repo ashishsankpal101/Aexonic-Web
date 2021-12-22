@@ -259,9 +259,7 @@ const Hospitality = () => {
                                  <h5 className="font-medium">100% Satisfection</h5>
                                  <p>You can relay on our amazing features list and also our customer services will.</p>
                               </div>
-                              <div className="col-lg-12 m-t-30 m-b-30">
-                                 <a className="btn btn-info-gradiant btn-md btn-arrow" data-toggle="collapse" href="#f12"><span>View Feature12 code <i className="ti-arrow-right"></i></span></a>
-                              </div>
+                             
                            </div>
                         </div>
                         {/* <!-- Column --> */}
@@ -418,7 +416,7 @@ const Hospitality = () => {
                      <div className="row ">
                         <div className="col-lg-3 col-md-6 m-b-30 ">
                            <h5 className="m-b-20 ">Address</h5>
-                           <p> 503, Pride Icon, Kharadi, Pune, India – 411014</p>
+                           <p> 503, Pride Icon, Kharadi, Pune, India  411014</p>
                         </div>
                         <div className="col-lg-3 col-md-6 m-b-30 ">
                            <h5 className="m-b-20 ">Phone</h5>

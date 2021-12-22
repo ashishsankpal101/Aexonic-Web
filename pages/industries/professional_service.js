@@ -341,7 +341,8 @@ const Professional = () => {
                                                 <h4>Language &amp; Input Tools</h4>
                                                 <h6 className="subtitle">You can relay on our amazing features</h6>
                                             </div>
-                                        </div> <a className="btn btn-success-gradiant btn-md btn-arrow" data-toggle="collapse" href="#f39"><span>View Feature39 code <i className="ti-arrow-right"></i></span></a>
+                                        </div> 
+                                       
                                     </div>
                                 </div>
                             </div>
@@ -405,7 +406,7 @@ const Professional = () => {
                             <div className="row ">
                                 <div className="col-lg-3 col-md-6 m-b-30 ">
                                     <h5 className="m-b-20 ">Address</h5>
-                                    <p> 503, Pride Icon, Kharadi, Pune, India – 411014</p>
+                                    <p> 503, Pride Icon, Kharadi, Pune, India  411014</p>
                                 </div>
                                 <div className="col-lg-3 col-md-6 m-b-30 ">
                                     <h5 className="m-b-20 ">Phone</h5>
