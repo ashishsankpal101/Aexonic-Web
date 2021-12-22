@@ -68,26 +68,26 @@ const Healthcare = () => {
                                                     <div className="col-lg-3 col-md-4">
                                                         <ul className="list-style-none">
                                                             <li>
-                                                                <h6 className="f-w-500">Product Engineering</h6>
+                                                                <h6 className="f-w-500 active cursor-pointer">Product Engineering</h6>
                                                             </li>
-                                                            <li><a target="_blank">SaaS Platforms</a></li>
-                                                            <li><a target="_blank">Software Engineering</a></li>
-                                                            <li><a target="_blank">Mobile and Web Apps</a></li>
-                                                            <li><a target="_blank">API Ecosystem</a></li>
+                                                            <li><a className='cursor-pointer dropdown-item' target="_blank ">SaaS Platforms</a></li>
+                                                            <li><a className='cursor-pointer dropdown-item' target="_blank">Software Engineering</a></li>
+                                                            <li><a className='cursor-pointer dropdown-item' target="_blank">Mobile and Web Apps</a></li>
+                                                            <li><a className='cursor-pointer dropdown-item' target="_blank">API Ecosystem</a></li>
 
                                                         </ul>
                                                     </div>
                                                     <div className="col-lg-3 col-md-4">
                                                         <ul className="list-style-none">
                                                             <li>
-                                                                <h6 className="f-w-500">Digital Transformation</h6>
+                                                                <h6 className="f-w-500 active cursor-pointer">Digital Transformation</h6>
                                                             </li>
-                                                            <li><a target="_blank">Machine Learning & AI</a></li>
-                                                            <li><a target="_blank">Data and Analytics</a></li>
-                                                            <li><a target="_blank">Internet of Things (IoT)</a></li>
-                                                            <li><a target="_blank">Chatbot and Automation</a></li>
-                                                            <li><a target="_blank">Cloud and DevOps</a></li>
-                                                            <li><a target="_blank">Technology Consulting</a></li>
+                                                            <li><a className='cursor-pointer dropdown-item' target="_blank">Machine Learning & AI</a></li>
+                                                            <li><a className='cursor-pointer dropdown-item' target="_blank">Data and Analytics</a></li>
+                                                            <li><a className='cursor-pointer dropdown-item' target="_blank">Internet of Things (IoT)</a></li>
+                                                            <li><a className='cursor-pointer dropdown-item' target="_blank">Chatbot and Automation</a></li>
+                                                            <li><a className='cursor-pointer dropdown-item' target="_blank">Cloud and DevOps</a></li>
+                                                            <li><a className='cursor-pointer dropdown-item' target="_blank">Technology Consulting</a></li>
                                                         </ul>
                                                     </div>
                                                     {/* <div className="col-lg-2 col-md-4">
@@ -99,28 +99,61 @@ const Healthcare = () => {
                                                     <div className="col-lg-3 col-md-4">
                                                         <ul className="list-style-none">
                                                             <li>
-                                                                <h6 className="f-w-500">Staff Augmentation</h6>
+                                                                <h6 className="f-w-500 active cursor-pointer">Staff Augmentation</h6>
                                                             </li>
-                                                            <li><a target="_blank">Onshore</a></li>
-                                                            <li><a target="_blank">Offshore</a></li>
-                                                            <li><a target="_blank">Nearshore</a></li>
+                                                            <li><a className='cursor-pointer dropdown-item' target="_blank">Onshore</a></li>
+                                                            <li><a className='cursor-pointer dropdown-item' target="_blank">Offshore</a></li>
+                                                            <li><a className='cursor-pointer dropdown-item' target="_blank">Nearshore</a></li>
                                                             <li>
-                                                                <h6 className="f-w-500">Enterprise Solutions</h6>
+                                                                <h6 className="f-w-500 active cursor-pointer">Enterprise Solutions</h6>
                                                             </li>
-                                                            <li><a target="_blank">SAP</a></li>
+                                                            <li><a className='cursor-pointer dropdown-item' target="_blank">SAP</a></li>
                                                         </ul>
                                                     </div>
 
                                                 </div>
                                             </div>
                                         </li>
-                                        <li className="nav-item dropdown">
-                                            <Link href="/industry">
-                                                <a className="nav-link dropdown-toggle active" id="h6-dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                                    Industries
-                                                </a>
-                                            </Link>
+                                        <li className="nav-item dropdown">  <Link href="/industry"><a className="nav-link dropdown-toggle active" id="h6-dropdown2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            Industries <i className="fa fa-angle-down m-l-5"></i>
+                                        </a></Link>
+                                            <ul className="b-none dropdown-menu font-14 animated fadeInUp">
 
+                                                <li>
+                                                    <Link href="/industries/banking">
+                                                        <a className="dropdown-item">Banking and FinTech</a>
+                                                    </Link>
+                                                </li>
+                                                <li>
+                                                    <Link href="/industries/supplychain">
+                                                        <a className="dropdown-item">Supply Chain and Logistics</a>
+                                                    </Link>
+                                                </li>
+                                                <li> <Link href="/industries/hospitality">
+                                                    <a className="dropdown-item">Hospitality and Travel</a>
+                                                </Link>
+                                                </li>
+                                                <li> <Link href="/industries/healthcare">
+                                                    <a className="dropdown-item active_menu">Healthcare</a>
+                                                </Link>
+                                                </li>
+                                                <li> <Link href="/industries/manifacturing">
+                                                    <a className="dropdown-item">Manufacturing</a>
+                                                </Link>
+                                                </li>
+                                                <li> <Link href="/industries/retail">
+                                                    <a className="dropdown-item">Retail and e-commerce</a>
+                                                </Link>
+                                                </li>
+                                                <li> <Link href="/industries/technology">
+                                                    <a className="dropdown-item">Technology and Software</a>
+                                                </Link>
+                                                </li>
+                                                <li> <Link href="/industries/professional_service">
+                                                    <a className="dropdown-item">Professional Services</a>
+                                                </Link>
+                                                </li>
+                                            </ul>
                                         </li>
                                         <li className="nav-item dropdown">
                                             <Link href="/careers">
@@ -198,18 +231,167 @@ const Healthcare = () => {
                             </div>
                         </div>
                     </div>
+
                     {/* <!-- ============================================================== -->
             <!-- Testimonial 9 -->
             <!-- ============================================================== --> */}
-
-                  
-
-                  
-
-
-
-
-
+                    {/* <!-- Feature Card --> */}
+                    <div className="spacer feature9">
+                        <div className="container">
+                            {/* <!-- Row --> */}
+                            <div className="row justify-content-center">
+                                <div className="col-md-7 text-center">
+                                    <h2 className="title">Features</h2>
+                                    <h6 className="subtitle">You can relay on our amazing features list and also our customer services will be great experience for you without doubt and in no-time</h6>
+                                </div>
+                            </div>
+                            {/* <!-- Row --> */}
+                            <div className="row m-t-40">
+                                {/* <!-- Column --> */}
+                                <div className="col-md-4 wrap-feature11-box">
+                                    <div className="card card-shadow" data-aos="fade-right" data-aos-duration="1200">
+                                        <div className="card-body">
+                                            <div className="icon-space"><i className="display-5 text-info-gradiant icon-Doctor"></i></div>
+                                            <h5 className="font-medium">Appointments</h5>
+                                            <p className="m-t-20">You can relay on our amazing features list and also our customer services will be great experience.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                {/* <!-- Column --> */}
+                                <div className="col-md-4 wrap-feature11-box">
+                                    <div className="card card-shadow" data-aos="fade-right" data-aos-duration="1200">
+                                        <div className="card-body">
+                                            <div className="icon-space"><i className="display-5 text-info-gradiant icon-Clock-Forward"></i></div>
+                                            <h5 className="font-medium">Working Time</h5>
+                                            <p className="m-t-20">You can relay on our amazing features list and also our customer services will be great experience.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                {/* <!-- Column --> */}
+                                <div className="col-md-4 wrap-feature11-box">
+                                    <div className="card card-shadow" data-aos="fade-right" data-aos-duration="1200">
+                                        <div className="card-body">
+                                            <div className="icon-space"><i className="display-5 text-info-gradiant icon-First-Aid"></i></div>
+                                            <h5 className="font-medium">Emergency</h5>
+                                            <p className="m-t-20">You can relay on our amazing features list and also our customer services will be great experience.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="feature16">
+                        <div className="row wrap-feature-16">
+                            <div className="col-lg-6 with-bg" data-aos="fade-up" data-aos-duration="1200" style={{ backgroundImage: "url(/images/features/hospital_service.jpg)" }}> </div>
+                            <div className="col-lg-6 bg-info-gradiant text-white">
+                                <div className="with-text">
+                                    <p className="op-7">What we did ?</p>
+                                    <h2 className="text-white m-t-30 m-b-30">Our Work</h2>
+                                    <ul className="list-block m-b-30">
+                                        <li><i className="icon-Yes"></i> <span>Powerful and Faster Results for your site</span></li>
+                                        <li><i className="icon-Yes"></i> <span>Make your site in no-time with your Bootstrap WrapKit</span></li>
+                                        <li><i className="icon-Yes"></i> <span>Tons of Features and Elements available here</span></li>
+                                        <li><i className="icon-Yes"></i> <span>What are you wait for? Go and Get it.</span></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="spacer feature2">
+                        <div className="container">
+                            {/* <!-- Row  --> */}
+                            <div className="row justify-content-center">
+                                <div className="col-md-7 text-center">
+                                    <h2 className="title"></h2>
+                                    <h6 className="subtitle">You can relay on our amazing features list and also our customer services will be great experience for you without doubt and in no-time</h6>
+                                </div>
+                            </div>
+                            {/* <!-- Row  --> */}
+                            <div className="row m-t-40">
+                                {/* <!-- Column --> */}
+                                <div className="col-md-4 wrap-feature2-box">
+                                    <div className="card card-shadow" data-aos="flip-left" data-aos-duration="1200">
+                                        <img className="card-img-top" src="/images/features/feature17/img1.jpg" alt="wrappixel kit" />
+                                        <div className="card-body text-center">
+                                            <h5 className="font-medium">Retargeting Market</h5>
+                                            <p className="m-t-20">You can relay on our amazing features list and also our customer services will be great experience.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                {/* <!-- Column --> */}
+                                <div className="col-md-4 wrap-feature2-box">
+                                    <div className="card card-shadow" data-aos="flip-up" data-aos-duration="1200">
+                                        <img className="card-img-top" src="/images/features/feature17/img2.jpg" alt="wrappixel kit" />
+                                        <div className="card-body text-center">
+                                            <h5 className="font-medium">Fruitful Results</h5>
+                                            <p className="m-t-20">You can relay on our amazing features list and also our customer services will be great experience.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                {/* <!-- Column --> */}
+                                <div className="col-md-4 wrap-feature2-box">
+                                    <div className="card card-shadow" data-aos="flip-right" data-aos-duration="1200">
+                                        <img className="card-img-top" src="/images/features/feature17/img3.jpg" alt="wrappixel kit" />
+                                        <div className="card-body text-center">
+                                            <h5 className="font-medium">Instant Solutions</h5>
+                                            <p className="m-t-20">You can relay on our amazing features list and also our customer services will be great experience.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    {/* Our thinking Section */}
+                    <div className="bg-light spacer feature15">
+                        <div className="container">
+                            {/* <!-- Row  --> */}
+                            <div className="row justify-content-center">
+                                <div className="col-md-7 text-center">
+                                    <h2 className="title">Our Thinking</h2>
+                                    <h6 className="subtitle">You can relay on our amazing features list and also our customer services will be great experience for you without doubt and in no-time</h6>
+                                </div>
+                            </div>
+                            {/* <!-- Row  --> */}
+                            <div className="row m-t-40">
+                                {/* <!-- Column --> */}
+                                <div className="col-lg-6 wrap-feature15-box">
+                                    <div className="row">
+                                        <div className="col-md-12 m-b-30" data-aos="fade-down" data-aos-duration="1000">
+                                            <div className="d-flex no-block">
+                                                <div className="no-shrink"><span className="icon-round bg-white display-5 text-success "><i className="icon-Target"></i></span></div>
+                                                <div className="p-20">
+                                                    <h5 className="font-medium"><a className="linking">Retargeting Market</a></h5>
+                                                    <p className="m-t-20">You can relay on our amazing features list and also our customer services will be great experience.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div className="col-md-12 m-b-30" data-aos="fade-down" data-aos-duration="2000">
+                                            <div className="d-flex no-block">
+                                                <div className="no-shrink"><span className="icon-round bg-white display-5 text-success "><i className="icon-Car-Wheel"></i></span></div>
+                                                <div className="p-20">
+                                                    <h5 className="font-medium"><a className="linking">Fruitful Results</a></h5>
+                                                    <p className="m-t-20">You can relay on our amazing features list and also our customer services will be great experience.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div className="col-md-12 m-b-30" data-aos="fade-down" data-aos-duration="3000">
+                                            <div className="d-flex no-block">
+                                                <div className="no-shrink"><span className="icon-round bg-white display-5 text-success "><i className="icon-Mouse-3"></i></span></div>
+                                                <div className="p-20">
+                                                    <h5 className="font-medium"><a className="linking">Instant Solutions</a></h5>
+                                                    <p className="m-t-20">You can relay on our amazing features list and also our customer services will be great experience.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                {/* <!-- Column --> */}
+                                <div className="col-lg-6 wrap-feature15-box" data-aos="flip-left" data-aos-duration="1200">
+                                    <img src="/images/features/img3.png" className="img-responsive" alt="wrapkit" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                     {/* <!-- ============================================================== -->
             <!-- footer 4  -->
             <!-- ============================================================== --> */}

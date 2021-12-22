@@ -16,7 +16,7 @@ const Technology = () => {
                 <meta name="author" content="" />
                 {/* <!-- Favicon icon --> */}
                 <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon.png" />
-                <title>Aexonic : Industries / Supply Chain and Logistics</title>
+                <title>Aexonic : Industries / Technology</title>
             </Head>
 
 
@@ -68,26 +68,26 @@ const Technology = () => {
                                                     <div className="col-lg-3 col-md-4">
                                                         <ul className="list-style-none">
                                                             <li>
-                                                                <h6 className="f-w-500">Product Engineering</h6>
+                                                                <h6 className="f-w-500 active cursor-pointer">Product Engineering</h6>
                                                             </li>
-                                                            <li><a target="_blank">SaaS Platforms</a></li>
-                                                            <li><a target="_blank">Software Engineering</a></li>
-                                                            <li><a target="_blank">Mobile and Web Apps</a></li>
-                                                            <li><a target="_blank">API Ecosystem</a></li>
+                                                            <li><a className='cursor-pointer dropdown-item' target="_blank ">SaaS Platforms</a></li>
+                                                            <li><a className='cursor-pointer dropdown-item' target="_blank">Software Engineering</a></li>
+                                                            <li><a className='cursor-pointer dropdown-item' target="_blank">Mobile and Web Apps</a></li>
+                                                            <li><a className='cursor-pointer dropdown-item' target="_blank">API Ecosystem</a></li>
 
                                                         </ul>
                                                     </div>
                                                     <div className="col-lg-3 col-md-4">
                                                         <ul className="list-style-none">
                                                             <li>
-                                                                <h6 className="f-w-500">Digital Transformation</h6>
+                                                                <h6 className="f-w-500 active cursor-pointer">Digital Transformation</h6>
                                                             </li>
-                                                            <li><a target="_blank">Machine Learning & AI</a></li>
-                                                            <li><a target="_blank">Data and Analytics</a></li>
-                                                            <li><a target="_blank">Internet of Things (IoT)</a></li>
-                                                            <li><a target="_blank">Chatbot and Automation</a></li>
-                                                            <li><a target="_blank">Cloud and DevOps</a></li>
-                                                            <li><a target="_blank">Technology Consulting</a></li>
+                                                            <li><a className='cursor-pointer dropdown-item' target="_blank">Machine Learning & AI</a></li>
+                                                            <li><a className='cursor-pointer dropdown-item' target="_blank">Data and Analytics</a></li>
+                                                            <li><a className='cursor-pointer dropdown-item' target="_blank">Internet of Things (IoT)</a></li>
+                                                            <li><a className='cursor-pointer dropdown-item' target="_blank">Chatbot and Automation</a></li>
+                                                            <li><a className='cursor-pointer dropdown-item' target="_blank">Cloud and DevOps</a></li>
+                                                            <li><a className='cursor-pointer dropdown-item' target="_blank">Technology Consulting</a></li>
                                                         </ul>
                                                     </div>
                                                     {/* <div className="col-lg-2 col-md-4">
@@ -99,28 +99,61 @@ const Technology = () => {
                                                     <div className="col-lg-3 col-md-4">
                                                         <ul className="list-style-none">
                                                             <li>
-                                                                <h6 className="f-w-500">Staff Augmentation</h6>
+                                                                <h6 className="f-w-500 active cursor-pointer">Staff Augmentation</h6>
                                                             </li>
-                                                            <li><a target="_blank">Onshore</a></li>
-                                                            <li><a target="_blank">Offshore</a></li>
-                                                            <li><a target="_blank">Nearshore</a></li>
+                                                            <li><a className='cursor-pointer dropdown-item' target="_blank">Onshore</a></li>
+                                                            <li><a className='cursor-pointer dropdown-item' target="_blank">Offshore</a></li>
+                                                            <li><a className='cursor-pointer dropdown-item' target="_blank">Nearshore</a></li>
                                                             <li>
-                                                                <h6 className="f-w-500">Enterprise Solutions</h6>
+                                                                <h6 className="f-w-500 active cursor-pointer">Enterprise Solutions</h6>
                                                             </li>
-                                                            <li><a target="_blank">SAP</a></li>
+                                                            <li><a className='cursor-pointer dropdown-item' target="_blank">SAP</a></li>
                                                         </ul>
                                                     </div>
 
                                                 </div>
                                             </div>
                                         </li>
-                                        <li className="nav-item dropdown">
-                                            <Link href="/industry">
-                                                <a className="nav-link dropdown-toggle active" id="h6-dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                                    Industries
-                                                </a>
-                                            </Link>
+                                        <li className="nav-item dropdown">  <Link href="/industry"><a className="nav-link active dropdown-toggle" id="h6-dropdown2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            Industries <i className="fa fa-angle-down m-l-5"></i>
+                                        </a></Link>
+                                            <ul className="b-none dropdown-menu font-14 animated fadeInUp">
 
+                                                <li>
+                                                    <Link href="/industries/banking">
+                                                        <a className="dropdown-item">Banking and FinTech</a>
+                                                    </Link>
+                                                </li>
+                                                <li>
+                                                    <Link href="/industries/supplychain">
+                                                        <a className="dropdown-item">Supply Chain and Logistics</a>
+                                                    </Link>
+                                                </li>
+                                                <li> <Link href="/industries/hospitality">
+                                                    <a className="dropdown-item">Hospitality and Travel</a>
+                                                </Link>
+                                                </li>
+                                                <li> <Link href="/industries/healthcare">
+                                                    <a className="dropdown-item">Healthcare</a>
+                                                </Link>
+                                                </li>
+                                                <li> <Link href="/industries/manifacturing">
+                                                    <a className="dropdown-item">Manufacturing</a>
+                                                </Link>
+                                                </li>
+                                                <li> <Link href="/industries/retail">
+                                                    <a className="dropdown-item">Retail and e-commerce</a>
+                                                </Link>
+                                                </li>
+                                                <li> <Link href="/industries/technology">
+                                                    <a className="dropdown-item active_menu">Technology and Software</a>
+                                                </Link>
+                                                </li>
+                                                <li> <Link href="/industries/professional_service">
+                                                    <a className="dropdown-item">Professional Services</a>
+                                                </Link>
+                                                </li>
+                                            </ul>
                                         </li>
                                         <li className="nav-item dropdown">
                                             <Link href="/careers">
@@ -202,11 +235,249 @@ const Technology = () => {
             <!-- Testimonial 9 -->
             <!-- ============================================================== --> */}
 
-                    
-                  
+                    <div className="spacer feature9">
+                        <div className="container">
+                            {/* <!-- Row --> */}
+                            <div className="row justify-content-center">
+                                <div className="col-md-7 text-center">
+                                    <h2 className="title">Our Services</h2>
+                                    <h6 className="subtitle">You can relay on our amazing features list and also our customer services will be great experience for you without doubt and in no-time</h6>
+                                </div>
+                            </div>
+                            {/* <!-- Row --> */}
+                            <div className="row m-t-40">
+                                {/* <!-- Column --> */}
+                                <div className="col-md-4 wrap-feature11-box">
+                                    <div className="card card-shadow" data-aos="fade-right" data-aos-duration="1200">
+                                        <div className="card-body">
+                                            <div className="icon-space"><i className="display-5 text-info-gradiant icon-Doctor"></i></div>
+                                            <h5 className="font-medium">Appointments</h5>
+                                            <p className="m-t-20">You can relay on our amazing features list and also our customer services will be great experience.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                {/* <!-- Column --> */}
+                                <div className="col-md-4 wrap-feature11-box">
+                                    <div className="card card-shadow" data-aos="fade-right" data-aos-duration="1200">
+                                        <div className="card-body">
+                                            <div className="icon-space"><i className="display-5 text-info-gradiant icon-Clock-Forward"></i></div>
+                                            <h5 className="font-medium">Working Time</h5>
+                                            <p className="m-t-20">You can relay on our amazing features list and also our customer services will be great experience.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                {/* <!-- Column --> */}
+                                <div className="col-md-4 wrap-feature11-box">
+                                    <div className="card card-shadow" data-aos="fade-right" data-aos-duration="1200">
+                                        <div className="card-body">
+                                            <div className="icon-space"><i className="display-5 text-info-gradiant icon-First-Aid"></i></div>
+                                            <h5 className="font-medium">Emergency</h5>
+                                            <p className="m-t-20">You can relay on our amazing features list and also our customer services will be great experience.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="row m-t-40">
+                                {/* <!-- Column --> */}
+                                <div className="col-md-4 wrap-feature11-box">
+                                    <div className="card card-shadow" data-aos="fade-left" data-aos-duration="1200">
+                                        <div className="card-body">
+                                            <div className="icon-space"><i className="display-5 text-info-gradiant icon-Doctor"></i></div>
+                                            <h5 className="font-medium">Appointments</h5>
+                                            <p className="m-t-20">You can relay on our amazing features list and also our customer services will be great experience.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                {/* <!-- Column --> */}
+                                <div className="col-md-4 wrap-feature11-box">
+                                    <div className="card card-shadow" data-aos="fade-left" data-aos-duration="1200">
+                                        <div className="card-body">
+                                            <div className="icon-space"><i className="display-5 text-info-gradiant icon-Clock-Forward"></i></div>
+                                            <h5 className="font-medium">Working Time</h5>
+                                            <p className="m-t-20">You can relay on our amazing features list and also our customer services will be great experience.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                {/* <!-- Column --> */}
+                                <div className="col-md-4 wrap-feature11-box">
+                                    <div className="card card-shadow" data-aos="fade-left" data-aos-duration="1200">
+                                        <div className="card-body">
+                                            <div className="icon-space"><i className="display-5 text-info-gradiant icon-First-Aid"></i></div>
+                                            <h5 className="font-medium">Emergency</h5>
+                                            <p className="m-t-20">You can relay on our amazing features list and also our customer services will be great experience.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
+                    <div className="bg-light spacer feature15">
+                        <div className="container">
+                            {/* <!-- Row  --> */}
+                            <div className="row justify-content-center">
+                                <div className="col-md-7 text-center">
+                                    <h2 className="title">Our Focus</h2>
+                                    <h6 className="subtitle">You can relay on our amazing features list and also our customer services will be great experience for you without doubt and in no-time</h6>
+                                </div>
+                            </div>
+                            {/* <!-- Row  --> */}
+                            <div className="row m-t-40">
+                                {/* <!-- Column --> */}
+                                <div className="col-lg-7 wrap-feature15-box">
+                                    <div className="row">
+                                        <div className="col-md-6 wrap-feature11-box">
+                                            <div className="card card-shadow" data-aos="fade-left" data-aos-duration="1200">
+                                                <div className="card-body">
+                                                    <div><h3>1.</h3></div>
+                                                    <h5 className="font-medium">Appointments</h5>
+                                                    <p>You can relay on our amazing features</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        {/* <!-- Column --> */}
+                                        <div className="col-md-6 wrap-feature11-box">
+                                            <div className="card card-shadow" data-aos="fade-left" data-aos-duration="1200">
+                                                <div className="card-body">
+                                                    <div><h3>2.</h3></div>
+                                                    <h5 className="font-medium">Working Time</h5>
+                                                    <p>You can relay on our amazing features</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div className="col-md-6 wrap-feature11-box">
+                                            <div className="card card-shadow" data-aos="fade-left" data-aos-duration="1200">
+                                                <div className="card-body">
+                                                    <div><h3>3.</h3></div>
+                                                    <h5 className="font-medium">Appointments</h5>
+                                                    <p>You can relay on our amazing features</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        {/* <!-- Column --> */}
+                                        <div className="col-md-6 wrap-feature11-box">
+                                            <div className="card card-shadow" data-aos="fade-left" data-aos-duration="1200">
+                                                <div className="card-body">
+                                                    <div><h3>4.</h3></div>
+                                                    <h5 className="font-medium">Working Time</h5>
+                                                    <p>You can relay on our amazing features</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                {/* <!-- Column --> */}
+                                <div className="col-lg-5 wrap-feature15-box" data-aos="flip-left" data-aos-duration="1200">
+                                    <img src="/images/features/img3.png" className="img-responsive" alt="wrapkit" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
+                    <div className="spacer feature24">
+                        <div className="container">
+                            {/* <!-- Row --> */}
+                            <div className="row justify-content-center">
+                                <div className="col-md-7 text-center">
+                                    <h2 className="title">Services you can Relay Upon</h2>
+                                    <h6 className="subtitle">You can relay on our amazing features list and also our customer services will be great experience for you without doubt and in no-time</h6>
+                                </div>
+                            </div>
+                            {/* <!-- Row --> */}
+                            <div className="row wrap-feature-24">
+                                {/* <!-- Column --> */}
+                                <div className="col-lg-3 col-md-6">
+                                    <div className="card card-shadow">
+                                        <a className="service-24"> <i className="icon-Target"></i>
+                                            <h6 className="ser-title">Retargeting Market</h6>
+                                        </a>
+                                    </div>
+                                </div>
+                                {/* <!-- Column --> */}
+                                {/* <!-- Column --> */}
+                                <div className="col-lg-3 col-md-6">
+                                    <div className="card card-shadow">
+                                        <a className="service-24"> <i className="icon-Car-Wheel"></i>
+                                            <h6 className="ser-title">Digital Marketing</h6>
+                                        </a>
+                                    </div>
+                                </div>
+                                {/* <!-- Column --> */}
+                                {/* <!-- Column --> */}
+                                <div className="col-lg-3 col-md-6">
+                                    <div className="card card-shadow">
+                                        <a className="service-24"> <i className="icon-Mouse-3"></i>
+                                            <h6 className="ser-title">SEO Techniques</h6>
+                                        </a>
+                                    </div>
+                                </div>
+                                {/* <!-- Column --> */}
+                                {/* <!-- Column --> */}
+                                <div className="col-lg-3 col-md-6">
+                                    <div className="card card-shadow">
+                                        <a className="service-24"> <i className="icon-Eyeglasses-Smiley"></i>
+                                            <h6 className="ser-title">Client Management</h6>
+                                        </a>
+                                    </div>
+                                </div>
+                                {/* <!-- Column --> */}
+                                {/* <!-- Column --> */}
+                                <div className="col-lg-3 col-md-6">
+                                    <div className="card card-shadow">
+                                        <a className="service-24"> <i className="icon-Target-Market"></i>
+                                            <h6 className="ser-title">Email Campaign</h6>
+                                        </a>
+                                    </div>
+                                </div>
+                                {/* <!-- Column --> */}
+                                {/* <!-- Column --> */}
+                                <div className="col-lg-3 col-md-6">
+                                    <div className="card card-shadow">
+                                        <a className="service-24"> <i className="icon-Laptop-Phone"></i>
+                                            <h6 className="ser-title">Website Strategy</h6>
+                                        </a>
+                                    </div>
+                                </div>
+                                {/* <!-- Column --> */}
+                                {/* <!-- Column --> */}
+                                <div className="col-lg-3 col-md-6">
+                                    <div className="card card-shadow">
+                                        <a className="service-24"> <i className="icon-Full-Bag"></i>
+                                            <h6 className="ser-title">eCommerce Shop</h6>
+                                        </a>
+                                    </div>
+                                </div>
+                                {/* <!-- Column --> */}
+                                {/* <!-- Column --> */}
+                                <div className="col-lg-3 col-md-6">
+                                    <div className="card card-shadow">
+                                        <a className="service-24"> <i className="icon-Eyeglasses-Smiley"></i>
+                                            <h6 className="ser-title">Cloud Hosting</h6>
+                                        </a>
+                                    </div>
+                                </div>
+                                {/* <!-- Column --> */}
+                            </div>
+                        </div>
+                    </div>
 
+                    <div className="spacer feature46 bg-light" style={{ backgroundImage: "url(/images/tech_1.jpg)" }}>
+                        <div className="container">
+                            <div className="row">
+                                <div className="col-lg-5 col-md-6">
+                                    <h2 className="title">We have covered everything for you to get desire results with WrapKit</h2>
+                                    <h6 className="subtitle m-b-40 m-t-20">You can relay on our amazing features list and also our customer services will be great experience for you without doubt and in no-time</h6>
+                                    <div className="card card-shadow " data-aos="fade-right" data-aos-duration="1200">
+                                        <div className="card-body p-30">
+                                            <h6 className="font-medium">Build your site in Record Time!</h6>
+                                            <p className="m-t-20">Lorem ipsum dolor sit amet, consecte tuam porttitor, nunc et fringilla.</p>
+                                            <a href="#f46" className="linking">Learn More <i className="ti-arrow-right text-success"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
 
                     {/* <!-- ============================================================== -->

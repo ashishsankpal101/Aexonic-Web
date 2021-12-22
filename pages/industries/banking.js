@@ -68,26 +68,26 @@ const Banking = () => {
                                                     <div className="col-lg-3 col-md-4">
                                                         <ul className="list-style-none">
                                                             <li>
-                                                                <h6 className="f-w-500">Product Engineering</h6>
+                                                                <h6 className="f-w-500 active cursor-pointer">Product Engineering</h6>
                                                             </li>
-                                                            <li><a target="_blank">SaaS Platforms</a></li>
-                                                            <li><a target="_blank">Software Engineering</a></li>
-                                                            <li><a target="_blank">Mobile and Web Apps</a></li>
-                                                            <li><a target="_blank">API Ecosystem</a></li>
+                                                            <li><a className='cursor-pointer dropdown-item' target="_blank ">SaaS Platforms</a></li>
+                                                            <li><a className='cursor-pointer dropdown-item' target="_blank">Software Engineering</a></li>
+                                                            <li><a className='cursor-pointer dropdown-item' target="_blank">Mobile and Web Apps</a></li>
+                                                            <li><a className='cursor-pointer dropdown-item' target="_blank">API Ecosystem</a></li>
 
                                                         </ul>
                                                     </div>
                                                     <div className="col-lg-3 col-md-4">
                                                         <ul className="list-style-none">
                                                             <li>
-                                                                <h6 className="f-w-500">Digital Transformation</h6>
+                                                                <h6 className="f-w-500 active cursor-pointer">Digital Transformation</h6>
                                                             </li>
-                                                            <li><a target="_blank">Machine Learning & AI</a></li>
-                                                            <li><a target="_blank">Data and Analytics</a></li>
-                                                            <li><a target="_blank">Internet of Things (IoT)</a></li>
-                                                            <li><a target="_blank">Chatbot and Automation</a></li>
-                                                            <li><a target="_blank">Cloud and DevOps</a></li>
-                                                            <li><a target="_blank">Technology Consulting</a></li>
+                                                            <li><a className='cursor-pointer dropdown-item' target="_blank">Machine Learning & AI</a></li>
+                                                            <li><a className='cursor-pointer dropdown-item' target="_blank">Data and Analytics</a></li>
+                                                            <li><a className='cursor-pointer dropdown-item' target="_blank">Internet of Things (IoT)</a></li>
+                                                            <li><a className='cursor-pointer dropdown-item' target="_blank">Chatbot and Automation</a></li>
+                                                            <li><a className='cursor-pointer dropdown-item' target="_blank">Cloud and DevOps</a></li>
+                                                            <li><a className='cursor-pointer dropdown-item' target="_blank">Technology Consulting</a></li>
                                                         </ul>
                                                     </div>
                                                     {/* <div className="col-lg-2 col-md-4">
@@ -99,28 +99,61 @@ const Banking = () => {
                                                     <div className="col-lg-3 col-md-4">
                                                         <ul className="list-style-none">
                                                             <li>
-                                                                <h6 className="f-w-500">Staff Augmentation</h6>
+                                                                <h6 className="f-w-500 active cursor-pointer">Staff Augmentation</h6>
                                                             </li>
-                                                            <li><a target="_blank">Onshore</a></li>
-                                                            <li><a target="_blank">Offshore</a></li>
-                                                            <li><a target="_blank">Nearshore</a></li>
+                                                            <li><a className='cursor-pointer dropdown-item' target="_blank">Onshore</a></li>
+                                                            <li><a className='cursor-pointer dropdown-item' target="_blank">Offshore</a></li>
+                                                            <li><a className='cursor-pointer dropdown-item' target="_blank">Nearshore</a></li>
                                                             <li>
-                                                                <h6 className="f-w-500">Enterprise Solutions</h6>
+                                                                <h6 className="f-w-500 active cursor-pointer">Enterprise Solutions</h6>
                                                             </li>
-                                                            <li><a target="_blank">SAP</a></li>
+                                                            <li><a className='cursor-pointer dropdown-item' target="_blank">SAP</a></li>
                                                         </ul>
                                                     </div>
 
                                                 </div>
                                             </div>
                                         </li>
-                                        <li className="nav-item dropdown">
-                                            <Link href="/industry">
-                                                <a className="nav-link dropdown-toggle active" id="h6-dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                                    Industries
-                                                </a>
-                                            </Link>
+                                        <li className="nav-item dropdown">  <Link href="/industry"><a className="nav-link dropdown-toggle active" id="h6-dropdown2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            Industries <i className="fa fa-angle-down m-l-5"></i>
+                                        </a></Link>
+                                            <ul className="b-none dropdown-menu font-14 animated fadeInUp">
 
+                                                <li>
+                                                    <Link href="/industries/banking">
+                                                        <a className="dropdown-item active_menu">Banking and FinTech</a>
+                                                    </Link>
+                                                </li>
+                                                <li>
+                                                    <Link href="/industries/supplychain">
+                                                        <a className="dropdown-item">Supply Chain and Logistics</a>
+                                                    </Link>
+                                                </li>
+                                                <li> <Link href="/industries/hospitality">
+                                                    <a className="dropdown-item">Hospitality and Travel</a>
+                                                </Link>
+                                                </li>
+                                                <li> <Link href="/industries/healthcare">
+                                                    <a className="dropdown-item">Healthcare</a>
+                                                </Link>
+                                                </li>
+                                                <li> <Link href="/industries/manifacturing">
+                                                    <a className="dropdown-item">Manufacturing</a>
+                                                </Link>
+                                                </li>
+                                                <li> <Link href="/industries/retail">
+                                                    <a className="dropdown-item">Retail and e-commerce</a>
+                                                </Link>
+                                                </li>
+                                                <li> <Link href="/industries/technology">
+                                                    <a className="dropdown-item">Technology and Software</a>
+                                                </Link>
+                                                </li>
+                                                <li> <Link href="/industries/professional_service">
+                                                    <a className="dropdown-item">Professional Services</a>
+                                                </Link>
+                                                </li>
+                                            </ul>
                                         </li>
                                         <li className="nav-item dropdown">
                                             <Link href="/careers">
@@ -201,7 +234,7 @@ const Banking = () => {
                     {/* <!-- ============================================================== -->
                         <!-- Testimonial 9 -->
                         <!-- ============================================================== --> */}
-                    <div className="">
+                    {/* <div className="">
                         <div className="row">
                             <div className="col-12">
                                 <div className="">
@@ -216,7 +249,7 @@ const Banking = () => {
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </div> */}
                     <div className="spacer feature9">
                         <div className="container">
 

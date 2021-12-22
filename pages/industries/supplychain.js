@@ -68,26 +68,26 @@ const SupplyChain = () => {
                                                     <div className="col-lg-3 col-md-4">
                                                         <ul className="list-style-none">
                                                             <li>
-                                                                <h6 className="f-w-500">Product Engineering</h6>
+                                                                <h6 className="f-w-500 active cursor-pointer">Product Engineering</h6>
                                                             </li>
-                                                            <li><a target="_blank">SaaS Platforms</a></li>
-                                                            <li><a target="_blank">Software Engineering</a></li>
-                                                            <li><a target="_blank">Mobile and Web Apps</a></li>
-                                                            <li><a target="_blank">API Ecosystem</a></li>
+                                                            <li><a className='cursor-pointer dropdown-item' target="_blank ">SaaS Platforms</a></li>
+                                                            <li><a className='cursor-pointer dropdown-item' target="_blank">Software Engineering</a></li>
+                                                            <li><a className='cursor-pointer dropdown-item' target="_blank">Mobile and Web Apps</a></li>
+                                                            <li><a className='cursor-pointer dropdown-item' target="_blank">API Ecosystem</a></li>
 
                                                         </ul>
                                                     </div>
                                                     <div className="col-lg-3 col-md-4">
                                                         <ul className="list-style-none">
                                                             <li>
-                                                                <h6 className="f-w-500">Digital Transformation</h6>
+                                                                <h6 className="f-w-500 active cursor-pointer">Digital Transformation</h6>
                                                             </li>
-                                                            <li><a target="_blank">Machine Learning & AI</a></li>
-                                                            <li><a target="_blank">Data and Analytics</a></li>
-                                                            <li><a target="_blank">Internet of Things (IoT)</a></li>
-                                                            <li><a target="_blank">Chatbot and Automation</a></li>
-                                                            <li><a target="_blank">Cloud and DevOps</a></li>
-                                                            <li><a target="_blank">Technology Consulting</a></li>
+                                                            <li><a className='cursor-pointer dropdown-item' target="_blank">Machine Learning & AI</a></li>
+                                                            <li><a className='cursor-pointer dropdown-item' target="_blank">Data and Analytics</a></li>
+                                                            <li><a className='cursor-pointer dropdown-item' target="_blank">Internet of Things (IoT)</a></li>
+                                                            <li><a className='cursor-pointer dropdown-item' target="_blank">Chatbot and Automation</a></li>
+                                                            <li><a className='cursor-pointer dropdown-item' target="_blank">Cloud and DevOps</a></li>
+                                                            <li><a className='cursor-pointer dropdown-item' target="_blank">Technology Consulting</a></li>
                                                         </ul>
                                                     </div>
                                                     {/* <div className="col-lg-2 col-md-4">
@@ -99,28 +99,61 @@ const SupplyChain = () => {
                                                     <div className="col-lg-3 col-md-4">
                                                         <ul className="list-style-none">
                                                             <li>
-                                                                <h6 className="f-w-500">Staff Augmentation</h6>
+                                                                <h6 className="f-w-500 active cursor-pointer">Staff Augmentation</h6>
                                                             </li>
-                                                            <li><a target="_blank">Onshore</a></li>
-                                                            <li><a target="_blank">Offshore</a></li>
-                                                            <li><a target="_blank">Nearshore</a></li>
+                                                            <li><a className='cursor-pointer dropdown-item' target="_blank">Onshore</a></li>
+                                                            <li><a className='cursor-pointer dropdown-item' target="_blank">Offshore</a></li>
+                                                            <li><a className='cursor-pointer dropdown-item' target="_blank">Nearshore</a></li>
                                                             <li>
-                                                                <h6 className="f-w-500">Enterprise Solutions</h6>
+                                                                <h6 className="f-w-500 active cursor-pointer">Enterprise Solutions</h6>
                                                             </li>
-                                                            <li><a target="_blank">SAP</a></li>
+                                                            <li><a className='cursor-pointer dropdown-item' target="_blank">SAP</a></li>
                                                         </ul>
                                                     </div>
 
                                                 </div>
                                             </div>
                                         </li>
-                                        <li className="nav-item dropdown">
-                                            <Link href="/industry">
-                                                <a className="nav-link dropdown-toggle active" id="h6-dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                                    Industries
-                                                </a>
-                                            </Link>
+                                        <li className="nav-item dropdown">  <Link href="/industry"><a className="nav-link active dropdown-toggle" id="h6-dropdown2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            Industries <i className="fa fa-angle-down m-l-5"></i>
+                                        </a></Link>
+                                            <ul className="b-none dropdown-menu font-14 animated fadeInUp">
 
+                                                <li>
+                                                    <Link href="/industries/banking">
+                                                        <a className="dropdown-item">Banking and FinTech</a>
+                                                    </Link>
+                                                </li>
+                                                <li>
+                                                    <Link href="/industries/supplychain">
+                                                        <a className="dropdown-item active_menu">Supply Chain and Logistics</a>
+                                                    </Link>
+                                                </li>
+                                                <li> <Link href="/industries/hospitality">
+                                                    <a className="dropdown-item">Hospitality and Travel</a>
+                                                </Link>
+                                                </li>
+                                                <li> <Link href="/industries/healthcare">
+                                                    <a className="dropdown-item">Healthcare</a>
+                                                </Link>
+                                                </li>
+                                                <li> <Link href="/industries/manifacturing">
+                                                    <a className="dropdown-item">Manufacturing</a>
+                                                </Link>
+                                                </li>
+                                                <li> <Link href="/industries/retail">
+                                                    <a className="dropdown-item">Retail and e-commerce</a>
+                                                </Link>
+                                                </li>
+                                                <li> <Link href="/industries/technology">
+                                                    <a className="dropdown-item">Technology and Software</a>
+                                                </Link>
+                                                </li>
+                                                <li> <Link href="/industries/professional_service">
+                                                    <a className="dropdown-item">Professional Services</a>
+                                                </Link>
+                                                </li>
+                                            </ul>
                                         </li>
                                         <li className="nav-item dropdown">
                                             <Link href="/careers">
@@ -202,12 +235,153 @@ const SupplyChain = () => {
             <!-- Testimonial 9 -->
             <!-- ============================================================== --> */}
 
-                    
+                    <div className="spacer feature2">
+                        <div className="container">
+                            {/* <!-- Row  --> */}
+                            <div className="row justify-content-center">
+                                <div className="col-md-7 text-center">
+                                    <h2 className="title">Services</h2>
+                                    <h6 className="subtitle">You can relay on our amazing features list and also our customer services will be great experience for you without doubt and in no-time</h6>
+                                </div>
+                            </div>
+                            {/* <!-- Row  --> */}
+                            <div className="row m-t-40">
+                                {/* <!-- Column --> */}
+                                <div className="col-md-4 wrap-feature2-box">
+                                    <div className="card card-shadow" data-aos="flip-left" data-aos-duration="1200">
+                                        <img className="card-img-top" src="/images/features/market.jpg" alt="wrappixel kit" />
+                                        <div className="card-body text-center">
+                                            <h5 className="font-medium">Retargeting Market</h5>
+                                            <p className="m-t-20">You can relay on our amazing features list and also our customer services will be great experience.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                {/* <!-- Column --> */}
+                                <div className="col-md-4 wrap-feature2-box">
+                                    <div className="card card-shadow" data-aos="flip-up" data-aos-duration="1200">
+                                        <img className="card-img-top" src="/images/features/fruit.jpg" alt="wrappixel kit" />
+                                        <div className="card-body text-center">
+                                            <h5 className="font-medium">Fruitful Results</h5>
+                                            <p className="m-t-20">You can relay on our amazing features list and also our customer services will be great experience.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                {/* <!-- Column --> */}
+                                <div className="col-md-4 wrap-feature2-box">
+                                    <div className="card card-shadow" data-aos="flip-right" data-aos-duration="1200">
+                                        <img className="card-img-top" src="/images/features/instant.jpg" alt="wrappixel kit" />
+                                        <div className="card-body text-center">
+                                            <h5 className="font-medium">Instant Solutions</h5>
+                                            <p className="m-t-20">You can relay on our amazing features list and also our customer services will be great experience.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
-                  
+                    <div className="spacer feature42" style={{ backgroundImage: "url(/images/bg2.jpg)" }}>
+                        <div className="container">
+                            <div className="row justify-content-center wrap-feature42-box">
+                                <div className="col-md-10 col-lg-7 text-center" data-aos="fade-up"> 
+                                    <h2 className="title text-white">You wont believ that you can make Your Website in Record Time</h2>
+                                    <h6 className="subtitle text-white op-7 m-b-20">You can relay on our amazing features list and also our customer services will be great experience for you without doubt and in no-time</h6> <a className="text-success-gradiant display-4" data-toggle="modal" data-target="#exampleModal"><i className="icon-Play-Music"></i></a>
+                                    <div className="modal fade" id="exampleModal" aria-hidden="true">
+                                        <div className="modal-dialog" role="document">
+                                            <div className="modal-content">
+                                                <div className="modal-header">
+                                                    <h5 className="modal-title">Watch video</h5>
+                                                    <button type="button" className="close" data-dismiss="modal" aria-label="Close"> <span aria-hidden="true">×</span> </button>
+                                                </div>
+                                                <div className="modal-body" id="yt-player">
+                                                    <iframe width="100%" height="315" src="https://www.youtube.com/embed/DDwbjWCgxVM?" frameborder="0" allowfullscreen=""></iframe>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
-
-
+                    <div className="bg-light spacer feature41">
+                        <div className="container">
+                            {/* <!-- Row  --> */}
+                            <div className="row justify-content-center">
+                                <div className="col-md-7 text-center"> 
+                                    <h2 className="title">Solutions we provide to client </h2>
+                                    <h6 className="subtitle">You can relay on our amazing features list and also our customer services will be great experience for you without doubt and in no-time</h6>
+                                </div>
+                            </div>
+                            <div className="row m-t-40 wrap-feature41-box">
+                                {/* <!-- Column --> */}
+                                <div className="col-md-4">
+                                    <ul className="nav vtab f41-tab">
+                                        <li className="nav-item">
+                                            <a className="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-expanded="true">
+                                                <div className="display-5 t-icon"><i className="icon-Structure"></i></div>
+                                                <div>
+                                                    <h5 className="m-b-0">Perfectly Structured</h5>
+                                                    <h6 className="subtitle">You can relay on our amazing features list.</h6>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li className="nav-item">
+                                            <a className="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile">
+                                                <div className="display-5 t-icon"><i className="icon-Brain-2"></i></div>
+                                                <div>
+                                                    <h5 className="m-b-0">Thinkful Products</h5>
+                                                    <h6 className="subtitle">You can relay on our amazing features list.</h6>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li className="nav-item">
+                                            <a className="nav-link" id="dropdown1-tab" data-toggle="tab" href="#dropdown1" role="tab" aria-controls="dropdown1">
+                                                <div className="display-5 t-icon"><i className="icon-Dollar-Sign"></i></div>
+                                                <div>
+                                                    <h5 className="m-b-0">Make Money</h5>
+                                                    <h6 className="subtitle">You can relay on our amazing features list.</h6>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li className="nav-item">
+                                            <a className="nav-link" id="ssd-tab" data-toggle="tab" href="#ssd" role="tab" aria-controls="ssd">
+                                                <div className="display-5 t-icon"><i className="icon-Data-Center"></i></div>
+                                                <div>
+                                                    <h5 className="m-b-0">SSD Storage</h5>
+                                                    <h6 className="subtitle">You can relay on our amazing features list.</h6>
+                                                </div>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div className="col-md-7 ml-auto">
+                                    <div className="tab-content" id="myTabContent">
+                                        <div className="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab"> <img src="/images/features/instant.jpg" alt="wrapkit" className="rounded img-fluid" />
+                                            <p className="m-t-40">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p> </div>
+                                        <div className="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab"> <img src="/images/features/fruit.jpg" alt="wrapkit" className="rounded img-fluid" />
+                                            <p className="m-t-40">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p></div>
+                                        <div className="tab-pane fade" id="dropdown1" role="tabpanel" aria-labelledby="dropdown1-tab"> <img src="/images/features/img1.jpg" alt="wrapkit" className="rounded img-fluid" />
+                                            <p className="m-t-40">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p></div>
+                                        <div className="tab-pane fade" id="ssd" role="tabpanel" aria-labelledby="ssd-tab"> <img src="/images/features/market.jpg" alt="wrapkit" className="rounded img-fluid" />
+                                            <p className="m-t-40">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="spacer feature48 bg-light" style={{backgroundImage:"url(/images/app-bg.jpg)"}}>
+                        <div className="container">
+                            <div className="row wrap-feature48-box">
+                                <div className="col-lg-5 col-md-6 ml-auto">
+                                    <h2 className="title">We are now on App Store, Grab our IOS or Android App from Stores</h2>
+                                    <h6 className="subtitle m-b-40 m-t-20">You can relay on our amazing features list and also our customer services will be great experience for you without doubt and in no-time</h6>
+                                    <a className="m-b-20"><img src="/images/app-strore.png" /></a>
+                                    <a className="m-b-20"><img src="/images/play-store.png" /></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
 
                     {/* <!-- ============================================================== -->
