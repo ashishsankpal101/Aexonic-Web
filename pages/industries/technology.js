@@ -241,7 +241,7 @@ const Technology = () => {
                             <div className="row justify-content-center">
                                 <div className="col-md-7 text-center">
                                     <h2 className="title">Our Services</h2>
-                                    <h6 className="subtitle">You can relay on our amazing features list and also our customer services will be great experience for you without doubt and in no-time</h6>
+                                    <h6 className="subtitle">You can relay on our amazing feat asures list of and also our customer services will be great experience for you without doubt and in no-time</h6>
                                 </div>
                             </div>
                             {/* <!-- Row --> */}
