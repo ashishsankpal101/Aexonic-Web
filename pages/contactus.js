@@ -412,7 +412,7 @@ const contactus = () => {
                                     <img src="images/clients/DMS-Final.png " alt="wrapkit " />
                                 </div>
                                 <div className="col-lg-2 col-md-4">
-                                    <img src="images/clients/mobicall.png " />
+                                    <img src="images/clients/mobicall.png " alt="wrapkit " />
                                 </div>
                                 <div className="col-lg-2 col-md-4">
                                     <img src="images/clients/cw.png " alt="wrapkit " />

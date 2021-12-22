@@ -376,8 +376,8 @@ const SupplyChain = () => {
                                 <div className="col-lg-5 col-md-6 ml-auto">
                                     <h2 className="title">We are now on App Store, Grab our IOS or Android App from Stores</h2>
                                     <h6 className="subtitle m-b-40 m-t-20">You can relay on our amazing features list and also our customer services will be great experience for you without doubt and in no-time</h6>
-                                    <a className="m-b-20"><img src="/images/app-strore.png" /></a>
-                                    <a className="m-b-20"><img src="/images/play-store.png" /></a>
+                                    <a className="m-b-20"><img src="/images/app-strore.png" alt='wrapkit' /></a>
+                                    <a className="m-b-20"><img src="/images/play-store.png" alt='wrapkit' /></a>
                                 </div>
                             </div>
                         </div>
