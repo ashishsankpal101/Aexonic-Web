@@ -163,11 +163,7 @@ const Healthcare = () => {
                                             </Link>
 
                                         </li>
-                                        {/* <li className="nav-item dropdown"> <a className="nav-link dropdown-toggle" href="#" id="h6-dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                            Blog
-
-                                        </a>
-                                        </li> */}
+                                        
                                         <li className="nav-item dropdown">
                                             <Link href="/aboutus">
                                                 <a className="nav-link dropdown-toggle" href="#" id="h6-dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -214,20 +210,17 @@ const Healthcare = () => {
           <!-- ============================================================== --> */}
                 </div>
                 <div className="container-fluid ">
-                    {/* <!-- ============================================================== -->
-                <!-- Static Slider 10  -->
-                <!-- ============================================================== --> */}
-                    {/* <div className="banner-innerpage" style="background-image:url(images/services/Banner/support.jpeg)"> */}
+                   
                     <div className="banner-innerpage" style={{ backgroundImage: "url(/images/services/Banner/team_aug.jpeg)" }}>
                         <div className="container">
                             {/* <!-- Row  --> */}
                             <div className="row justify-content-center ">
-                                {/* <!-- Column --> */}
+                              
                                 <div className="col-md-6 align-self-center text-center" data-aos="fade-down" data-aos-duration="1200">
                                     <h1 className="title banner-text">Healthcare</h1>
                                     <h6 className="subtitle op-8 banner-text">We are a team of passionate people who love what we do.</h6>
                                 </div>
-                                {/* <!-- Column --> */}
+                             
                             </div>
                         </div>
                     </div>

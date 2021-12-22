@@ -302,7 +302,7 @@ const Professional = () => {
                                     </div>
                                     <div className="col-md-6" data-aos="fade-left" data-aos-duration="1200">
                                         <h2 className="text-white display-5"><i className="icon-Car-Wheel"></i></h2>
-                                        <h5 className="title text-blue">Secured & Trendy</h5>
+                                        <h5 className="title text-blue">Secured &amp; Trendy</h5>
                                         <h6 className="text-white">You can relay on our amazing features list and also our customer services.</h6>
                                     </div>
                                 </div>
@@ -338,7 +338,7 @@ const Professional = () => {
                                         <div className="d-flex no-block m-b-40">
                                             <div className="display-4 m-r-20"><i className="icon-Google-Drive text-success-gradiant"></i></div>
                                             <div>
-                                                <h4>Language & Input Tools</h4>
+                                                <h4>Language &amp; Input Tools</h4>
                                                 <h6 className="subtitle">You can relay on our amazing features</h6>
                                             </div>
                                         </div> <a className="btn btn-success-gradiant btn-md btn-arrow" data-toggle="collapse" href="#f39"><span>View Feature39 code <i className="ti-arrow-right"></i></span></a>

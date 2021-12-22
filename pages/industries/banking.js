@@ -90,12 +90,7 @@ const Banking = () => {
                                                             <li><a className='cursor-pointer dropdown-item' target="_blank">Technology Consulting</a></li>
                                                         </ul>
                                                     </div>
-                                                    {/* <div className="col-lg-2 col-md-4">
-                                                        <ul className="list-style-none">
-                                                            
-                                                          
-                                                        </ul>
-                                                    </div> */}
+                                                    
                                                     <div className="col-lg-3 col-md-4">
                                                         <ul className="list-style-none">
                                                             <li>
@@ -163,11 +158,7 @@ const Banking = () => {
                                             </Link>
 
                                         </li>
-                                        {/* <li className="nav-item dropdown"> <a className="nav-link dropdown-toggle" href="#" id="h6-dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                            Blog
-
-                                        </a>
-                                        </li> */}
+                                
                                         <li className="nav-item dropdown">
                                             <Link href="/aboutus">
                                                 <a className="nav-link dropdown-toggle" href="#" id="h6-dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -234,22 +225,7 @@ const Banking = () => {
                     {/* <!-- ============================================================== -->
                         <!-- Testimonial 9 -->
                         <!-- ============================================================== --> */}
-                    {/* <div className="">
-                        <div className="row">
-                            <div className="col-12">
-                                <div className="">
-                                    <ol style={{ borderRadius: "0 !important" }} className="breadcrumb">
-                                        <li style={{ cursor: "pointer" }} className="breadcrumb-item">
-                                            <Link href="/industry">
-                                                <a>Industries</a>
-                                            </Link>
-                                        </li>
-                                        <li className="breadcrumb-item active">Banking and FinTech</li>
-                                    </ol>
-                                </div>
-                            </div>
-                        </div>
-                    </div> */}
+                    
                     <div className="spacer feature9">
                         <div className="container">
 

@@ -283,7 +283,7 @@ const SupplyChain = () => {
                     <div className="spacer feature42" style={{ backgroundImage: "url(/images/bg2.jpg)" }}>
                         <div className="container">
                             <div className="row justify-content-center wrap-feature42-box">
-                                <div className="col-md-10 col-lg-7 text-center" data-aos="fade-up"> 
+                                <div className="col-md-10 col-lg-7 text-center" data-aos="fade-up">
                                     <h2 className="title text-white">You wont believ that you can make Your Website in Record Time</h2>
                                     <h6 className="subtitle text-white op-7 m-b-20">You can relay on our amazing features list and also our customer services will be great experience for you without doubt and in no-time</h6> <a className="text-success-gradiant display-4" data-toggle="modal" data-target="#exampleModal"><i className="icon-Play-Music"></i></a>
                                     <div className="modal fade" id="exampleModal" aria-hidden="true">
@@ -308,7 +308,7 @@ const SupplyChain = () => {
                         <div className="container">
                             {/* <!-- Row  --> */}
                             <div className="row justify-content-center">
-                                <div className="col-md-7 text-center"> 
+                                <div className="col-md-7 text-center">
                                     <h2 className="title">Solutions we provide to client </h2>
                                     <h6 className="subtitle">You can relay on our amazing features list and also our customer services will be great experience for you without doubt and in no-time</h6>
                                 </div>
@@ -370,7 +370,7 @@ const SupplyChain = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="spacer feature48 bg-light" style={{backgroundImage:"url(/images/app-bg.jpg)"}}>
+                    <div className="spacer feature48 bg-light" style={{ backgroundImage: "url(/images/app-bg.jpg)" }}>
                         <div className="container">
                             <div className="row wrap-feature48-box">
                                 <div className="col-lg-5 col-md-6 ml-auto">
