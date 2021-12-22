@@ -857,19 +857,19 @@ Feature 12
 .wrap-feature-12 {
     position: relative;
 
-    [class*=col-md-12] {
-        margin-bottom     : 30px;
-        -webkit-transition: 0.2s ease-in;
-        -o-transition     : 0.2s ease-in;
-        transition        : 0.2s ease-in;
+    // [class*=col-md-12] {
+    //     margin-bottom     : 30px;
+    //     -webkit-transition: 0.2s ease-in;
+    //     -o-transition     : 0.2s ease-in;
+    //     transition        : 0.2s ease-in;
 
-    }
+    // }
 
-    [class*=col-md-12]:hover {
-        -webkit-transform: scale(1.1);
-        -ms-transform    : scale(1.1);
-        transform        : scale(1.1);
-    }
+    // [class*=col-md-12]:hover {
+    //     -webkit-transform: scale(1.1);
+    //     -ms-transform    : scale(1.1);
+    //     transform        : scale(1.1);
+    // }
 
     .uneven-box {
         margin-top: 100px;
