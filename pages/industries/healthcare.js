@@ -229,7 +229,7 @@ const Healthcare = () => {
             <!-- Testimonial 9 -->
             <!-- ============================================================== --> */}
                    
-                    {/* <div className="spacer feature9">
+                    <div className="spacer feature9">
                         <div className="container">
                             
                             <div className="row justify-content-center">
@@ -384,7 +384,7 @@ const Healthcare = () => {
                                 </div>
                             </div>
                         </div>
-                    </div> */}
+                    </div>
 
                     {/* <!-- ============================================================== -->
             <!-- footer 4  -->
