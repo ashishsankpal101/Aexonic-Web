@@ -350,7 +350,7 @@ const RetailEcommoerce = () => {
                                                     <button type="button" className="close" data-dismiss="modal" aria-label="Close"> <span aria-hidden="true">×</span> </button>
                                                 </div>
                                                 <div className="modal-body" id="yt-player">
-                                                    <iframe width="100%" height="315" src="https://www.youtube.com/embed/DDwbjWCgxVM?" frameborder="0" allowfullscreen=""></iframe>
+                                                    <iframe width="100%" height="315" src="https://www.youtube.com/embed/DDwbjWCgxVM?" frameBorder="0" allowFullScreen=""></iframe>
                                                 </div>
                                             </div>
                                         </div>

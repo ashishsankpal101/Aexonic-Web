@@ -447,61 +447,61 @@ const ServiceStaffAugumentation = () => {
                     </div>
                 </div>
 
-                <div class="spacer feature24 ">
-                    <div class="container">
+                <div className="spacer feature24 ">
+                    <div className="container">
                         {/* <!-- Row --> */}
-                        <div class="row justify-content-center">
-                            {/* <div class="col-md-12 text-center m-b-40"><img src="images/services.jpg" alt="wrapkit" class="img-fluid" /></div> */}
-                            <div class="col-md-7 text-center">
-                                <h2 class="title">More Then 8 Years We Provide IT Solutions Services For You</h2>
-                                <h6 class="subtitle">You can relay on our amazing features list and also our customer services will be great experience for you without doubt and in no-time</h6>
+                        <div className="row justify-content-center">
+                            {/* <div className="col-md-12 text-center m-b-40"><img src="images/services.jpg" alt="wrapkit" className="img-fluid" /></div> */}
+                            <div className="col-md-7 text-center">
+                                <h2 className="title">More Then 8 Years We Provide IT Solutions Services For You</h2>
+                                <h6 className="subtitle">You can relay on our amazing features list and also our customer services will be great experience for you without doubt and in no-time</h6>
                             </div>
                         </div>
                         {/* <!-- Row --> */}
-                        <div class="row m-t-30 p-t-30 client-box">
+                        <div className="row m-t-30 p-t-30 client-box">
                             {/* <!-- column  --> */}
-                            <div class="col-lg-3 col-md-6">
-                                <div class="d-flex no-block">
-                                    <div class="display-5"><i class="icon-Eyeglasses-Smiley"></i></div>
-                                    <div class="m-l-20">
-                                        <h1 class="font-light counter m-b-0">80</h1>
+                            <div className="col-lg-3 col-md-6">
+                                <div className="d-flex no-block">
+                                    <div className="display-5"><i className="icon-Eyeglasses-Smiley"></i></div>
+                                    <div className="m-l-20">
+                                        <h1 className="font-light counter m-b-0">80</h1>
 
-                                        <h6 class="text-muted font-13 text-uppercase">Happy Clients</h6>
+                                        <h6 className="text-muted font-13 text-uppercase">Happy Clients</h6>
                                     </div>
                                 </div>
                             </div>
                             {/* <!-- column  -->
                             <!-- column  --> */}
-                            <div class="col-lg-3 col-md-6">
-                                <div class="d-flex no-block">
-                                    <div class="display-5"><i class="icon-Coffee"></i></div>
-                                    <div class="m-l-20">
-                                        <h1 class="font-light counter m-b-0">300</h1>
-                                        <h6 class="text-muted font-13 text-uppercase">Projects Delivered
+                            <div className="col-lg-3 col-md-6">
+                                <div className="d-flex no-block">
+                                    <div className="display-5"><i className="icon-Coffee"></i></div>
+                                    <div className="m-l-20">
+                                        <h1 className="font-light counter m-b-0">300</h1>
+                                        <h6 className="text-muted font-13 text-uppercase">Projects Delivered
                                         </h6>
                                     </div>
                                 </div>
                             </div>
                             {/* <!-- column  -->
                             <!-- column  --> */}
-                            <div class="col-lg-3 col-md-6">
-                                <div class="d-flex no-block">
-                                    <div class="display-5"><i class="icon-Business-ManWoman"></i></div>
-                                    <div class="m-l-20">
-                                        <h1 class="font-light counter m-b-0">200</h1>
-                                        <h6 class="text-muted font-13 text-uppercase">Clients Served
+                            <div className="col-lg-3 col-md-6">
+                                <div className="d-flex no-block">
+                                    <div className="display-5"><i className="icon-Business-ManWoman"></i></div>
+                                    <div className="m-l-20">
+                                        <h1 className="font-light counter m-b-0">200</h1>
+                                        <h6 className="text-muted font-13 text-uppercase">Clients Served
                                         </h6>
                                     </div>
                                 </div>
                             </div>
                             {/* <!-- column  -->
                             <!-- column  --> */}
-                            <div class="col-lg-3 col-md-6">
-                                <div class="d-flex no-block">
-                                    <div class="display-5"><i class="icon-flag"></i></div>
-                                    <div class="m-l-20">
-                                        <h1 class="font-light counter m-b-0">15</h1>
-                                        <h6 class="text-muted font-13 text-uppercase">Countries Reached
+                            <div className="col-lg-3 col-md-6">
+                                <div className="d-flex no-block">
+                                    <div className="display-5"><i className="icon-flag"></i></div>
+                                    <div className="m-l-20">
+                                        <h1 className="font-light counter m-b-0">15</h1>
+                                        <h6 className="text-muted font-13 text-uppercase">Countries Reached
                                         </h6>
                                     </div>
                                 </div>
@@ -609,7 +609,7 @@ const ServiceStaffAugumentation = () => {
                                         <div className="icon-round bg-light-info"><i className="icon-Mouse-3"></i></div>
                                         <h5 className="font-medium">User Experience Design</h5>
                                         <p className="m-t-20">You can relay on our amazing features list and also our customer services will be great experience. Lorem ipsum dolor sit amet. </p>
-                                        {/* <a className="linking text-themecolor" data-toggle="collapse" href="#f4">Check the Feature4 Code <i class="ti-arrow-right"></i></a> */}
+                                        {/* <a className="linking text-themecolor" data-toggle="collapse" href="#f4">Check the Feature4 Code <i className="ti-arrow-right"></i></a> */}
                                     </div>
                                 </div>
                             </div>
