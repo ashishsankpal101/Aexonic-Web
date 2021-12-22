@@ -235,18 +235,18 @@ const SupplyChain = () => {
             <!-- Testimonial 9 -->
             <!-- ============================================================== --> */}
 
-                    <div className="spacer feature2">
+                    {/* <div className="spacer feature2">
                         <div className="container">
-                            {/* <!-- Row  --> */}
+                           
                             <div className="row justify-content-center">
                                 <div className="col-md-7 text-center">
                                     <h2 className="title">Services</h2>
                                     <h6 className="subtitle">You can relay on our amazing features list and also our customer services will be great experience for you without doubt and in no-time</h6>
                                 </div>
                             </div>
-                            {/* <!-- Row  --> */}
+                          
                             <div className="row m-t-40">
-                                {/* <!-- Column --> */}
+                                
                                 <div className="col-md-4 wrap-feature2-box">
                                     <div className="card card-shadow" data-aos="flip-left" data-aos-duration="1200">
                                         <img className="card-img-top" src="/images/features/market.jpg" alt="wrappixel kit" />
@@ -256,7 +256,7 @@ const SupplyChain = () => {
                                         </div>
                                     </div>
                                 </div>
-                                {/* <!-- Column --> */}
+                               
                                 <div className="col-md-4 wrap-feature2-box">
                                     <div className="card card-shadow" data-aos="flip-up" data-aos-duration="1200">
                                         <img className="card-img-top" src="/images/features/fruit.jpg" alt="wrappixel kit" />
@@ -266,7 +266,7 @@ const SupplyChain = () => {
                                         </div>
                                     </div>
                                 </div>
-                                {/* <!-- Column --> */}
+                             
                                 <div className="col-md-4 wrap-feature2-box">
                                     <div className="card card-shadow" data-aos="flip-right" data-aos-duration="1200">
                                         <img className="card-img-top" src="/images/features/instant.jpg" alt="wrappixel kit" />
@@ -306,7 +306,7 @@ const SupplyChain = () => {
 
                     <div className="bg-light spacer feature41">
                         <div className="container">
-                            {/* <!-- Row  --> */}
+                         
                             <div className="row justify-content-center">
                                 <div className="col-md-7 text-center">
                                     <h2 className="title">Solutions we provide to client </h2>
@@ -314,7 +314,7 @@ const SupplyChain = () => {
                                 </div>
                             </div>
                             <div className="row m-t-40 wrap-feature41-box">
-                                {/* <!-- Column --> */}
+                       
                                 <div className="col-md-4">
                                     <ul className="nav vtab f41-tab">
                                         <li className="nav-item">
@@ -381,7 +381,7 @@ const SupplyChain = () => {
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </div> */}
 
 
                     {/* <!-- ============================================================== -->

@@ -235,8 +235,8 @@ const RetailEcommoerce = () => {
             <!-- Testimonial 9 -->
             <!-- ============================================================== --> */}
 
-                    <div className="spacer bg-light feature31 wrap-feature31-box">
-                        {/* <!-- Row  --> */}
+                    {/* <div className="spacer bg-light feature31 wrap-feature31-box">
+                       
                         <div className="row">
                             <div className="container">
                                 <div className="col-lg-6">
@@ -306,7 +306,7 @@ const RetailEcommoerce = () => {
                                     <div className="card-body">
                                         <h2 className="title text-uppercase">Awesome Extra Ordinary Flexibility</h2>
                                         <p className="m-t-40 m-b-40">You can relay on our amazing features list and also our customer services will be greatexperience for you without</p>
-                                        {/* <!-- column  --> */}
+                                       
                                         <div className="d-flex no-block m-b-40">
                                             <div className="display-4 m-r-20"><i className="icon-Paypal text-success-gradiant"></i></div>
                                             <div>
@@ -314,7 +314,7 @@ const RetailEcommoerce = () => {
                                                 <h6 className="subtitle">You can relay on our amazing features</h6>
                                             </div>
                                         </div>
-                                        {/* <!-- column  --> */}
+                                        
                                         <div className="d-flex no-block m-b-40">
                                             <div className="display-4 m-r-20"><i className="icon-Evernote text-success-gradiant"></i></div>
                                             <div>
@@ -322,7 +322,7 @@ const RetailEcommoerce = () => {
                                                 <h6 className="subtitle">You can relay on our amazing features</h6>
                                             </div>
                                         </div>
-                                        {/* <!-- column  --> */}
+                                        
                                         <div className="d-flex no-block m-b-40">
                                             <div className="display-4 m-r-20"><i className="icon-Google-Drive text-success-gradiant"></i></div>
                                             <div>
@@ -407,7 +407,7 @@ const RetailEcommoerce = () => {
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </div> */}
 
                     {/* <!-- ============================================================== -->
             <!-- footer 4  -->

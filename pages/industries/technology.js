@@ -235,18 +235,18 @@ const Technology = () => {
             <!-- Testimonial 9 -->
             <!-- ============================================================== --> */}
 
-                    <div className="spacer feature9">
+                    {/* <div className="spacer feature9">
                         <div className="container">
-                            {/* <!-- Row --> */}
+                            
                             <div className="row justify-content-center">
                                 <div className="col-md-7 text-center">
                                     <h2 className="title">Our Services</h2>
                                     <h6 className="subtitle">You can relay on our amazing feat asures list of and also our customer services will be great experience for you without doubt and in no-time</h6>
                                 </div>
                             </div>
-                            {/* <!-- Row --> */}
+                           
                             <div className="row m-t-40">
-                                {/* <!-- Column --> */}
+                              
                                 <div className="col-md-4 wrap-feature11-box">
                                     <div className="card card-shadow" data-aos="fade-right" data-aos-duration="1200">
                                         <div className="card-body">
@@ -256,7 +256,7 @@ const Technology = () => {
                                         </div>
                                     </div>
                                 </div>
-                                {/* <!-- Column --> */}
+                              
                                 <div className="col-md-4 wrap-feature11-box">
                                     <div className="card card-shadow" data-aos="fade-right" data-aos-duration="1200">
                                         <div className="card-body">
@@ -266,7 +266,7 @@ const Technology = () => {
                                         </div>
                                     </div>
                                 </div>
-                                {/* <!-- Column --> */}
+                              
                                 <div className="col-md-4 wrap-feature11-box">
                                     <div className="card card-shadow" data-aos="fade-right" data-aos-duration="1200">
                                         <div className="card-body">
@@ -278,7 +278,7 @@ const Technology = () => {
                                 </div>
                             </div>
                             <div className="row m-t-40">
-                                {/* <!-- Column --> */}
+                              
                                 <div className="col-md-4 wrap-feature11-box">
                                     <div className="card card-shadow" data-aos="fade-left" data-aos-duration="1200">
                                         <div className="card-body">
@@ -288,7 +288,7 @@ const Technology = () => {
                                         </div>
                                     </div>
                                 </div>
-                                {/* <!-- Column --> */}
+                              
                                 <div className="col-md-4 wrap-feature11-box">
                                     <div className="card card-shadow" data-aos="fade-left" data-aos-duration="1200">
                                         <div className="card-body">
@@ -298,7 +298,7 @@ const Technology = () => {
                                         </div>
                                     </div>
                                 </div>
-                                {/* <!-- Column --> */}
+                              
                                 <div className="col-md-4 wrap-feature11-box">
                                     <div className="card card-shadow" data-aos="fade-left" data-aos-duration="1200">
                                         <div className="card-body">
@@ -314,16 +314,16 @@ const Technology = () => {
 
                     <div className="bg-light spacer feature15">
                         <div className="container">
-                            {/* <!-- Row  --> */}
+                            
                             <div className="row justify-content-center">
                                 <div className="col-md-7 text-center">
                                     <h2 className="title">Our Focus</h2>
                                     <h6 className="subtitle">You can relay on our amazing features list and also our customer services will be great experience for you without doubt and in no-time</h6>
                                 </div>
                             </div>
-                            {/* <!-- Row  --> */}
+                           
                             <div className="row m-t-40">
-                                {/* <!-- Column --> */}
+                                
                                 <div className="col-lg-7 wrap-feature15-box">
                                     <div className="row">
                                         <div className="col-md-6 wrap-feature11-box">
@@ -335,7 +335,7 @@ const Technology = () => {
                                                 </div>
                                             </div>
                                         </div>
-                                        {/* <!-- Column --> */}
+                                       
                                         <div className="col-md-6 wrap-feature11-box">
                                             <div className="card card-shadow" data-aos="fade-left" data-aos-duration="1200">
                                                 <div className="card-body">
@@ -354,7 +354,7 @@ const Technology = () => {
                                                 </div>
                                             </div>
                                         </div>
-                                        {/* <!-- Column --> */}
+                                       
                                         <div className="col-md-6 wrap-feature11-box">
                                             <div className="card card-shadow" data-aos="fade-left" data-aos-duration="1200">
                                                 <div className="card-body">
@@ -366,7 +366,7 @@ const Technology = () => {
                                         </div>
                                     </div>
                                 </div>
-                                {/* <!-- Column --> */}
+                               
                                 <div className="col-lg-5 wrap-feature15-box" data-aos="flip-left" data-aos-duration="1200">
                                     <img src="/images/features/img3.png" className="img-responsive" alt="wrapkit" />
                                 </div>
@@ -376,16 +376,16 @@ const Technology = () => {
 
                     <div className="spacer feature24">
                         <div className="container">
-                            {/* <!-- Row --> */}
+                            
                             <div className="row justify-content-center">
                                 <div className="col-md-7 text-center">
                                     <h2 className="title">Services you can Relay Upon</h2>
                                     <h6 className="subtitle">You can relay on our amazing features list and also our customer services will be great experience for you without doubt and in no-time</h6>
                                 </div>
                             </div>
-                            {/* <!-- Row --> */}
+                            
                             <div className="row wrap-feature-24">
-                                {/* <!-- Column --> */}
+                              
                                 <div className="col-lg-3 col-md-6">
                                     <div className="card card-shadow">
                                         <a className="service-24"> <i className="icon-Target"></i>
@@ -393,8 +393,7 @@ const Technology = () => {
                                         </a>
                                     </div>
                                 </div>
-                                {/* <!-- Column --> */}
-                                {/* <!-- Column --> */}
+                               
                                 <div className="col-lg-3 col-md-6">
                                     <div className="card card-shadow">
                                         <a className="service-24"> <i className="icon-Car-Wheel"></i>
@@ -402,8 +401,7 @@ const Technology = () => {
                                         </a>
                                     </div>
                                 </div>
-                                {/* <!-- Column --> */}
-                                {/* <!-- Column --> */}
+                                
                                 <div className="col-lg-3 col-md-6">
                                     <div className="card card-shadow">
                                         <a className="service-24"> <i className="icon-Mouse-3"></i>
@@ -411,8 +409,7 @@ const Technology = () => {
                                         </a>
                                     </div>
                                 </div>
-                                {/* <!-- Column --> */}
-                                {/* <!-- Column --> */}
+                               
                                 <div className="col-lg-3 col-md-6">
                                     <div className="card card-shadow">
                                         <a className="service-24"> <i className="icon-Eyeglasses-Smiley"></i>
@@ -420,8 +417,7 @@ const Technology = () => {
                                         </a>
                                     </div>
                                 </div>
-                                {/* <!-- Column --> */}
-                                {/* <!-- Column --> */}
+                               
                                 <div className="col-lg-3 col-md-6">
                                     <div className="card card-shadow">
                                         <a className="service-24"> <i className="icon-Target-Market"></i>
@@ -429,8 +425,7 @@ const Technology = () => {
                                         </a>
                                     </div>
                                 </div>
-                                {/* <!-- Column --> */}
-                                {/* <!-- Column --> */}
+                              
                                 <div className="col-lg-3 col-md-6">
                                     <div className="card card-shadow">
                                         <a className="service-24"> <i className="icon-Laptop-Phone"></i>
@@ -438,8 +433,7 @@ const Technology = () => {
                                         </a>
                                     </div>
                                 </div>
-                                {/* <!-- Column --> */}
-                                {/* <!-- Column --> */}
+                                
                                 <div className="col-lg-3 col-md-6">
                                     <div className="card card-shadow">
                                         <a className="service-24"> <i className="icon-Full-Bag"></i>
@@ -447,8 +441,7 @@ const Technology = () => {
                                         </a>
                                     </div>
                                 </div>
-                                {/* <!-- Column --> */}
-                                {/* <!-- Column --> */}
+                               
                                 <div className="col-lg-3 col-md-6">
                                     <div className="card card-shadow">
                                         <a className="service-24"> <i className="icon-Eyeglasses-Smiley"></i>
@@ -456,7 +449,7 @@ const Technology = () => {
                                         </a>
                                     </div>
                                 </div>
-                                {/* <!-- Column --> */}
+                               
                             </div>
                         </div>
                     </div>
@@ -477,7 +470,7 @@ const Technology = () => {
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </div> */}
 
 
                     {/* <!-- ============================================================== -->

@@ -234,11 +234,11 @@ const Hospitality = () => {
                {/* <!-- ============================================================== -->
             <!-- Testimonial 9 -->
             <!-- ============================================================== --> */}
-               {/* <!-- Discover Undergrounds --> */}
-               <div className="spacer feature12">
+            
+               {/* <div className="spacer feature12">
                   <div className="container">
                      <div className="row">
-                        {/* <!-- Column --> */}
+                      
                         <div className="col-lg-6">
                            <h2 className="m-b-30 m-t-20">Discover Our Undergrounds</h2>
                            <h4 className="text-muted font-light">You can relay on our amazing features list and also our customer services will be great experience for you without doubt and in no-time</h4>
@@ -262,7 +262,7 @@ const Hospitality = () => {
                              
                            </div>
                         </div>
-                        {/* <!-- Column --> */}
+                        
                         <div className="col-lg-6">
                            <div className="row wrap-feature-12">
                               <div className="col-md-6">
@@ -283,12 +283,12 @@ const Hospitality = () => {
                   </div>
                </div>
 
-               {/* <!-- Banner --> */}
+               
                <div className="spacer feature21 wrap-feature21-box" style={{ backgroundImage: " url(/images/features/slide2.jpg)" }}>
                   <div className="container">
-                     {/* <!-- Row  --> */}
+                   
                      <div className="row text-white">
-                        {/* <!-- Column --> */}
+                      
                         <div className="col-md-5 both-space">
                            <div className="" data-aos="fade-right" data-aos-duration="1200">
                               <h2 className="text-white m-t-20 m-b-30">Build your Project in Record Time with WrapKit</h2>
@@ -297,10 +297,10 @@ const Hospitality = () => {
                      </div>
                   </div>
                </div>
-               {/* <!-- Core Feature --> */}
+               
                <div className="bg-light spacer feature13">
                   <div className="container">
-                     {/* <!-- Row  --> */}
+                  
                      <div className="row justify-content-center">
                         <div className="col-md-7 text-center">
                            <h2 className="title">Our Core Feature</h2>
@@ -308,7 +308,7 @@ const Hospitality = () => {
                         </div>
                      </div>
                      <div className="row m-t-40">
-                        {/* <!-- Column --> */}
+                      
                         <div className="col-lg-6 wrap-feature13-box">
                            <div className="card card-shadow" data-aos="fade-right" data-aos-duration="1200">
                               <ul className="img-inline">
@@ -320,7 +320,7 @@ const Hospitality = () => {
                               </ul>
                            </div>
                         </div>
-                        {/* <!-- Column --> */}
+                      
                         <div className="col-lg-6 wrap-feature13-box">
                            <div className="card card-shadow" data-aos="fade-left" data-aos-duration="1200">
                               <ul className="img-inline">
@@ -332,7 +332,7 @@ const Hospitality = () => {
                               </ul>
                            </div>
                         </div>
-                        {/* <!-- Column --> */}
+                        
                         <div className="col-lg-6 wrap-feature13-box">
                            <div className="card card-shadow" data-aos="fade-right" data-aos-duration="1200">
                               <ul className="img-inline">
@@ -344,7 +344,7 @@ const Hospitality = () => {
                               </ul>
                            </div>
                         </div>
-                        {/* <!-- Column --> */}
+                        
                         <div className="col-lg-6 wrap-feature13-box">
                            <div className="card card-shadow" data-aos="fade-left" data-aos-duration="1200">
                               <ul className="img-inline">
@@ -359,10 +359,10 @@ const Hospitality = () => {
                      </div>
                   </div>
                </div>
-               {/* <!-- Photos --> */}
+              
                <div className="spacer feature2">
                   <div className="container">
-                     {/* <!-- Row  --> */}
+                  
                      <div className="row justify-content-center">
                         <div className="col-md-7 text-center">
                            <h2 className="title">Glance of our efforts</h2>
@@ -370,7 +370,7 @@ const Hospitality = () => {
                         </div>
                      </div>
                      <div className="row m-t-40">
-                        {/* <!-- Column --> */}
+                       
                         <div className="col-md-4 wrap-feature2-box">
                            <div className="card card-shadow" data-aos="flip-left" data-aos-duration="1200">
                               <img className="card-img-top" src="/images/features/market.jpg" alt="wrappixel kit" />
@@ -380,7 +380,7 @@ const Hospitality = () => {
                               </div>
                            </div>
                         </div>
-                        {/* <!-- Column --> */}
+                       
                         <div className="col-md-4 wrap-feature2-box">
                            <div className="card card-shadow" data-aos="flip-up" data-aos-duration="1200">
                               <img className="card-img-top" src="/images/features/fruit.jpg" alt="wrappixel kit" />
@@ -390,7 +390,7 @@ const Hospitality = () => {
                               </div>
                            </div>
                         </div>
-                        {/* <!-- Column --> */}
+                      
                         <div className="col-md-4 wrap-feature2-box">
                            <div className="card card-shadow" data-aos="flip-right" data-aos-duration="1200">
                               <img className="card-img-top" src="/images/features/instant.jpg" alt="wrappixel kit" />
@@ -403,7 +403,7 @@ const Hospitality = () => {
                      </div>
                   </div>
                </div>
-
+ */}
 
 
 

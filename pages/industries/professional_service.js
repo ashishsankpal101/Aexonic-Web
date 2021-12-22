@@ -235,18 +235,18 @@ const Professional = () => {
             <!-- Testimonial 9 -->
             <!-- ============================================================== --> */}
 
-                    <div className="spacer feature2">
+                    {/* <div className="spacer feature2">
                         <div className="container">
-                            {/* <!-- Row  --> */}
+                            
                             <div className="row justify-content-center">
                                 <div className="col-md-7 text-center">
                                     <h2 className="title">Services</h2>
                                     <h6 className="subtitle">You can relay on our amazing features list and also our customer services will be great experience for you without doubt and in no-time</h6>
                                 </div>
                             </div>
-                            {/* <!-- Row  --> */}
+                            
                             <div className="row m-t-40">
-                                {/* <!-- Column --> */}
+                              
                                 <div className="col-md-4 wrap-feature2-box">
                                     <div className="card card-shadow" data-aos="flip-left" data-aos-duration="1200">
                                         <img className="card-img-top" src="/images/features/market.jpg" alt="wrappixel kit" />
@@ -256,7 +256,7 @@ const Professional = () => {
                                         </div>
                                     </div>
                                 </div>
-                                {/* <!-- Column --> */}
+                              
                                 <div className="col-md-4 wrap-feature2-box">
                                     <div className="card card-shadow" data-aos="flip-up" data-aos-duration="1200">
                                         <img className="card-img-top" src="/images/features/fruit.jpg" alt="wrappixel kit" />
@@ -266,7 +266,7 @@ const Professional = () => {
                                         </div>
                                     </div>
                                 </div>
-                                {/* <!-- Column --> */}
+                              
                                 <div className="col-md-4 wrap-feature2-box">
                                     <div className="card card-shadow" data-aos="flip-right" data-aos-duration="1200">
                                         <img className="card-img-top" src="/images/features/instant.jpg" alt="wrappixel kit" />
@@ -318,7 +318,7 @@ const Professional = () => {
                                     <div className="card-body">
                                         <h2 className="title text-uppercase">Awesome Extra Ordinary Flexibility</h2>
                                         <p className="m-t-40 m-b-40">You can relay on our amazing features list and also our customer services will be greatexperience for you without</p>
-                                        {/* <!-- column  --> */}
+                                       
                                         <div className="d-flex no-block m-b-40">
                                             <div className="display-4 m-r-20"><i className="icon-Paypal text-success-gradiant"></i></div>
                                             <div>
@@ -326,7 +326,7 @@ const Professional = () => {
                                                 <h6 className="subtitle">You can relay on our amazing features</h6>
                                             </div>
                                         </div>
-                                        {/* <!-- column  --> */}
+                                       
                                         <div className="d-flex no-block m-b-40">
                                             <div className="display-4 m-r-20"><i className="icon-Evernote text-success-gradiant"></i></div>
                                             <div>
@@ -334,7 +334,7 @@ const Professional = () => {
                                                 <h6 className="subtitle">You can relay on our amazing features</h6>
                                             </div>
                                         </div>
-                                        {/* <!-- column  --> */}
+                                       
                                         <div className="d-flex no-block m-b-40">
                                             <div className="display-4 m-r-20"><i className="icon-Google-Drive text-success-gradiant"></i></div>
                                             <div>
@@ -396,7 +396,7 @@ const Professional = () => {
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </div> */}
 
                     {/* <!-- ============================================================== -->
             <!-- footer 4  -->

@@ -234,7 +234,7 @@ const Manufacturing = () => {
                     {/* <!-- ============================================================== -->
             <!-- Testimonial 9 -->
             <!-- ============================================================== --> */}
-                    <div className="spacer feature43">
+                    {/* <div className="spacer feature43">
                         <div className="container">
                             <div className="row">
                                 <div className="col-lg-5" data-aos="fade-right" data-aos-duration="1200">
@@ -271,17 +271,17 @@ const Manufacturing = () => {
 
                     <div className="spacer bg-light">
                         <div className="container">
-                            {/* <!-- row  --> */}
+                         
                             <div className="row justify-content-center">
                                 <div className="col-md-7 text-center">
                                     <h2 className="title">Customer services</h2>
                                     <h6 className="subtitle">You can relay on our amazing features list and also our customer services will be great experience for you without doubt and in no-time</h6>
                                 </div>
                             </div>
-                            {/* <!-- row  --> */}
-                            {/* <!-- Card Columns --> */}
+                          
+                          
                             <div className="row portfolio-box" style={{ position: "relative", height: "900.266px", marginTop: "20px" }}>
-                                {/* <!-- Columns --> */}
+                              
                                 <div className="col-lg-5 col-md-8 filter abstract print" style={{ position: "absolute", left: "0%", top: "0px" }}>
                                     <div className="overlay-box">
                                         <img src="/images/manufacturing_1.jpg" alt="wrpkit" className="img-fluid" />
@@ -293,8 +293,7 @@ const Manufacturing = () => {
                                         </a>
                                     </div>
                                 </div>
-                                {/* <!-- Columns --> */}
-                                {/* <!-- Columns --> */}
+                           
                                 <div className="col-lg-3 col-md-4 filter typography" style={{ position: "absolute", left: "41.6667%", top: "0px" }}>
                                     <div className="overlay-box mb-4">
                                         <img src="/images/manufacturing_2.jpg" alt="wrpkit" className="img-fluid" />
@@ -315,8 +314,7 @@ const Manufacturing = () => {
                                         </a>
                                     </div>
                                 </div>
-                                {/* <!-- Columns --> */}
-                                {/* <!-- Columns --> */}
+                               
                                 <div className="col-lg-4 col-md-6 filter abstract" style={{ position: "absolute", left: "66.6667%", top: "0px" }}>
                                     <div className="overlay-box">
                                         <img src="/images/manufacturing_3.jpg" alt="wrpkit" className="img-fluid" />
@@ -328,8 +326,7 @@ const Manufacturing = () => {
                                         </a>
                                     </div>
                                 </div>
-                                {/* <!-- Columns --> */}
-                                {/* <!-- Columns --> */}
+                                
                                 <div className="col-lg-8 col-md-6 filter abstract print" style={{ position: "absolute", left: "0%", top: "609px" }}>
                                     <div className="overlay-box">
                                         <img src="/images/manufacturing_6.jpg" alt="wrpkit" className="img-fluid" />
@@ -341,8 +338,7 @@ const Manufacturing = () => {
                                         </a>
                                     </div>
                                 </div>
-                                {/* <!-- Columns --> */}
-                                {/* <!-- Columns --> */}
+                              
                                 <div className="col-lg-4 col-md-6 filter branding" style={{ position: "absolute", left: "66.6667%", top: "318px" }}>
                                     <div className="overlay-box">
                                         <img src="/images/manufacturing_5.jpg" alt="wrpkit" className="img-fluid" />
@@ -354,10 +350,9 @@ const Manufacturing = () => {
                                         </a>
                                     </div>
                                 </div>
-                                {/* <!-- Columns --> */}
-                                {/* <!-- Columns --> */}
+                               
                             </div>
-                            {/* <!-- End Card Columns --> */}
+                         
                         </div>
                     </div>
 
@@ -489,7 +484,7 @@ const Manufacturing = () => {
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </div> */}
 
                     
 

@@ -228,19 +228,19 @@ const Healthcare = () => {
                     {/* <!-- ============================================================== -->
             <!-- Testimonial 9 -->
             <!-- ============================================================== --> */}
-                    {/* <!-- Feature Card --> */}
-                    <div className="spacer feature9">
+                   
+                    {/* <div className="spacer feature9">
                         <div className="container">
-                            {/* <!-- Row --> */}
+                            
                             <div className="row justify-content-center">
                                 <div className="col-md-7 text-center">
                                     <h2 className="title">Features</h2>
                                     <h6 className="subtitle">You can relay on our amazing features list and also our customer services will be great experience for you without doubt and in no-time</h6>
                                 </div>
                             </div>
-                            {/* <!-- Row --> */}
+                          
                             <div className="row m-t-40">
-                                {/* <!-- Column --> */}
+                                
                                 <div className="col-md-4 wrap-feature11-box">
                                     <div className="card card-shadow" data-aos="fade-right" data-aos-duration="1200">
                                         <div className="card-body">
@@ -250,7 +250,7 @@ const Healthcare = () => {
                                         </div>
                                     </div>
                                 </div>
-                                {/* <!-- Column --> */}
+                              
                                 <div className="col-md-4 wrap-feature11-box">
                                     <div className="card card-shadow" data-aos="fade-right" data-aos-duration="1200">
                                         <div className="card-body">
@@ -260,7 +260,7 @@ const Healthcare = () => {
                                         </div>
                                     </div>
                                 </div>
-                                {/* <!-- Column --> */}
+                                
                                 <div className="col-md-4 wrap-feature11-box">
                                     <div className="card card-shadow" data-aos="fade-right" data-aos-duration="1200">
                                         <div className="card-body">
@@ -292,16 +292,16 @@ const Healthcare = () => {
                     </div>
                     <div className="spacer feature2">
                         <div className="container">
-                            {/* <!-- Row  --> */}
+                           
                             <div className="row justify-content-center">
                                 <div className="col-md-7 text-center">
                                     <h2 className="title"></h2>
                                     <h6 className="subtitle">You can relay on our amazing features list and also our customer services will be great experience for you without doubt and in no-time</h6>
                                 </div>
                             </div>
-                            {/* <!-- Row  --> */}
+                           
                             <div className="row m-t-40">
-                                {/* <!-- Column --> */}
+                               
                                 <div className="col-md-4 wrap-feature2-box">
                                     <div className="card card-shadow" data-aos="flip-left" data-aos-duration="1200">
                                         <img className="card-img-top" src="/images/features/feature17/img1.jpg" alt="wrappixel kit" />
@@ -311,7 +311,7 @@ const Healthcare = () => {
                                         </div>
                                     </div>
                                 </div>
-                                {/* <!-- Column --> */}
+                                
                                 <div className="col-md-4 wrap-feature2-box">
                                     <div className="card card-shadow" data-aos="flip-up" data-aos-duration="1200">
                                         <img className="card-img-top" src="/images/features/feature17/img2.jpg" alt="wrappixel kit" />
@@ -321,7 +321,7 @@ const Healthcare = () => {
                                         </div>
                                     </div>
                                 </div>
-                                {/* <!-- Column --> */}
+                                
                                 <div className="col-md-4 wrap-feature2-box">
                                     <div className="card card-shadow" data-aos="flip-right" data-aos-duration="1200">
                                         <img className="card-img-top" src="/images/features/feature17/img3.jpg" alt="wrappixel kit" />
@@ -334,19 +334,19 @@ const Healthcare = () => {
                             </div>
                         </div>
                     </div>
-                    {/* Our thinking Section */}
+                   
                     <div className="bg-light spacer feature15">
                         <div className="container">
-                            {/* <!-- Row  --> */}
+                          
                             <div className="row justify-content-center">
                                 <div className="col-md-7 text-center">
                                     <h2 className="title">Our Thinking</h2>
                                     <h6 className="subtitle">You can relay on our amazi sdsdng features list and also our customer erer services will be great experience for you without doubt and in no-time</h6>
                                 </div>
                             </div>
-                            {/* <!-- Row  --> */}
+                          
                             <div className="row m-t-40">
-                                {/* <!-- Column --> */}
+                               
                                 <div className="col-lg-6 wrap-feature15-box">
                                     <div className="row">
                                         <div className="col-md-12 m-b-30" data-aos="fade-down" data-aos-duration="1000">
@@ -378,13 +378,14 @@ const Healthcare = () => {
                                         </div>
                                     </div>
                                 </div>
-                                {/* <!-- Column --> */}
+                               
                                 <div className="col-lg-6 wrap-feature15-box" data-aos="flip-left" data-aos-duration="1200">
                                     <img src="/images/features/img3.png" className="img-responsive" alt="wrapkit" />
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </div> */}
+
                     {/* <!-- ============================================================== -->
             <!-- footer 4  -->
             <!-- ============================================================== --> */}
