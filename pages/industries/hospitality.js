@@ -235,7 +235,7 @@ const Hospitality = () => {
             <!-- Testimonial 9 -->
             <!-- ============================================================== --> */}
             
-               {/* <div className="spacer feature12">
+               <div className="spacer feature12">
                   <div className="container">
                      <div className="row">
                       
@@ -403,7 +403,7 @@ const Hospitality = () => {
                      </div>
                   </div>
                </div>
- */}
+
 
 
 

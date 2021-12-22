@@ -235,7 +235,7 @@ const Technology = () => {
             <!-- Testimonial 9 -->
             <!-- ============================================================== --> */}
 
-                    {/* <div className="spacer feature9">
+                    <div className="spacer feature9">
                         <div className="container">
                             
                             <div className="row justify-content-center">
@@ -470,7 +470,7 @@ const Technology = () => {
                                 </div>
                             </div>
                         </div>
-                    </div> */}
+                    </div>
 
 
                     {/* <!-- ============================================================== -->

@@ -235,7 +235,7 @@ const Professional = () => {
             <!-- Testimonial 9 -->
             <!-- ============================================================== --> */}
 
-                    {/* <div className="spacer feature2">
+                    <div className="spacer feature2">
                         <div className="container">
                             
                             <div className="row justify-content-center">
@@ -396,7 +396,7 @@ const Professional = () => {
                                 </div>
                             </div>
                         </div>
-                    </div> */}
+                    </div>
 
                     {/* <!-- ============================================================== -->
             <!-- footer 4  -->

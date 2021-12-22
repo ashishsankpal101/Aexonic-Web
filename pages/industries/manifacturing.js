@@ -234,7 +234,7 @@ const Manufacturing = () => {
                     {/* <!-- ============================================================== -->
             <!-- Testimonial 9 -->
             <!-- ============================================================== --> */}
-                    {/* <div className="spacer feature43">
+                    <div className="spacer feature43">
                         <div className="container">
                             <div className="row">
                                 <div className="col-lg-5" data-aos="fade-right" data-aos-duration="1200">
@@ -484,7 +484,7 @@ const Manufacturing = () => {
                                 </div>
                             </div>
                         </div>
-                    </div> */}
+                    </div>
 
                     
 

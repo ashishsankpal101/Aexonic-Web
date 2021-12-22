@@ -235,7 +235,7 @@ const RetailEcommoerce = () => {
             <!-- Testimonial 9 -->
             <!-- ============================================================== --> */}
 
-                    {/* <div className="spacer bg-light feature31 wrap-feature31-box">
+                    <div className="spacer bg-light feature31 wrap-feature31-box">
                        
                         <div className="row">
                             <div className="container">
@@ -407,7 +407,7 @@ const RetailEcommoerce = () => {
                                 </div>
                             </div>
                         </div>
-                    </div> */}
+                    </div>
 
                     {/* <!-- ============================================================== -->
             <!-- footer 4  -->

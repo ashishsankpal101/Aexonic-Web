@@ -235,7 +235,7 @@ const SupplyChain = () => {
             <!-- Testimonial 9 -->
             <!-- ============================================================== --> */}
 
-                    {/* <div className="spacer feature2">
+                    <div className="spacer feature2">
                         <div className="container">
                            
                             <div className="row justify-content-center">
@@ -381,7 +381,7 @@ const SupplyChain = () => {
                                 </div>
                             </div>
                         </div>
-                    </div> */}
+                    </div>
 
 
                     {/* <!-- ============================================================== -->
