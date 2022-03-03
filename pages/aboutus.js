@@ -303,7 +303,7 @@ const aboutus = () => {
                                             <div className="icon-space"><i className="text-success-gradiant icon-Leo-2"></i></div>
                                             <div className="">
                                                 <h6 className="font-medium"><a className="linking">Execute Ideas </a></h6>
-                                                <p className="m-t-20">Achieve your KPIs every time. We materialize your ideas by designing products that your customers need. </p>
+                                                <p className="m-t-20">Achieve your KPIs every <br></br>time. <br></br>We materialize your ideas by designing products that your customers need.  </p>
                                             </div>
                                         </div>
                                     </div>
@@ -345,7 +345,7 @@ const aboutus = () => {
                                             <div className="icon-space"><i className="text-success-gradiant  icon-Laptop-Phone"></i></div>
                                             <div className="">
                                                 <h6 className="font-medium"><a className="linking">Customer Support</a></h6>
-                                                <p className="m-t-20">In the age of automation, we prioritize on-demand hyper-care customer support.
+                                                <p className="m-t-20">In the age of automation, we prioritize on-demand hyper-care customer support. We&apos;re here for you.
                                                     {/* We&apos;re here for you. */}
 
                                                 </p>
