@@ -252,9 +252,16 @@ const careers = () => {
                                 <div className="col-lg-7">
                                     {/* <!-- <div className="col-md-12 text-center m-b-40"><img src="images/services.jpg" alt="wrapkit" className="img-fluid" /></div> --> */}
                                     <h2 className="m-b-30 m-t-20">Our Culture</h2>
-                                    <h6 className="subtitle">If you like working in a comfortable environment along with global clients then this is the place for you. We work hard, we play hard, and we have fun.  We are on a mission to provide clients with strategically sound, artfully designed, amazingly and innovative digital solutions.
-                                        We are a diversified lot but our commitment to provide outstanding service to our clients’ ties us together.<br /> We are dedicated to a culture that fosters innovation, creativity, excellence and community. We believe in our people and understand that the quality and happiness of their lives has a direct relationship to the quality of our work
-                                        If you are looking for a fun, fast-paced atmosphere that you can thrive and develop your professional skills then Aexonic is the place for you. </h6>
+                                    <h6 className="subtitle">We are proud of having a team-first culture.
+
+                                    <br></br> <br></br> We are a group of diverse individuals united by a vision to empower businesses with our high-quality product development and transformation services.
+
+                                        <br></br> <br></br> We design, test, and deploy technologies to architect a robust product engineering methodology that accelerates businesses&apos; growth. If you are excited about working in a high-paced environment, and with global clients, then Aexonic welcomes you!
+
+                                        <br></br> <br></br>At Aexonic, customer and employee success are the top two priorities. Together, they strengthen our ethos and reflect our external and internal army of brand ambassadors. We work smart and celebrate together.
+
+                                        <br></br> <br></br>We prioritize innovation, transformation, and growth. If you want to take your career to new heights, join Aexonic.
+                                    </h6>
                                     {/* <div className="row">
                                         <div className="col-md-6 m-t-30">
                                             <div className="d-flex no-block">
@@ -317,28 +324,32 @@ const careers = () => {
                             <div className="row">
                                 <div className="col-lg-5" data-aos="fade-right" data-aos-duration="1200">
                                     <h2 className="title">What we look for</h2>
-                                    <h6 className="subtitle">You can relay on our amazing features list and also our customer services will be great experience for you without doubt and in no-time If you are looking for a fun, fast-paced atmosphere that you can thrive and develop your professional skills then Aexonic is the place for you. </h6>  </div>
+                                    <h6 className="subtitle">Aexonic favors people who can walk their talk. Those who can work in a team and still own their work autonomously. You are detail-oriented, adaptable to new changes, and take action. 
+
+This is what strengthens Aexonic as a team. 
+
+                                    </h6>  </div>
                                 <div className="col-lg-6 ml-auto">
                                     <div className="row wrap-feature43-box">
                                         <div className="col-md-6" data-aos="fade-right" data-aos-duration="1200">
                                             <h2 className="text-success-gradiant display-5"><i className="icon-Car-Wheel"></i></h2>
-                                            <h5 className="title">Dedication </h5>
-                                            <h6 className="subtitle">You can relay on our amazing features list and also our.</h6>
+                                            <h5 className="title">Open to feedback  </h5>
+                                            <h6 className="subtitle">You acknowledge and implement it. You have a growth mindset and aspire to be better.</h6>
                                         </div>
                                         <div className="col-md-6" data-aos="fade-left" data-aos-duration="1200">
                                             <h2 className="text-success-gradiant display-5"><i className="icon-Target"></i></h2>
-                                            <h5 className="title">Hard work</h5>
-                                            <h6 className="subtitle">You can relay on our amazing features list and also our.</h6>
+                                            <h5 className="title">Take on challenges </h5>
+                                            <h6 className="subtitle">Your eyes are on the prize. You are an ambitious and fast learner. </h6>
                                         </div>
                                         <div className="col-md-6" data-aos="fade-right" data-aos-duration="1200">
                                             <h2 className="text-success-gradiant display-5"><i className="icon-Mouse-3"></i></h2>
-                                            <h5 className="title">Self-Motivated</h5>
-                                            <h6 className="subtitle">You can relay on our amazing features list and also our.</h6>
+                                            <h5 className="title">Strong work ethics</h5>
+                                            <h6 className="subtitle">You work until it&apos;s right. And be accountable for it. </h6>
                                         </div>
                                         <div className="col-md-6" data-aos="fade-left" data-aos-duration="1200">
                                             <h2 className="text-success-gradiant display-5"><i className="icon-Car-Wheel"></i></h2>
-                                            <h5 className="title">Bright &amp; energetic</h5>
-                                            <h6 className="subtitle">You can relay on our amazing features list and also our.</h6>
+                                            <h5 className="title">Flexibility with creativity</h5>
+                                            <h6 className="subtitle">You light the room with new ideas. You have a knack for innovative products. </h6>
                                         </div>
                                     </div>
                                 </div>
@@ -359,7 +370,7 @@ const careers = () => {
                                 <div className="col-md-5 both-space">
                                     <div className="" data-aos="fade-right" data-aos-duration="1200">
                                         <h2 className="text-white m-t-20 m-b-30">Don&apos;t go by Queue, Create your Own Way Faster</h2>
-                                        <p className="op-8">You can relay on our amazing features list and also our customer services will be great experience.</p> <a className="btn btn-info-gradiant btn-md btn-arrow m-t-20" data-toggle="collapse" href="#"><span>Join Us <i className="ti-arrow-right"></i></span></a> </div>
+                                        <p className="op-8">Don&apos;t just come up with an "out-of-the-box" idea. Create your own box and design it with your energy.</p> <a className="btn btn-info-gradiant btn-md btn-arrow m-t-20" data-toggle="collapse" href="#"><span>Join Us <i className="ti-arrow-right"></i></span></a> </div>
                                 </div>
                             </div>
                         </div>
@@ -374,7 +385,8 @@ const careers = () => {
                                 <div className="col-md-7 text-center ">
                                     {/* <!-- <span className="label label-success label-rounded ">Feature 24</span> --> */}
                                     <h2 className="title ">Why work with us</h2>
-                                    <h6 className="subtitle ">You can relay on our amazing features list and also our customer services will be great experience for you without doubt and in no-time</h6>
+                                    <h6 className="subtitle ">Working at Aexonic is not just about having a job that makes your ends meet. Here, you have the opportunity to explore your curiosity, fulfill your ambitions, and take success into your own hands. 
+                                    </h6>
                                 </div>
                             </div>
                             {/* <!-- Row --> */}
@@ -383,7 +395,7 @@ const careers = () => {
                                 <div className="col-lg-3 col-md-6 ">
                                     <div className="card card-shadow ">
                                         <a className="service-24 "> <i className="icon-Target "></i>
-                                            <h6 className="ser-title ">Fantastic Co-workers</h6>
+                                            <h6 className="ser-title ">Greater opportunities</h6>
                                         </a>
                                     </div>
                                 </div>
@@ -392,7 +404,7 @@ const careers = () => {
                                 <div className="col-lg-3 col-md-6 ">
                                     <div className="card card-shadow ">
                                         <a className="service-24 "> <i className="icon-Car-Wheel "></i>
-                                            <h6 className="ser-title ">Digital Marketing</h6>
+                                            <h6 className="ser-title ">Diverse skillsets</h6>
                                         </a>
                                     </div>
                                 </div>
@@ -401,7 +413,7 @@ const careers = () => {
                                 <div className="col-lg-3 col-md-6 ">
                                     <div className="card card-shadow ">
                                         <a className="service-24 "> <i className="icon-Mouse-3 "></i>
-                                            <h6 className="ser-title ">SEO Techniques</h6>
+                                            <h6 className="ser-title ">Peer-to-peer learning</h6>
                                         </a>
                                     </div>
                                 </div>
@@ -410,7 +422,7 @@ const careers = () => {
                                 <div className="col-lg-3 col-md-6 ">
                                     <div className="card card-shadow ">
                                         <a className="service-24 "> <i className="icon-Eyeglasses-Smiley "></i>
-                                            <h6 className="ser-title ">Client Management</h6>
+                                            <h6 className="ser-title ">Unity in diversity </h6>
                                         </a>
                                     </div>
                                 </div>
@@ -419,7 +431,7 @@ const careers = () => {
                                 <div className="col-lg-3 col-md-6 ">
                                     <div className="card card-shadow ">
                                         <a className="service-24 "> <i className="icon-Target-Market "></i>
-                                            <h6 className="ser-title ">Email Campaign</h6>
+                                            <h6 className="ser-title ">Flexible with uncertainty</h6>
                                         </a>
                                     </div>
                                 </div>
@@ -428,7 +440,7 @@ const careers = () => {
                                 <div className="col-lg-3 col-md-6 ">
                                     <div className="card card-shadow ">
                                         <a className="service-24 "> <i className="icon-Laptop-Phone "></i>
-                                            <h6 className="ser-title ">Website Strategy</h6>
+                                            <h6 className="ser-title ">Prioritize creativity</h6>
                                         </a>
                                     </div>
                                 </div>
@@ -437,7 +449,7 @@ const careers = () => {
                                 <div className="col-lg-3 col-md-6 ">
                                     <div className="card card-shadow ">
                                         <a className="service-24 "> <i className="icon-Full-Bag "></i>
-                                            <h6 className="ser-title ">eCommerce Shop</h6>
+                                            <h6 className="ser-title ">Connect globally </h6>
                                         </a>
                                     </div>
                                 </div>
@@ -446,7 +458,7 @@ const careers = () => {
                                 <div className="col-lg-3 col-md-6 ">
                                     <div className="card card-shadow ">
                                         <a className="service-24 "> <i className="icon-Eyeglasses-Smiley "></i>
-                                            <h6 className="ser-title ">Cloud Hosting</h6>
+                                            <h6 className="ser-title ">Nurture your innate talents</h6>
                                         </a>
                                     </div>
                                 </div>
@@ -462,7 +474,7 @@ const careers = () => {
                             <div className="row justify-content-center">
                                 <div className="col-md-7 text-center">
                                     <h2 className="title">Our Workspace</h2>
-                                    <h6 className="subtitle">You can relay on our amazing features list and also our customer services will be great experience for you without doubt and in no-time</h6>
+                                    <h6 className="subtitle">Our holy space is where ideas are brainstormed and executed. </h6>
                                 </div>
                             </div>
                             {/* <!-- Row  --> */}
@@ -486,7 +498,10 @@ const careers = () => {
                                         <div className="item">
                                             <div className="card card-shadow testimonial-color">
                                                 <div className="p-40">
-                                                    <p>We care what our customers think of us and so should you. We are partners in your business and your success is ours in your business.</p>
+                                                    <p>I found an amazing opportunity to work at Aexonic in 2018. Since then, I&apos;ve fast-tracked my career and have worked on diverse projects that have strengthen my Front-End Devlopment
+
+                                                        I hope to achieve great things and continue working at Aexonic to simplify complex products.
+                                                    </p>
                                                 </div>
                                             </div>
                                             <div className="d-flex no-block align-items-center">

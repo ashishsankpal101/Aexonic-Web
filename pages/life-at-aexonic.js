@@ -225,7 +225,7 @@ const LifeAtAexonic = () => {
                                 {/* <!-- Column --> */}
                                 <div className="col-md-6 align-self-center text-center" data-aos="fade-down" data-aos-duration="1200">
                                     <h1 className="title banner-text">Life@Aexonic</h1>
-                                    <h6 className="subtitle op-8 banner-text">We are a team of passionate people who love what we do.</h6>
+                                    <h6 className="subtitle op-8 banner-text">We are a team of people united by a passion to use tech for the greater good.</h6>
                                 </div>
                                 {/* <!-- Column --> */}
                             </div>
@@ -241,7 +241,7 @@ const LifeAtAexonic = () => {
                                 <div className="col-md-7 text-center">
                                     {/* <span className="label label-success label-rounded">Team 4</span> */}
                                     <h2 className="title">Experienced &amp; Professional Team</h2>
-                                    <h6 className="subtitle">You can relay on our amazing features list and also our customer services will be great experience for you without doubt and in no-time</h6>
+                                    <h6 className="subtitle">We work for the good of the group. The Aexonic teams complement everyone&apos;s unique skills and strengths to help achieve our shared goals.</h6>
                                 </div>
                             </div>
                             <div className="row m-t-30">
@@ -350,7 +350,7 @@ const LifeAtAexonic = () => {
                                 <div className="col-md-7 text-center">
                                     {/* <!-- <span className="label label-success label-rounded">Feature 13</span> --> */}
                                     <h2 className="title">Our Values</h2>
-                                    <h6 className="subtitle">You can relay on our amazing features list and also our customer services will be great experience for you without doubt and in no-time</h6>
+                                    <h6 className="subtitle">We aim big but start small. Our values are defined by who we are individually and what we can do collectively.</h6>
                                 </div>
                             </div>
                             {/* <!-- Row  --> */}
@@ -361,8 +361,10 @@ const LifeAtAexonic = () => {
                                         <ul className="img-inline">
                                             <li className="half-width"><img src="./images/services/1.png" alt="wrapkit" className="img-responsive rounded" /></li>
                                             <li className="p-20 half-width">
-                                                <h5 className="font-medium m-t-10"><a className="linking">Optimum Client Satisfaction</a></h5>
-                                                <p className="m-t-20">You can relay on our amazing.</p>
+                                                {/* <h5 className="font-medium m-t-10"><a className="linking">Optimum Client Satisfaction</a></h5> */}
+                                                <h5 className="font-medium m-t-10"><a className="linking">Encourage Initiatives</a></h5>
+                                                <p className="m-t-20">Lead by example.We equip you to make intelligent decisions when challenges arise. 
+</p>
                                             </li>
                                         </ul>
                                     </div>
@@ -373,8 +375,9 @@ const LifeAtAexonic = () => {
                                         <ul className="img-inline">
                                             <li className="half-width"><img src="./images/services/3.png" alt="wrapkit" className="img-responsive rounded" /></li>
                                             <li className="p-20 half-width">
-                                                <h5 className="font-medium m-t-10"><a className="linking">Result-oriented Approach</a></h5>
-                                                <p className="m-t-20">You can relay on our amazing.</p>
+                                                <h5 className="font-medium m-t-10"><a className="linking">Mutual Respect </a></h5>
+                                                <p className="m-t-20">Recognize differences and celebrate diversity. We promote a positive work culture by nurturing your strengths.
+</p>
                                             </li>
                                         </ul>
                                     </div>
@@ -386,8 +389,9 @@ const LifeAtAexonic = () => {
                                         <ul className="img-inline">
                                             <li className="half-width"><img src="./images/services/2.png" alt="wrapkit" className="img-responsive rounded" /></li>
                                             <li className="p-20 half-width">
-                                                <h5 className="font-medium m-t-10"><a className="linking"> Integrity in Everything</a></h5>
-                                                <p className="m-t-20">You can relay on our amazing.</p>
+                                                <h5 className="font-medium m-t-10"><a className="linking"> Open Communication</a></h5>
+                                                <p className="m-t-20">Transparency from the top down. We empower everyone to share their thoughts without any hesitations. 
+ </p>
                                             </li>
                                         </ul>
                                     </div>
@@ -398,8 +402,10 @@ const LifeAtAexonic = () => {
                                         <ul className="img-inline">
                                             <li className="half-width"><img src="./images/services/4.png" alt="wrapkit" className="img-responsive rounded" /></li>
                                             <li className="p-20 half-width">
-                                                <h5 className="font-medium m-t-10"><a className="linking">Great Place to Work </a></h5>
-                                                <p className="m-t-20">You can relay on our amazing.</p>
+                                                <h5 className="font-medium m-t-10"><a className="linking">Fun to Work </a></h5>
+                                                <p className="m-t-20">Use your talent to turn the tasks into targets.
+We&apos;re driven by the energy to innovate and have fun.
+ </p>
                                             </li>
                                         </ul>
                                     </div>
@@ -414,7 +420,7 @@ const LifeAtAexonic = () => {
                             <div className="row justify-content-center">
                                 <div className="col-md-7 text-center">
                                     <h2 className="title">How We Work</h2>
-                                    <h6 className="subtitle">You can relay on our amazing features list and also our customer services will be great experience for you without doubt and in no-time</h6>
+                                    <h6 className="subtitle">The Aexonic leadership believes in autonomous work. Everyone has the flexibility to present their ideas and, most importantly, walk their talk. </h6>
                                 </div>
                             </div>
                             {/* <!-- Row  --> */}
@@ -430,7 +436,8 @@ const LifeAtAexonic = () => {
                             <div className="row justify-content-center">
                                 <div className="col-md-7 text-center">
                                     <h2 className="title">Celebrations at Aexonic</h2>
-                                    <h6 className="subtitle">You can relay on our amazing features list and also our customer services will be great experience for you without doubt and in no-time</h6>
+                                    <h6 className="subtitle">The team that celebrates and works together achieves great things together! 
+</h6>
                                 </div>
                             </div>
                             {/* <!-- Row  --> */}

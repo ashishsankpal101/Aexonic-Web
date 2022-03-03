@@ -115,7 +115,7 @@ const Banking = () => {
                                             <ul className="b-none dropdown-menu font-14 animated fadeInUp">
 
                                                 <li>
-                                                    <Link href="/industries/banking">
+                                                    <Link href="industries/banking">
                                                         <a className="dropdown-item active_menu">Banking and FinTech</a>
                                                     </Link>
                                                 </li>

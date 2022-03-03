@@ -227,7 +227,8 @@ const contactus = () => {
                                 {/* <!-- Column --> */}
                                 <div className="col-md-6 align-self-center text-center" data-aos="fade-down" data-aos-duration="1200">
                                     <h1 className="title banner-text">Contact Us</h1>
-                                    <h6 className="subtitle op-8 banner-text">Our custom approach ensures the perfect fit for your technology initiatives.</h6>
+                                    {/* <h6 className="subtitle op-8 banner-text">Our custom approach ensures the perfect fit for your technology initiatives.</h6> */}
+                                    <h6 className="subtitle op-8 banner-text">Interested to transform your business? Contact us now.</h6>
                                 </div>
                                 {/* <!-- Column --> */}
                             </div>
@@ -243,7 +244,8 @@ const contactus = () => {
                                 <div className="col-lg-5 col-md-6">
                                     <h2 className="m-t-40">What Our Customers Say</h2>
                                     <span className="devider bg-danger"></span>
-                                    <h6 className="subtitle ">You can relay on our amazing features list and also our customer services will be great experience for you without doubt and in no-time</h6>
+                                    {/* <h6 className="subtitle ">You can relay on our amazing features list and also our customer services will be great experience for you without doubt and in no-time</h6> */}
+                                    <h6 className="subtitle ">Don&apos;t just believe our words, read what customers say while working with the Aexonic team.</h6>
                                 </div>
                                 <div className="col-lg-6 col-md-6 ml-auto">
                                     <div className="owl-carousel owl-theme testi9">
@@ -251,7 +253,10 @@ const contactus = () => {
                                         <div className="item">
                                             <div className="card card-shadow testimonial-color">
                                                 <div className="p-40">
-                                                    <p>We care what our customers think of us and so should you. We are partners in your business and your success is ours in your business.</p>
+                                                    {/* <p>We care what our customers think of us and so should you. We are partners in your business and your success is ours in your business.</p> */}
+                                                    <p>We are happy with Aexonic. Usually, I come into the picture when things are escalated, but it&apos;s way more fun and important to appreciate things going well.
+Keep up the good work!
+</p>
                                                 </div>
                                             </div>
                                             <div className="d-flex no-block align-items-center">
@@ -372,7 +377,9 @@ const contactus = () => {
                             <div className="row justify-content-center">
                                 <div className="col-md-7 text-center">
                                     <h2 className="title">Trusted By</h2>
-                                    <h6 className="subtitle">You can relay on our amazing features list and also our customer services will be great experience for you without doubt and in no-time</h6>
+                                     {/* <h6 className="subtitle">You can relay on our amazing features list and also our customer services will be great experience for you without doubt and in no-time</h6> */}
+                                     <h6 className="subtitle">Our expertise comes from working with visionary and passionate MNCs, SMBs, entrepreneurs, and startups. With them, we&apos;ve conquered newer heights.  
+</h6>
                                 </div>
                             </div>
                             {/* <!-- Row  --> */}
@@ -432,7 +439,8 @@ const contactus = () => {
                                 <div className="col-md-7 text-center">
 
                                     <h2 className="title">Want To Know More</h2>
-                                    <h6 className="subtitle">You can relay on our amazing features list and also our customer services will be great experience for you without doubt and in no-time</h6>
+                                    {/* <h6 className="subtitle">You can relay on our amazing features list and also our customer services will be great experience for you without doubt and in no-time</h6> */}
+                                    <h6 className="subtitle">Interested to know more?</h6>
                                 </div>
                             </div>
 
@@ -446,12 +454,13 @@ const contactus = () => {
                                                     <div className="m-r-20"><img src="./images/features/f13/img1.jpg" alt="wrapkit" width="70" className="rounded" /></div>
                                                     <div>
                                                         <h5 className="font-medium">Our Highlights</h5>
-                                                        <h6 className="subtitle">More About us</h6>
+                                                        {/* <h6 className="subtitle">More About us</h6> */}
+                                                        <h6 className="subtitle">Methodologies &amp; solutions</h6>
                                                     </div>
                                                 </div>
                                             </div>
                                             <div className="col-md-4 text-center cursor-pointer">
-                                                <a style={{ padding: "40px 0 !important" }} className="text-white linking bg-info-gradiant">View More <i className="ti-arrow-right"></i></a>
+                                                <a style={{ padding: "40px 0 !important" }} className="text-white linking bg-info-gradiant">Check out  <i className="ti-arrow-right"></i></a>
                                             </div>
                                         </div>
                                     </div>
@@ -465,12 +474,12 @@ const contactus = () => {
                                                     <div className="m-r-20"><img src="./images/features/f13/img2.jpg" alt="wrapkit" width="70" className="rounded" /></div>
                                                     <div>
                                                         <h5 className="font-medium">Engagement Model</h5>
-                                                        <h6 className="subtitle">How we engage our clients</h6>
+                                                        <h6 className="subtitle">Systemized processes</h6>
                                                     </div>
                                                 </div>
                                             </div>
                                             <div className="col-md-4 text-center cursor-pointer">
-                                                <a style={{ padding: "40px 0 !important" }} className="text-white linking bg-info-gradiant">View More <i className="ti-arrow-right"></i></a>
+                                                <a style={{ padding: "40px 0 !important" }} className="text-white linking bg-info-gradiant">Find out <i className="ti-arrow-right"></i></a>
                                             </div>
                                         </div>
                                     </div>
@@ -484,12 +493,13 @@ const contactus = () => {
                                                     <div className="m-r-20"><img src="./images/features/f13/img3.jpg" alt="wrapkit" width="70" className="rounded" /></div>
                                                     <div>
                                                         <h5 className="font-medium">Industries We Serve</h5>
-                                                        <h6 className="subtitle">More About us</h6>
+                                                        {/* <h6 className="subtitle">More About us</h6> */}
+                                                        <h6 className="subtitle">And innovate strategically</h6>
                                                     </div>
                                                 </div>
                                             </div>
                                             <div className="col-md-4 text-center cursor-pointer">
-                                                <a style={{ padding: "40px 0 !important" }} className="text-white linking bg-info-gradiant">View More <i className="ti-arrow-right"></i></a>
+                                                <a style={{ padding: "40px 0 !important" }} className="text-white linking bg-info-gradiant">Know them  <i className="ti-arrow-right"></i></a>
                                             </div>
                                         </div>
                                     </div>
@@ -503,12 +513,13 @@ const contactus = () => {
                                                     <div className="m-r-20"><img src="./images/features/f13/img4.jpg" alt="wrapkit" width="70" className="rounded" /></div>
                                                     <div>
                                                         <h5 className="font-medium">Success Stories</h5>
-                                                        <h6 className="subtitle">More About us</h6>
+                                                        {/* <h6 className="subtitle">More About us</h6> */}
+                                                        <h6 className="subtitle">Fruits of smart work</h6>
                                                     </div>
                                                 </div>
                                             </div>
                                             <div className="col-md-4 text-center cursor-pointer">
-                                                <a style={{ padding: "40px 0 !important" }} className="text-white linking bg-info-gradiant">View More <i className="ti-arrow-right"></i></a>
+                                                <a style={{ padding: "40px 0 !important" }} className="text-white linking bg-info-gradiant">Read all  <i className="ti-arrow-right"></i></a>
                                             </div>
                                         </div>
                                     </div>
@@ -524,7 +535,8 @@ const contactus = () => {
                             <div className="row justify-content-center">
                                 <div className="col-md-7 text-center">
                                     <h2 className="title">Our Global Presence</h2>
-                                    <h6 className="subtitle">You can relay on our amazing features list and also our customer services will be great experience for you without doubt and in no-time</h6>
+                                    {/* <h6 className="subtitle">You can relay on our amazing features list and also our customer services will be great experience for you without doubt and in no-time</h6> */}
+                                    <h6 className="subtitle">We have served 200+ clients globally. Our portfolio of extensive projects has impacted millions and this makes us confident to aim for the zenith. </h6>
                                 </div>
                             </div>
                             {/* <!-- Row  --> */}
@@ -573,7 +585,8 @@ const contactus = () => {
                             <div className="row justify-content-center">
                                 <div className="col-md-7 text-center">
                                     <h2 className="title">Get In Touch</h2>
-                                    <h6 className="subtitle">We are creative thinkers with a focus on modern web production. We use the latest tools available to help build your brand&apos;s digital presence.</h6>
+                                    {/* <h6 className="subtitle">We are creative thinkers with a focus on modern web production. We use the latest tools available to help build your brand&apos;s digital presence.</h6> */}
+                                    <h6 className="subtitle">We are a team of creative thinkers, executors, and driven analysts and we&apos;re ready to fulfill your visions.</h6>
                                 </div>
                             </div>
 

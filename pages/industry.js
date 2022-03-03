@@ -250,7 +250,7 @@ const Industries = () => {
                                     {/* <span className="label label-info label-rounded">Great Feature 28</span> */}
                                     <h2 className="title">Banking and FinTech</h2>
                                     <h6 className="subtitle">You can relay on our amazing features list and also our customer services will be great experience for you without doubt and in no-time and with great quality.</h6>
-                                    <Link href="/industries/banking"><a className="btn btn-info-gradiant btn-md btn-arrow m-t-20" data-toggle="collapse"> <span>View More <i className="ti-arrow-right"></i></span></a></Link>
+                                    <Link href="industries/banking"><a className="btn btn-info-gradiant btn-md btn-arrow m-t-20" data-toggle="collapse"> <span>View More <i className="ti-arrow-right"></i></span></a></Link>
                                 </div>
                             </div>
                         </div>
