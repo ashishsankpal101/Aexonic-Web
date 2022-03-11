@@ -1,11 +1,70 @@
 import Head from 'next/head'
-import React from "react";
+// import React from "react";
 import Image from 'next/image'
 import Link from "next/link";
+import React, { useEffect } from "react";
+import $ from "jquery";
 
 
+const Banking = (props) => {
 
-const Banking = () => {
+    useEffect(() => {
+        $(function () {
+            "use strict";
+            $(function () {
+                $(".preloader").fadeOut();
+            });
+            jQuery(document).on('click', '.mega-dropdown', function (e) {
+                e.stopPropagation()
+            });
+            jQuery(document).on('click', '.navbar-nav > .dropdown', function (e) {
+                e.stopPropagation();
+            });
+            $(".dropdown-submenu").click(function () {
+                $(".dropdown-submenu > .dropdown-menu").toggleClass("show");
+            });
+            // ============================================================== 
+            // Resize all elements
+            // ============================================================== 
+            $("body").trigger("resize");
+            // ============================================================== 
+            //Fix header while scroll
+            // ============================================================== 
+            var wind = $(window);
+            wind.on("load", function () {
+                var bodyScroll = wind.scrollTop(),
+                    navbar = $(".topbar");
+                if (bodyScroll > 100) {
+                    navbar.addClass("fixed-header animated slideInDown")
+                } else {
+                    navbar.removeClass("fixed-header animated slideInDown")
+                }
+            });
+            $(window).scroll(function () {
+                if ($(window).scrollTop() >= 100) {
+                    $('.topbar').addClass('fixed-header animated slideInDown');
+                    $('.bt-top').addClass('visible');
+                } else {
+                    $('.topbar').removeClass('fixed-header animated slideInDown');
+                    $('.bt-top').removeClass('visible');
+                }
+            });
+            // ============================================================== 
+            // Animation initialized
+            // ============================================================== 
+            AOS.init();
+            // ============================================================== 
+            // Back to top
+            // ============================================================== 
+            $('.bt-top').on('click', function (e) {
+                e.preventDefault();
+                $('html,body').animate({
+                    scrollTop: 0
+                }, 700);
+            });
+        });
+      });
+    
     return (
         <div>
             <Head>
@@ -17,7 +76,6 @@ const Banking = () => {
                 <meta name="author" content="" />
                 {/* <!-- Favicon icon --> */}
                 <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon.png" />
-
                 <title>Aexonic : Industries / Banking</title>
             </Head>
 
@@ -234,7 +292,7 @@ const Banking = () => {
                             <div className="row justify-content-center">
                                 <div className="col-md-7 text-center">
 
-                                    <h2 className="title">Capitalizing on tech to maximize growth</h2>
+                                    <h2 className="title">Capitalizing On Tech To Maximize Growth</h2>
                                     <h6 className="subtitle">Through our extensive experience in serving Fintech companies, we build robust systems that make your customers&apos; lives easier.</h6>
                                 </div>
                             </div>
@@ -331,7 +389,7 @@ const Banking = () => {
 
                             <div className="row justify-content-center">
                                 <div className="col-md-7 text-center">
-                                    <h2 className="title">Creating stronger and more secure financial assets </h2>
+                                    <h2 className="title">Creating Stronger And More Secure Financial Assets </h2>
                                     <h6 className="subtitle">We&apos;re proud to have worked on different solutions and systems for our BFSI clients that have strengthened their business. </h6>
                                 </div>
                             </div>
@@ -343,7 +401,7 @@ const Banking = () => {
                                         <div className="p-20">
                                             <div className="icon-space"><i className="display-5 text-info-gradiant icon-Paypal"></i></div>
                                             <h4 className="font-medium">Payment Gateway</h4>
-                                            <p>Bridged the gap between merchant&apos;s website and payment provider by facilitating a robust mechanism that minimizes costs. </p>
+                                            <p>Bridged the gap between merchant's website and payment provider to facilitate a robust mechanism.</p>
                                         </div>
                                     </div>
                                 </div>
@@ -359,7 +417,7 @@ const Banking = () => {
                                     <div className="card-body text-center">
                                         <div className="p-20">
                                             <div className="icon-space"><i className="display-5 text-info-gradiant icon-Credit-Card"></i></div>
-                                            <h4 className="font-medium">Virtual card issuance</h4>
+                                            <h4 className="font-medium">Virtual Card Issuance</h4>
                                             <p>Simplified customers&apos; lives by fulfilling their demands to transact securely.</p>
                                         </div>
                                     </div>
@@ -379,7 +437,7 @@ const Banking = () => {
                                     <div className="card-body text-center">
                                         <div className="p-20">
                                             <div className="icon-space"><i className="display-5 text-info-gradiant icon-Gift-Box"></i></div>
-                                            <h4 className="font-medium">Gift cards exchange</h4>
+                                            <h4 className="font-medium">Gift Cards Exchange</h4>
                                             <p> Empowered our customers freedom at convenience to convert cash or card into a choice and redeem the value.
                                             </p>
                                         </div>
@@ -389,7 +447,7 @@ const Banking = () => {
                                 <div className="card custom_container">
                                     <img src="/images/features/feature17/img6.png" className="image" alt="wrapkit" />
                                     <div className="overlay">
-                                        <div className="text">Gift card system</div>
+                                        <div className="text">Gift Card System</div>
                                     </div>
                                 </div>
                             </div>
