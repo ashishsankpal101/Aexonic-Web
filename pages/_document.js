@@ -28,7 +28,7 @@ class MyDocument extends Document {
                     {/* <!-- This is for the animation --> */}
                     <script src="/assets/node_modules/aos/dist/aos.js"></script>
                     {/* <!--Custom JavaScript --> */}
-                    <script src="js/custom.min.js"></script>
+                    <script src="js/custom.js"></script>
                     {/* <!-- ============================================================== -->
                     <!-- This page plugins -->
                     <!-- ============================================================== --> */}
