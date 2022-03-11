@@ -304,7 +304,7 @@ export function Blog({ data }) {
                                 </div>
 
 
-                                <div className="row m-t-40 ">
+                                {/* <div className="row m-t-40 ">
                                     {data?.posts?.map((item) => (
                                         <div key={item.title} className="col-md-4 ">
                                             <div className="card card-shadow blog_card_height" data-aos="flip-left " data-aos-duration="1200 ">
@@ -317,9 +317,7 @@ export function Blog({ data }) {
                                                         <span className="ml-auto ">{item.date}</span>
                                                     </div>
                                                     <h5 className="font-medium m-t-20 "><a href="# " className="link ">{item.title}</a></h5>
-                                                    {/* <Link href="">
-                                                    <a className="font-13 m-t-10">CONTINUE READING</a>
-                                                </Link> */}
+                                                 
                                                 </div>
                                                 
                                             </div>
@@ -327,7 +325,7 @@ export function Blog({ data }) {
                                     ))}
 
 
-                                </div>
+                                </div> */}
                             </div>
                         </div>
 
