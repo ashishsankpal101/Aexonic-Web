@@ -23,12 +23,13 @@ class MyDocument extends Document {
                     <!-- ============================================================== --> */}
                     <script src="/assets/node_modules/jquery/dist/jquery.min.js"></script>
                     {/* <!-- Bootstrap popper Core JavaScript --> */}
-                    <script src="/assets/node_modules/popper/dist/popper.min.js"></script>
+                    {/* <script src="/assets/node_modules/popper/dist/popper.min.js"></script> */}
                     <script src="/assets/node_modules/bootstrap/js/bootstrap.min.js"></script>
                     {/* <!-- This is for the animation --> */}
-                    <script src="/assets/node_modules/aos/dist/aos.js"></script>
+                    {/* <script src="/assets/node_modules/aos/dist/aos.js"></script> */}
+                    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
                     {/* <!--Custom JavaScript --> */}
-                    <script src="js/custom.js"></script>
+                    <script src="js/custom.min.js"></script>
                     {/* <!-- ============================================================== -->
                     <!-- This page plugins -->
                     <!-- ============================================================== --> */}

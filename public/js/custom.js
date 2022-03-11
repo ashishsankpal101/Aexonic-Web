@@ -4,7 +4,6 @@ Author: Themedesigner
 Email: niravjoshi87@gmail.com
 File: js
 */
-console.clear()
 $(function () {
     "use strict";
     // ============================================================== 
