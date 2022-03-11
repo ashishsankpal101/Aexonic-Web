@@ -10,7 +10,8 @@ class MyDocument extends Document {
         return (
             <Html>
                 <Head>
-                    <link href="/assets/node_modules/aos/dist/aos.css" rel="stylesheet" />
+                    {/* <link href="/assets/node_modules/aos/dist/aos.css" rel="stylesheet" /> */}
+                    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"/>
                     <link href="/assets/node_modules/bootstrap-touch-slider/bootstrap-touch-slider.css" rel="stylesheet" media="all" />
                     <link href="/assets/node_modules/owl.carousel/dist/assets/owl.theme.green.css" rel="stylesheet" />
                 </Head>
