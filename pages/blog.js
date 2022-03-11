@@ -43,7 +43,7 @@ export const getStaticProps = async () => {
 }
 export function Blog({ data }) {
 
-    console.log(data)
+    // console.log(data)
     const [show, setShow] = React.useState();
 
     return (
