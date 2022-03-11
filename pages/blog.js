@@ -304,7 +304,7 @@ export function Blog({ data }) {
                                 </div>
 
 
-                                {/* <div className="row m-t-40 ">
+                                <div className="row m-t-40 ">
                                     {data?.posts?.map((item) => (
                                         <div key={item.title} className="col-md-4 ">
                                             <div className="card card-shadow blog_card_height" data-aos="flip-left " data-aos-duration="1200 ">
@@ -325,7 +325,7 @@ export function Blog({ data }) {
                                     ))}
 
 
-                                </div> */}
+                                </div>
                             </div>
                         </div>
 
