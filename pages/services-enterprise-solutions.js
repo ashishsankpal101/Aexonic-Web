@@ -120,7 +120,7 @@ const Serviceenterpricesolutions = () => {
                                             <ul className="b-none dropdown-menu font-14 animated fadeInUp">
 
                                                 <li>
-                                                    <Link href="industries/banking">
+                                                    <Link href="/industries/banking">
                                                         <a className="dropdown-item">Banking and FinTech</a>
                                                     </Link>
                                                 </li>

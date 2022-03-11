@@ -115,7 +115,7 @@ const Banking = () => {
                                             <ul className="b-none dropdown-menu font-14 animated fadeInUp">
 
                                                 <li>
-                                                    <Link href="industries/banking">
+                                                    <Link href="/industries/banking">
                                                         <a className="dropdown-item active_menu">Banking and FinTech</a>
                                                     </Link>
                                                 </li>
@@ -216,7 +216,7 @@ const Banking = () => {
                                 {/* <!-- Column --> */}
                                 <div className="col-md-6 align-self-center text-center" data-aos="fade-down" data-aos-duration="1200">
                                     <h1 className="title banner-text">Banking and FinTech</h1>
-                                    <h6 className="subtitle op-8 banner-text">We are a team of passionate people who love what we do.</h6>
+                                    <h6 className="subtitle op-8 banner-text">Integrating disruptive technologies for new-age financial services organizations. </h6>
                                 </div>
                                 {/* <!-- Column --> */}
                             </div>
@@ -232,8 +232,8 @@ const Banking = () => {
                             <div className="row justify-content-center">
                                 <div className="col-md-7 text-center">
 
-                                    <h2 className="title">Value We Delivered</h2>
-                                    <h6 className="subtitle">You can relay on our amazing features list and also our customer services will be great experience for you without doubt and in no-time</h6>
+                                    <h2 className="title">Capitalizing on tech to maximize growth</h2>
+                                    <h6 className="subtitle">Through our extensive experience in serving Fintech companies, we build robust systems that make your customers&apos; lives easier.</h6>
                                 </div>
                             </div>
 
@@ -242,10 +242,10 @@ const Banking = () => {
                                 <div className="col-md-6 wrap-feature9-box b-r b-b">
                                     <div className="card" data-aos="fade-left" data-aos-duration="1200">
                                         <div className="card-body d-flex">
-                                            <div className="icon-space align-self-center"><i className="icon-Computer-Secure display-4 text-info-gradiant"></i></div>
+                                            <div className="icon-space align-self-center"><i className=" icon-Code-Window display-4 text-info-gradiant"></i></div>
                                             <div className="align-self-center">
-                                                <h5 className="font-medium"><a className="linking">Ownership </a></h5>
-                                                <p className="m-t-20">You can relay on our amazing features list and also our customer services will be great experience.</p>
+                                                <h5 className="font-medium"><a className="linking">UI/UX Design </a></h5>
+                                                <p className="m-t-20">Understanding consumer psychology, making simple and intuitive user-centered products by combining design thinking to improve customer experience.</p>
                                             </div>
                                         </div>
                                     </div>
@@ -254,10 +254,10 @@ const Banking = () => {
                                 <div className="col-md-6 wrap-feature9-box b-b">
                                     <div className="card" data-aos="fade-left" data-aos-duration="1200">
                                         <div className="card-body d-flex">
-                                            <div className="icon-space align-self-center"><i className="icon-Computer-Secure display-4 text-info-gradiant"></i></div>
+                                            <div className="icon-space align-self-center"><i className="icon-Consulting display-4 text-info-gradiant"></i></div>
                                             <div className="align-self-center">
-                                                <h5 className="font-medium"><a className="linking">Transparency </a></h5>
-                                                <p className="m-t-20">You can relay on our amazing features list and also our customer services will be great experience.</p>
+                                                <h5 className="font-medium"><a className="linking">Support &amp; Maintenance </a></h5>
+                                                <p className="m-t-20">Measuring performance, monitoring application compatibility, and ensuring regulatory compliance. We deliver a unique banking experience that is safe, encrypted, and secured.</p>
                                             </div>
                                         </div>
                                     </div>
@@ -266,10 +266,10 @@ const Banking = () => {
                                 <div className="col-md-6 wrap-feature9-box b-r">
                                     <div className="card" data-aos="fade-right" data-aos-duration="1200">
                                         <div className="card-body d-flex">
-                                            <div className="icon-space align-self-center"><i className="icon-Cloud-Smartphone display-4 text-info-gradiant"></i></div>
+                                            <div className="icon-space align-self-center"><i className="icon-Computer-Secure display-4 text-info-gradiant"></i></div>
                                             <div className="align-self-center">
-                                                <h5 className="font-medium"><a className="linking">Trust </a></h5>
-                                                <p className="m-t-20">You can relay on our amazing features list and also our customer services will be great experience.</p>
+                                                <h5 className="font-medium"><a className="linking">Quality Assurance </a></h5>
+                                                <p className="m-t-20">Effectively structuring unstructured data using advanced technology to connect, operate, store and simplify processes. We test and validate digital products to provide users with an unmatched experience.</p>
                                             </div>
                                         </div>
                                     </div>
@@ -278,10 +278,11 @@ const Banking = () => {
                                 <div className="col-md-6 wrap-feature9-box">
                                     <div className="card" data-aos="fade-left" data-aos-duration="1200">
                                         <div className="card-body d-flex">
-                                            <div className="icon-space align-self-center"><i className="icon-Business-ManWoman display-4 text-info-gradiant"></i></div>
+                                            <div className="icon-space align-self-center"><i className="icon-Cloud-Settings
+ display-4 text-info-gradiant"></i></div>
                                             <div className="align-self-center">
-                                                <h5 className="font-medium"><a className="linking">Empathy </a></h5>
-                                                <p className="m-t-20">You can relay on our amazing features list and also our customer services will be great experience.</p>
+                                                <h5 className="font-medium"><a className="linking">Build &amp; Deploy </a></h5>
+                                                <p className="m-t-20">Empowering BFSI companies to integrate, customize and facilitate innovative products that transform the economy's future. We build smooth cloud-based financial solutions.</p>
                                             </div>
                                         </div>
                                     </div>
@@ -298,7 +299,7 @@ const Banking = () => {
                                 <div className="col-lg-5 col-md-6">
                                     <h2 className="m-t-40">What Our Customers Say</h2>
                                     <span className="devider bg-danger"></span>
-                                    <h6 className="subtitle ">You can relay on our amazing features list and also our customer services will be great experience for you without doubt and in no-time</h6>
+                                    <h6 className="subtitle ">Why do financial services organizations choose Aexonic? They’ve chosen Aexonic to support their vision of a more secure, highly-performant tech infrastructure that delivers personalized experiences to provide customers with a truly unique banking experience.</h6>
                                 </div>
                                 <div className="col-lg-6 col-md-6 ml-auto">
                                     <div className="owl-carousel owl-theme testi9">
@@ -328,8 +329,8 @@ const Banking = () => {
 
                             <div className="row justify-content-center">
                                 <div className="col-md-7 text-center">
-                                    <h2 className="title">Some of our works</h2>
-                                    <h6 className="subtitle">You can relay on our amazing features list and also our customer services will be great experience for you without doubt and in no-time</h6>
+                                    <h2 className="title">Creating stronger and more secure financial assets </h2>
+                                    <h6 className="subtitle">We&apos;re proud to have worked on different solutions and systems for our BFSI clients that have strengthened their business. </h6>
                                 </div>
                             </div>
 
@@ -338,15 +339,15 @@ const Banking = () => {
                                 <div className="card m-b-0">
                                     <div className="card-body text-center">
                                         <div className="p-20">
-                                            <div className="icon-space"><i className="display-5 text-info-gradiant icon-Target"></i></div>
-                                            <h4 className="font-medium">Retargeting Market</h4>
-                                            <p>You can relay on our amazing features list and also our customer services will be great experience worth taking.</p>
+                                            <div className="icon-space"><i className="display-5 text-info-gradiant icon-Paypal"></i></div>
+                                            <h4 className="font-medium">Payment Gateway</h4>
+                                            <p>Bridged the gap between merchant&apos;s website and payment provider by facilitating a robust mechanism that minimizes costs. </p>
                                         </div>
                                     </div>
                                 </div>
 
                                 <div className="card m-b-0 custom_container">
-                                    <img src="/images/features/feature17/img1.jpg" className="image" alt="wrapkit" />
+                                    <img src="/images/features/feature17/img4.png" className="image" alt="wrapkit" />
                                     <div className="overlay">
                                         <div className="text">E-Pin System</div>
                                     </div>
@@ -355,9 +356,9 @@ const Banking = () => {
                                 <div className="card m-b-0">
                                     <div className="card-body text-center">
                                         <div className="p-20">
-                                            <div className="icon-space"><i className="display-5 text-info-gradiant icon-Mouse-3"></i></div>
-                                            <h4 className="font-medium">Instant Solutions</h4>
-                                            <p>You can relay on our amazing features list and also our customer services will be great experience worth taking.</p>
+                                            <div className="icon-space"><i className="display-5 text-info-gradiant icon-Credit-Card"></i></div>
+                                            <h4 className="font-medium">Virtual card issuance</h4>
+                                            <p>Simplified customers&apos; lives by fulfilling their demands to transact securely.</p>
                                         </div>
                                     </div>
                                 </div>
@@ -366,7 +367,7 @@ const Banking = () => {
                             <div className="card-group wrap-feature-17-box">
 
                                 <div className="card custom_container">
-                                    <img src="/images/features/feature17/img2.jpg" className="image" alt="wrapkit" />
+                                    <img src="/images/features/feature17/img5.png" className="image" alt="wrapkit" />
                                     <div className="overlay">
                                         <div className="text">Payment Gateway</div>
                                     </div>
@@ -375,15 +376,16 @@ const Banking = () => {
                                 <div className="card">
                                     <div className="card-body text-center">
                                         <div className="p-20">
-                                            <div className="icon-space"><i className="display-5 text-info-gradiant icon-Car-Wheel"></i></div>
-                                            <h4 className="font-medium">Fruitful Results</h4>
-                                            <p>You can relay on our amazing features list and also our customer services will be great experience worth taking.</p>
+                                            <div className="icon-space"><i className="display-5 text-info-gradiant icon-Gift-Box"></i></div>
+                                            <h4 className="font-medium">Gift cards exchange</h4>
+                                            <p> Empowered our customers freedom at convenience to convert cash or card into a choice and redeem the value.
+</p>
                                         </div>
                                     </div>
                                 </div>
 
                                 <div className="card custom_container">
-                                    <img src="/images/features/feature17/img3.jpg" className="image" alt="wrapkit" />
+                                    <img src="/images/features/feature17/img6.png" className="image" alt="wrapkit" />
                                     <div className="overlay">
                                         <div className="text">Gift card system</div>
                                     </div>

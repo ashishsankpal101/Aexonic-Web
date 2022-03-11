@@ -120,7 +120,7 @@ const Industries = () => {
                                             <ul className="b-none dropdown-menu font-14 animated fadeInUp">
 
                                                 <li>
-                                                    <Link href="industries/banking">
+                                                    <Link href="/industries/banking">
                                                         <a className="dropdown-item">Banking and FinTech</a>
                                                     </Link>
                                                 </li>
@@ -225,7 +225,7 @@ const Industries = () => {
                                 {/* <!-- Column --> */}
                                 <div className="col-md-6 align-self-center text-center" data-aos="fade-down" data-aos-duration="1200">
                                     <h1 className="title banner-text">Industries</h1>
-                                    <h6 className="subtitle op-8 banner-text">We are a team of passionate people who love what we do.</h6>
+                                    <h6 className="subtitle op-8 banner-text">Industries that we&apos;ve worked in and enhanced our clientele&apso;s businesses.</h6>
                                 </div>
                                 {/* <!-- Column --> */}
                             </div>
@@ -239,7 +239,7 @@ const Industries = () => {
                         <div className="row justify-content-center spacer">
                             <div className="col-md-7 text-center">
                                 {/* <h2 className="title">Industries We Serve</h2> */}
-                                <h6 className="subtitle">You can relay on our amazing features list and also our customer services will be great experience for you without doubt and in no-time</h6>
+                                <h6 className="subtitle">Aexonic has established a strong clientele with growing organizations in the industry. Armed with diverse skill sets, our technology solutions have helped their business growth.</h6>
                             </div>
                         </div>
                         <div className="wrap-feature-28s row">
@@ -249,7 +249,7 @@ const Industries = () => {
                                 <div className="side-content both-space">
                                     {/* <span className="label label-info label-rounded">Great Feature 28</span> */}
                                     <h2 className="title">Banking and FinTech</h2>
-                                    <h6 className="subtitle">You can relay on our amazing features list and also our customer services will be great experience for you without doubt and in no-time and with great quality.</h6>
+                                    <h6 className="subtitle">We work with BFSI &amp; Fintech companies to revolutionize their digital transformation journey. We collaborate as a strategic partner to simplify BFSI processes with agility and a positive customer experience.</h6>
                                     <Link href="industries/banking"><a className="btn btn-info-gradiant btn-md btn-arrow m-t-20" data-toggle="collapse"> <span>View More <i className="ti-arrow-right"></i></span></a></Link>
                                 </div>
                             </div>
@@ -259,7 +259,7 @@ const Industries = () => {
                                 <div className="side-content both-space text-right pull-right">
                                     {/* <span className="label label-info label-rounded">Great Feature 28</span> */}
                                     <h2 className="title">Supply Chain and Logistics</h2>
-                                    <h6 className="subtitle">You can relay on our amazing features list and also our customer services will be great experience for you without doubt and in no-time and with great quality.</h6>
+                                    <h6 className="subtitle">The market is ripe with exciting business models to meet the customers&apos; demand to reach the fastest way possible. We&apos;re connecting the globe with sustainable solutions. </h6>
                                     <Link href="/industries/supplychain"><a className="btn btn-info-gradiant btn-md btn-arrow m-t-20" data-toggle="collapse"> <span>View More <i className="ti-arrow-right"></i></span></a></Link>
                                 </div>
                             </div>
@@ -276,7 +276,7 @@ const Industries = () => {
                                 <div className="side-content both-space">
                                     {/* <span className="label label-info label-rounded">Great Feature 28</span> */}
                                     <h2 className="title">Hospitality and Travel</h2>
-                                    <h6 className="subtitle">You can relay on our amazing features list and also our customer services will be great experience for you without doubt and in no-time and with great quality.</h6>
+                                    <h6 className="subtitle">Driving agile and adaptive digital transformation to outsmart uncertainty in the ever-changing Travel and Hospitality sector. Combined with smart innovations, we facilitated faster hospitality management and improved operations. </h6>
                                     <Link href="/industries/hospitality"><a className="btn btn-info-gradiant btn-md btn-arrow m-t-20" data-toggle="collapse"> <span>View More <i className="ti-arrow-right"></i></span></a></Link>
                                 </div>
                             </div>
@@ -286,7 +286,7 @@ const Industries = () => {
                                 <div className="side-content both-space text-right pull-right">
                                     {/* <span className="label label-info label-rounded">Great Feature 28</span> */}
                                     <h2 className="title">Healthcare</h2>
-                                    <h6 className="subtitle">You can relay on our amazing features list and also our customer services will be great experience for you without doubt and in no-time and with great quality.</h6>
+                                    <h6 className="subtitle">The Healthcare industry has evolved in novel ways. Armed with AI/VR and remote care, we&apos;ve helped our clientele improve performance and productivity without compromising data security. </h6>
                                     <Link href="/industries/healthcare"><a className="btn btn-info-gradiant btn-md btn-arrow m-t-20" data-toggle="collapse"> <span>View More <i className="ti-arrow-right"></i></span></a></Link>
                                 </div>
                             </div>
@@ -303,7 +303,7 @@ const Industries = () => {
                                 <div className="side-content both-space">
                                     {/* <span className="label label-info label-rounded">Great Feature 28</span> */}
                                     <h2 className="title">Manufacturing</h2>
-                                    <h6 className="subtitle">You can relay on our amazing features list and also our customer services will be great experience for you without doubt and in no-time and with great quality.</h6>
+                                    <h6 className="subtitle">Improve operational speed, minimize errors and reduce manual redundancies by leveraging sophisticated technologies. We incorporate smart tech to drive transformation. </h6>
                                     <Link href="/industries/manifacturing"><a className="btn btn-info-gradiant btn-md btn-arrow m-t-20" data-toggle="collapse"> <span>View More <i className="ti-arrow-right"></i></span></a></Link>
                                 </div>
                             </div>
@@ -313,7 +313,7 @@ const Industries = () => {
                                 <div className="side-content both-space text-right pull-right">
                                     {/* <span className="label label-info label-rounded">Great Feature 28</span> */}
                                     <h2 className="title">Retail and e-commerce</h2>
-                                    <h6 className="subtitle">You can relay on our amazing features list and also our customer services will be great experience for you without doubt and in no-time and with great quality.</h6>
+                                    <h6 className="subtitle">We understand retail and e-Commerce tech needs and connect businesses with robust solutions for a seamless customer experience with our expertise in understanding consumer behavior and analytics.</h6>
                                     <Link href="/industries/retail"><a className="btn btn-info-gradiant btn-md btn-arrow m-t-20" data-toggle="collapse"> <span>View More <i className="ti-arrow-right"></i></span></a></Link>
                                 </div>
                             </div>
@@ -330,7 +330,7 @@ const Industries = () => {
                                 <div className="side-content both-space">
                                     {/* <span className="label label-info label-rounded">Great Feature 28</span> */}
                                     <h2 className="title">Technology and Software</h2>
-                                    <h6 className="subtitle">You can relay on our amazing features list and also our customer services will be great experience for you without doubt and in no-time and with great quality.</h6>
+                                    <h6 className="subtitle">With the goal to reduce operational costs and improve efficiency, Aexonic works with businesses to globalize products, fill the market gap and drive growth using intelligent automation and processes. </h6>
                                     <Link href="/industries/technology"><a className="btn btn-info-gradiant btn-md btn-arrow m-t-20" data-toggle="collapse"> <span>View More <i className="ti-arrow-right"></i></span></a></Link>
                                 </div>
                             </div>
@@ -340,7 +340,7 @@ const Industries = () => {
                                 <div className="side-content both-space text-right pull-right">
                                     {/* <span className="label label-info label-rounded">Great Feature 28</span> */}
                                     <h2 className="title">Professional Services</h2>
-                                    <h6 className="subtitle">You can relay on our amazing features list and also our customer services will be great experience for you without doubt and in no-time and with great quality.</h6>
+                                    <h6 className="subtitle">Aexonic takes ownership of the challenges we solve. Stacked with advanced analytics, we leverage data and intelligence to fulfill your business&apos; tech needs. </h6>
                                     <Link href="/industries/professional_service"><a className="btn btn-info-gradiant btn-md btn-arrow m-t-20" data-toggle="collapse"> <span>View More <i className="ti-arrow-right"></i></span></a></Link>
                                 </div>
                             </div>
