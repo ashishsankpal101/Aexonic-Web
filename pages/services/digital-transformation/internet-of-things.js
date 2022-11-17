@@ -10,7 +10,7 @@ import {
   faGlobe,
 } from "@fortawesome/free-solid-svg-icons";
 
-const internetThings = () => {
+const InternetThings = () => {
   useEffect(() => {
     $(function () {
       "use strict";
@@ -994,4 +994,4 @@ const internetThings = () => {
   );
 };
 
-export default internetThings;
+export default InternetThings;

@@ -17,7 +17,7 @@ import {
   faWeightHanging,
 } from "@fortawesome/free-solid-svg-icons";
 
-const machineLearning = () => {
+const MachineLearning = () => {
   useEffect(() => {
     $(function () {
       "use strict";
@@ -1220,4 +1220,4 @@ const machineLearning = () => {
   );
 };
 
-export default machineLearning;
+export default MachineLearning;

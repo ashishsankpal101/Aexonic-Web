@@ -3,7 +3,7 @@ import React, { useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
 
-const technologyConsultant = () => {
+const TechnologyConsultant = () => {
   useEffect(() => {
     $(function () {
       "use strict";
@@ -1041,4 +1041,4 @@ const technologyConsultant = () => {
   );
 };
 
-export default technologyConsultant;
+export default TechnologyConsultant;

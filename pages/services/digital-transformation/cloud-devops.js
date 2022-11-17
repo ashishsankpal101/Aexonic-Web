@@ -13,7 +13,7 @@ import {
   faTruckFast,
 } from "@fortawesome/free-solid-svg-icons";
 
-const cloudDevops = () => {
+const CloudDevops = () => {
   useEffect(() => {
     $(function () {
       "use strict";
@@ -998,4 +998,4 @@ const cloudDevops = () => {
   );
 };
 
-export default cloudDevops;
+export default CloudDevops;

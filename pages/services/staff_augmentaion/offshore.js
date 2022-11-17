@@ -14,7 +14,7 @@ import {
   faLaptop,
 } from "@fortawesome/free-solid-svg-icons";
 
-const offshore = () => {
+const Offshore = () => {
   useEffect(() => {
     $(function () {
       "use strict";
@@ -1061,4 +1061,4 @@ const offshore = () => {
   );
 };
 
-export default offshore;
+export default Offshore;

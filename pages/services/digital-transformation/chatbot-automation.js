@@ -13,7 +13,7 @@ import {
   faTruckFast,
 } from "@fortawesome/free-solid-svg-icons";
 
-const chatbot = () => {
+const Chatbot = () => {
   useEffect(() => {
     $(function () {
       "use strict";
@@ -1070,4 +1070,4 @@ const chatbot = () => {
   );
 };
 
-export default chatbot;
+export default Chatbot;

@@ -9,7 +9,7 @@ import {
   faSnowflake,
 } from "@fortawesome/free-solid-svg-icons";
 
-const onshore = () => {
+const Onshore = () => {
   useEffect(() => {
     $(function () {
       "use strict";
@@ -1007,4 +1007,4 @@ const onshore = () => {
   );
 };
 
-export default onshore;
+export default Onshore;

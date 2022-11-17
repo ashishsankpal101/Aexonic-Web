@@ -8,7 +8,7 @@ import {
   faMagnifyingGlass,
 } from "@fortawesome/free-solid-svg-icons";
 
-const nearshore = () => {
+const Nearshore = () => {
   useEffect(() => {
     $(function () {
       "use strict";
@@ -1133,4 +1133,4 @@ const nearshore = () => {
   );
 };
 
-export default nearshore;
+export default Nearshore;

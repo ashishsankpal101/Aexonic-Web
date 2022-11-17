@@ -9,7 +9,7 @@ import {
   faDatabase,
 } from "@fortawesome/free-solid-svg-icons";
 
-const dataAnalytics = () => {
+const DataAnalytics = () => {
   useEffect(() => {
     $(function () {
       "use strict";
@@ -959,4 +959,4 @@ const dataAnalytics = () => {
   );
 };
 
-export default dataAnalytics;
+export default DataAnalytics;

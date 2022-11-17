@@ -17,7 +17,7 @@ import {
   faMagnifyingGlass,
 } from "@fortawesome/free-solid-svg-icons";
 
-const sap = () => {
+const Sap = () => {
   useEffect(() => {
     $(function () {
       "use strict";
@@ -1157,4 +1157,4 @@ const sap = () => {
   );
 };
 
-export default sap;
+export default Sap;
