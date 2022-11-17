@@ -1,434 +1,844 @@
-import Head from 'next/head'
+import Head from "next/head";
 import React from "react";
-import Image from 'next/image'
+import Image from "next/image";
 import Link from "next/link";
 
-
 const Industries = () => {
-    return (
-        <div>
-            <Head>
-                <meta charSet="utf-8" />
-                <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
-                {/* <!-- Tell the browser to be responsive to screen width --> */}
-                <meta name="viewport" content="width=device-width, initial-scale=1" />
-                <meta name="description" content="" />
-                <meta name="author" content="" />
-                {/* <!-- Favicon icon --> */}
-                <link rel="icon" type="image/png" sizes="16x16" href="images/favicon.png" />
-                <title>Aexonic : Industries</title>
-            </Head>
+  return (
+    <div>
+      <Head>
+        <meta charSet="utf-8" />
+        <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
+        {/* <!-- Tell the browser to be responsive to screen width --> */}
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        {/* <!-- Favicon icon --> */}
+        <link
+          rel="icon"
+          type="image/png"
+          sizes="16x16"
+          href="images/favicon.png"
+        />
+        <title>Aexonic : Industries</title>
+      </Head>
 
-
-            {/* <!-- ============================================================== -->
+      {/* <!-- ============================================================== -->
   <!-- Preloader - style you can find in spinners.css -->
   <!-- ============================================================== --> */}
-            {/* <div className="preloader">
+      {/* <div className="preloader">
       <div className="loader">
         <div className="loader__figure"></div>
         <p className="loader__label">Aexonic</p>
       </div>
     </div> */}
-            {/* <!-- ============================================================== -->
+      {/* <!-- ============================================================== -->
   <!-- Main wrapper - style you can find in pages.scss -->
   <!-- ============================================================== --> */}
-            <div id="main-wrapper">
-                {/* <!-- ============================================================== -->
+      <div id="main-wrapper">
+        {/* <!-- ============================================================== -->
       <!-- Top header  -->
       <!-- ============================================================== --> */}
 
-                <div className="topbar">
-                    {/* <!-- ============================================================== -->
+        <div className="topbar">
+          {/* <!-- ============================================================== -->
         <!-- Header 5  -->
         <!-- ============================================================== --> */}
-                    <div className="header5">
-                        <div className="container po-relative">
-                            <nav className="navbar navbar-expand-lg hover-dropdown h5-nav-bar">
-                                <a className="navbar-brand"><img className="header-icon" src="images/aexonic-logo_8.png" alt="Aexonic" /></a>
-                                <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#h5-info" aria-expanded="false" aria-label="Toggle navigation"><span className="ti-menu"></span></button>
-                                <div className="collapse navbar-collapse" id="h5-info">
-                                    <ul className="navbar-nav">
-                                        <li className="nav-item dropdown mega-dropdown">
-                                            <Link href="/">
-                                                <a className="nav-link dropdown-toggle" id="h6-mega-dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                                    Home
-                                                </a>
-                                            </Link>
-                                        </li>
-                                        <li className="nav-item dropdown mega-dropdown"> <a className="nav-link dropdown-toggle" id="h6-mega-dropdown1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                            Services <i className="fa fa-angle-down m-l-5"></i>
-                                        </a>
-                                            <div className="dropdown-menu b-none font-14 animated fadeInUp" aria-labelledby="h6-mega-dropdown1">
-                                                <div className="row">
-                                                    <div className="col-lg-3 inside-bg hidden-md-down">
-                                                        <div className="bg-img" style={{ backgroundImage: "url(/images/mega-bg2.jpg)" }}>
-                                                            <h3 className="text-white font-light">Create anything <br />with our amazing <br />sections</h3>
-                                                        </div>
-                                                    </div>
-                                                    <div className="col-lg-3 col-md-4">
-                                                        <ul className="list-style-none">
-                                                            <li>
-                                                                <h6 className="f-w-500 active cursor-pointer">Product Engineering</h6>
-                                                            </li>
-                                                            <li><a className='cursor-pointer dropdown-item' target="_blank ">SaaS Platforms</a></li>
-                                                            <li><a className='cursor-pointer dropdown-item' target="_blank">Software Engineering</a></li>
-                                                            <li><a className='cursor-pointer dropdown-item' target="_blank">Mobile and Web Apps</a></li>
-                                                            <li><a className='cursor-pointer dropdown-item' target="_blank">API Ecosystem</a></li>
+          <div className="header5">
+            <div className="container po-relative">
+              <nav className="navbar navbar-expand-lg hover-dropdown h5-nav-bar">
+                <a className="navbar-brand">
+                  <img
+                    className="header-icon"
+                    src="images/aexonic-logo_8.png"
+                    alt="Aexonic"
+                  />
+                </a>
+                <button
+                  className="navbar-toggler"
+                  type="button"
+                  data-toggle="collapse"
+                  data-target="#h5-info"
+                  aria-expanded="false"
+                  aria-label="Toggle navigation"
+                >
+                  <span className="ti-menu"></span>
+                </button>
+                <div className="collapse navbar-collapse" id="h5-info">
+                  <ul className="navbar-nav">
+                    <li className="nav-item dropdown mega-dropdown">
+                      <Link href="/">
+                        <a
+                          className="nav-link dropdown-toggle"
+                          id="h6-mega-dropdown"
+                          data-toggle="dropdown"
+                          aria-haspopup="true"
+                          aria-expanded="false"
+                        >
+                          Home
+                        </a>
+                      </Link>
+                    </li>
+                    <li className="nav-item dropdown mega-dropdown">
+                      {" "}
+                      <a
+                        className="nav-link dropdown-toggle"
+                        id="h6-mega-dropdown1"
+                        data-toggle="dropdown"
+                        aria-haspopup="true"
+                        aria-expanded="false"
+                      >
+                        Services <i className="fa fa-angle-down m-l-5"></i>
+                      </a>
+                      <div
+                        className="dropdown-menu b-none font-14 animated fadeInUp"
+                        aria-labelledby="h6-mega-dropdown1"
+                      >
+                        <div className="row">
+                          <div className="col-lg-3 inside-bg hidden-md-down">
+                            <div
+                              className="bg-img"
+                              style={{
+                                backgroundImage: "url(/images/mega-bg2.jpg)",
+                              }}
+                            >
+                              <h3 className="text-white font-light">
+                                Create anything <br />
+                                with our amazing <br />
+                                sections
+                              </h3>
+                            </div>
+                          </div>
+                          <div className="col-lg-3 col-md-4">
+                            <ul className="list-style-none">
+                              <li>
+                                <h6 className="f-w-500 active cursor-pointer">
+                                  Product Engineering
+                                </h6>
+                              </li>
+                              <li>
+                                <Link href="/services/product-engineering/saas-platforms">
+                                  <a className="cursor-pointer dropdown-item">
+                                    SaaS Platforms
+                                  </a>
+                                </Link>
+                              </li>
+                              <li>
+                                <Link href="/services/product-engineering/software-engineering">
+                                  <a className="cursor-pointer dropdown-item">
+                                    Software Engineering
+                                  </a>
+                                </Link>
+                              </li>
+                              <li>
+                                <Link href="/services/product-engineering/mobile-webapp">
+                                  <a className="cursor-pointer dropdown-item">
+                                    Mobile and Web Apps
+                                  </a>
+                                </Link>
+                              </li>
+                              <li>
+                                <Link href="/services/product-engineering/api-ecosystem">
+                                  <a className="cursor-pointer dropdown-item">
+                                    API Ecosystem
+                                  </a>
+                                </Link>
+                              </li>
+                            </ul>
+                          </div>
+                          <div className="col-lg-3 col-md-4">
+                            <ul className="list-style-none">
+                              <li>
+                                <h6 className="f-w-500 active cursor-pointer">
+                                  Digital Transformation
+                                </h6>
+                              </li>
+                              <li>
+                                <Link href="/services/digital-transformation/machine-learning-ai">
+                                  <a className="cursor-pointer dropdown-item">
+                                    Machine Learning &amp; AI
+                                  </a>
+                                </Link>
+                              </li>
 
-                                                        </ul>
-                                                    </div>
-                                                    <div className="col-lg-3 col-md-4">
-                                                        <ul className="list-style-none">
-                                                            <li>
-                                                                <h6 className="f-w-500 active cursor-pointer">Digital Transformation</h6>
-                                                            </li>
-                                                            <li><a className='cursor-pointer dropdown-item' target="_blank">Machine Learning &amp; AI</a></li>
-                                                            <li><a className='cursor-pointer dropdown-item' target="_blank">Data and Analytics</a></li>
-                                                            <li><a className='cursor-pointer dropdown-item' target="_blank">Internet of Things (IoT)</a></li>
-                                                            <li><a className='cursor-pointer dropdown-item' target="_blank">Chatbot and Automation</a></li>
-                                                            <li><a className='cursor-pointer dropdown-item' target="_blank">Cloud and DevOps</a></li>
-                                                            <li><a className='cursor-pointer dropdown-item' target="_blank">Technology Consulting</a></li>
-                                                        </ul>
-                                                    </div>
-                                                    {/* <div className="col-lg-2 col-md-4">
+                              <li>
+                                <Link href="/services/digital-transformation/data-analytics">
+                                  <a className="cursor-pointer dropdown-item">
+                                    Data and Analytics
+                                  </a>
+                                </Link>
+                              </li>
+                              <li>
+                                <Link href="/services/digital-transformation/internet-of-things">
+                                  <a className="cursor-pointer dropdown-item">
+                                    Internet of Things (IoT)
+                                  </a>
+                                </Link>
+                              </li>
+                              <li>
+                                <Link href="/services/digital-transformation/chatbot-automation">
+                                  <a className="cursor-pointer dropdown-item">
+                                    Chatbot and Automation
+                                  </a>
+                                </Link>
+                              </li>
+                              <li>
+                                <Link href="/services/digital-transformation/cloud-devops">
+                                  <a className="cursor-pointer dropdown-item">
+                                    Cloud and DevOps
+                                  </a>
+                                </Link>
+                              </li>
+                              <li>
+                                <Link href="/services/digital-transformation/technology-consultant">
+                                  <a className="cursor-pointer dropdown-item">
+                                    Technology Consulting
+                                  </a>
+                                </Link>
+                              </li>
+                            </ul>
+                          </div>
+                          {/* <div className="col-lg-2 col-md-4">
                                                         <ul className="list-style-none">
                                                             
                                                           
                                                         </ul>
                                                     </div> */}
-                                                    <div className="col-lg-3 col-md-4">
-                                                        <ul className="list-style-none">
-                                                            <li>
-                                                                <h6 className="f-w-500 active cursor-pointer">Staff Augmentation</h6>
-                                                            </li>
-                                                            <li><a className='cursor-pointer dropdown-item' target="_blank">Onshore</a></li>
-                                                            <li><a className='cursor-pointer dropdown-item' target="_blank">Offshore</a></li>
-                                                            <li><a className='cursor-pointer dropdown-item' target="_blank">Nearshore</a></li>
-                                                            <li>
-                                                                <h6 className="f-w-500 active cursor-pointer">Enterprise Solutions</h6>
-                                                            </li>
-                                                            <li><a className='cursor-pointer dropdown-item' target="_blank">SAP</a></li>
-                                                        </ul>
-                                                    </div>
-
-                                                </div>
-                                            </div>
-                                        </li>
-                                        <li className="nav-item dropdown">  <Link href="/industry"><a className="nav-link dropdown-toggle active" id="h6-dropdown2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                            Industries <i className="fa fa-angle-down m-l-5"></i>
-                                        </a></Link>
-                                            <ul className="b-none dropdown-menu font-14 animated fadeInUp">
-
-                                                <li>
-                                                    <Link href="/industries/banking">
-                                                        <a className="dropdown-item">Banking and FinTech</a>
-                                                    </Link>
-                                                </li>
-                                                <li>
-                                                    <Link href="industries/supplychain">
-                                                        <a className="dropdown-item">Supply Chain and Logistics</a>
-                                                    </Link>
-                                                </li>
-                                                <li> <Link href="industries/hospitality">
-                                                    <a className="dropdown-item">Hospitality and Travel</a>
-                                                </Link>
-                                                </li>
-                                                <li> <Link href="industries/healthcare">
-                                                    <a className="dropdown-item">Healthcare</a>
-                                                </Link>
-                                                </li>
-                                                <li> <Link href="industries/manifacturing">
-                                                    <a className="dropdown-item">Manufacturing</a>
-                                                </Link>
-                                                </li>
-                                                <li> <Link href="industries/retail">
-                                                    <a className="dropdown-item">Retail and e-commerce</a>
-                                                </Link>
-                                                </li>
-                                                <li> <Link href="industries/technology">
-                                                    <a className="dropdown-item">Technology and Software</a>
-                                                </Link>
-                                                </li>
-                                                <li> <Link href="industries/professional_service">
-                                                    <a className="dropdown-item">Professional Services</a>
-                                                </Link>
-                                                </li>
-                                            </ul>
-                                        </li>
-                                        <li className="nav-item dropdown">
-                                            <Link href="/careers">
-                                                <a className="nav-link dropdown-toggle" id="h6-dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                                    Careers
-                                                </a>
-                                            </Link>
-
-                                        </li>
-                                        {/* <li className="nav-item dropdown"> <a className="nav-link dropdown-toggle" href="#" id="h6-dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          <div className="col-lg-3 col-md-4">
+                            <ul className="list-style-none">
+                              <li>
+                                <h6 className="f-w-500 active cursor-pointer">
+                                  Staff Augmentation
+                                </h6>
+                              </li>
+                              <li>
+                                <Link href="/services/staff_augmentaion/onshore">
+                                  <a className="cursor-pointer dropdown-item">
+                                    Onshore
+                                  </a>
+                                </Link>
+                              </li>
+                              <li>
+                                <Link href="/services/staff_augmentaion/offshore">
+                                  <a className="cursor-pointer dropdown-item">
+                                    Offshore
+                                  </a>
+                                </Link>
+                              </li>
+                              <li>
+                                <Link href="/services/staff_augmentaion/nearshore">
+                                  <a className="cursor-pointer dropdown-item">
+                                    Nearshore
+                                  </a>
+                                </Link>
+                              </li>
+                              <li>
+                                <h6 className="f-w-500 active cursor-pointer">
+                                  Enterprise Solutions
+                                </h6>
+                              </li>
+                              <li>
+                                <Link href="/services/enterprise-solutions/sap">
+                                  <a className="cursor-pointer dropdown-item">
+                                    SAP
+                                  </a>
+                                </Link>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                    <li className="nav-item dropdown">
+                      {" "}
+                      <Link href="/industry">
+                        <a
+                          className="nav-link dropdown-toggle active"
+                          id="h6-dropdown2"
+                          data-toggle="dropdown"
+                          aria-haspopup="true"
+                          aria-expanded="false"
+                        >
+                          Industries <i className="fa fa-angle-down m-l-5"></i>
+                        </a>
+                      </Link>
+                      <ul className="b-none dropdown-menu font-14 animated fadeInUp">
+                        <li>
+                          <Link href="/industries/banking">
+                            <a className="dropdown-item">Banking and FinTech</a>
+                          </Link>
+                        </li>
+                        <li>
+                          <Link href="industries/supplychain">
+                            <a className="dropdown-item">
+                              Supply Chain and Logistics
+                            </a>
+                          </Link>
+                        </li>
+                        <li>
+                          {" "}
+                          <Link href="industries/hospitality">
+                            <a className="dropdown-item">
+                              Hospitality and Travel
+                            </a>
+                          </Link>
+                        </li>
+                        <li>
+                          {" "}
+                          <Link href="industries/healthcare">
+                            <a className="dropdown-item">Healthcare</a>
+                          </Link>
+                        </li>
+                        <li>
+                          {" "}
+                          <Link href="industries/manifacturing">
+                            <a className="dropdown-item">Manufacturing</a>
+                          </Link>
+                        </li>
+                        <li>
+                          {" "}
+                          <Link href="industries/retail">
+                            <a className="dropdown-item">
+                              Retail and e-commerce
+                            </a>
+                          </Link>
+                        </li>
+                        <li>
+                          {" "}
+                          <Link href="industries/technology">
+                            <a className="dropdown-item">
+                              Technology and Software
+                            </a>
+                          </Link>
+                        </li>
+                        <li>
+                          {" "}
+                          <Link href="industries/professional_service">
+                            <a className="dropdown-item">
+                              Professional Services
+                            </a>
+                          </Link>
+                        </li>
+                      </ul>
+                    </li>
+                    <li className="nav-item dropdown">
+                      <Link href="/careers">
+                        <a
+                          className="nav-link dropdown-toggle"
+                          id="h6-dropdown"
+                          data-toggle="dropdown"
+                          aria-haspopup="true"
+                          aria-expanded="false"
+                        >
+                          Careers
+                        </a>
+                      </Link>
+                    </li>
+                    {/* <li className="nav-item dropdown"> <a className="nav-link dropdown-toggle" href="#" id="h6-dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                             Blog
 
                                         </a>
                                         </li> */}
-                                        <li className="nav-item dropdown">
-                                            <Link href="/aboutus">
-                                                <a className="nav-link dropdown-toggle" href="#" id="h6-dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                                    About Us
-                                                </a>
-                                            </Link>
-                                        </li>
-                                        <li className="nav-item dropdown"> <a className="nav-link dropdown-toggle" href="#" id="h6-dropdown1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                            More <i className="fa fa-angle-down m-l-5"></i>
-                                        </a>
-                                            <ul className="b-none dropdown-menu font-14 animated fadeInUp">
-
-                                                <li>
-                                                    <Link href="/life-at-aexonic">
-                                                        <a className="dropdown-item">Life@aexonic</a>
-                                                    </Link>
-                                                </li>
-                                                <li>
-                                                    <Link href="/case-study">
-                                                        <a className="dropdown-item">Case Studies</a>
-                                                    </Link>
-                                                </li>
-                                                <li> <Link href="/blog">
-                                                    <a className="dropdown-item">Blogs</a>
-                                                </Link>
-                                                </li>
-                                            </ul>
-                                        </li>
-
-
-
-                                    </ul>
-                                    <div className="rounded-button">
-                                        <Link href="/contactus">
-                                            <a className="">Contact Us</a>
-                                        </Link>
-                                    </div>
-                                </div>
-                            </nav>
-                        </div>
-                    </div>
-                    {/* <!-- ============================================================== -->
+                    <li className="nav-item dropdown">
+                      <Link href="/aboutus">
+                        <a
+                          className="nav-link dropdown-toggle"
+                          href="#"
+                          id="h6-dropdown"
+                          data-toggle="dropdown"
+                          aria-haspopup="true"
+                          aria-expanded="false"
+                        >
+                          About Us
+                        </a>
+                      </Link>
+                    </li>
+                    <li className="nav-item dropdown">
+                      {" "}
+                      <a
+                        className="nav-link dropdown-toggle"
+                        href="#"
+                        id="h6-dropdown1"
+                        data-toggle="dropdown"
+                        aria-haspopup="true"
+                        aria-expanded="false"
+                      >
+                        More <i className="fa fa-angle-down m-l-5"></i>
+                      </a>
+                      <ul className="b-none dropdown-menu font-14 animated fadeInUp">
+                        <li>
+                          <Link href="/life-at-aexonic">
+                            <a className="dropdown-item">Life@aexonic</a>
+                          </Link>
+                        </li>
+                        <li>
+                          <Link href="/case-study">
+                            <a className="dropdown-item">Case Studies</a>
+                          </Link>
+                        </li>
+                        <li>
+                          {" "}
+                          <Link href="/blog">
+                            <a className="dropdown-item">Blogs</a>
+                          </Link>
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                  <div className="rounded-button">
+                    <Link href="/contactus">
+                      <a className="">Contact Us</a>
+                    </Link>
+                  </div>
+                </div>
+              </nav>
+            </div>
+          </div>
+          {/* <!-- ============================================================== -->
           <!-- End Header 5  -->
           <!-- ============================================================== --> */}
-                </div>
-                <div className="container-fluid ">
-                    {/* <!-- ============================================================== -->
+        </div>
+        <div className="container-fluid ">
+          {/* <!-- ============================================================== -->
                 <!-- Static Slider 10  -->
                 <!-- ============================================================== --> */}
-                    {/* <div className="banner-innerpage" style="background-image:url(images/services/Banner/support.jpeg)"> */}
-                    <div className="banner-innerpage" style={{ backgroundImage: "url(images/services/Banner/team_aug.jpeg)" }}>
-                        <div className="container">
-                            {/* <!-- Row  --> */}
-                            <div className="row justify-content-center ">
-                                {/* <!-- Column --> */}
-                                <div className="col-md-6 align-self-center text-center" data-aos="fade-down" data-aos-duration="1200">
-                                    <h1 className="title banner-text">Industries</h1>
-                                    <h6 className="subtitle op-8 banner-text">Industries that we&apos;ve worked in and enhanced our clientele&apso;s businesses.</h6>
-                                </div>
-                                {/* <!-- Column --> */}
-                            </div>
-                        </div>
-                    </div>
-                    {/* <!-- ============================================================== -->
+          {/* <div className="banner-innerpage" style="background-image:url(images/services/Banner/support.jpeg)"> */}
+          <div
+            className="banner-innerpage"
+            style={{
+              backgroundImage: "url(images/services/Banner/team_aug.jpeg)",
+            }}
+          >
+            <div className="container">
+              {/* <!-- Row  --> */}
+              <div className="row justify-content-center ">
+                {/* <!-- Column --> */}
+                <div
+                  className="col-md-6 align-self-center text-center"
+                  data-aos="fade-down"
+                  data-aos-duration="1200"
+                >
+                  <h1 className="title banner-text">Industries</h1>
+                  <h6 className="subtitle op-8 banner-text">
+                    Industries that we&apos;ve worked in and enhanced our
+                    clientele&apso;s businesses.
+                  </h6>
+                </div>
+                {/* <!-- Column --> */}
+              </div>
+            </div>
+          </div>
+          {/* <!-- ============================================================== -->
             <!-- Testimonial 9 -->
             <!-- ============================================================== --> */}
 
-                    <div className="bg-light feature28">
-                        <div className="row justify-content-center spacer">
-                            <div className="col-md-7 text-center">
-                                {/* <h2 className="title">Industries We Serve</h2> */}
-                                <h6 className="subtitle">Aexonic has established a strong clientele with growing organizations in the industry. Armed with diverse skill sets, our technology solutions have helped their business growth.</h6>
-                            </div>
-                        </div>
-                        <div className="wrap-feature-28s row">
-                            {/* <div className="col-lg-6 bg-cover" style="background-image:url(../assets/images/features/feature28/img1.jpg)"></div> */}
-                            <div className="col-lg-6 bg-cover" style={{ backgroundImage: "url(images/industry/Banking.jpg)" }}></div>
-                            <div className="col-lg-6">
-                                <div className="side-content both-space">
-                                    {/* <span className="label label-info label-rounded">Great Feature 28</span> */}
-                                    <h2 className="title">Banking and FinTech</h2>
-                                    <h6 className="subtitle">We work with BFSI &amp; Fintech companies to revolutionize their digital transformation journey. We collaborate as a strategic partner to simplify BFSI processes with agility and a positive customer experience.</h6>
-                                    <Link href="industries/banking"><a className="btn btn-info-gradiant btn-md btn-arrow m-t-20" data-toggle="collapse"> <span>View More <i className="ti-arrow-right"></i></span></a></Link>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="wrap-feature-28 row">
-                            <div className="col-lg-6">
-                                <div className="side-content both-space text-right pull-right">
-                                    {/* <span className="label label-info label-rounded">Great Feature 28</span> */}
-                                    <h2 className="title">Supply Chain and Logistics</h2>
-                                    <h6 className="subtitle">The market is ripe with exciting business models to meet the customers&apos; demand to reach the fastest way possible. We&apos;re connecting the globe with sustainable solutions. </h6>
-                                    <Link href="/industries/supplychain"><a className="btn btn-info-gradiant btn-md btn-arrow m-t-20" data-toggle="collapse"> <span>View More <i className="ti-arrow-right"></i></span></a></Link>
-                                </div>
-                            </div>
-                            {/* <div className="col-lg-6 bg-cover" style="background-image:url(../assets/images/features/feature28/img2.jpg)"></div> */}
-                            <div className="col-lg-6 bg-cover" style={{ backgroundImage: "url(images/industry/SupplyChain.jpg)" }}></div>
-                            <div className="col-md-12 text-center">
+          <div className="bg-light feature28">
+            <div className="row justify-content-center spacer">
+              <div className="col-md-7 text-center">
+                {/* <h2 className="title">Industries We Serve</h2> */}
+                <h6 className="subtitle">
+                  Aexonic has established a strong clientele with growing
+                  organizations in the industry. Armed with diverse skill sets,
+                  our technology solutions have helped their business growth.
+                </h6>
+              </div>
+            </div>
+            <div className="wrap-feature-28s row">
+              {/* <div className="col-lg-6 bg-cover" style="background-image:url(../assets/images/features/feature28/img1.jpg)"></div> */}
+              <div
+                className="col-lg-6 bg-cover"
+                style={{ backgroundImage: "url(images/industry/Banking.jpg)" }}
+              ></div>
+              <div className="col-lg-6">
+                <div className="side-content both-space">
+                  {/* <span className="label label-info label-rounded">Great Feature 28</span> */}
+                  <h2 className="title">Banking and FinTech</h2>
+                  <h6 className="subtitle">
+                    We work with BFSI &amp; Fintech companies to revolutionize
+                    their digital transformation journey. We collaborate as a
+                    strategic partner to simplify BFSI processes with agility
+                    and a positive customer experience.
+                  </h6>
+                  <Link href="industries/banking">
+                    <a
+                      className="btn btn-info-gradiant btn-md btn-arrow m-t-20"
+                      data-toggle="collapse"
+                    >
+                      {" "}
+                      <span>
+                        View More <i className="ti-arrow-right"></i>
+                      </span>
+                    </a>
+                  </Link>
+                </div>
+              </div>
+            </div>
+            <div className="wrap-feature-28 row">
+              <div className="col-lg-6">
+                <div className="side-content both-space text-right pull-right">
+                  {/* <span className="label label-info label-rounded">Great Feature 28</span> */}
+                  <h2 className="title">Supply Chain and Logistics</h2>
+                  <h6 className="subtitle">
+                    The market is ripe with exciting business models to meet the
+                    customers&apos; demand to reach the fastest way possible.
+                    We&apos;re connecting the globe with sustainable solutions.{" "}
+                  </h6>
+                  <Link href="/industries/supplychain">
+                    <a
+                      className="btn btn-info-gradiant btn-md btn-arrow m-t-20"
+                      data-toggle="collapse"
+                    >
+                      {" "}
+                      <span>
+                        View More <i className="ti-arrow-right"></i>
+                      </span>
+                    </a>
+                  </Link>
+                </div>
+              </div>
+              {/* <div className="col-lg-6 bg-cover" style="background-image:url(../assets/images/features/feature28/img2.jpg)"></div> */}
+              <div
+                className="col-lg-6 bg-cover"
+                style={{
+                  backgroundImage: "url(images/industry/SupplyChain.jpg)",
+                }}
+              ></div>
+              <div className="col-md-12 text-center"></div>
+            </div>
+            <div className="wrap-feature-28s row">
+              {/* <div className="col-lg-6 bg-cover" style="background-image:url(../assets/images/features/feature28/img1.jpg)"></div> */}
+              <div
+                className="col-lg-6 bg-cover"
+                style={{
+                  backgroundImage: "url(images/industry/Hospitality.jpg)",
+                }}
+              ></div>
+              <div className="col-lg-6">
+                <div className="side-content both-space">
+                  {/* <span className="label label-info label-rounded">Great Feature 28</span> */}
+                  <h2 className="title">Hospitality and Travel</h2>
+                  <h6 className="subtitle">
+                    Driving agile and adaptive digital transformation to
+                    outsmart uncertainty in the ever-changing Travel and
+                    Hospitality sector. Combined with smart innovations, we
+                    facilitated faster hospitality management and improved
+                    operations.{" "}
+                  </h6>
+                  <Link href="/industries/hospitality">
+                    <a
+                      className="btn btn-info-gradiant btn-md btn-arrow m-t-20"
+                      data-toggle="collapse"
+                    >
+                      {" "}
+                      <span>
+                        View More <i className="ti-arrow-right"></i>
+                      </span>
+                    </a>
+                  </Link>
+                </div>
+              </div>
+            </div>
+            <div className="wrap-feature-28 row">
+              <div className="col-lg-6">
+                <div className="side-content both-space text-right pull-right">
+                  {/* <span className="label label-info label-rounded">Great Feature 28</span> */}
+                  <h2 className="title">Healthcare</h2>
+                  <h6 className="subtitle">
+                    The Healthcare industry has evolved in novel ways. Armed
+                    with AI/VR and remote care, we&apos;ve helped our clientele
+                    improve performance and productivity without compromising
+                    data security.{" "}
+                  </h6>
+                  <Link href="/industries/healthcare">
+                    <a
+                      className="btn btn-info-gradiant btn-md btn-arrow m-t-20"
+                      data-toggle="collapse"
+                    >
+                      {" "}
+                      <span>
+                        View More <i className="ti-arrow-right"></i>
+                      </span>
+                    </a>
+                  </Link>
+                </div>
+              </div>
+              {/* <div className="col-lg-6 bg-cover" style="background-image:url(../assets/images/features/feature28/img2.jpg)"></div> */}
+              <div
+                className="col-lg-6 bg-cover"
+                style={{
+                  backgroundImage: "url(images/industry/HealtCare.jpg)",
+                }}
+              ></div>
+              <div className="col-md-12 text-center"></div>
+            </div>
+            <div className="wrap-feature-28s row">
+              {/* <div className="col-lg-6 bg-cover" style="background-image:url(../assets/images/features/feature28/img1.jpg)"></div> */}
+              <div
+                className="col-lg-6 bg-cover"
+                style={{
+                  backgroundImage: "url(images/industry/Manufacturing.jpg)",
+                }}
+              ></div>
+              <div className="col-lg-6">
+                <div className="side-content both-space">
+                  {/* <span className="label label-info label-rounded">Great Feature 28</span> */}
+                  <h2 className="title">Manufacturing</h2>
+                  <h6 className="subtitle">
+                    Improve operational speed, minimize errors and reduce manual
+                    redundancies by leveraging sophisticated technologies. We
+                    incorporate smart tech to drive transformation.{" "}
+                  </h6>
+                  <Link href="/industries/manifacturing">
+                    <a
+                      className="btn btn-info-gradiant btn-md btn-arrow m-t-20"
+                      data-toggle="collapse"
+                    >
+                      {" "}
+                      <span>
+                        View More <i className="ti-arrow-right"></i>
+                      </span>
+                    </a>
+                  </Link>
+                </div>
+              </div>
+            </div>
+            <div className="wrap-feature-28 row">
+              <div className="col-lg-6">
+                <div className="side-content both-space text-right pull-right">
+                  {/* <span className="label label-info label-rounded">Great Feature 28</span> */}
+                  <h2 className="title">Retail and e-commerce</h2>
+                  <h6 className="subtitle">
+                    We understand retail and e-Commerce tech needs and connect
+                    businesses with robust solutions for a seamless customer
+                    experience with our expertise in understanding consumer
+                    behavior and analytics.
+                  </h6>
+                  <Link href="/industries/retail">
+                    <a
+                      className="btn btn-info-gradiant btn-md btn-arrow m-t-20"
+                      data-toggle="collapse"
+                    >
+                      {" "}
+                      <span>
+                        View More <i className="ti-arrow-right"></i>
+                      </span>
+                    </a>
+                  </Link>
+                </div>
+              </div>
+              {/* <div className="col-lg-6 bg-cover" style="background-image:url(../assets/images/features/feature28/img2.jpg)"></div> */}
+              <div
+                className="col-lg-6 bg-cover"
+                style={{
+                  backgroundImage: "url(images/industry/e-commerce.jpg)",
+                }}
+              ></div>
+              <div className="col-md-12 text-center"></div>
+            </div>
+            <div className="wrap-feature-28s row">
+              {/* <div className="col-lg-6 bg-cover" style="background-image:url(../assets/images/features/feature28/img1.jpg)"></div> */}
+              <div
+                className="col-lg-6 bg-cover"
+                style={{
+                  backgroundImage: "url(images/industry/Technology.jpg)",
+                }}
+              ></div>
+              <div className="col-lg-6">
+                <div className="side-content both-space">
+                  {/* <span className="label label-info label-rounded">Great Feature 28</span> */}
+                  <h2 className="title">Technology and Software</h2>
+                  <h6 className="subtitle">
+                    With the goal to reduce operational costs and improve
+                    efficiency, Aexonic works with businesses to globalize
+                    products, fill the market gap and drive growth using
+                    intelligent automation and processes.{" "}
+                  </h6>
+                  <Link href="/industries/technology">
+                    <a
+                      className="btn btn-info-gradiant btn-md btn-arrow m-t-20"
+                      data-toggle="collapse"
+                    >
+                      {" "}
+                      <span>
+                        View More <i className="ti-arrow-right"></i>
+                      </span>
+                    </a>
+                  </Link>
+                </div>
+              </div>
+            </div>
+            <div className="wrap-feature-28 row">
+              <div className="col-lg-6">
+                <div className="side-content both-space text-right pull-right">
+                  {/* <span className="label label-info label-rounded">Great Feature 28</span> */}
+                  <h2 className="title">Professional Services</h2>
+                  <h6 className="subtitle">
+                    Aexonic takes ownership of the challenges we solve. Stacked
+                    with advanced analytics, we leverage data and intelligence
+                    to fulfill your business&apos; tech needs.{" "}
+                  </h6>
+                  <Link href="/industries/professional_service">
+                    <a
+                      className="btn btn-info-gradiant btn-md btn-arrow m-t-20"
+                      data-toggle="collapse"
+                    >
+                      {" "}
+                      <span>
+                        View More <i className="ti-arrow-right"></i>
+                      </span>
+                    </a>
+                  </Link>
+                </div>
+              </div>
+              {/* <div className="col-lg-6 bg-cover" style="background-image:url(../assets/images/features/feature28/img2.jpg)"></div> */}
+              <div
+                className="col-lg-6 bg-cover"
+                style={{
+                  backgroundImage: "url(images/industry/Professional.jpg)",
+                }}
+              ></div>
+              <div className="col-md-12 text-center"></div>
+            </div>
+          </div>
 
-                            </div>
-                        </div>
-                        <div className="wrap-feature-28s row">
-                            {/* <div className="col-lg-6 bg-cover" style="background-image:url(../assets/images/features/feature28/img1.jpg)"></div> */}
-                            <div className="col-lg-6 bg-cover" style={{ backgroundImage: "url(images/industry/Hospitality.jpg)" }}></div>
-                            <div className="col-lg-6">
-                                <div className="side-content both-space">
-                                    {/* <span className="label label-info label-rounded">Great Feature 28</span> */}
-                                    <h2 className="title">Hospitality and Travel</h2>
-                                    <h6 className="subtitle">Driving agile and adaptive digital transformation to outsmart uncertainty in the ever-changing Travel and Hospitality sector. Combined with smart innovations, we facilitated faster hospitality management and improved operations. </h6>
-                                    <Link href="/industries/hospitality"><a className="btn btn-info-gradiant btn-md btn-arrow m-t-20" data-toggle="collapse"> <span>View More <i className="ti-arrow-right"></i></span></a></Link>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="wrap-feature-28 row">
-                            <div className="col-lg-6">
-                                <div className="side-content both-space text-right pull-right">
-                                    {/* <span className="label label-info label-rounded">Great Feature 28</span> */}
-                                    <h2 className="title">Healthcare</h2>
-                                    <h6 className="subtitle">The Healthcare industry has evolved in novel ways. Armed with AI/VR and remote care, we&apos;ve helped our clientele improve performance and productivity without compromising data security. </h6>
-                                    <Link href="/industries/healthcare"><a className="btn btn-info-gradiant btn-md btn-arrow m-t-20" data-toggle="collapse"> <span>View More <i className="ti-arrow-right"></i></span></a></Link>
-                                </div>
-                            </div>
-                            {/* <div className="col-lg-6 bg-cover" style="background-image:url(../assets/images/features/feature28/img2.jpg)"></div> */}
-                            <div className="col-lg-6 bg-cover" style={{ backgroundImage: "url(images/industry/HealtCare.jpg)" }}></div>
-                            <div className="col-md-12 text-center">
-
-                            </div>
-                        </div>
-                        <div className="wrap-feature-28s row">
-                            {/* <div className="col-lg-6 bg-cover" style="background-image:url(../assets/images/features/feature28/img1.jpg)"></div> */}
-                            <div className="col-lg-6 bg-cover" style={{ backgroundImage: "url(images/industry/Manufacturing.jpg)" }}></div>
-                            <div className="col-lg-6">
-                                <div className="side-content both-space">
-                                    {/* <span className="label label-info label-rounded">Great Feature 28</span> */}
-                                    <h2 className="title">Manufacturing</h2>
-                                    <h6 className="subtitle">Improve operational speed, minimize errors and reduce manual redundancies by leveraging sophisticated technologies. We incorporate smart tech to drive transformation. </h6>
-                                    <Link href="/industries/manifacturing"><a className="btn btn-info-gradiant btn-md btn-arrow m-t-20" data-toggle="collapse"> <span>View More <i className="ti-arrow-right"></i></span></a></Link>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="wrap-feature-28 row">
-                            <div className="col-lg-6">
-                                <div className="side-content both-space text-right pull-right">
-                                    {/* <span className="label label-info label-rounded">Great Feature 28</span> */}
-                                    <h2 className="title">Retail and e-commerce</h2>
-                                    <h6 className="subtitle">We understand retail and e-Commerce tech needs and connect businesses with robust solutions for a seamless customer experience with our expertise in understanding consumer behavior and analytics.</h6>
-                                    <Link href="/industries/retail"><a className="btn btn-info-gradiant btn-md btn-arrow m-t-20" data-toggle="collapse"> <span>View More <i className="ti-arrow-right"></i></span></a></Link>
-                                </div>
-                            </div>
-                            {/* <div className="col-lg-6 bg-cover" style="background-image:url(../assets/images/features/feature28/img2.jpg)"></div> */}
-                            <div className="col-lg-6 bg-cover" style={{ backgroundImage: "url(images/industry/e-commerce.jpg)" }}></div>
-                            <div className="col-md-12 text-center">
-
-                            </div>
-                        </div>
-                        <div className="wrap-feature-28s row">
-                            {/* <div className="col-lg-6 bg-cover" style="background-image:url(../assets/images/features/feature28/img1.jpg)"></div> */}
-                            <div className="col-lg-6 bg-cover" style={{ backgroundImage: "url(images/industry/Technology.jpg)" }}></div>
-                            <div className="col-lg-6">
-                                <div className="side-content both-space">
-                                    {/* <span className="label label-info label-rounded">Great Feature 28</span> */}
-                                    <h2 className="title">Technology and Software</h2>
-                                    <h6 className="subtitle">With the goal to reduce operational costs and improve efficiency, Aexonic works with businesses to globalize products, fill the market gap and drive growth using intelligent automation and processes. </h6>
-                                    <Link href="/industries/technology"><a className="btn btn-info-gradiant btn-md btn-arrow m-t-20" data-toggle="collapse"> <span>View More <i className="ti-arrow-right"></i></span></a></Link>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="wrap-feature-28 row">
-                            <div className="col-lg-6">
-                                <div className="side-content both-space text-right pull-right">
-                                    {/* <span className="label label-info label-rounded">Great Feature 28</span> */}
-                                    <h2 className="title">Professional Services</h2>
-                                    <h6 className="subtitle">Aexonic takes ownership of the challenges we solve. Stacked with advanced analytics, we leverage data and intelligence to fulfill your business&apos; tech needs. </h6>
-                                    <Link href="/industries/professional_service"><a className="btn btn-info-gradiant btn-md btn-arrow m-t-20" data-toggle="collapse"> <span>View More <i className="ti-arrow-right"></i></span></a></Link>
-                                </div>
-                            </div>
-                            {/* <div className="col-lg-6 bg-cover" style="background-image:url(../assets/images/features/feature28/img2.jpg)"></div> */}
-                            <div className="col-lg-6 bg-cover" style={{ backgroundImage: "url(images/industry/Professional.jpg)" }}></div>
-                            <div className="col-md-12 text-center">
-
-                            </div>
-                        </div>
-                    </div>
-
-                    {/* <!-- ============================================================== -->
+          {/* <!-- ============================================================== -->
             <!-- footer 4  -->
             <!-- ============================================================== --> */}
-                    <div className="footer4 spacer ">
-                        <div className="container ">
-                            <div className="row ">
-                                <div className="col-lg-3 col-md-6 m-b-30 ">
-                                    <h5 className="m-b-20 ">Address</h5>
-                                    <p> 503, Pride Icon, Kharadi, Pune, India  411014</p>
-                                </div>
-                                <div className="col-lg-3 col-md-6 m-b-30 ">
-                                    <h5 className="m-b-20 ">Phone</h5>
-                                    <p>Reception : +205 123 4567
-                                        <br />Office : +207 235 7890</p>
-                                </div>
-                                <div className="col-lg-3 col-md-6 m-b-30 ">
-                                    <h5 className="m-b-20 ">Email</h5>
-                                    <p>Office : <a href="# " className="link ">info@aexonic.com</a>
-                                        <br />Site : <a href="# " className="link ">http://www.aexonic.com/</a></p>
-                                </div>
-                                <div className="col-lg-3 col-md-6 ">
-                                    <h5 className="m-b-20 ">Social</h5>
-                                    <div className="round-social light ">
-                                        <a href="# " className="link "><i className="fa fa-facebook "></i></a>
-                                        <a href="# " className="link "><i className="fa fa-twitter "></i></a>
-                                        <a href="# " className="link "><i className="fa fa-linkedin "></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="f4-bottom-bar ">
-                                <div className="row ">
+          <div className="footer4 spacer ">
+            <div className="container ">
+              <div className="row ">
+                <div className="col-lg-3 col-md-6 m-b-30 ">
+                  <h5 className="m-b-20 ">Address</h5>
+                  <p> 503, Pride Icon, Kharadi, Pune, India 411014</p>
+                </div>
+                <div className="col-lg-3 col-md-6 m-b-30 ">
+                  <h5 className="m-b-20 ">Phone</h5>
+                  <p>
+                    Reception : +205 123 4567
+                    <br />
+                    Office : +207 235 7890
+                  </p>
+                </div>
+                <div className="col-lg-3 col-md-6 m-b-30 ">
+                  <h5 className="m-b-20 ">Email</h5>
+                  <p>
+                    Office :{" "}
+                    <a href="# " className="link ">
+                      info@aexonic.com
+                    </a>
+                    <br />
+                    Site :{" "}
+                    <a href="# " className="link ">
+                      http://www.aexonic.com/
+                    </a>
+                  </p>
+                </div>
+                <div className="col-lg-3 col-md-6 ">
+                  <h5 className="m-b-20 ">Social</h5>
+                  <div className="round-social light ">
+                    <a href="# " className="link ">
+                      <i className="fa fa-facebook "></i>
+                    </a>
+                    <a href="# " className="link ">
+                      <i className="fa fa-twitter "></i>
+                    </a>
+                    <a href="# " className="link ">
+                      <i className="fa fa-linkedin "></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div className="f4-bottom-bar ">
+                <div className="row ">
+                  <div className="col-md-12 ">
+                    <hr />
 
-                                    <div className="col-md-12 ">
-
-                                        <hr />
-
-                                        <nav style={{ paddingLeft: "0px !important" }} className="navbar navbar-expand-lg h1-nav ">
-                                            <a className="navbar-brand m-b-11 " href="# "><img src="./images/aexonic-logo_5.png " alt="Aexonic " width="120 " /></a>
-                                            <button className="navbar-toggler " type="button " data-toggle="collapse " data-target="#header1 " aria-expanded="false " aria-label="Toggle navigation ">
-                                                <span className="ti-menu "></span>
-                                            </button>
-                                            <div className="collapse navbar-collapse " id="header1 ">
-                                                <span className="hidden-lg-down ">© 2020 All rights reserved.</span>
-                                                <ul className="navbar-nav ml-auto mt-2 mt-lg-0 ">
-                                                    <li className="nav-item"><a className="nav-link " href="# ">Home</a></li>
-                                                    <li className="nav-item "><a className="nav-link " href="# ">Services</a></li>
-                                                    <li className="nav-item "><a className="nav-link active" href="# ">Industries</a></li>
-                                                    <li className="nav-item "><a className="nav-link " href="# ">Careers</a></li>
-                                                    <li className="nav-item "><a className="nav-link " href="# ">About Us</a></li>
-                                                    <li className="nav-item "><a className="nav-link " href="# ">More</a></li>
-                                                    <li className="nav-item "><a className="nav-link " href="# ">Contact Us</a></li>
-                                                </ul>
-                                            </div>
-                                        </nav>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    {/* <!-- ============================================================== -->
+                    <nav
+                      style={{ paddingLeft: "0px !important" }}
+                      className="navbar navbar-expand-lg h1-nav "
+                    >
+                      <a className="navbar-brand m-b-11 " href="# ">
+                        <img
+                          src="./images/aexonic-logo_5.png "
+                          alt="Aexonic "
+                          width="120 "
+                        />
+                      </a>
+                      <button
+                        className="navbar-toggler "
+                        type="button "
+                        data-toggle="collapse "
+                        data-target="#header1 "
+                        aria-expanded="false "
+                        aria-label="Toggle navigation "
+                      >
+                        <span className="ti-menu "></span>
+                      </button>
+                      <div className="collapse navbar-collapse " id="header1 ">
+                        <span className="hidden-lg-down ">
+                          © 2020 All rights reserved.
+                        </span>
+                        <ul className="navbar-nav ml-auto mt-2 mt-lg-0 ">
+                          <li className="nav-item">
+                            <a className="nav-link " href="# ">
+                              Home
+                            </a>
+                          </li>
+                          <li className="nav-item ">
+                            <a className="nav-link " href="# ">
+                              Services
+                            </a>
+                          </li>
+                          <li className="nav-item ">
+                            <a className="nav-link active" href="# ">
+                              Industries
+                            </a>
+                          </li>
+                          <li className="nav-item ">
+                            <a className="nav-link " href="# ">
+                              Careers
+                            </a>
+                          </li>
+                          <li className="nav-item ">
+                            <a className="nav-link " href="# ">
+                              About Us
+                            </a>
+                          </li>
+                          <li className="nav-item ">
+                            <a className="nav-link " href="# ">
+                              More
+                            </a>
+                          </li>
+                          <li className="nav-item ">
+                            <a className="nav-link " href="# ">
+                              Contact Us
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+                    </nav>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          {/* <!-- ============================================================== -->
             <!-- End footer 4  -->
             <!-- ============================================================== --> */}
-                    <a className="bt-top btn btn-circle btn-lg btn-info" href="#top"><i className="ti-arrow-up"></i></a>
+          <a className="bt-top btn btn-circle btn-lg btn-info" href="#top">
+            <i className="ti-arrow-up"></i>
+          </a>
 
-
-                    {/* <!-- ============================================================== -->
+          {/* <!-- ============================================================== -->
       <!-- End Page wrapper  -->
       <!-- ============================================================== --> */}
-                </div>
-            </div>
-            {/* <!-- ============================================================== -->
+        </div>
+      </div>
+      {/* <!-- ============================================================== -->
   <!-- End Wrapper -->
   <!-- ============================================================== --> */}
-
-
-        </div>
-    )
-}
+    </div>
+  );
+};
 
 export default Industries;

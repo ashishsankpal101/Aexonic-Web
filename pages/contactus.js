@@ -2,8 +2,21 @@ import Head from "next/head";
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
+import ReCAPTCHA from "react-google-recaptcha";
+
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faUsers,
+  faChartLine,
+  faClock,
+  faBuilding,
+  faArrowUpRightDots,
+} from "@fortawesome/free-solid-svg-icons";
 
 const contactus = () => {
+  function onChange(value) {
+    console.log("Captcha value:", value);
+  }
   return (
     <div>
       <Head>
@@ -20,7 +33,7 @@ const contactus = () => {
           sizes="16x16"
           href="images/favicon.png"
         />
-        <title>Aexonic : Home</title>
+        <title>Aexonic : Contact Us</title>
       </Head>
 
       {/* <!-- ============================================================== -->
@@ -117,36 +130,32 @@ const contactus = () => {
                                 </h6>
                               </li>
                               <li>
-                                <a
-                                  className="cursor-pointer dropdown-item"
-                                  target="_blank "
-                                >
-                                  SaaS Platforms
-                                </a>
+                                <Link href="/services/product-engineering/saas-platforms">
+                                  <a className="cursor-pointer dropdown-item">
+                                    SaaS Platforms
+                                  </a>
+                                </Link>
                               </li>
                               <li>
-                                <a
-                                  className="cursor-pointer dropdown-item"
-                                  target="_blank"
-                                >
-                                  Software Engineering
-                                </a>
+                                <Link href="/services/product-engineering/software-engineering">
+                                  <a className="cursor-pointer dropdown-item">
+                                    Software Engineering
+                                  </a>
+                                </Link>
                               </li>
                               <li>
-                                <a
-                                  className="cursor-pointer dropdown-item"
-                                  target="_blank"
-                                >
-                                  Mobile and Web Apps
-                                </a>
+                                <Link href="/services/product-engineering/mobile-webapp">
+                                  <a className="cursor-pointer dropdown-item">
+                                    Mobile and Web Apps
+                                  </a>
+                                </Link>
                               </li>
                               <li>
-                                <a
-                                  className="cursor-pointer dropdown-item"
-                                  target="_blank"
-                                >
-                                  API Ecosystem
-                                </a>
+                                <Link href="/services/product-engineering/api-ecosystem">
+                                  <a className="cursor-pointer dropdown-item">
+                                    API Ecosystem
+                                  </a>
+                                </Link>
                               </li>
                             </ul>
                           </div>
@@ -158,52 +167,47 @@ const contactus = () => {
                                 </h6>
                               </li>
                               <li>
-                                <a
-                                  className="cursor-pointer dropdown-item"
-                                  target="_blank"
-                                >
-                                  Machine Learning &amp; AI
-                                </a>
+                                <Link href="/services/digital-transformation/machine-learning-ai">
+                                  <a className="cursor-pointer dropdown-item">
+                                    Machine Learning &amp; AI
+                                  </a>
+                                </Link>
+                              </li>
+
+                              <li>
+                                <Link href="/services/digital-transformation/data-analytics">
+                                  <a className="cursor-pointer dropdown-item">
+                                    Data and Analytics
+                                  </a>
+                                </Link>
                               </li>
                               <li>
-                                <a
-                                  className="cursor-pointer dropdown-item"
-                                  target="_blank"
-                                >
-                                  Data and Analytics
-                                </a>
+                                <Link href="/services/digital-transformation/internet-of-things">
+                                  <a className="cursor-pointer dropdown-item">
+                                    Internet of Things (IoT)
+                                  </a>
+                                </Link>
                               </li>
                               <li>
-                                <a
-                                  className="cursor-pointer dropdown-item"
-                                  target="_blank"
-                                >
-                                  Internet of Things (IoT)
-                                </a>
+                                <Link href="/services/digital-transformation/chatbot-automation">
+                                  <a className="cursor-pointer dropdown-item">
+                                    Chatbot and Automation
+                                  </a>
+                                </Link>
                               </li>
                               <li>
-                                <a
-                                  className="cursor-pointer dropdown-item"
-                                  target="_blank"
-                                >
-                                  Chatbot and Automation
-                                </a>
+                                <Link href="/services/digital-transformation/cloud-devops">
+                                  <a className="cursor-pointer dropdown-item">
+                                    Cloud and DevOps
+                                  </a>
+                                </Link>
                               </li>
                               <li>
-                                <a
-                                  className="cursor-pointer dropdown-item"
-                                  target="_blank"
-                                >
-                                  Cloud and DevOps
-                                </a>
-                              </li>
-                              <li>
-                                <a
-                                  className="cursor-pointer dropdown-item"
-                                  target="_blank"
-                                >
-                                  Technology Consulting
-                                </a>
+                                <Link href="/services/digital-transformation/technology-consultant">
+                                  <a className="cursor-pointer dropdown-item">
+                                    Technology Consulting
+                                  </a>
+                                </Link>
                               </li>
                             </ul>
                           </div>
@@ -221,28 +225,25 @@ const contactus = () => {
                                 </h6>
                               </li>
                               <li>
-                                <a
-                                  className="cursor-pointer dropdown-item"
-                                  target="_blank"
-                                >
-                                  Onshore
-                                </a>
+                                <Link href="/services/staff_augmentaion/onshore">
+                                  <a className="cursor-pointer dropdown-item">
+                                    Onshore
+                                  </a>
+                                </Link>
                               </li>
                               <li>
-                                <a
-                                  className="cursor-pointer dropdown-item"
-                                  target="_blank"
-                                >
-                                  Offshore
-                                </a>
+                                <Link href="/services/staff_augmentaion/offshore">
+                                  <a className="cursor-pointer dropdown-item">
+                                    Offshore
+                                  </a>
+                                </Link>
                               </li>
                               <li>
-                                <a
-                                  className="cursor-pointer dropdown-item"
-                                  target="_blank"
-                                >
-                                  Nearshore
-                                </a>
+                                <Link href="/services/staff_augmentaion/nearshore">
+                                  <a className="cursor-pointer dropdown-item">
+                                    Nearshore
+                                  </a>
+                                </Link>
                               </li>
                               <li>
                                 <h6 className="f-w-500 active cursor-pointer">
@@ -250,12 +251,11 @@ const contactus = () => {
                                 </h6>
                               </li>
                               <li>
-                                <a
-                                  className="cursor-pointer dropdown-item"
-                                  target="_blank"
-                                >
-                                  SAP
-                                </a>
+                                <Link href="/services/enterprise-solutions/sap">
+                                  <a className="cursor-pointer dropdown-item">
+                                    SAP
+                                  </a>
+                                </Link>
                               </li>
                             </ul>
                           </div>
@@ -264,7 +264,6 @@ const contactus = () => {
                     </li>
 
                     <li className="nav-item dropdown">
-                      {" "}
                       <Link href="/industry">
                         <a
                           className="nav-link dropdown-toggle"
@@ -441,6 +440,228 @@ const contactus = () => {
             </div>
           </div>
 
+          <div className="spacer feature1 ">
+            <div className="container">
+              <div className="row justify-content-center">
+                <div className="col-md-7 text-center">
+                  <h2 className="title">Get In Touch</h2>
+                  {/* <h6 className="subtitle">We are creative thinkers with a focus on modern web production. We use the latest tools available to help build your brand&apos;s digital presence.</h6> */}
+                  <h6 className="subtitle">
+                    Transform your business by leveraging our expertise in
+                    digital transformation. Reach out to us today.
+                  </h6>
+                </div>
+              </div>
+
+              <div className="row contact-container m-t-30 ">
+                <div className="col-lg-5 align-self-center">
+                  <div className="max-500 m-auto p-20">
+                    {/* <!-- <span className="label label-success label-rounded">Feature 47</span> --> */}
+                    {/* <h2 className="title">Why Companies Choose Us</h2> */}
+                    {/* <h6 className="subtitle">You can relay on our amazing features list and also our customer services will be great experience for you without doubt and in no-time</h6> */}
+                    <ul className="list-block with-underline font-medium m-t-30 m-b-20 text-dark">
+                      <li>
+                        {/* <i className="fa fa-user-o text-info"></i> */}
+                        <FontAwesomeIcon
+                          icon={faUsers}
+                          className="text-info pr-3"
+                          size="2x"
+                        />
+
+                        <span>200+ Happy Clients </span>
+                      </li>
+                      <li>
+                        {/* <i className="fa fa-line-chart text-info"></i> */}
+                        <FontAwesomeIcon
+                          icon={faArrowUpRightDots}
+                          className="text-info pr-3"
+                          size="2x"
+                        />
+                        <span>10+ Years of Experience </span>
+                      </li>
+                      {/* <li>
+                        <i className="fa fa-map-marker text-info"></i>
+                        <span>Presence in 2 Countries </span>
+                      </li> */}
+                      <li>
+                        {/* <i className="fa fa-angle-right  text-info"></i> */}
+                        <FontAwesomeIcon
+                          icon={faClock}
+                          className="text-info pr-3"
+                          size="2x"
+                        />
+
+                        <span>300+ Projects Delivered</span>
+                      </li>
+                      {/* <li>
+                        <i className="fa fa-certificate text-info"></i>
+                        <span>ISO 27001 Certified</span>
+                      </li> */}
+                      <li>
+                        {/* <i className="fa fa-cog text-info"></i> */}
+                        <FontAwesomeIcon
+                          icon={faBuilding}
+                          className="text-info pr-3"
+                          size="2x"
+                        />
+                        <span>5+ Industries Served</span>
+                      </li>
+                    </ul>
+                    {/* <!-- <a className="btn btn-info-gradiant btn-md btn-arrow m-t-20 m-b-20" data-toggle="collapse" href="#f47"><span>Get Code <i className="ti-arrow-right"></i></span></a> --> */}
+                  </div>
+                </div>
+                <div className="col-lg-7 ">
+                  <div
+                    className="card card-shadow m-t-40"
+                    style={{ marginTop: "55px" }}
+                    data-aos="fade-up "
+                    data-aos-duration="1200 "
+                  >
+                    <div className="row ">
+                      <div className="col-lg-12 ">
+                        <div className="contact-box p-40 ">
+                          {/* <!-- <h4 className=" ">Contact Us</h4> --> */}
+                          <form>
+                            <div className="row ">
+                              <div className="col-lg-6 ">
+                                <div className="form-group m-t-20 ">
+                                  <input
+                                    className="form-control "
+                                    type="text "
+                                    placeholder="Name "
+                                  />
+                                </div>
+                              </div>
+                              <div className="col-lg-6 ">
+                                <div className="form-group m-t-20 ">
+                                  <input
+                                    className="form-control "
+                                    type="text "
+                                    placeholder="Email "
+                                  />
+                                </div>
+                              </div>
+                              <div className="col-lg-6 ">
+                                <div className="form-group m-t-20 ">
+                                  <input
+                                    className="form-control "
+                                    type="text "
+                                    placeholder="Phone "
+                                  />
+                                </div>
+                              </div>
+                              <div className="col-lg-6 ">
+                                <div className="form-group m-t-20 ">
+                                  <input
+                                    className="form-control "
+                                    type="text "
+                                    placeholder="Location "
+                                  />
+                                </div>
+                              </div>
+                              <div className="col-lg-12 ">
+                                <div className="form-group m-t-20 ">
+                                  <input
+                                    className="form-control "
+                                    type="text "
+                                    placeholder="Message "
+                                  />
+                                </div>
+                              </div>
+                              <div className="col-lg-12 ">
+                                <ReCAPTCHA
+                                  sitekey="6Lf2jtYfAAAAAIZJZoymnF1_QAue0jrpB7jXZtpU"
+                                  onChange={onChange}
+                                />
+                              </div>
+
+                              <div className="col-lg-12 ">
+                                <button
+                                  type="submit "
+                                  className="btn btn-info-gradiant m-t-20 btn-arrow "
+                                >
+                                  <span>
+                                    SUBMIT NOW
+                                    <i className="fa fa-arrow-right "></i>
+                                  </span>
+                                </button>
+                              </div>
+                            </div>
+                          </form>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className="feature10">
+            <div className="row">
+              <div className="col-lg-4 bg-megna">
+                <div className="wrap-feature10-box text-center">
+                  <div className="display-4 m-b-20">
+                    <i className="icon-Talk-Man"></i>
+                  </div>
+                  <small className="op-8">Methodologies &amp; solutions</small>
+                  <h4 className="box-title">Our Highlights</h4>
+                  <p className="op-8">
+                    With a technology-led and innovation-first approach, we help
+                    businesses become a pioneer in their industry by equipping
+                    them with technological developments.
+                  </p>
+                  <a className="btn btn-outline-light btn-md btn-arrow">
+                    <span>
+                      Read all <i className="ti-arrow-right"></i>
+                    </span>
+                  </a>
+                </div>
+              </div>
+
+              <div className="col-lg-4 bg-primary">
+                <div className="wrap-feature10-box text-center">
+                  <div className="display-4 m-b-20">
+                    <i className="icon-Chrysler-Building"></i>
+                  </div>
+                  <small className="op-8">And innovate strategically</small>
+                  <h4 className="box-title">Industries We Serve</h4>
+                  <p className="op-8">
+                    From solving complex industry-specific processes and
+                    managing highly-technical solutions, the Aexonic team&apos;s
+                    end-to-end vertical approach enables us to serve a diverse
+                    clientele.
+                  </p>
+                  <a className="btn btn-outline-light btn-md btn-arrow">
+                    <span>
+                      Read all <i className="ti-arrow-right"></i>
+                    </span>
+                  </a>
+                </div>
+              </div>
+
+              <div className="col-lg-4 bg-orange">
+                <div className="wrap-feature10-box text-center">
+                  <div className="display-4 m-b-20">
+                    <i className="icon-Mouse-3"></i>
+                  </div>
+                  <small className="op-8">Fruits of smart work</small>
+                  <h4 className="box-title">Success Stories</h4>
+                  <p className="op-8">
+                    Click here to know how our global clients have benefited by
+                    deploying technologically advanced tools and software and
+                    empowering their businesses dynamically.
+                  </p>
+                  <a className="btn btn-outline-light btn-md btn-arrow">
+                    <span>
+                      Read all <i className="ti-arrow-right"></i>
+                    </span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
           {/* <!-- ============================================================== -->
                 <!-- Testimonial 9 -->
                 <!-- ============================================================== --> */}
@@ -448,8 +669,8 @@ const contactus = () => {
             <div className="container">
               <div className="row">
                 <div className="col-lg-5 col-md-6">
-                  <h2 className="m-t-40">What Our client Say</h2>
-                  <span className="devider bg-danger"></span>
+                  <h2 className="m-t-40 title">What Our Customers Say</h2>
+                  {/* <span className="devider bg-danger"></span> */}
                   {/* <h6 className="subtitle ">You can relay on our amazing features list and also our customer services will be great experience for you without doubt and in no-time</h6> */}
                   <h6 className="subtitle ">
                     Don&apos;t just believe our words, read what customers say
@@ -500,6 +721,67 @@ const contactus = () => {
           {/* <!-- ============================================================== -->
                 <!-- End Testimonial 9 -->
                 <!-- ============================================================== --> */}
+
+          <div className="client2 spacer ">
+            <div className="container ">
+              <div className="row justify-content-center ">
+                <div className="col-md-7 text-center ">
+                  <h2 className="title ">Trusted By</h2>
+                  <h6 className="subtitle ">
+                    Our expertise comes from working with visionary and
+                    passionate MNCs, SMBs, entrepreneurs, and startups. With
+                    them, we've conquered newer heights.
+                  </h6>
+                </div>
+              </div>
+              <div className="row client-box text-center op-7 ">
+                <div className="col-lg-2 col-md-4 ">
+                  <img src="images/clients/sky7venture.png " alt="wrapkit " />
+                </div>
+                <div className="col-lg-2 col-md-4 ">
+                  <img src="images/clients/slinkd.png " alt="wrapkit " />
+                </div>
+                <div className="col-lg-2 col-md-4 ">
+                  <img src="images/clients/Pay2Cards.png " alt="wrapkit " />
+                </div>
+                <div className="col-lg-2 col-md-4 ">
+                  <img src="images/clients/payatshop.png " alt="wrapkit " />
+                </div>
+                <div className="col-lg-2 col-md-4 ">
+                  <img src="images/clients/paymentbox.png " alt="wrapkit " />
+                </div>
+                <div className="col-lg-2 col-md-4 ">
+                  <img
+                    src="images/clients/ProcessingQuotes.png "
+                    alt="wrapkit "
+                  />
+                </div>
+              </div>
+              <div className="row client-box text-center op-7 m-t-10 ">
+                <div className="col-lg-2 col-md-4 ">
+                  <img src="images/clients/help-light.png " alt="wrapkit " />
+                </div>
+                <div className="col-lg-2 col-md-4 ">
+                  <img src="images/clients/la_cour.png " alt="wrapkit " />
+                </div>
+                <div className="col-lg-2 col-md-4 ">
+                  <img src="images/clients/mobicall.png " alt="wrapkit " />
+                </div>
+                <div className="col-lg-2 col-md-4 ">
+                  <img src="images/clients/DMS-Final.png " alt="wrapkit " />
+                </div>
+                <div className="col-lg-2 col-md-4 ">
+                  <img src="images/clients/cw.png " alt="wrapkit " />
+                </div>
+                <div className="col-lg-2 col-md-4 ">
+                  <img
+                    src="images/clients/ProcessingQuotes.png "
+                    alt="wrapkit "
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
 
           {/* <div className="client2 spacer">
                         <div className="container ">
@@ -590,245 +872,7 @@ const contactus = () => {
                 <!-- End Feature 1  -->
                 <!-- ============================================================== --> */}
 
-          <div className=" spacer feature15">
-            <div className="container">
-              {/* <!-- Row  --> */}
-              <div className="row justify-content-center">
-                <div className="col-md-7 text-center">
-                  <h2 className="title">Trusted By</h2>
-                  {/* <h6 className="subtitle">You can relay on our amazing features list and also our customer services will be great experience for you without doubt and in no-time</h6> */}
-                  <h6 className="subtitle">
-                    Our expertise comes from working with visionary and
-                    passionate MNCs, SMBs, entrepreneurs, and startups. With
-                    them, we&apos;ve conquered newer heights.
-                  </h6>
-                </div>
-              </div>
-              {/* <!-- Row  --> */}
-              <div className="row client-box text-center op-7 ">
-                <div className="col-lg-2 col-md-4">
-                  <img
-                    src="images/clients/sepio.png "
-                    style={{ height: "30px", marginLeft: "30px" }}
-                    alt="wrapkit "
-                  />
-                </div>
-                <div className="col-lg-2 col-md-4">
-                  <img
-                    src="images/clients/tgi.png "
-                    style={{ height: "30px" }}
-                    alt="wrapkit "
-                  />
-                </div>
-                <div className="col-lg-2 col-md-4">
-                  <img
-                    src="images/clients/cactus.png "
-                    style={{ height: "30px" }}
-                    alt="wrapkit "
-                  />
-                </div>
-                <div className="col-lg-2 col-md-4">
-                  <img src="images/clients/DMS-Final.png " alt="wrapkit " />
-                </div>
-                <div className="col-lg-2 col-md-4">
-                  <img src="images/clients/cw.png " alt="wrapkit " />
-                </div>
-                <div className="col-lg-2 col-md-4">
-                  <img
-                    src="images/clients/ProcessingQuotes.png "
-                    alt="wrapkit "
-                  />
-                </div>
-              </div>
-
-              <div className="row client-box text-center op-7 ">
-                <div className="col-lg-2 col-md-4">
-                  <img src="images/clients/help-light.png " alt="wrapkit " />
-                </div>
-                <div className="col-lg-2 col-md-4">
-                  <img src="images/clients/mobicall.png " alt="wrapkit " />
-                </div>
-                <div className="col-lg-2 col-md-4">
-                  <img src="images/clients/DMS-Final.png " alt="wrapkit " />
-                </div>
-                <div className="col-lg-2 col-md-4">
-                  <img src="images/clients/mobicall.png " alt="wrapkit " />
-                </div>
-                <div className="col-lg-2 col-md-4">
-                  <img src="images/clients/cw.png " alt="wrapkit " />
-                </div>
-                <div className="col-lg-2 col-md-4">
-                  <img
-                    src="images/clients/ProcessingQuotes.png "
-                    alt="wrapkit "
-                  />
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div className="bg-light spacer feature20 up">
-            <div className="container">
-              <div className="row justify-content-center">
-                <div className="col-md-7 text-center">
-                  <h2 className="title">Want To Know More</h2>
-                  {/* <h6 className="subtitle">You can relay on our amazing features list and also our customer services will be great experience for you without doubt and in no-time</h6> */}
-                  <h6 className="subtitle">Interested to know more?</h6>
-                </div>
-              </div>
-
-              <div className="row wrap-feature-20">
-                <div
-                  className="col-lg-6"
-                  data-aos="flip-left"
-                  data-aos-duration="1200"
-                >
-                  <div className="card">
-                    <div className="row">
-                      <div className="col-md-8">
-                        <div className="card-body d-flex no-block">
-                          <div className="m-r-20">
-                            <img
-                              src="./images/features/f13/img1.jpg"
-                              alt="wrapkit"
-                              width="70"
-                              className="rounded"
-                            />
-                          </div>
-                          <div>
-                            <h5 className="font-medium">Our Highlights</h5>
-                            {/* <h6 className="subtitle">More About us</h6> */}
-                            <h6 className="subtitle">
-                              Methodologies &amp; solutions
-                            </h6>
-                          </div>
-                        </div>
-                      </div>
-                      <div className="col-md-4 text-center cursor-pointer">
-                        <a
-                          style={{ padding: "40px 0 !important" }}
-                          className="text-white linking bg-info-gradiant"
-                        >
-                          Check out <i className="ti-arrow-right"></i>
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div
-                  className="col-lg-6"
-                  data-aos="flip-right"
-                  data-aos-duration="1200"
-                >
-                  <div className="card">
-                    <div className="row">
-                      <div className="col-md-8">
-                        <div className="card-body d-flex no-block">
-                          <div className="m-r-20">
-                            <img
-                              src="./images/features/f13/img2.jpg"
-                              alt="wrapkit"
-                              width="70"
-                              className="rounded"
-                            />
-                          </div>
-                          <div>
-                            <h5 className="font-medium">Engagement Model</h5>
-                            <h6 className="subtitle">Systemized processes</h6>
-                          </div>
-                        </div>
-                      </div>
-                      <div className="col-md-4 text-center cursor-pointer">
-                        <a
-                          style={{ padding: "40px 0 !important" }}
-                          className="text-white linking bg-info-gradiant"
-                        >
-                          Find out <i className="ti-arrow-right"></i>
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div
-                  className="col-lg-6"
-                  data-aos="zoom-in"
-                  data-aos-duration="1200"
-                >
-                  <div className="card">
-                    <div className="row">
-                      <div className="col-md-8">
-                        <div className="card-body d-flex no-block">
-                          <div className="m-r-20">
-                            <img
-                              src="./images/features/f13/img3.jpg"
-                              alt="wrapkit"
-                              width="70"
-                              className="rounded"
-                            />
-                          </div>
-                          <div>
-                            <h5 className="font-medium">Industries We Serve</h5>
-                            {/* <h6 className="subtitle">More About us</h6> */}
-                            <h6 className="subtitle">
-                              And innovate strategically
-                            </h6>
-                          </div>
-                        </div>
-                      </div>
-                      <div className="col-md-4 text-center cursor-pointer">
-                        <a
-                          style={{ padding: "40px 0 !important" }}
-                          className="text-white linking bg-info-gradiant"
-                        >
-                          Know them <i className="ti-arrow-right"></i>
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div
-                  className="col-lg-6"
-                  data-aos="zoom-in"
-                  data-aos-duration="1200"
-                >
-                  <div className="card">
-                    <div className="row">
-                      <div className="col-md-8">
-                        <div className="card-body d-flex no-block">
-                          <div className="m-r-20">
-                            <img
-                              src="./images/features/f13/img4.jpg"
-                              alt="wrapkit"
-                              width="70"
-                              className="rounded"
-                            />
-                          </div>
-                          <div>
-                            <h5 className="font-medium">Success Stories</h5>
-                            {/* <h6 className="subtitle">More About us</h6> */}
-                            <h6 className="subtitle">Fruits of smart work</h6>
-                          </div>
-                        </div>
-                      </div>
-                      <div className="col-md-4 text-center cursor-pointer">
-                        <a
-                          style={{ padding: "40px 0 !important" }}
-                          className="text-white linking bg-info-gradiant"
-                        >
-                          Read all <i className="ti-arrow-right"></i>
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div className=" spacer feature15">
+          <div className=" spacer bg-light feature15">
             <div className="container">
               {/* <!-- Row  --> */}
               <div className="row justify-content-center">
@@ -838,7 +882,7 @@ const contactus = () => {
                   <h6 className="subtitle">
                     We have served 200+ clients globally. Our portfolio of
                     extensive projects has impacted millions and this makes us
-                    confident to aim for the zenith.{" "}
+                    confident to aim for the zenith.
                   </h6>
                 </div>
               </div>
@@ -865,7 +909,7 @@ const contactus = () => {
                             </a>
                           </h5>
                           <p className="m-t-20">
-                            503, Pride Icon, Kharadi, Pune, India – 411014.
+                            504, Stellar Spaces, Kharadi, Pune, India – 411014.
                           </p>
                         </div>
                       </div>
@@ -902,7 +946,7 @@ const contactus = () => {
                     data-aos="flip-left"
                     data-aos-duration="1200"
                   >
-                    <iframe
+                    {/* <iframe
                       src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15130.709280079906!2d73.9359377!3d18.5434784!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xf37df2d7acdb1d82!2sAexonic%20Technologies!5e0!3m2!1sen!2sin!4v1601548568796!5m2!1sen!2sin"
                       width="650"
                       height="350"
@@ -911,7 +955,9 @@ const contactus = () => {
                       allowFullScreen=""
                       aria-hidden="false"
                       tabIndex="0"
-                    ></iframe>
+                    ></iframe> */}
+                    {/* <img src="./images/contact_us/map.png" alt="" /> */}
+                    <img src="./images/contact_us/map2.png" alt="" />
                   </div>
                 </div>
                 {/* <!-- Column --> */}
@@ -919,259 +965,173 @@ const contactus = () => {
             </div>
           </div>
 
-          <div className="spacer feature1 bg-light">
-            <div className="container">
-              <div className="row justify-content-center">
-                <div className="col-md-7 text-center">
-                  <h2 className="title">Get In Touch</h2>
-                  {/* <h6 className="subtitle">We are creative thinkers with a focus on modern web production. We use the latest tools available to help build your brand&apos;s digital presence.</h6> */}
-                  <h6 className="subtitle">
-                    We are a team of creative thinkers, executors, and driven
-                    analysts and we&apos;re ready to fulfill your visions.
-                  </h6>
+          {/* <!-- ============================================================== -->
+           <!-- footer 4  -->
+           <!-- ============================================================== --> */}
+          <div className="footer3 bg-dark font-14">
+            <div className="f3-topbar container">
+              <div className="d-flex">
+                <div className="d-flex no-block align-items-center">
+                  <a href="#" className="m-r-20">
+                    <img src="images/footer/aexonic-logo_8.png" alt="Aexonic" />
+                  </a>
+                  <span>
+                    We are empowered by a mindset for technological
+                    breakthroughs and creating functional tools and solutions.
+                    We unite and work with a problem-solving approach by
+                    employing technologies that drive dynamic progress.
+                  </span>
+                </div>
+                <div className="ml-auto no-shrink align-self-center">
+                  <form>
+                    <div className="input-group">
+                      <input
+                        type="text"
+                        className="form-control form-control-dark form-control-lg"
+                        placeholder="Sign up for updates"
+                      />
+                      <span className="input-group-btn">
+                        <button
+                          className="btn btn-danger-gradiant btn-md"
+                          type="button"
+                        >
+                          Go!
+                        </button>
+                      </span>
+                    </div>
+                  </form>
                 </div>
               </div>
+            </div>
+            <div className="f3-middle container">
+              <div className="row">
+                <div className="col-lg-3 col-md-6 m-b-30">
+                  <h6 className="font-medium text-white">SERVICES</h6>
+                  <ul className="general-listing">
+                    <li>
+                      <a href="#">
+                        <i className="ti-arrow-right"></i> Product Engineering
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <i className="ti-arrow-right"></i> Digital
+                        Transformation
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <i className="ti-arrow-right"></i> Staff Augmentation
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <i className="ti-arrow-right"></i> Enterprise Solutions
+                      </a>
+                    </li>
+                  </ul>
+                </div>
 
-              <div className="row contact-container m-t-30 ">
-                <div className="col-lg-5 align-self-center">
-                  <div className="max-500 m-auto p-20">
-                    {/* <!-- <span className="label label-success label-rounded">Feature 47</span> --> */}
-                    {/* <h2 className="title">Why Companies Choose Us</h2> */}
-                    {/* <h6 className="subtitle">You can relay on our amazing features list and also our customer services will be great experience for you without doubt and in no-time</h6> */}
-                    <ul className="list-block with-underline font-medium m-t-30 m-b-20 text-dark">
-                      <li>
-                        <i className="fa fa-user-o text-info"></i>{" "}
-                        <span>200+ Happy Clients </span>
-                      </li>
-                      <li>
-                        <i className="fa fa-line-chart text-info"></i>{" "}
-                        <span>9+ Years of Experience </span>
-                      </li>
-                      <li>
-                        <i className="fa fa-map-marker text-info"></i>{" "}
-                        <span>Presence in 2 Countries </span>
-                      </li>
-                      <li>
-                        <i className="fa fa-angle-right  text-info"></i>{" "}
-                        <span>300+ Projects Delivered</span>
-                      </li>
-                      <li>
-                        <i className="fa fa-certificate text-info"></i>{" "}
-                        <span>ISO 27001 Certified</span>
-                      </li>
-                      <li>
-                        <i className="fa fa-cog text-info"></i>{" "}
-                        <span>5+ Industries Served</span>
-                      </li>
-                    </ul>
-                    {/* <!-- <a className="btn btn-info-gradiant btn-md btn-arrow m-t-20 m-b-20" data-toggle="collapse" href="#f47"><span>Get Code <i className="ti-arrow-right"></i></span></a> --> */}
+                <div className="col-lg-3 col-md-6 m-b-30">
+                  <h6 className="font-medium text-white">PROJECTS</h6>
+                  <div className="d-flex no-block align-items-center m-t-20">
+                    <div className="btext">
+                      <a href="#" className="link">
+                        Hotel nira inn got bigger heding you ever seen.
+                      </a>
+                    </div>
+                  </div>
+                  <div className="d-flex no-block align-items-center m-t-20">
+                    <div className="btext">
+                      <a href="#" className="link">
+                        Hotel nira inn got bigger heding you ever seen.
+                      </a>
+                    </div>
                   </div>
                 </div>
-                <div className="col-lg-7 ">
-                  <div
-                    className="card card-shadow m-t-40"
-                    style={{ marginTop: "55px" }}
-                    data-aos="fade-up "
-                    data-aos-duration="1200 "
-                  >
-                    <div className="row ">
-                      <div className="col-lg-12 ">
-                        <div className="contact-box p-40 ">
-                          {/* <!-- <h4 className=" ">Contact Us</h4> --> */}
-                          <form>
-                            <div className="row ">
-                              <div className="col-lg-6 ">
-                                <div className="form-group m-t-20 ">
-                                  <input
-                                    className="form-control "
-                                    type="text "
-                                    placeholder="Name "
-                                  />
-                                </div>
-                              </div>
-                              <div className="col-lg-6 ">
-                                <div className="form-group m-t-20 ">
-                                  <input
-                                    className="form-control "
-                                    type="text "
-                                    placeholder="Email "
-                                  />
-                                </div>
-                              </div>
-                              <div className="col-lg-6 ">
-                                <div className="form-group m-t-20 ">
-                                  <input
-                                    className="form-control "
-                                    type="text "
-                                    placeholder="Phone "
-                                  />
-                                </div>
-                              </div>
-                              <div className="col-lg-6 ">
-                                <div className="form-group m-t-20 ">
-                                  <input
-                                    className="form-control "
-                                    type="text "
-                                    placeholder="Location "
-                                  />
-                                </div>
-                              </div>
-                              <div className="col-lg-12 ">
-                                <div className="form-group m-t-20 ">
-                                  <input
-                                    className="form-control "
-                                    type="text "
-                                    placeholder="Message "
-                                  />
-                                </div>
-                              </div>
-                              <div className="col-lg-12 ">
-                                <button
-                                  type="submit "
-                                  className="btn btn-info-gradiant m-t-20 btn-arrow "
-                                >
-                                  <span>
-                                    {" "}
-                                    SUBMIT NOW{" "}
-                                    <i className="fa fa-arrow-right "></i>
-                                  </span>
-                                </button>
-                              </div>
-                            </div>
-                          </form>
-                        </div>
-                      </div>
+
+                <div className="col-lg-3 col-md-6 m-b-30">
+                  <h6 className="font-medium text-white">BLOG</h6>
+                  <div className="d-flex no-block align-items-center m-t-20">
+                    <div className="btext">
+                      <a href="#" className="link">
+                        Automation for Utilities and Energy Sectors
+                      </a>
+                    </div>
+                  </div>
+                  <div className="d-flex no-block align-items-center m-t-20">
+                    <div className="btext">
+                      <a href="#" className="link">
+                        AI, IoT, Blockchain
+                      </a>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="col-lg-3 col-md-6 m-b-30">
+                  <h6 className="font-medium text-white">CONTACT</h6>
+                  <div className="d-flex no-block m-b-10 m-t-20">
+                    <div className="display-7 m-r-20 align-self-top">
+                      <i className="icon-Location-2"></i>
+                    </div>
+                    <div className="info">
+                      <p>504, Stellar Spaces, Kharadi, Pune, India – 411014</p>
+                    </div>
+                  </div>
+                  <div className="d-flex no-block m-b-10">
+                    <div className="display-7 m-r-20 align-self-top">
+                      <i className="icon-Phone-2"></i>
+                    </div>
+                    <div className="info">
+                      <span className=" db  m-t-5"> +207 235 7890</span>
+                    </div>
+                  </div>
+                  <div className="d-flex no-block m-b-30">
+                    <div className="display-7 m-r-20 align-self-top">
+                      <i className="icon-Mail"></i>
+                    </div>
+                    <div className="info">
+                      <a
+                        href="http://www.aexonic.com/"
+                        className="link db  m-t-5"
+                      >
+                        http://www.aexonic.com/
+                      </a>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-          </div>
-
-          {/* <!-- ============================================================== -->
-                <!-- footer 4  -->
-                <!-- ============================================================== --> */}
-          <div className="footer4 spacer ">
-            <div className="container ">
-              <div className="row ">
-                <div className="col-lg-3 col-md-6 m-b-30 ">
-                  <h5 className="m-b-20 ">Address</h5>
-                  <p> 503, Pride Icon, Kharadi, Pune, India 411014</p>
-                </div>
-                <div className="col-lg-3 col-md-6 m-b-30 ">
-                  <h5 className="m-b-20 ">Phone</h5>
-                  <p>
-                    Reception : +205 123 4567
-                    <br />
-                    Office : +207 235 7890
-                  </p>
-                </div>
-                <div className="col-lg-3 col-md-6 m-b-30 ">
-                  <h5 className="m-b-20 ">Email</h5>
-                  <p>
-                    Office :{" "}
-                    <a href="# " className="link ">
-                      info@aexonic.com
+            <div className="f3-bottom-bar">
+              <div className="container">
+                <div className="d-flex">
+                  <span className="m-t-10 m-b-10">
+                    Copyright 2018. All Rights Reserved by WrapPixel.
+                  </span>
+                  <div className="ml-auto m-t-10 m-b-10">
+                    <a href="#" className="link">
+                      <i className="fa fa-facebook"></i>
                     </a>
-                    <br />
-                    Site :{" "}
-                    <a href="# " className="link ">
-                      http://www.aexonic.com/
+                    <a href="#" className="link">
+                      <i className="fa fa-twitter"></i>
                     </a>
-                  </p>
-                </div>
-                <div className="col-lg-3 col-md-6 ">
-                  <h5 className="m-b-20 ">Social</h5>
-                  <div className="round-social light ">
-                    <a href="# " className="link ">
-                      <i className="fa fa-facebook "></i>
+                    <a href="#" className="link">
+                      <i className="fa fa-linkedin"></i>
                     </a>
-                    <a href="# " className="link ">
-                      <i className="fa fa-twitter "></i>
+                    <a href="#" className="link">
+                      <i className="fa fa-pinterest"></i>
                     </a>
-                    <a href="# " className="link ">
-                      <i className="fa fa-linkedin "></i>
+                    <a href="#" className="link">
+                      <i className="fa fa-instagram"></i>
                     </a>
-                  </div>
-                </div>
-              </div>
-              <div className="f4-bottom-bar ">
-                <div className="row ">
-                  <div className="col-md-12 ">
-                    <hr />
-
-                    <nav
-                      style={{ paddingLeft: "0px !important" }}
-                      className="navbar navbar-expand-lg h1-nav "
-                    >
-                      <a className="navbar-brand m-b-11 " href="# ">
-                        <img
-                          src="./images/aexonic-logo_5.png "
-                          alt="Aexonic "
-                          width="120 "
-                        />
-                      </a>
-                      <button
-                        className="navbar-toggler "
-                        type="button "
-                        data-toggle="collapse "
-                        data-target="#header1 "
-                        aria-expanded="false "
-                        aria-label="Toggle navigation "
-                      >
-                        <span className="ti-menu "></span>
-                      </button>
-                      <div className="collapse navbar-collapse " id="header1 ">
-                        <span className="hidden-lg-down ">
-                          © 2020 All rights reserved.
-                        </span>
-                        <ul className="navbar-nav ml-auto mt-2 mt-lg-0 ">
-                          <li className="nav-item">
-                            <a className="nav-link " href="# ">
-                              Home
-                            </a>
-                          </li>
-                          <li className="nav-item ">
-                            <a className="nav-link " href="# ">
-                              Services
-                            </a>
-                          </li>
-                          <li className="nav-item ">
-                            <a className="nav-link " href="# ">
-                              Industries
-                            </a>
-                          </li>
-                          <li className="nav-item ">
-                            <a className="nav-link " href="# ">
-                              Careers
-                            </a>
-                          </li>
-                          <li className="nav-item ">
-                            <a className="nav-link " href="# ">
-                              About Us
-                            </a>
-                          </li>
-                          <li className="nav-item ">
-                            <a className="nav-link " href="# ">
-                              More
-                            </a>
-                          </li>
-                          <li className="nav-item ">
-                            <a className="nav-link active" href="# ">
-                              Contact Us
-                            </a>
-                          </li>
-                        </ul>
-                      </div>
-                    </nav>
                   </div>
                 </div>
               </div>
             </div>
           </div>
           {/* <!-- ============================================================== -->
-                <!-- End footer 4  -->
-                <!-- ============================================================== --> */}
+           <!-- End footer 4  -->
+           <!-- ============================================================== --> */}
           <a className="bt-top btn btn-circle btn-lg btn-info" href="#top">
             <i className="ti-arrow-up"></i>
           </a>
