@@ -969,7 +969,7 @@ const Onshore = () => {
               <div className="container">
                 <div className="d-flex">
                   <span className="m-t-10 m-b-10">
-                    Copyright 2018. All Rights Reserved by WrapPixel.
+                    Copyright 2018. All Rights Reserved by Aexonic.
                   </span>
                   <div className="ml-auto m-t-10 m-b-10">
                     <a href="#" className="link">

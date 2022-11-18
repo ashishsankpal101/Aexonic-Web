@@ -1191,118 +1191,161 @@ export default function Home() {
         {/* <!-- ============================================================== -->
             <!-- footer 2  -->
             <!-- ============================================================== --> */}
-        <div className="footer4 spacer ">
-          <div className="container ">
-            <div className="row ">
-              <div className="col-lg-3 col-md-6 m-b-30 ">
-                <h5 className="m-b-20 ">Address</h5>
-                <p> 503, Pride Icon, Kharadi, Pune, India 411014</p>
+        <div className="footer3 bg-dark font-14">
+          <div className="f3-topbar container">
+            <div className="d-flex">
+              <div className="d-flex no-block align-items-center">
+                <a href="#" className="m-r-20">
+                  <img src="/images/footer/aexonic-logo_8.png" alt="Aexonic" />
+                </a>
+                <span>
+                  We are empowered by a mindset for technological breakthroughs
+                  and creating functional tools and solutions. We unite and work
+                  with a problem-solving approach by employing technologies that
+                  drive dynamic progress.
+                </span>
               </div>
-              <div className="col-lg-3 col-md-6 m-b-30 ">
-                <h5 className="m-b-20 ">Phone</h5>
-                <p>
-                  Reception : +205 123 4567
-                  <br />
-                  Office : +207 235 7890
-                </p>
+              <div className="ml-auto no-shrink align-self-center">
+                <form>
+                  <div className="input-group">
+                    <input
+                      type="text"
+                      className="form-control form-control-dark form-control-lg"
+                      placeholder="Sign up for updates"
+                    />
+                    <span className="input-group-btn">
+                      <button
+                        className="btn btn-danger-gradiant btn-md"
+                        type="button"
+                      >
+                        Go!
+                      </button>
+                    </span>
+                  </div>
+                </form>
               </div>
-              <div className="col-lg-3 col-md-6 m-b-30 ">
-                <h5 className="m-b-20 ">Email</h5>
-                <p>
-                  Office :{" "}
-                  <a href="# " className="link ">
-                    info@aexonic.com
-                  </a>
-                  <br />
-                  Site :{" "}
-                  <a href="# " className="link ">
-                    http://www.aexonic.com/
-                  </a>
-                </p>
+            </div>
+          </div>
+          <div className="f3-middle container">
+            <div className="row">
+              <div className="col-lg-3 col-md-6 m-b-30">
+                <h6 className="font-medium text-white">SERVICES</h6>
+                <ul className="general-listing">
+                  <li>
+                    <a href="#">
+                      <i className="ti-arrow-right"></i> Product Engineering
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <i className="ti-arrow-right"></i> Digital Transformation
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <i className="ti-arrow-right"></i> Staff Augmentation
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <i className="ti-arrow-right"></i> Enterprise Solutions
+                    </a>
+                  </li>
+                </ul>
               </div>
-              <div className="col-lg-3 col-md-6 ">
-                <h5 className="m-b-20 ">Social</h5>
-                <div className="round-social light ">
-                  <a href="# " className="link ">
-                    <i className="fa fa-facebook "></i>
-                  </a>
-                  <a href="# " className="link ">
-                    <i className="fa fa-twitter "></i>
-                  </a>
-                  <a href="# " className="link ">
-                    <i className="fa fa-linkedin "></i>
-                  </a>
+
+              <div className="col-lg-3 col-md-6 m-b-30">
+                <h6 className="font-medium text-white">PROJECTS</h6>
+                <div className="d-flex no-block align-items-center m-t-20">
+                  <div className="btext">
+                    <a href="#" className="link">
+                      Hotel nira inn got bigger heding you ever seen.
+                    </a>
+                  </div>
+                </div>
+                <div className="d-flex no-block align-items-center m-t-20">
+                  <div className="btext">
+                    <a href="#" className="link">
+                      Hotel nira inn got bigger heding you ever seen.
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <div className="col-lg-3 col-md-6 m-b-30">
+                <h6 className="font-medium text-white">BLOG</h6>
+                <div className="d-flex no-block align-items-center m-t-20">
+                  <div className="btext">
+                    <a href="#" className="link">
+                      Automation for Utilities and Energy Sectors
+                    </a>
+                  </div>
+                </div>
+                <div className="d-flex no-block align-items-center m-t-20">
+                  <div className="btext">
+                    <a href="#" className="link">
+                      AI, IoT, Blockchain
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <div className="col-lg-3 col-md-6 m-b-30">
+                <h6 className="font-medium text-white">CONTACT</h6>
+                <div className="d-flex no-block m-b-10 m-t-20">
+                  <div className="display-7 m-r-20 align-self-top">
+                    <i className="icon-Location-2"></i>
+                  </div>
+                  <div className="info">
+                    <p>504, Stellar Spaces, Kharadi, Pune, India – 411014</p>
+                  </div>
+                </div>
+                <div className="d-flex no-block m-b-10">
+                  <div className="display-7 m-r-20 align-self-top">
+                    <i className="icon-Phone-2"></i>
+                  </div>
+                  <div className="info">
+                    <span className=" db  m-t-5"> +207 235 7890</span>
+                  </div>
+                </div>
+                <div className="d-flex no-block m-b-30">
+                  <div className="display-7 m-r-20 align-self-top">
+                    <i className="icon-Mail"></i>
+                  </div>
+                  <div className="info">
+                    <a
+                      href="http://www.aexonic.com/"
+                      className="link db  m-t-5"
+                    >
+                      http://www.aexonic.com/
+                    </a>
+                  </div>
                 </div>
               </div>
             </div>
-            <div className="f4-bottom-bar ">
-              <div className="row ">
-                <div className="col-md-12 ">
-                  <hr />
-                  <nav
-                    style={{ paddingLeft: "0px !important" }}
-                    className="navbar navbar-expand-lg h1-nav "
-                  >
-                    <a className="navbar-brand m-b-11 " href="# ">
-                      <img
-                        src="./images/aexonic-logo_5.png "
-                        alt="Aexonic "
-                        width="120 "
-                      />
-                    </a>
-                    <button
-                      className="navbar-toggler "
-                      type="button "
-                      data-toggle="collapse "
-                      data-target="#header1 "
-                      aria-expanded="false "
-                      aria-label="Toggle navigation "
-                    >
-                      <span className="ti-menu "></span>
-                    </button>
-                    <div className="collapse navbar-collapse " id="header1 ">
-                      <span className="hidden-lg-down ">
-                        © 2020 All rights reserved.
-                      </span>
-                      <ul className="navbar-nav ml-auto mt-2 mt-lg-0 ">
-                        <li className="nav-item">
-                          <a className="nav-link active" href="# ">
-                            Home
-                          </a>
-                        </li>
-                        <li className="nav-item ">
-                          <a className="nav-link " href="# ">
-                            Services
-                          </a>
-                        </li>
-                        <li className="nav-item ">
-                          <a className="nav-link " href="# ">
-                            Industries
-                          </a>
-                        </li>
-                        <li className="nav-item ">
-                          <a className="nav-link " href="# ">
-                            Careers
-                          </a>
-                        </li>
-                        <li className="nav-item ">
-                          <a className="nav-link " href="# ">
-                            About Us
-                          </a>
-                        </li>
-                        <li className="nav-item ">
-                          <a className="nav-link " href="# ">
-                            More
-                          </a>
-                        </li>
-                        <li className="nav-item ">
-                          <a className="nav-link " href="# ">
-                            Contact Us
-                          </a>
-                        </li>
-                      </ul>
-                    </div>
-                  </nav>
+          </div>
+          <div className="f3-bottom-bar">
+            <div className="container">
+              <div className="d-flex">
+                <span className="m-t-10 m-b-10">
+                  Copyright 2018. All Rights Reserved by Aexonic.
+                </span>
+                <div className="ml-auto m-t-10 m-b-10">
+                  <a href="#" className="link">
+                    <i className="fa fa-facebook"></i>
+                  </a>
+                  <a href="#" className="link">
+                    <i className="fa fa-twitter"></i>
+                  </a>
+                  <a href="#" className="link">
+                    <i className="fa fa-linkedin"></i>
+                  </a>
+                  <a href="#" className="link">
+                    <i className="fa fa-pinterest"></i>
+                  </a>
+                  <a href="#" className="link">
+                    <i className="fa fa-instagram"></i>
+                  </a>
                 </div>
               </div>
             </div>
