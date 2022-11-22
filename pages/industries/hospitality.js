@@ -1,9 +1,66 @@
 import Head from "next/head";
-import React from "react";
+import { React, useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
 
 const Hospitality = () => {
+  useEffect(() => {
+    $(function () {
+      "use strict";
+      $(function () {
+        $(".preloader").fadeOut();
+      });
+      jQuery(document).on("click", ".mega-dropdown", function (e) {
+        e.stopPropagation();
+      });
+      jQuery(document).on("click", ".navbar-nav > .dropdown", function (e) {
+        e.stopPropagation();
+      });
+      $(".dropdown-submenu").click(function () {
+        $(".dropdown-submenu > .dropdown-menu").toggleClass("show");
+      });
+
+      $("body").trigger("resize");
+      // ==============================================================
+      //Fix header while scroll
+      // ==============================================================
+      var wind = $(window);
+      wind.on("load", function () {
+        var bodyScroll = wind.scrollTop(),
+          navbar = $(".topbar");
+        if (bodyScroll > 100) {
+          navbar.addClass("fixed-header animated slideInDown");
+        } else {
+          navbar.removeClass("fixed-header animated slideInDown");
+        }
+      });
+      $(window).scroll(function () {
+        if ($(window).scrollTop() >= 100) {
+          $(".topbar").addClass("fixed-header animated slideInDown");
+          $(".bt-top").addClass("visible");
+        } else {
+          $(".topbar").removeClass("fixed-header animated slideInDown");
+          $(".bt-top").removeClass("visible");
+        }
+      });
+      // ==============================================================
+      // Animation initialized
+      // ==============================================================
+      AOS.init();
+      // ==============================================================
+      // Back to top
+      // ==============================================================
+      $(".bt-top").on("click", function (e) {
+        e.preventDefault();
+        $("html,body").animate(
+          {
+            scrollTop: 0,
+          },
+          700
+        );
+      });
+    });
+  });
   return (
     <div>
       <Head>
@@ -80,7 +137,6 @@ const Hospitality = () => {
                       </Link>
                     </li>
                     <li className="nav-item dropdown mega-dropdown">
-                      {" "}
                       <a
                         className="nav-link dropdown-toggle"
                         id="h6-mega-dropdown1"
@@ -250,8 +306,7 @@ const Hospitality = () => {
                       </div>
                     </li>
                     <li className="nav-item dropdown">
-                      {" "}
-                      <Link href="/industry">
+                      <Link href="">
                         <a
                           className="nav-link dropdown-toggle active"
                           id="h6-dropdown2"
@@ -276,7 +331,6 @@ const Hospitality = () => {
                           </Link>
                         </li>
                         <li>
-                          {" "}
                           <Link href="/industries/hospitality">
                             <a className="dropdown-item active_menu">
                               Hospitality and Travel
@@ -284,19 +338,16 @@ const Hospitality = () => {
                           </Link>
                         </li>
                         <li>
-                          {" "}
                           <Link href="/industries/healthcare">
                             <a className="dropdown-item">Healthcare</a>
                           </Link>
                         </li>
                         <li>
-                          {" "}
                           <Link href="/industries/manifacturing">
                             <a className="dropdown-item">Manufacturing</a>
                           </Link>
                         </li>
                         <li>
-                          {" "}
                           <Link href="/industries/retail">
                             <a className="dropdown-item">
                               Retail and e-commerce
@@ -304,7 +355,6 @@ const Hospitality = () => {
                           </Link>
                         </li>
                         <li>
-                          {" "}
                           <Link href="/industries/technology">
                             <a className="dropdown-item">
                               Technology and Software
@@ -312,7 +362,6 @@ const Hospitality = () => {
                           </Link>
                         </li>
                         <li>
-                          {" "}
                           <Link href="/industries/professional_service">
                             <a className="dropdown-item">
                               Professional Services
@@ -354,7 +403,6 @@ const Hospitality = () => {
                       </Link>
                     </li>
                     <li className="nav-item dropdown">
-                      {" "}
                       <a
                         className="nav-link dropdown-toggle"
                         href="#"
@@ -377,7 +425,6 @@ const Hospitality = () => {
                           </Link>
                         </li>
                         <li>
-                          {" "}
                           <Link href="/blog">
                             <a className="dropdown-item">Blogs</a>
                           </Link>
@@ -427,89 +474,37 @@ const Hospitality = () => {
               </div>
             </div>
           </div>
-          {/* <!-- ============================================================== -->
-            <!-- Testimonial 9 -->
-            <!-- ============================================================== --> */}
 
           <div className="spacer feature12">
             <div className="container">
               <div className="row">
-                <div className="col-lg-6">
-                  <h2 className="m-b-30 m-t-20">Discover Our Undergrounds</h2>
-                  <h4 className="text-muted font-light">
-                    You can relay on our amazing features list and also our
-                    customer services will be great experience for you without
-                    doubt and in no-time
-                  </h4>
-                  <div className="row">
-                    <div className="col-md-6 m-t-30">
-                      <h5 className="font-medium">Instant Solutions</h5>
-                      <p>
-                        You can relay on our amazing features list and also our
-                        customer services will.
-                      </p>
-                    </div>
-                    <div className="col-md-6 m-t-30">
-                      <h5 className="font-medium">Retargeting Market</h5>
-                      <p>
-                        You can relay on our amazing features list and also our
-                        customer services will.
-                      </p>
-                    </div>
-                    <div className="col-md-6 m-t-30">
-                      <h5 className="font-medium">Fruitful Results</h5>
-                      <p>
-                        You can relay on our amazing features list and also our
-                        customer services will.
-                      </p>
-                    </div>
-                    <div className="col-md-6 m-t-30">
-                      <h5 className="font-medium">100% Satisfection</h5>
-                      <p>
-                        You can relay on our amazing features list and also our
-                        customer services will.
-                      </p>
-                    </div>
-                  </div>
+                <div className="col-lg-7">
+                  <h2 className="m-b-30 m-t-20">
+                    IT solutions for Hospitality & Travel Industry
+                  </h2>
+                  <h6 className="subtitle">
+                    Aexonic is committed to the hospitality & travel industry
+                    and applies the latest technologies for digitizing
+                    operations across various touchpoints of the customer
+                    journey.
+                    <br />
+                    <br />
+                    We understand the growing needs of this industry sector and
+                    strive to drive operational excellence by offering effective
+                    business solutions.
+                    <br></br> <br></br> In a disruptive digital world, your At
+                    Aexonic, we&apos;re extremely mindful of this and are
+                    already helping our clients acclimate to the situation.
+                  </h6>
                 </div>
-
-                <div className="col-lg-6">
+                <div className="col-lg-5">
                   <div className="row wrap-feature-12">
-                    <div className="col-md-6">
-                      <div className="row">
-                        <div className="col-md-12">
-                          <img
-                            src="/images/features/feature12/img1.jpg"
-                            className="rounded img-shadow img-responsive"
-                            alt="wrapkit"
-                          />
-                        </div>
-                        <div className="col-md-12">
-                          <img
-                            src="/images/features/feature12/img2.jpg"
-                            className="rounded img-shadow img-responsive"
-                            alt="wrapkit"
-                          />
-                        </div>
-                      </div>
-                    </div>
-                    <div className="col-md-6 uneven-box">
-                      <div className="row">
-                        <div className="col-md-12">
-                          <img
-                            src="/images/features/feature12/img3.jpg"
-                            className="rounded img-shadow img-responsive"
-                            alt="wrapkit"
-                          />
-                        </div>
-                        <div className="col-md-12">
-                          <img
-                            src="/images/features/feature12/img4.jpg"
-                            className="rounded img-shadow img-responsive"
-                            alt="wrapkit"
-                          />
-                        </div>
-                      </div>
+                    <div className="col-md-12">
+                      <img
+                        src="https://img.freepik.com/free-photo/travelers-reception_1098-14597.jpg?w=900&t=st=1669031339~exp=1669031939~hmac=b39f8ad23da3d511aed8bb6ca4338c1e33cacf4e155c5be3f5a634a069d2c274"
+                        className="rounded img-responsive m-t-3"
+                        alt="wrapkit "
+                      />
                     </div>
                   </div>
                 </div>
@@ -519,7 +514,10 @@ const Hospitality = () => {
 
           <div
             className="spacer feature21 wrap-feature21-box"
-            style={{ backgroundImage: " url(/images/features/slide2.jpg)" }}
+            style={{
+              backgroundImage:
+                " linear-gradient(90deg, #000000b5, transparent),url(https://images.unsplash.com/photo-1483375801503-374c5f660610?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80)",
+            }}
           >
             <div className="container">
               <div className="row text-white">
@@ -530,159 +528,119 @@ const Hospitality = () => {
                     data-aos-duration="1200"
                   >
                     <h2 className="text-white m-t-20 m-b-30">
-                      Build your Project in Record Time with WrapKit
+                      Helped A Travel Platform With Quick Functionality Rollout
                     </h2>
-                    <p className="op-8">
-                      You can relay on our amazing features list and also our
-                      customer services will be great experience.
-                    </p>{" "}
+                    <p>
+                      Find out how Aexonic ensured quicker functionality rollout
+                      for a travel privilege platform.
+                    </p>
                   </div>
                 </div>
               </div>
             </div>
           </div>
 
-          <div className="bg-light spacer feature13">
+          <div className="spacer feature12">
             <div className="container">
-              <div className="row justify-content-center">
-                <div className="col-md-7 text-center">
-                  <h2 className="title">Our Core Feature</h2>
-                  <h6 className="subtitle">
-                    You can relay on our amazing features list and also our
-                    customer services will be great experience for you without
-                    doubt and in no-time
-                  </h6>
-                </div>
-              </div>
-              <div className="row m-t-40">
-                <div className="col-lg-6 wrap-feature13-box">
-                  <div
-                    className="card card-shadow"
-                    data-aos="fade-right"
-                    data-aos-duration="1200"
-                  >
-                    <ul className="img-inline">
-                      <li className="half-width">
-                        <img
-                          src="/images/features/f13/img1.jpg"
-                          alt="wrapkit"
-                          className="img-responsive rounded"
-                        />
-                      </li>
-                      <li className="p-20 half-width">
-                        <h5 className="font-medium m-t-10">
-                          <a className="linking">
-                            Instant Solutions <i className="ti-arrow-right"></i>
-                          </a>
-                        </h5>
-                        <p className="m-t-20">
-                          You can relay on our amazing features list and also
-                          our customer.
-                        </p>
-                      </li>
-                    </ul>
+              <div className="row">
+                <div className="col-lg-6">
+                  <h2 className="m-b-30 m-t-20">Our offerings</h2>
+                  <h4 className="text-muted font-light">
+                    Taking the hospitality industry towards digitization with
+                    our offerings
+                  </h4>
+                  <div className="row">
+                    <div className="col-md-6 m-t-30">
+                      <h5 className="font-medium">
+                        IT Infrastructure Management Services
+                      </h5>
+                      <p>
+                        With a deep understanding of the hospitality & travel
+                        industry and the relevant technical expertise, we manage
+                        your IT environment efficiently.
+                      </p>
+                    </div>
+                    <div className="col-md-6 m-t-30">
+                      <h5 className="font-medium">
+                        Web & eCommerce Development
+                      </h5>
+                      <p>
+                        From web redesign to creating new website content from
+                        scratch, Aexonic delivers extensive web technology
+                        solutions.
+                      </p>
+                    </div>
+                    <div className="col-md-6 m-t-30">
+                      <h5 className="font-medium">Mobility Solutions</h5>
+                      <p>
+                        Reach your customers anywhere, anytime, and on any
+                        device using our secure mobility solutions, including
+                        Android and iOS.
+                      </p>
+                    </div>
+                    <div className="col-md-6 m-t-30">
+                      <h5 className="font-medium">Cloud Computing Solutions</h5>
+                      <p>
+                        Achieve your business goals and the evolving demands of
+                        the customer leveraging the power, scalability,
+                        flexibility, and other capabilities of the cloud.
+                      </p>
+                    </div>
                   </div>
                 </div>
 
-                <div className="col-lg-6 wrap-feature13-box">
-                  <div
-                    className="card card-shadow"
-                    data-aos="fade-left"
-                    data-aos-duration="1200"
-                  >
-                    <ul className="img-inline">
-                      <li className="half-width">
-                        <img
-                          src="/images/features/f13/img2.jpg"
-                          alt="wrapkit"
-                          className="img-responsive rounded"
-                        />
-                      </li>
-                      <li className="p-20 half-width">
-                        <h5 className="font-medium m-t-10">
-                          <a className="linking">
-                            Instant Solutions <i className="ti-arrow-right"></i>
-                          </a>
-                        </h5>
-                        <p className="m-t-20">
-                          You can relay on our amazing features list and also
-                          our customer.
-                        </p>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-
-                <div className="col-lg-6 wrap-feature13-box">
-                  <div
-                    className="card card-shadow"
-                    data-aos="fade-right"
-                    data-aos-duration="1200"
-                  >
-                    <ul className="img-inline">
-                      <li className="half-width">
-                        <img
-                          src="/images/features/f13/img3.jpg"
-                          alt="wrapkit"
-                          className="img-responsive rounded"
-                        />
-                      </li>
-                      <li className="p-20 half-width">
-                        <h5 className="font-medium m-t-10">
-                          <a className="linking">
-                            Instant Solutions <i className="ti-arrow-right"></i>
-                          </a>
-                        </h5>
-                        <p className="m-t-20">
-                          You can relay on our amazing features list and also
-                          our customer.
-                        </p>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-
-                <div className="col-lg-6 wrap-feature13-box">
-                  <div
-                    className="card card-shadow"
-                    data-aos="fade-left"
-                    data-aos-duration="1200"
-                  >
-                    <ul className="img-inline">
-                      <li className="half-width">
-                        <img
-                          src="/images/features/f13/img4.jpg"
-                          alt="wrapkit"
-                          className="img-responsive rounded"
-                        />
-                      </li>
-                      <li className="p-20 half-width">
-                        <h5 className="font-medium m-t-10">
-                          <a className="linking">
-                            Instant Solutions <i className="ti-arrow-right"></i>
-                          </a>
-                        </h5>
-                        <p className="m-t-20">
-                          You can relay on our amazing features list and also
-                          our customer.
-                        </p>
-                      </li>
-                    </ul>
+                <div className="col-lg-6" style={{ marginTop: "5rem" }}>
+                  <div className="row wrap-feature-12">
+                    <div className="col-md-6">
+                      <div className="row">
+                        <div className="col-md-12">
+                          <img
+                            src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+                            className="rounded img-shadow img-responsive"
+                            alt="wrapkit"
+                          />
+                        </div>
+                        <div className="col-md-12">
+                          <img
+                            src="https://images.unsplash.com/photo-1481487196290-c152efe083f5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1262&q=80"
+                            className="rounded img-shadow img-responsive"
+                            alt="wrapkit"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                    <div className="col-md-6 uneven-box">
+                      <div className="row">
+                        <div className="col-md-12">
+                          <img
+                            src="https://img.freepik.com/free-photo/elegant-woman-with-laptop-listening-music_1208-193.jpg?w=900&t=st=1669028301~exp=1669028901~hmac=c1a4f8a1db5c2546bf9bef90d9de4c41b22ae69fb260e46d5f926c03cbc4d03f"
+                            className="rounded img-shadow img-responsive"
+                            alt="wrapkit"
+                          />
+                        </div>
+                        <div className="col-md-12">
+                          <img
+                            src="https://img.freepik.com/free-photo/man-hand-holding-virtual-world-with-internet-connection-metaverse-global-business-marketing-banking-financial-pass-thru-application-technology-concept_616485-32.jpg?w=900&t=st=1669028413~exp=1669029013~hmac=73ce2a1c4c823897d5dede18ba116dda4334dade82733091c0206a897ece088b"
+                            className="rounded img-shadow img-responsive"
+                            alt="wrapkit"
+                          />
+                        </div>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
 
-          <div className="spacer feature2">
+          <div className="spacer bg-light feature2">
             <div className="container">
               <div className="row justify-content-center">
                 <div className="col-md-7 text-center">
-                  <h2 className="title">Glance of our efforts</h2>
+                  <h2 className="title">Explore Our Key Solutions</h2>
                   <h6 className="subtitle">
-                    You can relay on our amazing features list and also our
-                    customer services will be great experience for you without
-                    doubt and in no-time
+                    Increased operational efficiencies and user-friendly
+                    experience across entire internal business processes.
                   </h6>
                 </div>
               </div>
@@ -695,14 +653,16 @@ const Hospitality = () => {
                   >
                     <img
                       className="card-img-top"
-                      src="/images/features/market.jpg"
+                      src="https://img.freepik.com/free-photo/woman-talking-with-hotel-receptionist-lobby_23-2149304051.jpg?w=900&t=st=1669033020~exp=1669033620~hmac=4660592b3c617b2dd413fce9805ce9ab56633ab9b1d7fd1479a2a14e15c3b925"
                       alt="wrappixel kit"
                     />
                     <div className="card-body text-center">
-                      <h5 className="font-medium">Retargeting Market</h5>
+                      <h5 className="font-medium">Hospitality</h5>
                       <p className="m-t-20">
-                        You can relay on our amazing features list and also our
-                        customer services will be great experience.
+                        Our experience of more than two decades gives us
+                        unparalleled know-how to help you accelerate growth and
+                        optimize your business offerings. Aexonic&apos;s
+                        engineering services offer 360° solutions.
                       </p>
                     </div>
                   </div>
@@ -716,14 +676,17 @@ const Hospitality = () => {
                   >
                     <img
                       className="card-img-top"
-                      src="/images/features/fruit.jpg"
+                      src="https://img.freepik.com/free-photo/delivery-men-loading-carboard-boxes-van-while-getting-ready-shipment_637285-2289.jpg?w=900&t=st=1669033068~exp=1669033668~hmac=bde065ca5a102010f39128cb7a67b15e1c89eca0983f7913aa9b99668808c284"
                       alt="wrappixel kit"
                     />
                     <div className="card-body text-center">
-                      <h5 className="font-medium">Fruitful Results</h5>
+                      <h5 className="font-medium">Distribution</h5>
                       <p className="m-t-20">
-                        You can relay on our amazing features list and also our
-                        customer services will be great experience.
+                        We help clients build new-age travel distribution models
+                        that are agile, adaptable, and highly customer-centric.
+                        In the current business climate, Aexonic can be your
+                        trusted partner in your quest to adapt to the new
+                        normal.
                       </p>
                     </div>
                   </div>
@@ -737,14 +700,16 @@ const Hospitality = () => {
                   >
                     <img
                       className="card-img-top"
-                      src="/images/features/instant.jpg"
+                      src="https://img.freepik.com/free-photo/high-angle-females-working-drinking-coffee_23-2148347258.jpg?w=900&t=st=1669033180~exp=1669033780~hmac=1f69dc4e11d835fc0f8f5ad58d88af5f55d96e56eb96b7ba56fadc722ade0a2b"
                       alt="wrappixel kit"
                     />
                     <div className="card-body text-center">
-                      <h5 className="font-medium">Instant Solutions</h5>
+                      <h5 className="font-medium">Events & Meetings</h5>
                       <p className="m-t-20">
-                        You can relay on our amazing features list and also our
-                        customer services will be great experience.
+                        With a decade of experience of serving some of the
+                        world&apos;s most respectable clients. Unlike many other
+                        businesses that have been hit badly by the COVID-19
+                        pandemic, the virtual events space has flourished.
                       </p>
                     </div>
                   </div>

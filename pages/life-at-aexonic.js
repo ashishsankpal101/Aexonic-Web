@@ -250,7 +250,7 @@ const LifeAtAexonic = () => {
                       </div>
                     </li>
                     <li className="nav-item dropdown">
-                      <Link href="/industry">
+                      <Link href="">
                         <a
                           className="nav-link dropdown-toggle"
                           id="h6-dropdown2"
@@ -1137,7 +1137,7 @@ const LifeAtAexonic = () => {
                 <!-- End Feature 29 -->
                 <!-- ============================================================== --> */}
 
-          <div className="bg-light spacer team4">
+          <div className="spacer bg-light team4">
             <div className="container">
               <div className="row justify-content-center m-b-30">
                 <div className="col-md-7 text-center">
@@ -1145,7 +1145,6 @@ const LifeAtAexonic = () => {
                   <h2 className="title" style={{ paddingBottom: "2vh" }}>
                     Experienced &amp; Professional Team
                   </h2>
-
                   <h6 className="subtitle">
                     Our expertise and achievements come from the strong
                     workforce that strengthens Aexonic what it is today.
@@ -1166,11 +1165,13 @@ const LifeAtAexonic = () => {
                     </div>
                     <div className="col-md-12">
                       <div className="p-t-10">
-                        <h5 className="title font-medium">Vikas Ranjan</h5>
-                        <h6 className="subtitle">Chief Technology Officer</h6>
+                        <h5 className="title font-medium">Abhishek Prasad</h5>
+                        <h6 className="subtitle">Director</h6>
                         <p>
-                          You can relay on our amazing features list and also
-                          our customer services will be great experience.
+                          Abhishek Prasad has extensive experience in the
+                          deployment Business Solution. He has successfully led
+                          strategy and deployment of business transformation
+                          project and mobility solutions for enterprises.
                         </p>
                         <ul className="list-inline">
                           <li className="list-inline-item">
@@ -1216,8 +1217,10 @@ const LifeAtAexonic = () => {
                         <h5 className="title font-medium">Aprajita Sinha</h5>
                         <h6 className="subtitle">Director</h6>
                         <p>
-                          You can relay on our amazing features list and also
-                          our customer services will be great experience.
+                          Aprajita Sinha has extensive experience in the
+                          deployment Business Solution. She is Developing
+                          corporate plans for a variety of HR matters such as
+                          compensation, benefits, health and safety etc.
                         </p>
                         <ul className="list-inline">
                           <li className="list-inline-item">
@@ -1260,11 +1263,14 @@ const LifeAtAexonic = () => {
                     </div>
                     <div className="col-md-12">
                       <div className="p-t-10">
-                        <h5 className="title font-medium">Abhishek Prasad</h5>
-                        <h6 className="subtitle">Director</h6>
+                        <h5 className="title font-medium"> Vikas Ranjan</h5>
+                        <h6 className="subtitle">Chief Technology Officer</h6>
                         <p>
-                          You can relay on our amazing features list and also
-                          our customer services will be great experience.
+                          Vikas Ranjan has multiple years of experience in
+                          emerging technologies like IOT, AI/ML, Blockchain,
+                          Chat Bots. He has nurtured multiple startups and
+                          business to utilize emerging technologies to build
+                          better solutions
                         </p>
                         <ul className="list-inline">
                           <li className="list-inline-item">

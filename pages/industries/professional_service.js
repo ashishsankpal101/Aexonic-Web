@@ -251,7 +251,7 @@ const Professional = () => {
                     </li>
                     <li className="nav-item dropdown">
                       {" "}
-                      <Link href="/industry">
+                      <Link href="">
                         <a
                           className="nav-link active dropdown-toggle"
                           id="h6-dropdown2"

@@ -249,7 +249,7 @@ const careers = () => {
                       </div>
                     </li>
                     {/* <li className="nav-item dropdown">
-                                            <Link href="/industry">
+                                            <Link href="">
                                                 <a className="nav-link dropdown-toggle" id="h6-dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                                     Industries
                                                 </a>
@@ -259,7 +259,7 @@ const careers = () => {
 
                     <li className="nav-item dropdown">
                       {" "}
-                      <Link href="/industry">
+                      <Link href="">
                         <a
                           className="nav-link dropdown-toggle"
                           id="h6-dropdown2"

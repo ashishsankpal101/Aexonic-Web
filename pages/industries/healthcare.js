@@ -1,9 +1,76 @@
 import Head from "next/head";
-import React from "react";
+import React, { useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faClockRotateLeft,
+  faUserNurse,
+  faBriefcaseMedical,
+  faCity,
+  faHospitalUser,
+  faHandHoldingMedical,
+} from "@fortawesome/free-solid-svg-icons";
 
 const Healthcare = () => {
+  useEffect(() => {
+    $(function () {
+      "use strict";
+      $(function () {
+        $(".preloader").fadeOut();
+      });
+      jQuery(document).on("click", ".mega-dropdown", function (e) {
+        e.stopPropagation();
+      });
+      jQuery(document).on("click", ".navbar-nav > .dropdown", function (e) {
+        e.stopPropagation();
+      });
+      $(".dropdown-submenu").click(function () {
+        $(".dropdown-submenu > .dropdown-menu").toggleClass("show");
+      });
+
+      $("body").trigger("resize");
+      // ==============================================================
+      //Fix header while scroll
+      // ==============================================================
+      var wind = $(window);
+      wind.on("load", function () {
+        var bodyScroll = wind.scrollTop(),
+          navbar = $(".topbar");
+        if (bodyScroll > 100) {
+          navbar.addClass("fixed-header animated slideInDown");
+        } else {
+          navbar.removeClass("fixed-header animated slideInDown");
+        }
+      });
+      $(window).scroll(function () {
+        if ($(window).scrollTop() >= 100) {
+          $(".topbar").addClass("fixed-header animated slideInDown");
+          $(".bt-top").addClass("visible");
+        } else {
+          $(".topbar").removeClass("fixed-header animated slideInDown");
+          $(".bt-top").removeClass("visible");
+        }
+      });
+      // ==============================================================
+      // Animation initialized
+      // ==============================================================
+      AOS.init();
+      // ==============================================================
+      // Back to top
+      // ==============================================================
+      $(".bt-top").on("click", function (e) {
+        e.preventDefault();
+        $("html,body").animate(
+          {
+            scrollTop: 0,
+          },
+          700
+        );
+      });
+    });
+  });
+
   return (
     <div>
       <Head>
@@ -80,7 +147,6 @@ const Healthcare = () => {
                       </Link>
                     </li>
                     <li className="nav-item dropdown mega-dropdown">
-                      {" "}
                       <a
                         className="nav-link dropdown-toggle"
                         id="h6-mega-dropdown1"
@@ -250,8 +316,7 @@ const Healthcare = () => {
                       </div>
                     </li>
                     <li className="nav-item dropdown">
-                      {" "}
-                      <Link href="/industry">
+                      <Link href="">
                         <a
                           className="nav-link dropdown-toggle active"
                           id="h6-dropdown2"
@@ -276,7 +341,6 @@ const Healthcare = () => {
                           </Link>
                         </li>
                         <li>
-                          {" "}
                           <Link href="/industries/hospitality">
                             <a className="dropdown-item">
                               Hospitality and Travel
@@ -284,7 +348,6 @@ const Healthcare = () => {
                           </Link>
                         </li>
                         <li>
-                          {" "}
                           <Link href="/industries/healthcare">
                             <a className="dropdown-item active_menu">
                               Healthcare
@@ -292,13 +355,11 @@ const Healthcare = () => {
                           </Link>
                         </li>
                         <li>
-                          {" "}
                           <Link href="/industries/manifacturing">
                             <a className="dropdown-item">Manufacturing</a>
                           </Link>
                         </li>
                         <li>
-                          {" "}
                           <Link href="/industries/retail">
                             <a className="dropdown-item">
                               Retail and e-commerce
@@ -306,7 +367,6 @@ const Healthcare = () => {
                           </Link>
                         </li>
                         <li>
-                          {" "}
                           <Link href="/industries/technology">
                             <a className="dropdown-item">
                               Technology and Software
@@ -314,7 +374,6 @@ const Healthcare = () => {
                           </Link>
                         </li>
                         <li>
-                          {" "}
                           <Link href="/industries/professional_service">
                             <a className="dropdown-item">
                               Professional Services
@@ -352,7 +411,6 @@ const Healthcare = () => {
                       </Link>
                     </li>
                     <li className="nav-item dropdown">
-                      {" "}
                       <a
                         className="nav-link dropdown-toggle"
                         href="#"
@@ -375,7 +433,6 @@ const Healthcare = () => {
                           </Link>
                         </li>
                         <li>
-                          {" "}
                           <Link href="/blog">
                             <a className="dropdown-item">Blogs</a>
                           </Link>
@@ -424,15 +481,16 @@ const Healthcare = () => {
             <!-- Testimonial 9 -->
             <!-- ============================================================== --> */}
 
-          <div className="spacer feature9">
+          <div className="spacer feature9 bg-light">
             <div className="container">
               <div className="row justify-content-center">
                 <div className="col-md-7 text-center">
-                  <h2 className="title">Features</h2>
+                  <h2 className="title">
+                    Your challenges are our goals. Let&apos;s work together.
+                  </h2>
                   <h6 className="subtitle">
-                    You can relay on our amazing features list and also our
-                    customer services will be great experience for you without
-                    doubt and in no-time
+                    We comply with your healthcare facility&apos;s policies and
+                    procedures and build patient-focused apps and solutions
                   </h6>
                 </div>
               </div>
@@ -446,12 +504,17 @@ const Healthcare = () => {
                   >
                     <div className="card-body">
                       <div className="icon-space">
-                        <i className="display-5 text-info-gradiant icon-Doctor"></i>
+                        <FontAwesomeIcon
+                          icon={faCity}
+                          className="text-info pr-3"
+                          size="3x"
+                        />
                       </div>
-                      <h5 className="font-medium">Appointments</h5>
+                      <h5 className="font-medium">Business operation</h5>
                       <p className="m-t-20">
-                        You can relay on our amazing features list and also our
-                        customer services will be great experience.
+                        We implement the right processes and practices across
+                        your organization. We streamline your entire department
+                        to improve performance.
                       </p>
                     </div>
                   </div>
@@ -465,12 +528,18 @@ const Healthcare = () => {
                   >
                     <div className="card-body">
                       <div className="icon-space">
-                        <i className="display-5 text-info-gradiant icon-Clock-Forward"></i>
+                        <FontAwesomeIcon
+                          icon={faUserNurse}
+                          className="text-info pr-3"
+                          size="3x"
+                        />
                       </div>
-                      <h5 className="font-medium">Working Time</h5>
+                      <h5 className="font-medium">Caregiver management</h5>
                       <p className="m-t-20">
-                        You can relay on our amazing features list and also our
-                        customer services will be great experience.
+                        Everything you need to supervise the best caregiver
+                        solutions with improved support that follows all the
+                        functionalities. It includes planning, organizing,
+                        staffing.
                       </p>
                     </div>
                   </div>
@@ -484,12 +553,17 @@ const Healthcare = () => {
                   >
                     <div className="card-body">
                       <div className="icon-space">
-                        <i className="display-5 text-info-gradiant icon-First-Aid"></i>
+                        <FontAwesomeIcon
+                          icon={faBriefcaseMedical}
+                          className="text-info pr-3"
+                          size="3x"
+                        />
                       </div>
-                      <h5 className="font-medium">Emergency</h5>
+                      <h5 className="font-medium">Client service management</h5>
                       <p className="m-t-20">
-                        You can relay on our amazing features list and also our
-                        customer services will be great experience.
+                        Provide the best possible care to your patients and
+                        patrons. We help you build intelligent solutions that
+                        meet their needs with personalized care.
                       </p>
                     </div>
                   </div>
@@ -506,126 +580,52 @@ const Healthcare = () => {
                 style={{
                   backgroundImage: "url(/images/features/hospital_service.jpg)",
                 }}
-              >
-                {" "}
-              </div>
+              ></div>
               <div className="col-lg-6 bg-info-gradiant text-white">
                 <div className="with-text">
-                  <p className="op-7">What we did ?</p>
-                  <h2 className="text-white m-t-30 m-b-30">Our Work</h2>
+                  <h2 className="text-white m-t-30 m-b-30">Our Offerings</h2>
                   <ul className="list-block m-b-30">
                     <li>
-                      <i className="icon-Yes"></i>{" "}
-                      <span>Powerful and Faster Results for your site</span>
-                    </li>
-                    <li>
-                      <i className="icon-Yes"></i>{" "}
+                      <i className="icon-Yes"></i>
                       <span>
-                        Make your site in no-time with your Bootstrap WrapKit
+                        Business Consulting and Healthcare Intelligence
                       </span>
                     </li>
                     <li>
-                      <i className="icon-Yes"></i>{" "}
-                      <span>Tons of Features and Elements available here</span>
+                      <i className="icon-Yes"></i>
+                      <span>
+                        Application Customization & Enhancement, Implementation,
+                        Support & Maintenance
+                      </span>
                     </li>
                     <li>
-                      <i className="icon-Yes"></i>{" "}
-                      <span>What are you wait for? Go and Get it.</span>
+                      <i className="icon-Yes"></i>
+                      <span>Data Integration & Serialization</span>
+                    </li>
+                    <li>
+                      <i className="icon-Yes"></i>
+                      <span>
+                        Mobility Application Development & Maintenance
+                      </span>
                     </li>
                   </ul>
                 </div>
               </div>
             </div>
           </div>
-          <div className="spacer feature2">
+
+          <div className=" spacer feature15">
             <div className="container">
               <div className="row justify-content-center">
                 <div className="col-md-7 text-center">
-                  <h2 className="title"></h2>
+                  <h2 className="title">
+                    Drive Digital Growth For Your Healthcare Facilities
+                  </h2>
                   <h6 className="subtitle">
-                    You can relay on our amazing features list and also our
-                    customer services will be great experience for you without
-                    doubt and in no-time
-                  </h6>
-                </div>
-              </div>
-
-              <div className="row m-t-40">
-                <div className="col-md-4 wrap-feature2-box">
-                  <div
-                    className="card card-shadow"
-                    data-aos="flip-left"
-                    data-aos-duration="1200"
-                  >
-                    <img
-                      className="card-img-top"
-                      src="/images/features/feature17/img1.jpg"
-                      alt="wrappixel kit"
-                    />
-                    <div className="card-body text-center">
-                      <h5 className="font-medium">Retargeting Market</h5>
-                      <p className="m-t-20">
-                        You can relay on our amazing features list and also our
-                        customer services will be great experience.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-
-                <div className="col-md-4 wrap-feature2-box">
-                  <div
-                    className="card card-shadow"
-                    data-aos="flip-up"
-                    data-aos-duration="1200"
-                  >
-                    <img
-                      className="card-img-top"
-                      src="/images/features/feature17/img2.jpg"
-                      alt="wrappixel kit"
-                    />
-                    <div className="card-body text-center">
-                      <h5 className="font-medium">Fruitful Results</h5>
-                      <p className="m-t-20">
-                        You can relay on our amazing features list and also our
-                        customer services will be great experience.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-
-                <div className="col-md-4 wrap-feature2-box">
-                  <div
-                    className="card card-shadow"
-                    data-aos="flip-right"
-                    data-aos-duration="1200"
-                  >
-                    <img
-                      className="card-img-top"
-                      src="/images/features/feature17/img3.jpg"
-                      alt="wrappixel kit"
-                    />
-                    <div className="card-body text-center">
-                      <h5 className="font-medium">Instant Solutions</h5>
-                      <p className="m-t-20">
-                        You can relay on our amazing features list and also our
-                        customer services will be great experience.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div className="bg-light spacer feature15">
-            <div className="container">
-              <div className="row justify-content-center">
-                <div className="col-md-7 text-center">
-                  <h2 className="title">Our Thinking</h2>
-                  <h6 className="subtitle">
-                    You can relay on our amazi sdsdng features list and also our
-                    customer erer services will be great experience for you
-                    without doubt and in no-time
+                    Improving hospital operations through tech-infused care and
+                    equipping Healthtech companies with a host of software,
+                    tools and applications that streamline their administrative
+                    workloads and open newer avenues to scale.
                   </h6>
                 </div>
               </div>
@@ -640,17 +640,21 @@ const Healthcare = () => {
                     >
                       <div className="d-flex no-block">
                         <div className="no-shrink">
-                          <span className="icon-round bg-white display-5 text-success ">
-                            <i className="icon-Target"></i>
+                          <span className="icon-round display-5 text-success ">
+                            <FontAwesomeIcon
+                              icon={faHandHoldingMedical}
+                              className="text-info pr-3"
+                              size="1x"
+                            />
                           </span>
                         </div>
                         <div className="p-20">
                           <h5 className="font-medium">
-                            <a className="linking">Retargeting Market</a>
+                            <a className="linking">Deliver high-quality care</a>
                           </h5>
                           <p className="m-t-20">
-                            You can relay on our amazing features list and also
-                            our customer services will be great experience.
+                            Harnessing the power of data and digital technology,
+                            we help you build holistic health care.
                           </p>
                         </div>
                       </div>
@@ -662,17 +666,21 @@ const Healthcare = () => {
                     >
                       <div className="d-flex no-block">
                         <div className="no-shrink">
-                          <span className="icon-round bg-white display-5 text-success ">
-                            <i className="icon-Car-Wheel"></i>
+                          <span className="icon-round display-5 text-success ">
+                            <FontAwesomeIcon
+                              icon={faHospitalUser}
+                              className="text-info pr-3"
+                              size="1x"
+                            />
                           </span>
                         </div>
                         <div className="p-20">
                           <h5 className="font-medium">
-                            <a className="linking">Fruitful Results</a>
+                            <a className="linking">Process-oriented approach</a>
                           </h5>
                           <p className="m-t-20">
-                            You can relay on our amazing features list and also
-                            our customer services will be great experience.
+                            We work to become your partner to provide full-stack
+                            Healthtech IT solutions and innovations.
                           </p>
                         </div>
                       </div>
@@ -684,17 +692,21 @@ const Healthcare = () => {
                     >
                       <div className="d-flex no-block">
                         <div className="no-shrink">
-                          <span className="icon-round bg-white display-5 text-success ">
-                            <i className="icon-Mouse-3"></i>
+                          <span className="icon-round display-5 text-success ">
+                            <FontAwesomeIcon
+                              icon={faClockRotateLeft}
+                              className="text-info pr-3"
+                              size="1x"
+                            />
                           </span>
                         </div>
                         <div className="p-20">
                           <h5 className="font-medium">
-                            <a className="linking">Instant Solutions</a>
+                            <a className="linking">Unlock opportunities</a>
                           </h5>
                           <p className="m-t-20">
-                            You can relay on our amazing features list and also
-                            our customer services will be great experience.
+                            Through advanced tech, we help you lay a strong
+                            foundation so that you serve a wider horizon.
                           </p>
                         </div>
                       </div>
@@ -708,10 +720,98 @@ const Healthcare = () => {
                   data-aos-duration="1200"
                 >
                   <img
-                    src="/images/features/img3.png"
+                    src="https://images.unsplash.com/photo-1527613426441-4da17471b66d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1yZWxhdGVkfDExfHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=500&q=60"
                     className="img-responsive"
                     alt="wrapkit"
                   />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className="spacer bg-light feature2">
+            <div className="container">
+              <div className="row justify-content-center">
+                <div className="col-md-7 text-center">
+                  <h2 className="title">
+                    Powering digital-first Life Sciences & Healthcare
+                  </h2>
+                  <h6 className="subtitle">
+                    Envisioning a reliable patient-centered healthcare system by
+                    maximizing value for patients and achieving the best
+                    outcomes at an efficient cost.
+                  </h6>
+                </div>
+              </div>
+
+              <div className="row m-t-40">
+                <div className="col-md-4 wrap-feature2-box">
+                  <div
+                    className="card card-shadow"
+                    data-aos="flip-left"
+                    data-aos-duration="1200"
+                  >
+                    <img
+                      className="card-img-top"
+                      src="https://img.freepik.com/premium-photo/business-man-hand-touching-digital-brain-artificial-intelligence-learning-network-business-technology-internet-network-concept_590401-47.jpg?w=900"
+                      alt="wrappixel kit"
+                    />
+                    <div className="card-body text-center">
+                      <h5 className="font-medium">Deep knowledge of systems</h5>
+                      <p className="m-t-20">
+                        With our experience within the healthcare space, we
+                        understand these systems and build solutions that
+                        improve every aspect of your company.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="col-md-4 wrap-feature2-box">
+                  <div
+                    className="card card-shadow"
+                    data-aos="flip-up"
+                    data-aos-duration="1200"
+                  >
+                    <img
+                      className="card-img-top"
+                      src="https://img.freepik.com/free-photo/empty-bright-medical-office-having-computer-table-with-coronavirus-cell-screen-during-virus-examination-hospital-room-with-nobody-it-equipped-with-professional-tools-virus-illustration_482257-39808.jpg?w=900&t=st=1669013769~exp=1669014369~hmac=3cbf05a37ba5be1e1e4d96a532716550ddef1d6850709d4b3abbc732eacbcc9b"
+                      alt="wrappixel kit"
+                    />
+                    <div className="card-body text-center">
+                      <h5 className="font-medium">
+                        Specialists in Healthcare IT
+                      </h5>
+                      <p className="m-t-20">
+                        We develop customized & secure technologies so that you
+                        can digitally delight your patients with exceptional
+                        service. We assists companies by managing there IT
+                        Services.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="col-md-4 wrap-feature2-box">
+                  <div
+                    className="card card-shadow"
+                    data-aos="flip-right"
+                    data-aos-duration="1200"
+                  >
+                    <img
+                      className="card-img-top"
+                      src="https://img.freepik.com/free-photo/woman-s-hand-presenting-futuristic-technology-digital-remix_53876-104222.jpg?w=900&t=st=1669013817~exp=1669014417~hmac=bde3674d18c28f343c69509da496bc162d9c199d99aee64476f205e2b0374dc1"
+                      alt="wrappixel kit"
+                    />
+                    <div className="card-body text-center">
+                      <h5 className="font-medium">Innovating for the future</h5>
+                      <p className="m-t-20">
+                        We leverage cutting-edge tech solutions like cloud, AI,
+                        blockchain, analytics and IoT to build mission-critical
+                        solutions and higher patient fulfilment.
+                      </p>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>

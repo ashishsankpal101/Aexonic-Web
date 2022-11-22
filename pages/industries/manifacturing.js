@@ -1,9 +1,66 @@
 import Head from "next/head";
-import React from "react";
+import { React, useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
 
 const Manufacturing = () => {
+  useEffect(() => {
+    $(function () {
+      "use strict";
+      $(function () {
+        $(".preloader").fadeOut();
+      });
+      jQuery(document).on("click", ".mega-dropdown", function (e) {
+        e.stopPropagation();
+      });
+      jQuery(document).on("click", ".navbar-nav > .dropdown", function (e) {
+        e.stopPropagation();
+      });
+      $(".dropdown-submenu").click(function () {
+        $(".dropdown-submenu > .dropdown-menu").toggleClass("show");
+      });
+
+      $("body").trigger("resize");
+      // ==============================================================
+      //Fix header while scroll
+      // ==============================================================
+      var wind = $(window);
+      wind.on("load", function () {
+        var bodyScroll = wind.scrollTop(),
+          navbar = $(".topbar");
+        if (bodyScroll > 100) {
+          navbar.addClass("fixed-header animated slideInDown");
+        } else {
+          navbar.removeClass("fixed-header animated slideInDown");
+        }
+      });
+      $(window).scroll(function () {
+        if ($(window).scrollTop() >= 100) {
+          $(".topbar").addClass("fixed-header animated slideInDown");
+          $(".bt-top").addClass("visible");
+        } else {
+          $(".topbar").removeClass("fixed-header animated slideInDown");
+          $(".bt-top").removeClass("visible");
+        }
+      });
+      // ==============================================================
+      // Animation initialized
+      // ==============================================================
+      AOS.init();
+      // ==============================================================
+      // Back to top
+      // ==============================================================
+      $(".bt-top").on("click", function (e) {
+        e.preventDefault();
+        $("html,body").animate(
+          {
+            scrollTop: 0,
+          },
+          700
+        );
+      });
+    });
+  });
   return (
     <div>
       <Head>
@@ -80,7 +137,6 @@ const Manufacturing = () => {
                       </Link>
                     </li>
                     <li className="nav-item dropdown mega-dropdown">
-                      {" "}
                       <a
                         className="nav-link dropdown-toggle"
                         id="h6-mega-dropdown1"
@@ -250,8 +306,7 @@ const Manufacturing = () => {
                       </div>
                     </li>
                     <li className="nav-item dropdown">
-                      {" "}
-                      <Link href="/industry">
+                      <Link href="">
                         <a
                           className="nav-link dropdown-toggle active"
                           id="h6-dropdown2"
@@ -276,7 +331,6 @@ const Manufacturing = () => {
                           </Link>
                         </li>
                         <li>
-                          {" "}
                           <Link href="/industries/hospitality">
                             <a className="dropdown-item">
                               Hospitality and Travel
@@ -284,13 +338,11 @@ const Manufacturing = () => {
                           </Link>
                         </li>
                         <li>
-                          {" "}
                           <Link href="/industries/healthcare">
                             <a className="dropdown-item">Healthcare</a>
                           </Link>
                         </li>
                         <li>
-                          {" "}
                           <Link href="/industries/manifacturing">
                             <a className="dropdown-item active_menu">
                               Manufacturing
@@ -298,7 +350,6 @@ const Manufacturing = () => {
                           </Link>
                         </li>
                         <li>
-                          {" "}
                           <Link href="/industries/retail">
                             <a className="dropdown-item">
                               Retail and e-commerce
@@ -306,7 +357,6 @@ const Manufacturing = () => {
                           </Link>
                         </li>
                         <li>
-                          {" "}
                           <Link href="/industries/technology">
                             <a className="dropdown-item">
                               Technology and Software
@@ -314,7 +364,6 @@ const Manufacturing = () => {
                           </Link>
                         </li>
                         <li>
-                          {" "}
                           <Link href="/industries/professional_service">
                             <a className="dropdown-item">
                               Professional Services
@@ -356,7 +405,6 @@ const Manufacturing = () => {
                       </Link>
                     </li>
                     <li className="nav-item dropdown">
-                      {" "}
                       <a
                         className="nav-link dropdown-toggle"
                         href="#"
@@ -379,7 +427,6 @@ const Manufacturing = () => {
                           </Link>
                         </li>
                         <li>
-                          {" "}
                           <Link href="/blog">
                             <a className="dropdown-item">Blogs</a>
                           </Link>
@@ -432,81 +479,38 @@ const Manufacturing = () => {
           {/* <!-- ============================================================== -->
             <!-- Testimonial 9 -->
             <!-- ============================================================== --> */}
-          <div className="spacer feature43">
+          <div className="spacer feature12">
             <div className="container">
               <div className="row">
-                <div
-                  className="col-lg-5"
-                  data-aos="fade-right"
-                  data-aos-duration="1200"
-                >
-                  <h2 className="title">
-                    Create your Website in Simple and Easy Steps with Powerful
-                    WrapKit Features
+                <div className="col-lg-7">
+                  <h2 className="m-b-30 m-t-20">
+                    Navigating your next in Industrial Manufacturing
                   </h2>
                   <h6 className="subtitle">
-                    You can relay on our amazing features list and also our
-                    customer services will be great experience for you without
-                    doubt and in no-time
+                    Manufacturers are accelerating digital transformation using
+                    an integrated approach, applying AI, hybrid cloud and
+                    automation to achieve new levels of agility, efficiency,
+                    quality and sustainability.
+                    <br />
+                    <br />
+                    Aexonic works with you to co-create a roadmap to a custom
+                    solution with a focus on leveraging existing OT investments,
+                    improving key metrics, digital tools and using people that
+                    know best.
+                    <br></br> <br></br> Manufacturing companies cannot simply
+                    focus on a return to the pre-pandemic normal. The scale of
+                    the ambition needs to be much higher—shifting gears to enter
+                    a new phase of accelerated growth.
                   </h6>
                 </div>
-                <div className="col-lg-6 ml-auto">
-                  <div className="row wrap-feature43-box">
-                    <div
-                      className="col-md-6"
-                      data-aos="fade-right"
-                      data-aos-duration="1200"
-                    >
-                      <h2 className="text-success-gradiant display-5">
-                        <i className="icon-Car-Wheel"></i>
-                      </h2>
-                      <h5 className="title">Unbeatable Features</h5>
-                      <h6 className="subtitle">
-                        You can relay on our amazing features list and also our
-                        customer services.
-                      </h6>
-                    </div>
-                    <div
-                      className="col-md-6"
-                      data-aos="fade-left"
-                      data-aos-duration="1200"
-                    >
-                      <h2 className="text-success-gradiant display-5">
-                        <i className="icon-Target"></i>
-                      </h2>
-                      <h5 className="title">Professional Support</h5>
-                      <h6 className="subtitle">
-                        You can relay on our amazing features list and also our
-                        customer services.
-                      </h6>
-                    </div>
-                    <div
-                      className="col-md-6"
-                      data-aos="fade-right"
-                      data-aos-duration="1200"
-                    >
-                      <h2 className="text-success-gradiant display-5">
-                        <i className="icon-Mouse-3"></i>
-                      </h2>
-                      <h5 className="title">Quick and Easy</h5>
-                      <h6 className="subtitle">
-                        You can relay on our amazing features list and also our
-                        customer services.
-                      </h6>
-                    </div>
-                    <div
-                      className="col-md-6"
-                      data-aos="fade-left"
-                      data-aos-duration="1200"
-                    >
-                      <h2 className="text-success-gradiant display-5">
-                        <i className="icon-Car-Wheel"></i>
-                      </h2>
-                      <h5 className="title">Secured &amp; Trendy</h5>
-                      <h6 className="subtitle">
-                        You can relay on our amazing features list and also our
-                        customer services.
-                      </h6>
+                <div className="col-lg-5">
+                  <div className="row wrap-feature-12">
+                    <div className="col-md-12">
+                      <img
+                        src="https://img.freepik.com/free-photo/cutting-metal-with-plasma-equipment_176420-4832.jpg?w=900&t=st=1669035691~exp=1669036291~hmac=3c635d8cb02b9cc9764e8f23276ed8162f85975d3783bc5c7175f82aeb3415e6"
+                        className="rounded img-responsive m-t-3"
+                        alt="wrapkit "
+                      />
                     </div>
                   </div>
                 </div>
@@ -514,196 +518,94 @@ const Manufacturing = () => {
             </div>
           </div>
 
-          <div className="spacer bg-light">
+          <div className="spacer bg-light feature12">
             <div className="container">
-              <div className="row justify-content-center">
-                <div className="col-md-7 text-center">
-                  <h2 className="title">Customer services</h2>
-                  <h6 className="subtitle">
-                    You can relay on our amazing features list and also our
-                    customer services will be great experience for you without
-                    doubt and in no-time
-                  </h6>
-                </div>
-              </div>
-
-              <div
-                className="row portfolio-box"
-                style={{
-                  position: "relative",
-                  height: "900.266px",
-                  marginTop: "20px",
-                }}
-              >
-                <div
-                  className="col-lg-5 col-md-8 filter abstract print"
-                  style={{ position: "absolute", left: "0%", top: "0px" }}
-                >
-                  <div className="overlay-box">
-                    <img
-                      src="/images/manufacturing_1.jpg"
-                      alt="wrpkit"
-                      className="img-fluid"
-                    />
-                    <a className="overlay">
-                      <div className="port-text">
-                        <h5>Marine Drive</h5>
-                        <span>9 Properties</span>
-                      </div>
-                    </a>
-                  </div>
-                </div>
-
-                <div
-                  className="col-lg-3 col-md-4 filter typography"
-                  style={{ position: "absolute", left: "41.6667%", top: "0px" }}
-                >
-                  <div className="overlay-box mb-4">
-                    <img
-                      src="/images/manufacturing_2.jpg"
-                      alt="wrpkit"
-                      className="img-fluid"
-                    />
-                    <a className="overlay">
-                      <div className="port-text">
-                        <h5>Juhu Beach</h5>
-                        <span>5 Properties</span>
-                      </div>
-                    </a>
-                  </div>
-                  <div className="overlay-box">
-                    <img
-                      src="/images/manufacturing_4.jpg"
-                      alt="wrpkit"
-                      className="img-fluid"
-                    />
-                    <a className="overlay">
-                      <div className="port-text">
-                        <h5>Summer Hills</h5>
-                        <span>6 Properties</span>
-                      </div>
-                    </a>
-                  </div>
-                </div>
-
-                <div
-                  className="col-lg-4 col-md-6 filter abstract"
-                  style={{ position: "absolute", left: "66.6667%", top: "0px" }}
-                >
-                  <div className="overlay-box">
-                    <img
-                      src="/images/manufacturing_3.jpg"
-                      alt="wrpkit"
-                      className="img-fluid"
-                    />
-                    <a className="overlay">
-                      <div className="port-text">
-                        <h5>Ahmedabad Air</h5>
-                        <span>12 Properties</span>
-                      </div>
-                    </a>
-                  </div>
-                </div>
-
-                <div
-                  className="col-lg-8 col-md-6 filter abstract print"
-                  style={{ position: "absolute", left: "0%", top: "609px" }}
-                >
-                  <div className="overlay-box">
-                    <img
-                      src="/images/manufacturing_6.jpg"
-                      alt="wrpkit"
-                      className="img-fluid"
-                    />
-                    <a className="overlay">
-                      <div className="port-text">
-                        <h5>Bhavnagar Best</h5>
-                        <span>6 Properties</span>
-                      </div>
-                    </a>
-                  </div>
-                </div>
-
-                <div
-                  className="col-lg-4 col-md-6 filter branding"
-                  style={{
-                    position: "absolute",
-                    left: "66.6667%",
-                    top: "318px",
-                  }}
-                >
-                  <div className="overlay-box">
-                    <img
-                      src="/images/manufacturing_5.jpg"
-                      alt="wrpkit"
-                      className="img-fluid"
-                    />
-                    <a className="overlay">
-                      <div className="port-text">
-                        <h5>Jaipur Palace</h5>
-                        <span>3 Properties</span>
-                      </div>
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div className="spacer feature43">
-            <div className="container">
-              <div className="row justify-content-center">
-                <div className="col-md-7 text-center">
-                  <h2 className="title">Customer services</h2>
-                  <h6 className="subtitle">
-                    You can relay on our amazing features list and also our
-                    customer services will be great experience for you without
-                    doubt and in no-time
-                  </h6>
-                </div>
-              </div>
               <div className="row">
-                <div className="col-lg-3 col-md-4">
-                  <div className="d-flex no-block m-t-10 m-b-10">
-                    <div className="display-4 m-r-20">
-                      <i className="icon-Windows-2 text-success-gradiant"></i>
+                <div className="col-lg-6">
+                  <h2 className="m-b-30 m-t-20">
+                    Digital manufacturing technology solutions
+                  </h2>
+                  <h4 className="text-muted font-light">
+                    Taking the hospitality industry towards digitization with
+                    our offerings
+                  </h4>
+                  <div className="row">
+                    <div className="col-md-6 m-t-30">
+                      <h5 className="font-medium">
+                        Elevate your manufacturing value chain
+                      </h5>
+                      <p>
+                        Minimize downtime, increase efficiency, improve worker
+                        safety and impact decision-making, product development
+                        with AI insights from IoT, IIoT and edge real-time data.
+                      </p>
                     </div>
-                    <div className="">
-                      <h2 className="m-b-0 font-light">6455</h2>
-                      <h6 className="subtitle">Projects</h6>
+                    <div className="col-md-6 m-t-30">
+                      <h5 className="font-medium">
+                        Optimize manufacturing operations
+                      </h5>
+                      <p>
+                        Act on insights closer to the source of data with edge
+                        computing to optimize production operations and product
+                        quality in real time.
+                      </p>
+                    </div>
+                    <div className="col-md-6 m-t-30">
+                      <h5 className="font-medium">
+                        Monitor and secure networks and computer systems
+                      </h5>
+                      <p>
+                        See how you can make OT security and connectivity a top
+                        priority in the age of digital transformation.
+                      </p>
+                    </div>
+                    <div className="col-md-6 m-t-30">
+                      <h5 className="font-medium">Integrate valuable data</h5>
+                      <p>
+                        Establish digital threads by unlocking valuable data
+                        with an open platform and extensible APIs.
+                      </p>
                     </div>
                   </div>
                 </div>
-                <div className="col-lg-3 col-md-4">
-                  <div className="d-flex no-block m-t-10 m-b-10">
-                    <div className="display-4 m-r-20">
-                      <i className="icon-Starfish text-success-gradiant"></i>
+
+                <div className="col-lg-6" style={{ marginTop: "5rem" }}>
+                  <div className="row wrap-feature-12">
+                    <div className="col-md-6">
+                      <div className="row">
+                        <div className="col-md-12">
+                          <img
+                            src="https://images.unsplash.com/photo-1580983230712-f7d0f878bcc4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+                            className="rounded img-shadow img-responsive"
+                            alt="wrapkit"
+                          />
+                        </div>
+                        <div className="col-md-12">
+                          <img
+                            src="https://images.unsplash.com/photo-1581091215367-9b6c00b3035a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+                            className="rounded img-shadow img-responsive"
+                            alt="wrapkit"
+                          />
+                        </div>
+                      </div>
                     </div>
-                    <div className="">
-                      <h2 className="m-b-0 font-light">85.5%</h2>
-                      <h6 className="subtitle">Success</h6>
-                    </div>
-                  </div>
-                </div>
-                <div className="col-lg-3 col-md-4">
-                  <div className="d-flex no-block m-t-10 m-b-10">
-                    <div className="display-4 m-r-20">
-                      <i className="icon-Add-User text-success-gradiant"></i>
-                    </div>
-                    <div className="">
-                      <h2 className="m-b-0 font-light">354</h2>
-                      <h6 className="subtitle">Users</h6>
-                    </div>
-                  </div>
-                </div>
-                <div className="col-lg-3 col-md-4">
-                  <div className="d-flex no-block m-t-10 m-b-10">
-                    <div className="display-4 m-r-20">
-                      <i className="icon-Add-User text-success-gradiant"></i>
-                    </div>
-                    <div className="">
-                      <h2 className="m-b-0 font-light">354</h2>
-                      <h6 className="subtitle">Users</h6>
+                    <div className="col-md-6 uneven-box">
+                      <div className="row">
+                        <div className="col-md-12">
+                          <img
+                            src="https://images.unsplash.com/photo-1581094480465-4e6c25fb4a52?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+                            className="rounded img-shadow img-responsive"
+                            alt="wrapkit"
+                          />
+                        </div>
+                        <div className="col-md-12">
+                          <img
+                            src="https://images.unsplash.com/photo-1593106410288-caf65eca7c9d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+                            className="rounded img-shadow img-responsive"
+                            alt="wrapkit"
+                          />
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -711,146 +613,43 @@ const Manufacturing = () => {
             </div>
           </div>
 
-          <div className="bg-light spacer feature20 up">
-            <div className="container">
-              <div className="row justify-content-center">
-                <div className="col-md-7 text-center">
-                  <h2 className="title">Customer services</h2>
-                  <h6 className="subtitle">
-                    You can relay on our amazing features list and also our
-                    customer services will be great experience for you without
-                    doubt and in no-time
-                  </h6>
-                </div>
-              </div>
-              <div className="row wrap-feature-20">
-                <div
-                  className="col-lg-6"
-                  data-aos="flip-left"
-                  data-aos-duration="1200"
-                >
-                  <div className="card">
-                    <div className="row">
-                      <div className="col-md-8">
-                        <div className="card-body d-flex no-block">
-                          <div className="m-r-20">
-                            <img
-                              src="/images/features/f13/img1.jpg"
-                              alt="wrapkit"
-                              width="70"
-                              className="rounded"
-                            />
-                          </div>
-                          <div>
-                            <h5 className="font-medium">
-                              Make your website in no-time with us.
-                            </h5>
-                          </div>
-                        </div>
-                      </div>
-                      <div className="col-md-4 text-center cursor-pointer">
-                        <a className="text-white linking bg-info-gradiant">
-                          View More <i className="ti-arrow-right"></i>
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div
-                  className="col-lg-6"
-                  data-aos="flip-right"
-                  data-aos-duration="1200"
-                >
-                  <div className="card">
-                    <div className="row">
-                      <div className="col-md-8">
-                        <div className="card-body d-flex no-block">
-                          <div className="m-r-20">
-                            <img
-                              src="/images/features/f13/img2.jpg"
-                              alt="wrapkit"
-                              width="70"
-                              className="rounded"
-                            />
-                          </div>
-                          <div>
-                            <h5 className="font-medium">
-                              Make your website in no-time with us.
-                            </h5>
-                          </div>
-                        </div>
-                      </div>
-                      <div className="col-md-4 text-center cursor-pointer">
-                        <a className="text-white linking bg-info-gradiant">
-                          View More <i className="ti-arrow-right"></i>
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div
-                  className="col-lg-6"
-                  data-aos="zoom-in"
-                  data-aos-duration="1200"
-                >
-                  <div className="card">
-                    <div className="row">
-                      <div className="col-md-8">
-                        <div className="card-body d-flex no-block">
-                          <div className="m-r-20">
-                            <img
-                              src="/images/features/f13/img3.jpg"
-                              alt="wrapkit"
-                              width="70"
-                              className="rounded"
-                            />
-                          </div>
-                          <div>
-                            <h5 className="font-medium">
-                              Make your website in no-time with us.
-                            </h5>
-                          </div>
-                        </div>
-                      </div>
-                      <div className="col-md-4 text-center cursor-pointer">
-                        <a className="text-white linking bg-info-gradiant">
-                          View More <i className="ti-arrow-right"></i>
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div
-                  className="col-lg-6"
-                  data-aos="zoom-in"
-                  data-aos-duration="1200"
-                >
-                  <div className="card">
-                    <div className="row">
-                      <div className="col-md-8">
-                        <div className="card-body d-flex no-block">
-                          <div className="m-r-20">
-                            <img
-                              src="/images/features/f13/img4.jpg"
-                              alt="wrapkit"
-                              width="70"
-                              className="rounded"
-                            />
-                          </div>
-                          <div>
-                            <h5 className="font-medium">
-                              Make your website in no-time with us.
-                            </h5>
-                          </div>
-                        </div>
-                      </div>
-                      <div className="col-md-4 text-center cursor-pointer">
-                        <a className="text-white linking bg-info-gradiant">
-                          View More <i className="ti-arrow-right"></i>
-                        </a>
-                      </div>
-                    </div>
-                  </div>
+          <div className="feature16">
+            <div className="row wrap-feature-16">
+              <div
+                className="col-lg-6 with-bg"
+                data-aos="fade-up"
+                data-aos-duration="1200"
+                style={{
+                  backgroundImage:
+                    "url(https://images.unsplash.com/photo-1598302936625-6075fbd98dd7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80)",
+                }}
+              ></div>
+              <div className="col-lg-6 bg-info-gradiant text-white">
+                <div className="with-text">
+                  <h2 className="text-white m-t-30 m-b-30">Our Offerings</h2>
+                  <ul className="list-block m-b-30">
+                    <li>
+                      <i className="icon-Yes"></i>
+                      <span>Internet of Things (IoT)</span>
+                    </li>
+                    <li>
+                      <i className="icon-Yes"></i>
+                      <span>
+                        Application Customization & Enhancement, Implementation,
+                        Support & Maintenance
+                      </span>
+                    </li>
+                    <li>
+                      <i className="icon-Yes"></i>
+                      <span>Legacy Modernization & Re-engineering</span>
+                    </li>
+                    <li>
+                      <i className="icon-Yes"></i>
+                      <span>
+                        Supply Chain Management and Traceability Solutions
+                      </span>
+                    </li>
+                  </ul>
                 </div>
               </div>
             </div>

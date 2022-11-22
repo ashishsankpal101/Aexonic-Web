@@ -1,9 +1,73 @@
 import Head from "next/head";
-import React from "react";
+import React, { useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faTruckPlane,
+  faWarehouse,
+  faShip,
+  faTruckFast,
+} from "@fortawesome/free-solid-svg-icons";
 
 const SupplyChain = () => {
+  useEffect(() => {
+    $(function () {
+      "use strict";
+      $(function () {
+        $(".preloader").fadeOut();
+      });
+      jQuery(document).on("click", ".mega-dropdown", function (e) {
+        e.stopPropagation();
+      });
+      jQuery(document).on("click", ".navbar-nav > .dropdown", function (e) {
+        e.stopPropagation();
+      });
+      $(".dropdown-submenu").click(function () {
+        $(".dropdown-submenu > .dropdown-menu").toggleClass("show");
+      });
+
+      $("body").trigger("resize");
+      // ==============================================================
+      //Fix header while scroll
+      // ==============================================================
+      var wind = $(window);
+      wind.on("load", function () {
+        var bodyScroll = wind.scrollTop(),
+          navbar = $(".topbar");
+        if (bodyScroll > 100) {
+          navbar.addClass("fixed-header animated slideInDown");
+        } else {
+          navbar.removeClass("fixed-header animated slideInDown");
+        }
+      });
+      $(window).scroll(function () {
+        if ($(window).scrollTop() >= 100) {
+          $(".topbar").addClass("fixed-header animated slideInDown");
+          $(".bt-top").addClass("visible");
+        } else {
+          $(".topbar").removeClass("fixed-header animated slideInDown");
+          $(".bt-top").removeClass("visible");
+        }
+      });
+      // ==============================================================
+      // Animation initialized
+      // ==============================================================
+      AOS.init();
+      // ==============================================================
+      // Back to top
+      // ==============================================================
+      $(".bt-top").on("click", function (e) {
+        e.preventDefault();
+        $("html,body").animate(
+          {
+            scrollTop: 0,
+          },
+          700
+        );
+      });
+    });
+  });
   return (
     <div>
       <Head>
@@ -249,7 +313,7 @@ const SupplyChain = () => {
                       </div>
                     </li>
                     <li className="nav-item dropdown">
-                      <Link href="/industry">
+                      <Link href="">
                         <a
                           className="nav-link active dropdown-toggle"
                           id="h6-dropdown2"
@@ -423,15 +487,55 @@ const SupplyChain = () => {
             <!-- Testimonial 9 -->
             <!-- ============================================================== --> */}
 
-          <div className="spacer feature2">
+          <div className="spacer feature12">
+            <div className="container">
+              <div className="row">
+                <div className="col-lg-7">
+                  <h2 className="m-b-30 m-t-20">
+                    Supply And Logistics Solutions
+                  </h2>
+                  <h6 className="subtitle">
+                    With the expanding global trade solutions and the increasing
+                    complexity of the supply chains, the transport and logistics
+                    industry struggles to consolidate their supply chains,
+                    enable better data visibility, reduce costs and overheads,
+                    speed order deliveries, and achieve real-time data access.
+                    <br />
+                    <br />
+                    With the onset of globalization, managing supply chains has
+                    become more complex and critical for businesses than ever
+                    before. Therefore, businesses need smart supply chain &
+                    logistics solutions.
+                    <br></br> <br></br> Aexonic provides supply chain and
+                    logistics technology consultancy by bringing together
+                    digital expertise and domain knowledge to enhance and manage
+                    your dynamic supply chain ecosystem.
+                  </h6>
+                </div>
+                <div className="col-lg-5">
+                  <div className="row wrap-feature-12">
+                    <div className="col-md-12">
+                      <img
+                        src="https://img.freepik.com/free-vector/customer-choosing-order-delivery-type-global-distribution-freight-quote-request-best-shipping-proposal-freight-cost-request-form-concept-pinkish-coral-bluevector-isolated-illustration_335657-1755.jpg?w=900&t=st=1669017532~exp=1669018132~hmac=3f9faad23017eb3ee8630f921ebdcf5a5264b899c95dcaa6f7014c3ad3b00e29"
+                        className="rounded img-responsive m-t-3"
+                        alt="wrapkit "
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className="spacer bg-light feature2">
             <div className="container">
               <div className="row justify-content-center">
                 <div className="col-md-7 text-center">
-                  <h2 className="title">Services</h2>
+                  <h2 className="title">Mobilizing supply chain management</h2>
                   <h6 className="subtitle">
-                    You can relay on our amazing features list and also our
-                    customer services will be great experience for you without
-                    doubt and in no-time
+                    We help organizations simplify the logistics process and
+                    lower the operational cost, effectively. We systemize
+                    processes to deliver products to your customer faster.
                   </h6>
                 </div>
               </div>
@@ -445,14 +549,15 @@ const SupplyChain = () => {
                   >
                     <img
                       className="card-img-top"
-                      src="/images/features/market.jpg"
+                      src="https://img.freepik.com/premium-photo/business-service-transportation-international-by-container-cargo-freight-ship-open-deep-sea-aerial-view_44353-2076.jpg?w=900"
                       alt="wrappixel kit"
                     />
                     <div className="card-body text-center">
-                      <h5 className="font-medium">Retargeting Market</h5>
+                      <h5 className="font-medium">Smart shipment tracking</h5>
                       <p className="m-t-20">
-                        You can relay on our amazing features list and also our
-                        customer services will be great experience.
+                        Empower customers to track their shipments 24/7/365
+                        smartly. Collect and update real-time from shipment
+                        status to estimated delivery date.
                       </p>
                     </div>
                   </div>
@@ -466,14 +571,15 @@ const SupplyChain = () => {
                   >
                     <img
                       className="card-img-top"
-                      src="/images/features/fruit.jpg"
+                      src="https://images.unsplash.com/photo-1449247666642-264389f5f5b1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1169&q=80"
                       alt="wrappixel kit"
                     />
                     <div className="card-body text-center">
-                      <h5 className="font-medium">Fruitful Results</h5>
+                      <h5 className="font-medium">Product authentication</h5>
                       <p className="m-t-20">
-                        You can relay on our amazing features list and also our
-                        customer services will be great experience.
+                        Centrally store, manage and share complex product
+                        specifications across the supply chain to streamline
+                        processes with full transparency.
                       </p>
                     </div>
                   </div>
@@ -487,14 +593,15 @@ const SupplyChain = () => {
                   >
                     <img
                       className="card-img-top"
-                      src="/images/features/instant.jpg"
+                      src="https://images.unsplash.com/photo-1434626881859-194d67b2b86f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1174&q=80"
                       alt="wrappixel kit"
                     />
                     <div className="card-body text-center">
-                      <h5 className="font-medium">Instant Solutions</h5>
+                      <h5 className="font-medium">Marketing campaign </h5>
                       <p className="m-t-20">
-                        You can relay on our amazing features list and also our
-                        customer services will be great experience.
+                        Increase efficiency and nurture sustainable
+                        relationships with suppliers and stakeholders through
+                        robust marketing campaigns.
                       </p>
                     </div>
                   </div>
@@ -505,7 +612,10 @@ const SupplyChain = () => {
 
           <div
             className="spacer feature42"
-            style={{ backgroundImage: "url(/images/bg2.jpg)" }}
+            style={{
+              backgroundImage:
+                "linear-gradient(90deg, #0000005c, transparent), url(https://www.ranosys.com/in/industries/transport-logistics-solutions/_jcr_content/root/container_1098629747/teaser.coreimg.85.1600.jpeg/1663918167778/transport-and-logistics-banner.jpeg)",
+            }}
           >
             <div className="container">
               <div className="row justify-content-center wrap-feature42-box">
@@ -514,21 +624,19 @@ const SupplyChain = () => {
                   data-aos="fade-up"
                 >
                   <h2 className="title text-white">
-                    You wont believ that you can make Your Website in Record
-                    Time
+                    Fast-track your business by automating processes
                   </h2>
                   <h6 className="subtitle text-white op-7 m-b-20">
-                    You can relay on our amazing features list and also our
-                    customer services will be great experience for you without
-                    doubt and in no-time
+                    Automate warehouse operations, improve planning, diversity
+                    distribution centers, proactively manage inventory - all
+                    through harnessing the power of advanced tech in your supply
+                    chain management.
                   </h6>
                   <a
                     className="text-success-gradiant display-4"
                     data-toggle="modal"
                     data-target="#exampleModal"
-                  >
-                    <i className="icon-Play-Music"></i>
-                  </a>
+                  ></a>
                   <div
                     className="modal fade"
                     id="exampleModal"
@@ -590,13 +698,16 @@ const SupplyChain = () => {
                         aria-expanded="true"
                       >
                         <div className="display-5 t-icon">
-                          <i className="icon-Structure"></i>
+                          <FontAwesomeIcon
+                            icon={faTruckPlane}
+                            className="text-info pr-3"
+                            size="1x"
+                          />
                         </div>
                         <div>
-                          <h5 className="m-b-0">Perfectly Structured</h5>
-                          <h6 className="subtitle">
-                            You can relay on our amazing features list.
-                          </h6>
+                          <h5 className="m-b-0">
+                            Third Party Logistics Solutions
+                          </h5>
                         </div>
                       </a>
                     </li>
@@ -610,13 +721,16 @@ const SupplyChain = () => {
                         aria-controls="profile"
                       >
                         <div className="display-5 t-icon">
-                          <i className="icon-Brain-2"></i>
+                          <FontAwesomeIcon
+                            icon={faWarehouse}
+                            className="text-info pr-3"
+                            size="1x"
+                          />
                         </div>
                         <div>
-                          <h5 className="m-b-0">Thinkful Products</h5>
-                          <h6 className="subtitle">
-                            You can relay on our amazing features list.
-                          </h6>
+                          <h5 className="m-b-0">
+                            Warehouse Management Systems
+                          </h5>
                         </div>
                       </a>
                     </li>
@@ -630,13 +744,14 @@ const SupplyChain = () => {
                         aria-controls="dropdown1"
                       >
                         <div className="display-5 t-icon">
-                          <i className="icon-Dollar-Sign"></i>
+                          <FontAwesomeIcon
+                            icon={faShip}
+                            className="text-info pr-3"
+                            size="1x"
+                          />
                         </div>
                         <div>
-                          <h5 className="m-b-0">Make Money</h5>
-                          <h6 className="subtitle">
-                            You can relay on our amazing features list.
-                          </h6>
+                          <h5 className="m-b-0">Fleet Management Systems</h5>
                         </div>
                       </a>
                     </li>
@@ -650,13 +765,16 @@ const SupplyChain = () => {
                         aria-controls="ssd"
                       >
                         <div className="display-5 t-icon">
-                          <i className="icon-Data-Center"></i>
+                          <FontAwesomeIcon
+                            icon={faTruckFast}
+                            className="text-info pr-3"
+                            size="1x"
+                          />
                         </div>
                         <div>
-                          <h5 className="m-b-0">SSD Storage</h5>
-                          <h6 className="subtitle">
-                            You can relay on our amazing features list.
-                          </h6>
+                          <h5 className="m-b-0">
+                            Transport Management Systems
+                          </h5>
                         </div>
                       </a>
                     </li>
@@ -671,15 +789,16 @@ const SupplyChain = () => {
                       aria-labelledby="home-tab"
                     >
                       <img
-                        src="/images/features/instant.jpg"
+                        src="https://hwchamber.co.uk/wp-content/uploads/2019/10/export-import-plane.jpg"
                         alt="wrapkit"
                         className="rounded img-fluid"
                       />
-                      <p className="m-t-40">
-                        Lorem ipsum dolor sit amet, consectetuer adipiscing
-                        elit, sed diam nonummy nibh euismod tincidunt ut laoreet
-                        dolore magna aliquam erat volutpat.
-                      </p>
+                      <h5 className="m-t-40">
+                        With extensive experience of working with global
+                        companies and technology + partner-led ecosystem, we
+                        help integrate the entire logistics functions and offer
+                        flexibility to optimize business processes.
+                      </h5>
                     </div>
                     <div
                       className="tab-pane fade"
@@ -688,15 +807,15 @@ const SupplyChain = () => {
                       aria-labelledby="profile-tab"
                     >
                       <img
-                        src="/images/features/fruit.jpg"
+                        src="https://img.freepik.com/premium-photo/warehouse-management-innovative-software-computer-real-time-monitoring_31965-21150.jpg?w=900"
                         alt="wrapkit"
                         className="rounded img-fluid"
                       />
-                      <p className="m-t-40">
-                        Lorem ipsum dolor sit amet, consectetuer adipiscing
-                        elit, sed diam nonummy nibh euismod tincidunt ut laoreet
-                        dolore magna aliquam erat volutpat.
-                      </p>
+                      <h5 className="m-t-40">
+                        Amplify and simplify your storage and distribution
+                        business area with our most adaptable and flexible WMS
+                        solutions.
+                      </h5>
                     </div>
                     <div
                       className="tab-pane fade"
@@ -705,15 +824,16 @@ const SupplyChain = () => {
                       aria-labelledby="dropdown1-tab"
                     >
                       <img
-                        src="/images/features/img1.jpg"
+                        src="https://thumbor.forbes.com/thumbor/fit-in/900x510/https://www.forbes.com/advisor/wp-content/uploads/2022/01/what_is_fleet_management_-_article_image.jpg"
                         alt="wrapkit"
                         className="rounded img-fluid"
                       />
-                      <p className="m-t-40">
-                        Lorem ipsum dolor sit amet, consectetuer adipiscing
-                        elit, sed diam nonummy nibh euismod tincidunt ut laoreet
-                        dolore magna aliquam erat volutpat.
-                      </p>
+                      <h5 className="m-t-40">
+                        We provide expertise in developing software ecosystem
+                        for fleet management solutions covering telematics,
+                        visibility, efficiency, safety, and maintenance of your
+                        fleet.
+                      </h5>
                     </div>
                     <div
                       className="tab-pane fade"
@@ -722,43 +842,17 @@ const SupplyChain = () => {
                       aria-labelledby="ssd-tab"
                     >
                       <img
-                        src="/images/features/market.jpg"
+                        src="https://images.unsplash.com/photo-1559297434-fae8a1916a79?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
                         alt="wrapkit"
                         className="rounded img-fluid"
                       />
-                      <p className="m-t-40">
-                        Lorem ipsum dolor sit amet, consectetuer adipiscing
-                        elit, sed diam nonummy nibh euismod tincidunt ut laoreet
-                        dolore magna aliquam erat volutpat.
-                      </p>
+                      <h5 className="m-t-40">
+                        Re-envision existing frameworks, processes, and systems
+                        around transport and logistics management for a holistic
+                        overhaul of operations and strategy.
+                      </h5>
                     </div>
                   </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div
-            className="spacer feature48 bg-light"
-            style={{ backgroundImage: "url(/images/app-bg.jpg)" }}
-          >
-            <div className="container">
-              <div className="row wrap-feature48-box">
-                <div className="col-lg-5 col-md-6 ml-auto">
-                  <h2 className="title">
-                    We are now on App Store, Grab our IOS or Android App from
-                    Stores
-                  </h2>
-                  <h6 className="subtitle m-b-40 m-t-20">
-                    You can relay on our amazing features list and also our
-                    customer services will be great experience for you without
-                    doubt and in no-time
-                  </h6>
-                  <a className="m-b-20">
-                    <img src="/images/app-strore.png" alt="wrapkit" />
-                  </a>
-                  <a className="m-b-20">
-                    <img src="/images/play-store.png" alt="wrapkit" />
-                  </a>
                 </div>
               </div>
             </div>
