@@ -1,9 +1,83 @@
 import Head from "next/head";
-import React from "react";
+import { React, useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faUsers,
+  faClock,
+  faCodeCompare,
+  faShareSquare,
+  faChalkboard,
+  faCubes,
+  faGreaterThan,
+  faLayerGroup,
+  faChalkboardUser,
+  faBuildingColumns,
+  faUnlink,
+  faCropSimple,
+  faCrosshairs,
+  faIndent,
+} from "@fortawesome/free-solid-svg-icons";
 
-const careers = () => {
+const Careers = () => {
+  useEffect(() => {
+    $(function () {
+      "use strict";
+      $(function () {
+        $(".preloader").fadeOut();
+      });
+      jQuery(document).on("click", ".mega-dropdown", function (e) {
+        e.stopPropagation();
+      });
+      jQuery(document).on("click", ".navbar-nav > .dropdown", function (e) {
+        e.stopPropagation();
+      });
+      $(".dropdown-submenu").click(function () {
+        $(".dropdown-submenu > .dropdown-menu").toggleClass("show");
+      });
+
+      $("body").trigger("resize");
+      // ==============================================================
+      //Fix header while scroll
+      // ==============================================================
+      var wind = $(window);
+      wind.on("load", function () {
+        var bodyScroll = wind.scrollTop(),
+          navbar = $(".topbar");
+        if (bodyScroll > 100) {
+          navbar.addClass("fixed-header animated slideInDown");
+        } else {
+          navbar.removeClass("fixed-header animated slideInDown");
+        }
+      });
+      $(window).scroll(function () {
+        if ($(window).scrollTop() >= 100) {
+          $(".topbar").addClass("fixed-header animated slideInDown");
+          $(".bt-top").addClass("visible");
+        } else {
+          $(".topbar").removeClass("fixed-header animated slideInDown");
+          $(".bt-top").removeClass("visible");
+        }
+      });
+      // ==============================================================
+      // Animation initialized
+      // ==============================================================
+      AOS.init();
+      // ==============================================================
+      // Back to top
+      // ==============================================================
+      $(".bt-top").on("click", function (e) {
+        e.preventDefault();
+        $("html,body").animate(
+          {
+            scrollTop: 0,
+          },
+          700
+        );
+      });
+    });
+  });
   return (
     <div>
       <Head>
@@ -258,7 +332,6 @@ const careers = () => {
                                         </li> */}
 
                     <li className="nav-item dropdown">
-                      {" "}
                       <Link href="">
                         <a
                           className="nav-link dropdown-toggle"
@@ -284,7 +357,6 @@ const careers = () => {
                           </Link>
                         </li>
                         <li>
-                          {" "}
                           <Link href="industries/hospitality">
                             <a className="dropdown-item">
                               Hospitality and Travel
@@ -292,19 +364,16 @@ const careers = () => {
                           </Link>
                         </li>
                         <li>
-                          {" "}
                           <Link href="industries/healthcare">
                             <a className="dropdown-item">Healthcare</a>
                           </Link>
                         </li>
                         <li>
-                          {" "}
                           <Link href="industries/manifacturing">
                             <a className="dropdown-item">Manufacturing</a>
                           </Link>
                         </li>
                         <li>
-                          {" "}
                           <Link href="industries/retail">
                             <a className="dropdown-item">
                               Retail and e-commerce
@@ -312,7 +381,6 @@ const careers = () => {
                           </Link>
                         </li>
                         <li>
-                          {" "}
                           <Link href="industries/technology">
                             <a className="dropdown-item">
                               Technology and Software
@@ -320,7 +388,6 @@ const careers = () => {
                           </Link>
                         </li>
                         <li>
-                          {" "}
                           <Link href="industries/professional_service">
                             <a className="dropdown-item">
                               Professional Services
@@ -363,7 +430,6 @@ const careers = () => {
                       </Link>
                     </li>
                     <li className="nav-item dropdown">
-                      {" "}
                       <a
                         className="nav-link dropdown-toggle"
                         href="#"
@@ -386,7 +452,6 @@ const careers = () => {
                           </Link>
                         </li>
                         <li>
-                          {" "}
                           <Link href="/blog">
                             <a className="dropdown-item">Blogs</a>
                           </Link>
@@ -505,7 +570,11 @@ const careers = () => {
                       data-aos-duration="1200"
                     >
                       <h2 className="text-success-gradiant display-5">
-                        <i className="icon-Car-Wheel"></i>
+                        <FontAwesomeIcon
+                          icon={faCodeCompare}
+                          className="text-info pr-3"
+                          size="1x"
+                        />
                       </h2>
                       <h5 className="title">Critical Thinking </h5>
                       <h6 className="subtitle">
@@ -519,7 +588,11 @@ const careers = () => {
                       data-aos-duration="1200"
                     >
                       <h2 className="text-success-gradiant display-5">
-                        <i className="icon-Target"></i>
+                        <FontAwesomeIcon
+                          icon={faShareSquare}
+                          className="text-info pr-3"
+                          size="1x"
+                        />
                       </h2>
                       <h5 className="title">Right amount of ambition </h5>
                       <h6 className="subtitle">
@@ -533,7 +606,11 @@ const careers = () => {
                       data-aos-duration="1200"
                     >
                       <h2 className="text-success-gradiant display-5">
-                        <i className="icon-Mouse-3"></i>
+                        <FontAwesomeIcon
+                          icon={faChalkboard}
+                          className="text-info pr-3"
+                          size="1x"
+                        />
                       </h2>
                       <h5 className="title"> Keep on learning</h5>
                       <h6 className="subtitle">
@@ -547,7 +624,11 @@ const careers = () => {
                       data-aos-duration="1200"
                     >
                       <h2 className="text-success-gradiant display-5">
-                        <i className="icon-Car-Wheel"></i>
+                        <FontAwesomeIcon
+                          icon={faCubes}
+                          className="text-info pr-3"
+                          size="1x"
+                        />
                       </h2>
                       <h5 className="title">Be curious about everything</h5>
                       <h6 className="subtitle">
@@ -561,18 +642,12 @@ const careers = () => {
             </div>
           </div>
 
-          {/* <!-- ============================================================== -->
-                <!-- Features 21  -->
-                <!-- ============================================================== --> */}
-          {/* <div className="spacer feature21 wrap-feature21-box" style="background-image:url(images/bg1.jpg)"> */}
           <div
             className="spacer feature21 wrap-feature21-box"
             style={{ backgroundImage: "url(images/bg1.jpg)" }}
           >
             <div className="container">
-              {/* <!-- Row  --> */}
               <div className="row text-white">
-                {/* <!-- Column --> */}
                 <div className="col-md-5 both-space">
                   <div
                     className=""
@@ -582,33 +657,20 @@ const careers = () => {
                     <h2 className="text-white m-t-20 m-b-30">
                       Don&apos;t go by Queue, Create your Own Way Faster
                     </h2>
-                    <p className="op-8">
+                    <p>
                       Don&apos;t just come up with an "out-of-the-box" idea.
                       Create your own box and design it with your energy.
-                    </p>{" "}
-                    <a
-                      className="btn btn-info-gradiant btn-md btn-arrow m-t-20"
-                      data-toggle="collapse"
-                      href="#"
-                    >
-                      <span>
-                        Join Us <i className="ti-arrow-right"></i>
-                      </span>
-                    </a>{" "}
+                    </p>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-          {/* <!-- ============================================================== -->
-                <!-- Features 21  -->
-                <!-- ============================================================== --> */}
+
           <div className="spacer feature24 bg-light ">
             <div className="container ">
-              {/* <!-- Row --> */}
               <div className="row justify-content-center ">
                 <div className="col-md-7 text-center ">
-                  {/* <!-- <span className="label label-success label-rounded ">Feature 24</span> --> */}
                   <h2 className="title ">Why Join Aexonic?</h2>
                   <h6 className="subtitle ">
                     Working at Aexonic is not just about having a job that makes
@@ -618,91 +680,107 @@ const careers = () => {
                   </h6>
                 </div>
               </div>
-              {/* <!-- Row --> */}
+
               <div className="row wrap-feature-24 ">
-                {/* <!-- Column --> */}
                 <div className="col-lg-3 col-md-6 ">
                   <div className="card card-shadow ">
                     <a className="service-24 ">
-                      {" "}
-                      <i className="icon-Target "></i>
+                      <FontAwesomeIcon
+                        icon={faGreaterThan}
+                        className="text-info pr-3"
+                        size="3x"
+                      />
                       <h6 className="ser-title ">Greater opportunities</h6>
                     </a>
                   </div>
                 </div>
-                {/* <!-- Column -->
-                        <!-- Column --> */}
+
                 <div className="col-lg-3 col-md-6 ">
                   <div className="card card-shadow ">
                     <a className="service-24 ">
-                      {" "}
-                      <i className="icon-Car-Wheel "></i>
+                      <FontAwesomeIcon
+                        icon={faLayerGroup}
+                        className="text-info pr-3"
+                        size="3x"
+                      />
                       <h6 className="ser-title ">Diverse skillsets</h6>
                     </a>
                   </div>
                 </div>
-                {/* <!-- Column -->
-                        <!-- Column --> */}
+
                 <div className="col-lg-3 col-md-6 ">
                   <div className="card card-shadow ">
                     <a className="service-24 ">
-                      {" "}
-                      <i className="icon-Mouse-3 "></i>
+                      <FontAwesomeIcon
+                        icon={faChalkboardUser}
+                        className="text-info pr-3"
+                        size="3x"
+                      />
                       <h6 className="ser-title ">Peer-to-peer learning</h6>
                     </a>
                   </div>
                 </div>
-                {/* <!-- Column -->
-                        <!-- Column --> */}
+
                 <div className="col-lg-3 col-md-6 ">
                   <div className="card card-shadow ">
                     <a className="service-24 ">
-                      {" "}
-                      <i className="icon-Eyeglasses-Smiley "></i>
+                      <FontAwesomeIcon
+                        icon={faBuildingColumns}
+                        className="text-info pr-3"
+                        size="3x"
+                      />
                       <h6 className="ser-title ">Unity in diversity </h6>
                     </a>
                   </div>
                 </div>
-                {/* <!-- Column -->
-                        <!-- Column --> */}
+
                 <div className="col-lg-3 col-md-6 ">
                   <div className="card card-shadow ">
                     <a className="service-24 ">
-                      {" "}
-                      <i className="icon-Target-Market "></i>
+                      <FontAwesomeIcon
+                        icon={faCropSimple}
+                        className="text-info pr-3"
+                        size="3x"
+                      />
                       <h6 className="ser-title ">Flexible with uncertainty</h6>
                     </a>
                   </div>
                 </div>
-                {/* <!-- Column -->
-                        <!-- Column --> */}
+
                 <div className="col-lg-3 col-md-6 ">
                   <div className="card card-shadow ">
                     <a className="service-24 ">
-                      {" "}
-                      <i className="icon-Laptop-Phone "></i>
+                      <FontAwesomeIcon
+                        icon={faCrosshairs}
+                        className="text-info pr-3"
+                        size="3x"
+                      />
                       <h6 className="ser-title ">Prioritize creativity</h6>
                     </a>
                   </div>
                 </div>
-                {/* <!-- Column -->
-                        <!-- Column --> */}
+
                 <div className="col-lg-3 col-md-6 ">
                   <div className="card card-shadow ">
                     <a className="service-24 ">
-                      {" "}
-                      <i className="icon-Full-Bag "></i>
+                      <FontAwesomeIcon
+                        icon={faUsers}
+                        className="text-info pr-3"
+                        size="3x"
+                      />
                       <h6 className="ser-title ">Connect globally </h6>
                     </a>
                   </div>
                 </div>
-                {/* <!-- Column -->
-                        <!-- Column --> */}
+
                 <div className="col-lg-3 col-md-6 ">
                   <div className="card card-shadow ">
                     <a className="service-24 ">
-                      {" "}
-                      <i className="icon-Eyeglasses-Smiley "></i>
+                      <FontAwesomeIcon
+                        icon={faIndent}
+                        className="text-info pr-3"
+                        size="3x"
+                      />
                       <h6 className="ser-title ">
                         Nurture your innate talents
                       </h6>
@@ -1029,4 +1107,4 @@ const careers = () => {
   );
 };
 
-export default careers;
+export default Careers;

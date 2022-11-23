@@ -518,6 +518,35 @@ const Manufacturing = () => {
             </div>
           </div>
 
+          <div
+            className="spacer feature21 wrap-feature21-box"
+            style={{
+              backgroundImage:
+                "url(https://www.infosys.com/content/dam/infosys-web/en/global-resource/18/banner/collaboration-digital-workplace-management-lead.jpg)",
+            }}
+          >
+            <div className="container">
+              <div className="row text-white">
+                <div className="col-md-5 both-space">
+                  <div
+                    className=""
+                    data-aos="fade-right"
+                    data-aos-duration="1200"
+                  >
+                    <h2 className="text-white m-t-20 m-b-30">
+                      Delivering Digital Excellence Across Industries
+                    </h2>
+                    <p>
+                      Manufacturers need to build connected, cognitive, and
+                      collaborative networks which support adaptive innovation
+                      at scale.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
           <div className="spacer bg-light feature12">
             <div className="container">
               <div className="row">

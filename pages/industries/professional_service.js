@@ -1,9 +1,76 @@
 import Head from "next/head";
-import React from "react";
+import { React, useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faCropSimple,
+  faCoins,
+  faRocket,
+  faGlobe,
+  faTruckFast,
+  faKitMedical,
+  faIndustry,
+} from "@fortawesome/free-solid-svg-icons";
 
 const Professional = () => {
+  useEffect(() => {
+    $(function () {
+      "use strict";
+      $(function () {
+        $(".preloader").fadeOut();
+      });
+      jQuery(document).on("click", ".mega-dropdown", function (e) {
+        e.stopPropagation();
+      });
+      jQuery(document).on("click", ".navbar-nav > .dropdown", function (e) {
+        e.stopPropagation();
+      });
+      $(".dropdown-submenu").click(function () {
+        $(".dropdown-submenu > .dropdown-menu").toggleClass("show");
+      });
+
+      $("body").trigger("resize");
+      // ==============================================================
+      //Fix header while scroll
+      // ==============================================================
+      var wind = $(window);
+      wind.on("load", function () {
+        var bodyScroll = wind.scrollTop(),
+          navbar = $(".topbar");
+        if (bodyScroll > 100) {
+          navbar.addClass("fixed-header animated slideInDown");
+        } else {
+          navbar.removeClass("fixed-header animated slideInDown");
+        }
+      });
+      $(window).scroll(function () {
+        if ($(window).scrollTop() >= 100) {
+          $(".topbar").addClass("fixed-header animated slideInDown");
+          $(".bt-top").addClass("visible");
+        } else {
+          $(".topbar").removeClass("fixed-header animated slideInDown");
+          $(".bt-top").removeClass("visible");
+        }
+      });
+      // ==============================================================
+      // Animation initialized
+      // ==============================================================
+      AOS.init();
+      // ==============================================================
+      // Back to top
+      // ==============================================================
+      $(".bt-top").on("click", function (e) {
+        e.preventDefault();
+        $("html,body").animate(
+          {
+            scrollTop: 0,
+          },
+          700
+        );
+      });
+    });
+  });
   return (
     <div>
       <Head>
@@ -80,7 +147,6 @@ const Professional = () => {
                       </Link>
                     </li>
                     <li className="nav-item dropdown mega-dropdown">
-                      {" "}
                       <a
                         className="nav-link dropdown-toggle"
                         id="h6-mega-dropdown1"
@@ -250,7 +316,6 @@ const Professional = () => {
                       </div>
                     </li>
                     <li className="nav-item dropdown">
-                      {" "}
                       <Link href="">
                         <a
                           className="nav-link active dropdown-toggle"
@@ -276,7 +341,6 @@ const Professional = () => {
                           </Link>
                         </li>
                         <li>
-                          {" "}
                           <Link href="/industries/hospitality">
                             <a className="dropdown-item">
                               Hospitality and Travel
@@ -284,19 +348,16 @@ const Professional = () => {
                           </Link>
                         </li>
                         <li>
-                          {" "}
                           <Link href="/industries/healthcare">
                             <a className="dropdown-item">Healthcare</a>
                           </Link>
                         </li>
                         <li>
-                          {" "}
                           <Link href="/industries/manifacturing">
                             <a className="dropdown-item">Manufacturing</a>
                           </Link>
                         </li>
                         <li>
-                          {" "}
                           <Link href="/industries/retail">
                             <a className="dropdown-item">
                               Retail and e-commerce
@@ -304,7 +365,6 @@ const Professional = () => {
                           </Link>
                         </li>
                         <li>
-                          {" "}
                           <Link href="/industries/technology">
                             <a className="dropdown-item">
                               Technology and Software
@@ -312,7 +372,6 @@ const Professional = () => {
                           </Link>
                         </li>
                         <li>
-                          {" "}
                           <Link href="/industries/professional_service">
                             <a className="dropdown-item active_menu">
                               Professional Services
@@ -354,7 +413,6 @@ const Professional = () => {
                       </Link>
                     </li>
                     <li className="nav-item dropdown">
-                      {" "}
                       <a
                         className="nav-link dropdown-toggle"
                         href="#"
@@ -377,7 +435,6 @@ const Professional = () => {
                           </Link>
                         </li>
                         <li>
-                          {" "}
                           <Link href="/blog">
                             <a className="dropdown-item">Blogs</a>
                           </Link>
@@ -427,19 +484,223 @@ const Professional = () => {
               </div>
             </div>
           </div>
-          {/* <!-- ============================================================== -->
-            <!-- Testimonial 9 -->
-            <!-- ============================================================== --> */}
 
-          <div className="spacer feature2">
+          <div className="spacer feature12">
+            <div className="container">
+              <div className="row">
+                <div className="col-lg-7">
+                  <h2 className="m-b-30 m-t-20">
+                    Navigate your Next in Professional Services
+                  </h2>
+                  <h6 className="subtitle">
+                    Aexonic supports professional services organizations by
+                    designing and implementing solutions for the smooth delivery
+                    of audit, tax, and legal services while leveraging new and
+                    emerging technologies.
+                    <br />
+                    <br />
+                    Our partners with professional services organizations to
+                    navigate business challenges and drive business
+                    transformation. We automate processes, modernize IT
+                    infrastructure, integrate systems, and distill business
+                    insights to empower professionals.
+                  </h6>
+                </div>
+                <div className="col-lg-5">
+                  <div className="row wrap-feature-12">
+                    <div className="col-md-12">
+                      <img
+                        src="https://img.freepik.com/free-vector/communication-flat-icon_1262-18771.jpg?w=740&t=st=1669120392~exp=1669120992~hmac=d746a343df00cabb51a5ca130383d76daf045438ced94dc36e5a7c24fffb1407"
+                        className="rounded img-responsive m-t-3"
+                        alt="wrapkit "
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div
+            className="spacer feature42"
+            style={{
+              backgroundImage:
+                "linear-gradient(255deg, #000000, transparent), url(https://images.unsplash.com/photo-1425421669292-0c3da3b8f529?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1169&q=80)",
+            }}
+          >
+            <div className="row justify-content-center">
+              <div
+                className="col-md-10 col-lg-7 text-center"
+                data-aos="fade-up"
+              >
+                <h2 className="title text-white">
+                  Our roles in the professional services sector
+                </h2>
+                <div className="row wrap-feature43-box">
+                  <div
+                    className="col-md-6"
+                    data-aos="fade-right"
+                    data-aos-duration="1200"
+                  >
+                    <h2 className="text-white display-5">
+                      <FontAwesomeIcon
+                        icon={faCropSimple}
+                        className=" pr-3 "
+                        size="1x"
+                      />
+                    </h2>
+                    <h5 className="title text-blue">Consulting</h5>
+                    <h6 className="text-white">
+                      working with businesses to reduce costs or reorganise for
+                      maximum efficiency
+                    </h6>
+                  </div>
+                  <div
+                    className="col-md-6"
+                    data-aos="fade-right"
+                    data-aos-duration="1200"
+                  >
+                    <h2 className="text-white display-5">
+                      <FontAwesomeIcon
+                        icon={faCoins}
+                        className=" pr-3 "
+                        size="1x"
+                      />
+                    </h2>
+                    <h5 className="title text-blue">Financial Advisory </h5>
+                    <h6 className="text-white">
+                      Advising businesses on investments and how to best manage
+                      their money
+                    </h6>
+                  </div>
+                  <div
+                    className="col-md-6"
+                    data-aos="fade-left"
+                    data-aos-duration="1200"
+                  >
+                    <h2 className="text-white display-5">
+                      <FontAwesomeIcon
+                        icon={faGlobe}
+                        className=" pr-3 "
+                        size="1x"
+                      />
+                    </h2>
+                    <h5 className="title text-blue">Optimize audit</h5>
+                    <h6 className="text-white">
+                      We combine deep data analytics with machine learning to
+                      optimize the workforce for audit services
+                    </h6>
+                  </div>
+                  <div
+                    className="col-md-6"
+                    data-aos="fade-left"
+                    data-aos-duration="1200"
+                  >
+                    <h2 className="text-white display-5">
+                      <FontAwesomeIcon
+                        icon={faRocket}
+                        className=" pr-3 "
+                        size="1x"
+                      />
+                    </h2>
+                    <h5 className="title text-blue">Corporate Solutions</h5>
+                    <h6 className="text-white">
+                      Our digital solutions focus on talent transformation by
+                      supporting learning and collaboration.
+                    </h6>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className="feature39 spacer wrap-feature39-box">
+            <div className="container">
+              <div className="row">
+                <div className="col-lg-6">
+                  <img
+                    src="https://images.unsplash.com/photo-1521898284481-a5ec348cb555?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
+                    className="img-fluid"
+                    alt="wrapkit"
+                  />
+                </div>
+                <div className="col-lg-6">
+                  <div className="card-body">
+                    <h2 className="title text-uppercase">
+                      Aexonic experts discuss how cloud services transform the
+                      business landscape
+                    </h2>
+                    <p className="m-t-40 m-b-40">
+                      We drive operational excellence at professional services
+                      organizations
+                    </p>
+
+                    <div className="d-flex no-block m-b-40">
+                      <div className="display-4 m-r-20">
+                        <FontAwesomeIcon
+                          icon={faTruckFast}
+                          className="text-info pr-3 "
+                          size="1x"
+                        />
+                      </div>
+                      <div>
+                        <h4>Consumer Packaged Goods, Retail and Logistics</h4>
+                        <h6 className="subtitle">
+                          Our aimed is understanding the cloud initiatives for
+                          Consumer Packaged Goods, Retail and Logistics
+                          companies.
+                        </h6>
+                      </div>
+                    </div>
+
+                    <div className="d-flex no-block m-b-40">
+                      <div className="display-4 m-r-20">
+                        <FontAwesomeIcon
+                          icon={faKitMedical}
+                          className="text-info pr-3 "
+                          size="1x"
+                        />
+                      </div>
+                      <div>
+                        <h4>Healthcare</h4>
+                        <h6 className="subtitle">
+                          Aexonic understanding the cloud initiatives for
+                          Healthcare and Life Sciences companies.
+                        </h6>
+                      </div>
+                    </div>
+
+                    <div className="d-flex no-block m-b-40">
+                      <div className="display-4 m-r-20">
+                        <FontAwesomeIcon
+                          icon={faIndustry}
+                          className="text-info pr-3 "
+                          size="1x"
+                        />
+                      </div>
+                      <div>
+                        <h4>Manufacturing</h4>
+                        <h6 className="subtitle">
+                          Manufacturers expect operational outcomes from their
+                          cloud programs such as a standardized and integrated
+                          technology landscape, reduced time to market.
+                        </h6>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className="spacer bg-light feature2">
             <div className="container">
               <div className="row justify-content-center">
                 <div className="col-md-7 text-center">
-                  <h2 className="title">Services</h2>
+                  <h2 className="title">Our offerings</h2>
                   <h6 className="subtitle">
-                    You can relay on our amazing features list and also our
-                    customer services will be great experience for you without
-                    doubt and in no-time
+                    Our offerings for professional services organizations are
+                    based on three principles:
                   </h6>
                 </div>
               </div>
@@ -453,14 +714,18 @@ const Professional = () => {
                   >
                     <img
                       className="card-img-top"
-                      src="/images/features/market.jpg"
+                      src="https://img.freepik.com/free-vector/sphere-grid-wave-with-binary-code-ai-artificial-intelligence-logo-hand-machine-learning-concept_127544-855.jpg?w=900&t=st=1669121333~exp=1669121933~hmac=6834a373693215939c6b44b41fc86eb920944e162cac629800f1f0122d0f0e35"
                       alt="wrappixel kit"
                     />
                     <div className="card-body text-center">
-                      <h5 className="font-medium">Retargeting Market</h5>
+                      <h5 className="font-medium">
+                        Artificial intelligence (AI)
+                      </h5>
                       <p className="m-t-20">
-                        You can relay on our amazing features list and also our
-                        customer services will be great experience.
+                        Processes a huge volume of structured and unstructured
+                        data sets, distills actionable business insights, and
+                        automates processes by capitalizing on cognitive
+                        solutions.
                       </p>
                     </div>
                   </div>
@@ -474,14 +739,16 @@ const Professional = () => {
                   >
                     <img
                       className="card-img-top"
-                      src="/images/features/fruit.jpg"
+                      src="https://img.freepik.com/free-photo/teamwork-designers_1098-13045.jpg?w=900&t=st=1669121548~exp=1669122148~hmac=36fee04de2dc9fae0ab02e25b452d2718be85db7869ecec8ba5b09d922ba6a34"
                       alt="wrappixel kit"
                     />
                     <div className="card-body text-center">
-                      <h5 className="font-medium">Fruitful Results</h5>
+                      <h5 className="font-medium">Always-on learning</h5>
                       <p className="m-t-20">
-                        You can relay on our amazing features list and also our
-                        customer services will be great experience.
+                        Enables continuous assimilation and sharing of knowledge
+                        with an immersive learning platform. Learning is the
+                        process of acquiring new, or modifying existing,
+                        knowledge, behaviors.
                       </p>
                     </div>
                   </div>
@@ -495,246 +762,17 @@ const Professional = () => {
                   >
                     <img
                       className="card-img-top"
-                      src="/images/features/instant.jpg"
+                      src="https://img.freepik.com/free-photo/focused-businesspeople-reading-documents-with-statistics-successful-concentrated-office-employers-suits-meeting-office-room-studying-reports-teamwork-business-management-concept_74855-7250.jpg?w=900&t=st=1669121605~exp=1669122205~hmac=9e961044adb14f0e7451b371da1082158517c8f33dfcbc96e20f32723af8a1e5"
                       alt="wrappixel kit"
                     />
                     <div className="card-body text-center">
-                      <h5 className="font-medium">Instant Solutions</h5>
+                      <h5 className="font-medium">Agile digital at scale</h5>
                       <p className="m-t-20">
-                        You can relay on our amazing features list and also our
-                        customer services will be great experience.
+                        Enhances performance through microservices-based
+                        integration, blockchain networks, and real-time data
+                        analytics. Agile helps you familiarize yourself with
+                        complex software and IT skills.
                       </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div
-            className="spacer feature42"
-            style={{ backgroundImage: "url(/images/innerpage/ban1.jpeg)" }}
-          >
-            <div className="row justify-content-center">
-              <div
-                className="col-md-10 col-lg-7 text-center"
-                data-aos="fade-up"
-              >
-                <h2 className="title text-white">
-                  You wont believ that you can make Your Website in Record Time
-                </h2>
-                <div className="row wrap-feature43-box">
-                  <div
-                    className="col-md-6"
-                    data-aos="fade-right"
-                    data-aos-duration="1200"
-                  >
-                    <h2 className="text-white display-5">
-                      <i className="icon-Car-Wheel"></i>
-                    </h2>
-                    <h5 className="title text-blue">Unbeatable Features</h5>
-                    <h6 className="text-white">
-                      You can relay on our amazing features list and also our
-                      customer services.
-                    </h6>
-                  </div>
-                  <div
-                    className="col-md-6"
-                    data-aos="fade-right"
-                    data-aos-duration="1200"
-                  >
-                    <h2 className="text-white display-5">
-                      <i className="icon-Target"></i>
-                    </h2>
-                    <h5 className="title text-blue">Professional Support</h5>
-                    <h6 className="text-white">
-                      You can relay on our amazing features list and also our
-                      customer services.
-                    </h6>
-                  </div>
-                  <div
-                    className="col-md-6"
-                    data-aos="fade-left"
-                    data-aos-duration="1200"
-                  >
-                    <h2 className="text-white display-5">
-                      <i className="icon-Mouse-3"></i>
-                    </h2>
-                    <h5 className="title text-blue">Quick and Easy</h5>
-                    <h6 className="text-white">
-                      You can relay on our amazing features list and also our
-                      customer services.
-                    </h6>
-                  </div>
-                  <div
-                    className="col-md-6"
-                    data-aos="fade-left"
-                    data-aos-duration="1200"
-                  >
-                    <h2 className="text-white display-5">
-                      <i className="icon-Car-Wheel"></i>
-                    </h2>
-                    <h5 className="title text-blue">Secured &amp; Trendy</h5>
-                    <h6 className="text-white">
-                      You can relay on our amazing features list and also our
-                      customer services.
-                    </h6>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div className="feature39 spacer wrap-feature39-box">
-            <div className="container">
-              <div className="row">
-                <div className="col-lg-6">
-                  <img
-                    src="/images/retail_2.jpg"
-                    className="img-fluid"
-                    alt="wrapkit"
-                  />
-                </div>
-                <div className="col-lg-6">
-                  <div className="card-body">
-                    <h2 className="title text-uppercase">
-                      Awesome Extra Ordinary Flexibility
-                    </h2>
-                    <p className="m-t-40 m-b-40">
-                      You can relay on our amazing features list and also our
-                      customer services will be greatexperience for you without
-                    </p>
-
-                    <div className="d-flex no-block m-b-40">
-                      <div className="display-4 m-r-20">
-                        <i className="icon-Paypal text-success-gradiant"></i>
-                      </div>
-                      <div>
-                        <h4>Payment and exchange</h4>
-                        <h6 className="subtitle">
-                          You can relay on our amazing features
-                        </h6>
-                      </div>
-                    </div>
-
-                    <div className="d-flex no-block m-b-40">
-                      <div className="display-4 m-r-20">
-                        <i className="icon-Evernote text-success-gradiant"></i>
-                      </div>
-                      <div>
-                        <h4>Notes and organising</h4>
-                        <h6 className="subtitle">
-                          You can relay on our amazing features
-                        </h6>
-                      </div>
-                    </div>
-
-                    <div className="d-flex no-block m-b-40">
-                      <div className="display-4 m-r-20">
-                        <i className="icon-Google-Drive text-success-gradiant"></i>
-                      </div>
-                      <div>
-                        <h4>Language &amp; Input Tools</h4>
-                        <h6 className="subtitle">
-                          You can relay on our amazing features
-                        </h6>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div className="blog-home1 spacer bg-light ">
-            <div className="container ">
-              <div className="row justify-content-center ">
-                <div className="col-md-8 text-center ">
-                  <h2 className="title ">Our Work</h2>
-                  <h6 className="subtitle ">
-                    You can relay on our amazing features list and also our
-                    customer services will be great experience for you without
-                    doubt and in no-time
-                  </h6>
-                </div>
-              </div>
-              <div className="row m-t-40 ">
-                <div className="col-md-4 ">
-                  <div
-                    className="card card-shadow "
-                    data-aos="flip-left "
-                    data-aos-duration="1200 "
-                  >
-                    <a href="# ">
-                      <img
-                        className="card-img-top "
-                        src="/images/blog/img3.jpg "
-                        alt="wrappixel kit "
-                      />
-                    </a>
-                    <div className="p-30 ">
-                      <div className="d-flex no-block font-14 ">
-                        <a href="# ">Digital Marketing</a>
-                        <span className="ml-auto ">Sept 18, 2017</span>
-                      </div>
-                      <h5 className="font-medium m-t-20 ">
-                        <a href="# " className="link ">
-                          Digital Marketing becomes very Essential for any site
-                        </a>
-                      </h5>
-                    </div>
-                  </div>
-                </div>
-                <div className="col-md-4 ">
-                  <div
-                    className="card card-shadow "
-                    data-aos="flip-up "
-                    data-aos-duration="1200 "
-                  >
-                    <a href="# ">
-                      <img
-                        className="card-img-top "
-                        src="/images/blog/img2.jpg "
-                        alt="wrappixel kit "
-                      />
-                    </a>
-                    <div className="p-30 ">
-                      <div className="d-flex no-block font-14 ">
-                        <a href="# ">Search Engine </a>
-                        <span className="ml-auto ">Sept 18, 2017</span>
-                      </div>
-                      <h5 className="font-medium m-t-20 ">
-                        <a href="# " className="link ">
-                          Rank your site on First Page of Google seems easier
-                          now
-                        </a>
-                      </h5>
-                    </div>
-                  </div>
-                </div>
-                <div className="col-md-4 ">
-                  <div
-                    className="card card-shadow "
-                    data-aos="flip-right "
-                    data-aos-duration="1200 "
-                  >
-                    <a href="# ">
-                      <img
-                        className="card-img-top "
-                        src="/images/blog/img1.jpg "
-                        alt="wrappixel kit "
-                      />
-                    </a>
-                    <div className="p-30 ">
-                      <div className="d-flex no-block font-14 ">
-                        <a href="# ">Search Engine</a>
-                        <span className="ml-auto ">Sept 18, 2017</span>
-                      </div>
-                      <h5 className="font-medium m-t-20 ">
-                        <a href="# " className="link ">
-                          We have just launched our new Admin template
-                        </a>
-                      </h5>
                     </div>
                   </div>
                 </div>

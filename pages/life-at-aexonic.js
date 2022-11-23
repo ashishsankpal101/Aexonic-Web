@@ -1,9 +1,75 @@
 import Head from "next/head";
-import React from "react";
+import { React, useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faGaugeHigh,
+  faLaptopFile,
+  faBuilding,
+  faArrowUpRightDots,
+  faPeopleGroup,
+  faCheckDouble,
+} from "@fortawesome/free-solid-svg-icons";
 
 const LifeAtAexonic = () => {
+  useEffect(() => {
+    $(function () {
+      "use strict";
+      $(function () {
+        $(".preloader").fadeOut();
+      });
+      jQuery(document).on("click", ".mega-dropdown", function (e) {
+        e.stopPropagation();
+      });
+      jQuery(document).on("click", ".navbar-nav > .dropdown", function (e) {
+        e.stopPropagation();
+      });
+      $(".dropdown-submenu").click(function () {
+        $(".dropdown-submenu > .dropdown-menu").toggleClass("show");
+      });
+
+      $("body").trigger("resize");
+      // ==============================================================
+      //Fix header while scroll
+      // ==============================================================
+      var wind = $(window);
+      wind.on("load", function () {
+        var bodyScroll = wind.scrollTop(),
+          navbar = $(".topbar");
+        if (bodyScroll > 100) {
+          navbar.addClass("fixed-header animated slideInDown");
+        } else {
+          navbar.removeClass("fixed-header animated slideInDown");
+        }
+      });
+      $(window).scroll(function () {
+        if ($(window).scrollTop() >= 100) {
+          $(".topbar").addClass("fixed-header animated slideInDown");
+          $(".bt-top").addClass("visible");
+        } else {
+          $(".topbar").removeClass("fixed-header animated slideInDown");
+          $(".bt-top").removeClass("visible");
+        }
+      });
+      // ==============================================================
+      // Animation initialized
+      // ==============================================================
+      AOS.init();
+      // ==============================================================
+      // Back to top
+      // ==============================================================
+      $(".bt-top").on("click", function (e) {
+        e.preventDefault();
+        $("html,body").animate(
+          {
+            scrollTop: 0,
+          },
+          700
+        );
+      });
+    });
+  });
   return (
     <div>
       <Head>
@@ -80,7 +146,6 @@ const LifeAtAexonic = () => {
                       </Link>
                     </li>
                     <li className="nav-item dropdown mega-dropdown">
-                      {" "}
                       <a
                         className="nav-link dropdown-toggle"
                         id="h6-mega-dropdown1"
@@ -198,12 +263,7 @@ const LifeAtAexonic = () => {
                               </li>
                             </ul>
                           </div>
-                          {/* <div className="col-lg-2 col-md-4">
-                                                        <ul className="list-style-none">
-                                                            
-                                                          
-                                                        </ul>
-                                                    </div> */}
+
                           <div className="col-lg-3 col-md-4">
                             <ul className="list-style-none">
                               <li>
@@ -327,11 +387,7 @@ const LifeAtAexonic = () => {
                         </a>
                       </Link>
                     </li>
-                    {/* <li className="nav-item dropdown"> <a className="nav-link dropdown-toggle" href="#" id="h6-dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                            Blog
 
-                                        </a>
-                                        </li> */}
                     <li className="nav-item dropdown">
                       <Link href="/aboutus">
                         <a
@@ -347,7 +403,6 @@ const LifeAtAexonic = () => {
                       </Link>
                     </li>
                     <li className="nav-item dropdown">
-                      {" "}
                       <a
                         className="nav-link dropdown-toggle active"
                         href="#"
@@ -372,7 +427,6 @@ const LifeAtAexonic = () => {
                           </Link>
                         </li>
                         <li>
-                          {" "}
                           <Link href="/blog">
                             <a className="dropdown-item">Blogs</a>
                           </Link>
@@ -394,10 +448,6 @@ const LifeAtAexonic = () => {
           <!-- ============================================================== --> */}
         </div>
         <div className="container-fluid ">
-          {/* <!-- ============================================================== -->
-                <!-- Static Slider 10  -->
-                <!-- ============================================================== --> */}
-          {/* <div className="banner-innerpage" style="background-image:url(images/services/Banner/support.jpeg)"> */}
           <div
             className="banner-innerpage"
             style={{
@@ -516,120 +566,6 @@ const LifeAtAexonic = () => {
             </div>
           </div>
 
-          {/* <!-- ============================================================== -->
-                <!-- End Feature 29 -->
-                <!-- ============================================================== --> */}
-
-          {/* <div className="spacer  team4">
-            <div className="container">
-              <div className="row justify-content-center m-b-30">
-                <div className="col-md-7 text-center">
-                  <h2 className="title">Our Priorities</h2>
-                  <h6 className="subtitle">
-                    You can tell a lot about a team by the way it works. On Team
-                    Aexonic, four competencies define the framework for our
-                    entire organization.
-                  </h6>
-                </div>
-              </div>
-              <div className="row m-t-30">
-                <div className="col-lg-3 m-b-30">
-                  <div className="row">
-                    <div className="col-md-12 pro-pic">
-                      <img
-                        src="https://www.entrata.com/img/company_pages/careers/growth_icon.svg"
-                        alt="wrapkit"
-                        className="img-responsive"
-                      />
-                    </div>
-                    <div className="col-md-12">
-                      <div className="p-t-10">
-                        <h5 className="title font-medium">Work for growth</h5>
-                        <h6 className="subtitle"></h6>
-                        <p>
-                          Aexonic&apos;s teams cultivate a mindset that
-                          prioritizes growth, and not just for the organization.
-                          A focus on personal and career development helps drive
-                          the innovation that is essential to our success.
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div className="col-lg-3 m-b-30">
-                  <div className="row">
-                    <div className="col-md-12 pro-pic">
-                      <img
-                        src="	https://www.entrata.com/img/company_pages/careers/fast_icon.svg"
-                        alt="wrapkit"
-                        className="img-responsive"
-                      />
-                    </div>
-                    <div className="col-md-12">
-                      <div className="p-t-10">
-                        <h5 className="title font-medium">Work fast</h5>
-                        <h6 className="subtitle"></h6>
-                        <p>
-                          The pace of technology is always increasing, creating
-                          an urgency in everything we do. Aexonic embraces a
-                          dynamic, high-energy environment because we
-                          understand: slowing down is not an option.
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div className="col-lg-3 m-b-30">
-                  <div className="row">
-                    <div className="col-md-12 pro-pic">
-                      <img
-                        src="	https://www.entrata.com/img/company_pages/careers/purpose_icon.svg"
-                        alt="wrapkit"
-                        className="img-responsive"
-                      />
-                    </div>
-                    <div className="col-md-12">
-                      <div className="p-t-10">
-                        <h5 className="title font-medium">Work with purpose</h5>
-                        <h6 className="subtitle"></h6>
-                        <p>
-                          Our work impacts thousands of communities and millions
-                          of renters across the globe. You might say we&apos;re
-                          obsessed with our customers, and you&apos;d be right.
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div className="col-lg-3 m-b-30">
-                  <div className="row">
-                    <div className="col-md-12 pro-pic">
-                      <img
-                        src="https://www.entrata.com/img/company_pages/careers/together_icon.svg"
-                        alt="wrapkit"
-                        className="img-responsive"
-                      />
-                    </div>
-                    <div className="col-md-12">
-                      <div className="p-t-10">
-                        <h5 className="title font-medium">Work together</h5>
-                        <h6 className="subtitle"></h6>
-                        <p>
-                          A diversity of perspectives reveals solutions that
-                          might otherwise go unseen. We prioritize teamwork and
-                          collaboration to make certain every angle is covered.
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div> */}
-
           <div className=" spacer feature3">
             <div className="container">
               <div className="row justify-content-center">
@@ -652,7 +588,11 @@ const LifeAtAexonic = () => {
                   >
                     <div className="card-body d-flex">
                       <div className="icon-space align-self-center">
-                        <i className="icon-Double-Circle display-2 text-success-gradiant"></i>
+                        <FontAwesomeIcon
+                          icon={faArrowUpRightDots}
+                          className="text-info pr-3"
+                          size="3x"
+                        />
                       </div>
                       <div className="align-self-center">
                         <h5 className="font-medium">Work For Growth</h5>
@@ -675,7 +615,11 @@ const LifeAtAexonic = () => {
                   >
                     <div className="card-body d-flex">
                       <div className="icon-space align-self-center">
-                        <i className="icon-Stopwatch display-2 text-success-gradiant"></i>
+                        <FontAwesomeIcon
+                          icon={faGaugeHigh}
+                          className="text-info pr-3"
+                          size="3x"
+                        />
                       </div>
                       <div className="align-self-center">
                         <h5 className="font-medium">Work Fast</h5>
@@ -697,7 +641,11 @@ const LifeAtAexonic = () => {
                   >
                     <div className="card-body d-flex">
                       <div className="icon-space align-self-center">
-                        <i className="icon-Thumbs-UpSmiley display-2 text-success-gradiant"></i>
+                        <FontAwesomeIcon
+                          icon={faLaptopFile}
+                          className="text-info pr-3"
+                          size="3x"
+                        />
                       </div>
                       <div className="align-self-center">
                         <h5 className="font-medium">Work With Purpose</h5>
@@ -719,7 +667,11 @@ const LifeAtAexonic = () => {
                   >
                     <div className="card-body d-flex">
                       <div className="icon-space align-self-center">
-                        <i className="icon-Window-2 display-2 text-success-gradiant"></i>
+                        <FontAwesomeIcon
+                          icon={faPeopleGroup}
+                          className="text-info pr-3"
+                          size="3x"
+                        />
                       </div>
                       <div className="align-self-center">
                         <h5 className="font-medium">Work Together</h5>

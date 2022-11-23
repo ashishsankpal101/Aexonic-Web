@@ -1,9 +1,73 @@
 import Head from "next/head";
-import React from "react";
+import { React, useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faCropSimple,
+  faHeadset,
+  faCashRegister,
+  faCartShopping,
+} from "@fortawesome/free-solid-svg-icons";
 
 const RetailEcommoerce = () => {
+  useEffect(() => {
+    $(function () {
+      "use strict";
+      $(function () {
+        $(".preloader").fadeOut();
+      });
+      jQuery(document).on("click", ".mega-dropdown", function (e) {
+        e.stopPropagation();
+      });
+      jQuery(document).on("click", ".navbar-nav > .dropdown", function (e) {
+        e.stopPropagation();
+      });
+      $(".dropdown-submenu").click(function () {
+        $(".dropdown-submenu > .dropdown-menu").toggleClass("show");
+      });
+
+      $("body").trigger("resize");
+      // ==============================================================
+      //Fix header while scroll
+      // ==============================================================
+      var wind = $(window);
+      wind.on("load", function () {
+        var bodyScroll = wind.scrollTop(),
+          navbar = $(".topbar");
+        if (bodyScroll > 100) {
+          navbar.addClass("fixed-header animated slideInDown");
+        } else {
+          navbar.removeClass("fixed-header animated slideInDown");
+        }
+      });
+      $(window).scroll(function () {
+        if ($(window).scrollTop() >= 100) {
+          $(".topbar").addClass("fixed-header animated slideInDown");
+          $(".bt-top").addClass("visible");
+        } else {
+          $(".topbar").removeClass("fixed-header animated slideInDown");
+          $(".bt-top").removeClass("visible");
+        }
+      });
+      // ==============================================================
+      // Animation initialized
+      // ==============================================================
+      AOS.init();
+      // ==============================================================
+      // Back to top
+      // ==============================================================
+      $(".bt-top").on("click", function (e) {
+        e.preventDefault();
+        $("html,body").animate(
+          {
+            scrollTop: 0,
+          },
+          700
+        );
+      });
+    });
+  });
   return (
     <div>
       <Head>
@@ -80,7 +144,6 @@ const RetailEcommoerce = () => {
                       </Link>
                     </li>
                     <li className="nav-item dropdown mega-dropdown">
-                      {" "}
                       <a
                         className="nav-link dropdown-toggle"
                         id="h6-mega-dropdown1"
@@ -250,7 +313,6 @@ const RetailEcommoerce = () => {
                       </div>
                     </li>
                     <li className="nav-item dropdown">
-                      {" "}
                       <Link href="">
                         <a
                           className="nav-link active dropdown-toggle"
@@ -276,7 +338,6 @@ const RetailEcommoerce = () => {
                           </Link>
                         </li>
                         <li>
-                          {" "}
                           <Link href="/industries/hospitality">
                             <a className="dropdown-item">
                               Hospitality and Travel
@@ -284,19 +345,16 @@ const RetailEcommoerce = () => {
                           </Link>
                         </li>
                         <li>
-                          {" "}
                           <Link href="/industries/healthcare">
                             <a className="dropdown-item">Healthcare</a>
                           </Link>
                         </li>
                         <li>
-                          {" "}
                           <Link href="/industries/manifacturing">
                             <a className="dropdown-item">Manufacturing</a>
                           </Link>
                         </li>
                         <li>
-                          {" "}
                           <Link href="/industries/retail">
                             <a className="dropdown-item active_menu">
                               Retail and e-commerce
@@ -304,7 +362,6 @@ const RetailEcommoerce = () => {
                           </Link>
                         </li>
                         <li>
-                          {" "}
                           <Link href="/industries/technology">
                             <a className="dropdown-item">
                               Technology and Software
@@ -312,7 +369,6 @@ const RetailEcommoerce = () => {
                           </Link>
                         </li>
                         <li>
-                          {" "}
                           <Link href="/industries/professional_service">
                             <a className="dropdown-item">
                               Professional Services
@@ -354,7 +410,6 @@ const RetailEcommoerce = () => {
                       </Link>
                     </li>
                     <li className="nav-item dropdown">
-                      {" "}
                       <a
                         className="nav-link dropdown-toggle"
                         href="#"
@@ -377,7 +432,6 @@ const RetailEcommoerce = () => {
                           </Link>
                         </li>
                         <li>
-                          {" "}
                           <Link href="/blog">
                             <a className="dropdown-item">Blogs</a>
                           </Link>
@@ -427,93 +481,69 @@ const RetailEcommoerce = () => {
               </div>
             </div>
           </div>
-          {/* <!-- ============================================================== -->
-            <!-- Testimonial 9 -->
-            <!-- ============================================================== --> */}
 
-          <div className="spacer bg-light feature31 wrap-feature31-box">
-            <div className="row">
-              <div className="container">
-                <div className="col-lg-6">
+          <div className="spacer feature12">
+            <div className="container">
+              <div className="row">
+                <div className="col-lg-7">
+                  <h2 className="m-b-30 m-t-20">
+                    Retail technology for the evolving consumer landscape
+                  </h2>
+                  <h6 className="subtitle">
+                    Retail technology trends are towards powerful, contactless
+                    digital customer engagements and e-commerce to safer
+                    workplaces and more agile operations and supply chains.
+                    <br />
+                    <br />
+                    COVID-19 led to a near-simultaneous shutdown of the global
+                    economy, with retail among the severely impacted. In
+                    responding to the global crisis, retailers turned to rapid
+                    large-scale digital transformation to focus on short-term
+                    operational issues and look ahead at the evolving retail
+                    landscape.
+                    <br></br> <br></br> Aexonic is an award winning agency and
+                    has the requisite expertise to power the growth of digital
+                    commerce across all of these segments.
+                  </h6>
+                </div>
+                <div className="col-lg-5">
+                  <div className="row wrap-feature-12">
+                    <div className="col-md-12">
+                      <img
+                        src="https://img.freepik.com/free-vector/store-with-credit-card-gift-boxes-buyers-illustration_1262-18980.jpg?w=900&t=st=1669099142~exp=1669099742~hmac=89c7d6474554a8c99931a1df353e0bbacda251fc5145addf9266172c05071fc3"
+                        className="rounded img-responsive m-t-3"
+                        alt="wrapkit "
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div
+            className="spacer feature21 wrap-feature21-box"
+            style={{
+              backgroundImage:
+                "linear-gradient(90deg, #000000b5, transparent), url(https://ais-akamai.rtl.de/masters/1789117/1686x0/eine-junge-frau-schlendert-die-shoppingmeile-entlang-und-haelt-einige-tueten-in-den-haenden.jpg)",
+            }}
+          >
+            <div className="container">
+              <div className="row text-white">
+                <div className="col-md-5 both-space">
                   <div
                     className=""
                     data-aos="fade-right"
                     data-aos-duration="1200"
                   >
-                    <h2 className="title text-uppercase">Services Provided</h2>
-                    <p className="op-8">
-                      You can relay on our amazing features list and also our
-                      customer services will be great experience.
+                    <h2 className="text-white m-t-20 m-b-30">
+                      Digitize to 'retell' your retail journey
+                    </h2>
+                    <p>
+                      Discover Aexonic retail technology solutions and services
+                      to help your retail business stay agile and responsive.
                     </p>
                   </div>
-                  <div className="row m-t-30" data-aos="fade-right">
-                    <div className="col-md-4">
-                      <div className="card card-shadow">
-                        <div className="card-body text-center text-uppercase">
-                          {" "}
-                          <i className="icon-Car-Wheel display-5 text-success"></i>
-                          <h6 className="m-t-10 font-medium">Target</h6>
-                        </div>
-                      </div>
-                    </div>
-                    <div className="col-md-4">
-                      <div className="card card-shadow">
-                        <div className="card-body text-center text-uppercase">
-                          {" "}
-                          <i className="icon-Mouse-3 display-5 text-success"></i>
-                          <h6 className="m-t-10 font-medium">Internet</h6>
-                        </div>
-                      </div>
-                    </div>
-                    <div className="col-md-4">
-                      <div className="card card-shadow">
-                        <div className="card-body text-center text-uppercase">
-                          {" "}
-                          <i className="icon-Target display-5 text-success"></i>
-                          <h6 className="m-t-10 font-medium">survive</h6>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="row m-t-30" data-aos="fade-right">
-                    <div className="col-md-4">
-                      <div className="card card-shadow">
-                        <div className="card-body text-center text-uppercase">
-                          {" "}
-                          <i className="icon-Car-Wheel display-5 text-success"></i>
-                          <h6 className="m-t-10 font-medium">Target</h6>
-                        </div>
-                      </div>
-                    </div>
-                    <div className="col-md-4">
-                      <div className="card card-shadow">
-                        <div className="card-body text-center text-uppercase">
-                          {" "}
-                          <i className="icon-Mouse-3 display-5 text-success"></i>
-                          <h6 className="m-t-10 font-medium">Internet</h6>
-                        </div>
-                      </div>
-                    </div>
-                    <div className="col-md-4">
-                      <div className="card card-shadow">
-                        <div className="card-body text-center text-uppercase">
-                          {" "}
-                          <i className="icon-Target display-5 text-success"></i>
-                          <h6 className="m-t-10 font-medium">survive</h6>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div className="col-lg-6 right-image">
-                  <img
-                    src="/images/retail_1.jpg"
-                    className="half-radius"
-                    alt="wrappixel"
-                    data-aos="fade-left"
-                    data-aos-duration="3000"
-                    data-aos-offset="500"
-                  />
                 </div>
               </div>
             </div>
@@ -524,219 +554,169 @@ const RetailEcommoerce = () => {
               <div className="row">
                 <div className="col-lg-6">
                   <img
-                    src="/images/retail_2.jpg"
+                    src="https://images.unsplash.com/photo-1571867424488-4565932edb41?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
                     className="img-fluid"
                     alt="wrapkit"
                   />
                 </div>
                 <div className="col-lg-6">
                   <div className="card-body">
-                    <h2 className="title text-uppercase">
-                      Awesome Extra Ordinary Flexibility
-                    </h2>
+                    <h2 className="title text-uppercase">Our offerings</h2>
                     <p className="m-t-40 m-b-40">
-                      You can relay on our amazing features list and also our
-                      customer services will be greatexperience for you without
+                      Catering to all the IT needs of the eCommerce & Retail
+                      industry
                     </p>
                     <div className="d-flex no-block m-b-40">
                       <div className="display-4 m-r-20">
-                        <i className="icon-Paypal text-success-gradiant"></i>
+                        <FontAwesomeIcon
+                          icon={faCartShopping}
+                          className="text-info pr-3"
+                          size="1x"
+                        />
                       </div>
                       <div>
-                        <h4>Payment and exchange</h4>
+                        <h4>Omnichannel Commerce Solutions</h4>
                         <h6 className="subtitle">
-                          You can relay on our amazing features
+                          Deliver an engaging experience to customers on all
+                          channels and touchpoints to grow and drive business
+                          forward.
                         </h6>
                       </div>
                     </div>
                     <div className="d-flex no-block m-b-40">
                       <div className="display-4 m-r-20">
-                        <i className="icon-Evernote text-success-gradiant"></i>
+                        <FontAwesomeIcon
+                          icon={faCashRegister}
+                          className="text-info pr-3"
+                          size="1x"
+                        />
                       </div>
                       <div>
-                        <h4>Notes and organising</h4>
+                        <h4>eCommerce Platform Migration</h4>
                         <h6 className="subtitle">
-                          You can relay on our amazing features
+                          Get your digital product developed, harnessing our
+                          engineering excellence with DevOps & agile approach
+                          for quick time-to-market
                         </h6>
                       </div>
                     </div>
                     <div className="d-flex no-block m-b-40">
                       <div className="display-4 m-r-20">
-                        <i className="icon-Google-Drive text-success-gradiant"></i>
+                        <FontAwesomeIcon
+                          icon={faHeadset}
+                          className="text-info pr-3"
+                          size="1x"
+                        />
                       </div>
                       <div>
-                        <h4>Language &amp; Input Tools</h4>
+                        <h4>Maintenance & Support</h4>
                         <h6 className="subtitle">
-                          You can relay on our amazing features
+                          Focus on the business and let us take care of your
+                          platform, patches, upgrades, bugs, and features in a
+                          reliable way
                         </h6>
                       </div>
-                    </div>{" "}
-                    <a
-                      className="btn btn-success-gradiant btn-md btn-arrow"
-                      data-toggle="collapse"
-                      href="#f39"
-                    >
-                      <span>
-                        View Feature39 code <i className="ti-arrow-right"></i>
-                      </span>
-                    </a>
+                    </div>
+                    <div className="d-flex no-block m-b-40">
+                      <div className="display-4 m-r-20">
+                        <FontAwesomeIcon
+                          icon={faCropSimple}
+                          className="text-info pr-3"
+                          size="1x"
+                        />
+                      </div>
+                      <div>
+                        <h4>Experience Design</h4>
+                        <h6 className="subtitle">
+                          Assess your current platform and migrate to a suitable
+                          platform for your business with our replatforming and
+                          migration services.
+                        </h6>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
 
-          <div
-            className="spacer feature42"
-            style={{ backgroundImage: "url(/images/bg2.jpg)" }}
-          >
+          <div className="spacer bg-light feature2">
             <div className="container">
-              <div className="row justify-content-center wrap-feature42-box">
-                <div
-                  className="col-md-10 col-lg-7 text-center"
-                  data-aos="fade-up"
-                >
-                  <h2 className="title text-white">
-                    You wont believ that you can make Your Website in Record
-                    Time
-                  </h2>
-                  <h6 className="subtitle text-white op-7 m-b-20">
-                    You can relay on our amazing features list and also our
-                    customer services will be great experience for you without
-                    doubt and in no-time
-                  </h6>{" "}
-                  <a
-                    className="text-success-gradiant display-4"
-                    data-toggle="modal"
-                    data-target="#exampleModal"
-                  >
-                    <i className="icon-Play-Music"></i>
-                  </a>
-                  <div
-                    className="modal fade"
-                    id="exampleModal"
-                    aria-hidden="true"
-                  >
-                    <div className="modal-dialog" role="document">
-                      <div className="modal-content">
-                        <div className="modal-header">
-                          <h5 className="modal-title">Watch video</h5>
-                          <button
-                            type="button"
-                            className="close"
-                            data-dismiss="modal"
-                            aria-label="Close"
-                          >
-                            {" "}
-                            <span aria-hidden="true">×</span>{" "}
-                          </button>
-                        </div>
-                        <div className="modal-body" id="yt-player">
-                          <iframe
-                            width="100%"
-                            height="315"
-                            src="https://www.youtube.com/embed/DDwbjWCgxVM?"
-                            frameBorder="0"
-                            allowFullScreen=""
-                          ></iframe>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div className="blog-home1 spacer bg-light ">
-            <div className="container ">
-              <div className="row justify-content-center ">
-                <div className="col-md-8 text-center ">
-                  <h2 className="title ">Our Work</h2>
-                  <h6 className="subtitle ">
-                    You can relay on our amazing features list and also our
-                    customer services will be great experience for you without
-                    doubt and in no-time
+              <div className="row justify-content-center">
+                <div className="col-md-7 text-center">
+                  <h2 className="title">We understand your business</h2>
+                  <h6 className="subtitle">
+                    Platform driven eCommerce and retail solutions for quick
+                    turnaround
                   </h6>
                 </div>
               </div>
-              <div className="row m-t-40 ">
-                <div className="col-md-4 ">
+
+              <div className="row m-t-40">
+                <div className="col-md-4 wrap-feature2-box">
                   <div
-                    className="card card-shadow "
-                    data-aos="flip-left "
-                    data-aos-duration="1200 "
+                    className="card card-shadow"
+                    data-aos="flip-left"
+                    data-aos-duration="1200"
                   >
-                    <a href="# ">
-                      <img
-                        className="card-img-top "
-                        src="/images/blog/img3.jpg "
-                        alt="wrappixel kit "
-                      />
-                    </a>
-                    <div className="p-30 ">
-                      <div className="d-flex no-block font-14 ">
-                        <a href="# ">Digital Marketing</a>
-                        <span className="ml-auto ">Sept 18, 2017</span>
-                      </div>
-                      <h5 className="font-medium m-t-20 ">
-                        <a href="# " className="link ">
-                          Digital Marketing becomes very Essential for any site
-                        </a>
-                      </h5>
+                    <img
+                      className="card-img-top"
+                      src="https://images.unsplash.com/photo-1627634771100-b78244ffd302?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+                      alt="wrappixel kit"
+                    />
+                    <div className="card-body text-center">
+                      <h5 className="font-medium">Marketplaces Solutions</h5>
+                      <p className="m-t-20">
+                        Manage transactions of goods and services between buyers
+                        and suppliers with a powerful platform and our domain
+                        knowledge.
+                      </p>
                     </div>
                   </div>
                 </div>
-                <div className="col-md-4 ">
+
+                <div className="col-md-4 wrap-feature2-box">
                   <div
-                    className="card card-shadow "
-                    data-aos="flip-up "
-                    data-aos-duration="1200 "
+                    className="card card-shadow"
+                    data-aos="flip-up"
+                    data-aos-duration="1200"
                   >
-                    <a href="# ">
-                      <img
-                        className="card-img-top "
-                        src="/images/blog/img2.jpg "
-                        alt="wrappixel kit "
-                      />
-                    </a>
-                    <div className="p-30 ">
-                      <div className="d-flex no-block font-14 ">
-                        <a href="# ">Search Engine </a>
-                        <span className="ml-auto ">Sept 18, 2017</span>
-                      </div>
-                      <h5 className="font-medium m-t-20 ">
-                        <a href="# " className="link ">
-                          Rank your site on First Page of Google seems easier
-                          now
-                        </a>
+                    <img
+                      className="card-img-top"
+                      src="https://images.unsplash.com/photo-1543269865-cbf427effbad?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+                      alt="wrappixel kit"
+                    />
+                    <div className="card-body text-center">
+                      <h5 className="font-medium">
+                        Business to Business (B2B)
                       </h5>
+                      <p className="m-t-20">
+                        Delight your business buyers by providing them easier
+                        ways to get special prices, receive quotes, negotiate,
+                        and place repeat orders.
+                      </p>
                     </div>
                   </div>
                 </div>
-                <div className="col-md-4 ">
+
+                <div className="col-md-4 wrap-feature2-box">
                   <div
-                    className="card card-shadow "
-                    data-aos="flip-right "
-                    data-aos-duration="1200 "
+                    className="card card-shadow"
+                    data-aos="flip-right"
+                    data-aos-duration="1200"
                   >
-                    <a href="# ">
-                      <img
-                        className="card-img-top "
-                        src="/images/blog/img1.jpg "
-                        alt="wrappixel kit "
-                      />
-                    </a>
-                    <div className="p-30 ">
-                      <div className="d-flex no-block font-14 ">
-                        <a href="# ">Search Engine</a>
-                        <span className="ml-auto ">Sept 18, 2017</span>
-                      </div>
-                      <h5 className="font-medium m-t-20 ">
-                        <a href="# " className="link ">
-                          We have just launched our new Admin template
-                        </a>
-                      </h5>
+                    <img
+                      className="card-img-top"
+                      src="https://images.unsplash.com/photo-1579616043939-95d87a6e8512?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1169&q=80"
+                      alt="wrappixel kit"
+                    />
+                    <div className="card-body text-center">
+                      <h5 className="font-medium">Material Tracking Systems</h5>
+                      <p className="m-t-20">
+                        Facilitate fast and flexible implementation of mobile
+                        solutions in areas of inventory, logistics, service, and
+                        product tracking.
+                      </p>
                     </div>
                   </div>
                 </div>

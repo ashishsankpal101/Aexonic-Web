@@ -1,56 +1,89 @@
 import Head from "next/head";
-import React from "react";
+import { React, useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import $ from "jquery";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faUsers,
+  faHeadset,
+  faLightbulb,
+  faTrophy,
+  faUsersGear,
+  faUserGear,
+  faComment,
+  faThumbsUp,
+  faGlobe,
+  faSliders,
+  faLayerGroup,
+  faFaceSmile,
+  faAtom,
+  faChartColumn,
+  faIndustry,
+  faShieldHalved,
+  faRecycle,
+  faDatabase,
+  faMicrochip,
+} from "@fortawesome/free-solid-svg-icons";
 
-const aboutus = () => {
-  // $(document).window(function () {}
+const Aboutus = () => {
+  useEffect(() => {
+    $(function () {
+      "use strict";
+      $(function () {
+        $(".preloader").fadeOut();
+      });
+      jQuery(document).on("click", ".mega-dropdown", function (e) {
+        e.stopPropagation();
+      });
+      jQuery(document).on("click", ".navbar-nav > .dropdown", function (e) {
+        e.stopPropagation();
+      });
+      $(".dropdown-submenu").click(function () {
+        $(".dropdown-submenu > .dropdown-menu").toggleClass("show");
+      });
 
-  // $(function ($) {
-  //   $(".testi2").owlCarousel({
-  //     loop: true,
-  //     margin: 20,
-  //     nav: false,
-  //     dots: true,
-  //     autoplay: true,
-  //     responsiveClass: true,
-  //     responsive: {
-  //       0: {
-  //         items: 1,
-  //         nav: false,
-  //       },
-  //       1170: {
-  //         items: 1,
-  //       },
-  //     },
-  //   });
-  //   $(function () {
-  //     // 1) ASSIGN EACH 'DOT' A NUMBER
-  //     dotcount = 1;
-  //     $(".testi2 .owl-dot").each(function () {
-  //       $(this).addClass("dotnumber" + dotcount);
-  //       $(this).attr("data-info", dotcount);
-  //       dotcount = dotcount + 1;
-  //     });
-  //     // 2) ASSIGN EACH 'SLIDE' A NUMBER
-  //     slidecount = 1;
-  //     $(".testi2 .owl-item")
-  //       .not(".cloned")
-  //       .each(function () {
-  //         $(this).addClass("slidenumber" + slidecount);
-  //         slidecount = slidecount + 1;
-  //       });
-  //     $(".testi2 .owl-dot").each(function () {
-  //       grab = jQuery(this).data("info");
-  //       slidegrab = $(".slidenumber" + grab + " img").attr("src");
-  //       console.log(slidegrab);
-  //       $(this).css("background-image", "url(" + slidegrab + ")");
-  //     });
-  //     // THIS FINAL BIT CAN BE REMOVED AND OVERRIDEN WITH YOUR OWN CSS OR FUNCTION, I JUST HAVE IT
-  //     // TO MAKE IT ALL NEAT
-  //   });
-  // });
+      $("body").trigger("resize");
+      // ==============================================================
+      //Fix header while scroll
+      // ==============================================================
+      var wind = $(window);
+      wind.on("load", function () {
+        var bodyScroll = wind.scrollTop(),
+          navbar = $(".topbar");
+        if (bodyScroll > 100) {
+          navbar.addClass("fixed-header animated slideInDown");
+        } else {
+          navbar.removeClass("fixed-header animated slideInDown");
+        }
+      });
+      $(window).scroll(function () {
+        if ($(window).scrollTop() >= 100) {
+          $(".topbar").addClass("fixed-header animated slideInDown");
+          $(".bt-top").addClass("visible");
+        } else {
+          $(".topbar").removeClass("fixed-header animated slideInDown");
+          $(".bt-top").removeClass("visible");
+        }
+      });
+      // ==============================================================
+      // Animation initialized
+      // ==============================================================
+      AOS.init();
+      // ==============================================================
+      // Back to top
+      // ==============================================================
+      $(".bt-top").on("click", function (e) {
+        e.preventDefault();
+        $("html,body").animate(
+          {
+            scrollTop: 0,
+          },
+          700
+        );
+      });
+    });
+  });
 
   return (
     <div>
@@ -554,7 +587,6 @@ const aboutus = () => {
 
           <div className="bg-light spacer feature5">
             <div className="container">
-              {/* <!-- Row  --> */}
               <div className="row justify-content-center">
                 <div className="col-md-7 text-center">
                   <h2 className="title">Our Business Philosophy</h2>
@@ -565,9 +597,8 @@ const aboutus = () => {
                   </h6>
                 </div>
               </div>
-              {/* <!-- Row  --> */}
+
               <div className="row m-t-40">
-                {/* <!-- Column --> */}
                 <div className="col-md-4 wrap-feature5-box">
                   <div
                     className="card card-shadow"
@@ -576,7 +607,11 @@ const aboutus = () => {
                   >
                     <div className="card-body d-flex">
                       <div className="icon-space">
-                        <i className="text-success-gradiant icon-Stopwatch"></i>
+                        <FontAwesomeIcon
+                          icon={faUsers}
+                          className="text-info pr-3"
+                          size="1x"
+                        />
                       </div>
                       <div className="">
                         <h6 className="font-medium">
@@ -590,8 +625,7 @@ const aboutus = () => {
                     </div>
                   </div>
                 </div>
-                {/* <!-- Column -->
-                            <!-- Column --> */}
+
                 <div className="col-md-4 wrap-feature5-box">
                   <div
                     className="card card-shadow"
@@ -600,7 +634,11 @@ const aboutus = () => {
                   >
                     <div className="card-body d-flex">
                       <div className="icon-space">
-                        <i className="text-success-gradiant icon-Information"></i>
+                        <FontAwesomeIcon
+                          icon={faComment}
+                          className="text-info pr-3"
+                          size="1x"
+                        />
                       </div>
                       <div className="">
                         <h6 className="font-medium">
@@ -625,15 +663,20 @@ const aboutus = () => {
                   >
                     <div className="card-body d-flex">
                       <div className="icon-space">
-                        <i className="text-success-gradiant icon-Leo-2"></i>
+                        <FontAwesomeIcon
+                          icon={faLightbulb}
+                          className="text-info pr-3"
+                          size="1x"
+                        />
                       </div>
                       <div className="">
                         <h6 className="font-medium">
                           <a className="linking">Execute Ideas </a>
                         </h6>
                         <p className="m-t-20">
-                          Achieve your KPIs every time. We materialize your
-                          ideas by designing products that your customers need.
+                          We materialize your ideas by designing products that
+                          your customers need. Execution is what you need to do
+                          to be successful
                         </p>
                       </div>
                     </div>
@@ -649,7 +692,11 @@ const aboutus = () => {
                   >
                     <div className="card-body d-flex">
                       <div className="icon-space">
-                        <i className="text-success-gradiant icon-Target-Market"></i>
+                        <FontAwesomeIcon
+                          icon={faUserGear}
+                          className="text-info pr-3"
+                          size="1x"
+                        />
                       </div>
                       <div className="">
                         <h6 className="font-medium">
@@ -673,15 +720,20 @@ const aboutus = () => {
                   >
                     <div className="card-body d-flex">
                       <div className="icon-space">
-                        <i className="text-success-gradiant icon-Sunglasses-Smiley"></i>
+                        <FontAwesomeIcon
+                          icon={faTrophy}
+                          className="text-info pr-3"
+                          size="1x"
+                        />
                       </div>
                       <div className="">
                         <h6 className="font-medium">
-                          <a className="linking">Motivated To Win</a>
+                          <a className="linking">Motivate To Win</a>
                         </h6>
                         <p className="m-t-20">
-                          In the age of automation, we prioritize on-demand
-                          hyper-care customer support. We&apos;re here for you
+                          Motivate to Win is a comprehensive guide starting from
+                          the very definition of motivation, to its
+                          implications.
                         </p>
                       </div>
                     </div>
@@ -697,7 +749,11 @@ const aboutus = () => {
                   >
                     <div className="card-body d-flex">
                       <div className="icon-space">
-                        <i className="text-success-gradiant  icon-Laptop-Phone"></i>
+                        <FontAwesomeIcon
+                          icon={faHeadset}
+                          className="text-info pr-3"
+                          size="1x"
+                        />
                       </div>
                       <div className="">
                         <h6 className="font-medium">
@@ -706,7 +762,6 @@ const aboutus = () => {
                         <p className="m-t-20">
                           In the age of automation, we prioritize on-demand
                           hyper-care customer support. We&apos;re here for you.
-                          {/* We&apos;re here for you. */}
                         </p>
                       </div>
                     </div>
@@ -715,63 +770,6 @@ const aboutus = () => {
               </div>
             </div>
           </div>
-          {/* <!-- ============================================================== -->
-                <!-- End Feature 5  -->
-                <!-- ============================================================== --> */}
-          {/* <!-- ============================================================== -->
-                <!-- Counter  -->
-                <!-- ============================================================== --> */}
-          {/* <div className="mini-spacer bg-info feature24">
-                        <div className="container">
-                           
-                            <div className="row p-t-20 p-b-20 tclient-box text-white">
-                             
-                                <div className="col-lg-3 col-md-6">
-                                    <div className="d-flex no-block">
-                                        <div className="display-5"><i className="icon-Eyeglasses-Smiley"></i></div>
-                                        <div className="m-l-20">
-                                            <h1 className="font-light counter m-b-0 text-white">5000</h1>
-                                            <h6 className="font-13 text-uppercase text-white op-7">Happy Clients</h6>
-                                        </div>
-                                    </div>
-                                </div>
-                             
-                                <div className="col-lg-3 col-md-6">
-                                    <div className="d-flex no-block">
-                                        <div className="display-5"><i className="icon-Coffee"></i></div>
-                                        <div className="m-l-20">
-                                            <h1 className="font-light counter m-b-0 text-white">2300</h1>
-                                            <h6 className="font-13 text-uppercase text-white op-7">Cups of Coffe</h6>
-                                        </div>
-                                    </div>
-                                </div>
-                               
-                                <div className="col-lg-3 col-md-6">
-                                    <div className="d-flex no-block">
-                                        <div className="display-5"><i className="icon-Business-ManWoman"></i></div>
-                                        <div className="m-l-20">
-                                            <h1 className="font-light counter m-b-0 text-white">200</h1>
-                                            <h6 className="font-13 text-uppercase text-white op-7">Dedicated staff</h6>
-                                        </div>
-                                    </div>
-                                </div>
-                                
-                                <div className="col-lg-3 col-md-6">
-                                    <div className="d-flex no-block">
-                                        <div className="display-5"><i className="icon-Trophy"></i></div>
-                                        <div className="m-l-20">
-                                            <h1 className="font-light counter m-b-0 text-white">20</h1>
-                                            <h6 className="font-13 text-uppercase text-white op-7">Awards won</h6>
-                                        </div>
-                                    </div>
-                                </div>
-                               
-                            </div>
-                        </div>
-                    </div> */}
-          {/* <!-- ============================================================== -->
-                <!-- Counter   -->
-                <!-- ============================================================== --> */}
 
           <div className="spacer feature9">
             <div className="container">
@@ -795,7 +793,11 @@ const aboutus = () => {
                   >
                     <div className="card-body d-flex">
                       <div className="icon-space align-self-center">
-                        <i className="icon-Computer-Secure display-4 text-info-gradiant"></i>
+                        <FontAwesomeIcon
+                          icon={faThumbsUp}
+                          className="text-info pr-3"
+                          size="3x"
+                        />
                       </div>
                       <div className="align-self-center">
                         <h5 className="font-medium">
@@ -821,7 +823,11 @@ const aboutus = () => {
                   >
                     <div className="card-body d-flex">
                       <div className="icon-space align-self-center">
-                        <i className="icon-Computer-Secure display-4 text-info-gradiant"></i>
+                        <FontAwesomeIcon
+                          icon={faGlobe}
+                          className="text-info pr-3"
+                          size="3x"
+                        />
                       </div>
                       <div className="align-self-center">
                         <h5 className="font-medium">
@@ -849,7 +855,11 @@ const aboutus = () => {
                   >
                     <div className="card-body d-flex">
                       <div className="icon-space align-self-center">
-                        <i className="icon-Cloud-Smartphone display-4 text-info-gradiant"></i>
+                        <FontAwesomeIcon
+                          icon={faSliders}
+                          className="text-info pr-3"
+                          size="3x"
+                        />
                       </div>
                       <div className="align-self-center">
                         <h5 className="font-medium">
@@ -875,7 +885,11 @@ const aboutus = () => {
                   >
                     <div className="card-body d-flex">
                       <div className="icon-space align-self-center">
-                        <i className="icon-Business-ManWoman display-4 text-info-gradiant"></i>
+                        <FontAwesomeIcon
+                          icon={faLayerGroup}
+                          className="text-info pr-3"
+                          size="3x"
+                        />
                       </div>
                       <div className="align-self-center">
                         <h5 className="font-medium">
@@ -955,7 +969,11 @@ const aboutus = () => {
                 <div className="col-lg-6 text-center">
                   <div className="row">
                     <div className="col-lg-12">
-                      <i className="icon-Eyeglasses-Smiley display-5"></i>
+                      <FontAwesomeIcon
+                        icon={faFaceSmile}
+                        className="pr-3"
+                        size="3x"
+                      />
                       <h4 className="title">200+ Happy Clients</h4>
                       <p>
                         We&apos;ve worked with amazing teams who believed in
@@ -963,7 +981,11 @@ const aboutus = () => {
                       </p>
                     </div>
                     <div className="col-lg-12 m-t-20 m-b-20">
-                      <i className="icon-Monitor-Analytics display-5"></i>
+                      <FontAwesomeIcon
+                        icon={faChartColumn}
+                        className="pr-3"
+                        size="3x"
+                      />
                       <h4 className="title">10+ Years of Experience</h4>
                       <p>
                         The humble years of experience have made us realize how
@@ -974,31 +996,26 @@ const aboutus = () => {
                   </div>
                 </div>
 
-                {/* <div
-                  className="col-lg-4 text-center"
-                  data-aos="fade-up"
-                  data-aos-duration="1800"
-                  data-aos-easing="linear"
-                >
-                   <img
-                    src="./images/features/img1.png"
-                    className="img-responsive"
-                    alt="wrappixel"
-                  /> 
-                </div> */}
-
                 <div className="col-lg-6 text-center m-b-30">
                   <div className="row">
                     <div className="col-lg-12">
-                      <i className="icon-Sheriff-Badge display-5"></i>
+                      <FontAwesomeIcon
+                        icon={faAtom}
+                        className="pr-3"
+                        size="3x"
+                      />
                       <h4 className="title">ISO 27001 Certified</h4>
                       <p>
                         Our practice of investing in people and processes has
-                        empowered us to gain greater customer confidence.{" "}
+                        empowered us to gain greater customer confidence.
                       </p>
                     </div>
                     <div className="col-lg-12 m-t-20 m-b-20">
-                      <i className="icon-Building display-5"></i>
+                      <FontAwesomeIcon
+                        icon={faIndustry}
+                        className="pr-3"
+                        size="3x"
+                      />
                       <h4 className="title">5+ Industries Served</h4>
                       <p>
                         From working with Fortune 500 companies to working with
@@ -1337,11 +1354,10 @@ const aboutus = () => {
                 </div>
                 <div className="col-lg-6">
                   <div className="card-body">
-                    {/* <span className="label label-success label-rounded">Feature 39</span> */}
                     <h2 className="title text-uppercase">
                       Our Differentiators
                     </h2>
-                    {/* <p className="m-t-40 m-b-40">You can relay on our amazing features list and also our customer services will be greatexperience for you without</p> */}
+
                     <h6 className="subtitle m-t-40 m-b-40">
                       It&apos;s not just the technology and tools we use but
                       also how we use them that drives an overall digital
@@ -1351,7 +1367,11 @@ const aboutus = () => {
                     {/* <!-- column  --> */}
                     <div className="d-flex no-block m-b-40">
                       <div className="display-4 m-r-20">
-                        <i className="icon-Paypal text-success-gradiant"></i>
+                        <FontAwesomeIcon
+                          icon={faShieldHalved}
+                          className="text-info pr-3"
+                          size="1x"
+                        />
                       </div>
                       <div>
                         <h4>Expertise You Trust</h4>
@@ -1364,7 +1384,11 @@ const aboutus = () => {
                     {/* <!-- column  --> */}
                     <div className="d-flex no-block m-b-40">
                       <div className="display-4 m-r-20">
-                        <i className="icon-Evernote text-success-gradiant"></i>
+                        <FontAwesomeIcon
+                          icon={faRecycle}
+                          className="text-info pr-3"
+                          size="1x"
+                        />
                       </div>
                       <div>
                         <h4>Responsive and Reliable</h4>
@@ -1377,7 +1401,11 @@ const aboutus = () => {
                     {/* <!-- column  --> */}
                     <div className="d-flex no-block m-b-40">
                       <div className="display-4 m-r-20">
-                        <i className="icon-Google-Drive text-success-gradiant"></i>
+                        <FontAwesomeIcon
+                          icon={faDatabase}
+                          className="text-info pr-3"
+                          size="1x"
+                        />
                       </div>
                       <div>
                         <h4>Solutions You Need</h4>
@@ -1390,7 +1418,11 @@ const aboutus = () => {
                     {/* <!-- column  --> */}
                     <div className="d-flex no-block m-b-40">
                       <div className="display-4 m-r-20">
-                        <i className="icon-Google-Drive text-success-gradiant"></i>
+                        <FontAwesomeIcon
+                          icon={faMicrochip}
+                          className="text-info pr-3"
+                          size="1x"
+                        />
                       </div>
                       <div>
                         <h4>Engineering Technological Momentum</h4>
@@ -1400,105 +1432,11 @@ const aboutus = () => {
                         </h6>
                       </div>
                     </div>
-                    {/* <a className="btn btn-success-gradiant btn-md btn-arrow" data-toggle="collapse" href="#f39"><span>View Feature39 code <i className="ti-arrow-right"></i></span>
-                                        </a> */}
                   </div>
                 </div>
               </div>
             </div>
           </div>
-          {/* <!-- ============================================================== -->
-                <!-- Feature 39  -->
-                <!-- ============================================================== --> */}
-
-          {/* <div className="spacer feature2">
-            <div className="container">
-              <div className="row justify-content-center">
-                <div className="col-md-7 text-center">
-                  <h2 className="title">Our Success Stories</h2>
-                  <h6 className="subtitle">
-                    You can relay on our amazing features list and also our
-                    customer services will be great experience for you without
-                    doubt and in no-time
-                  </h6>
-                </div>
-              </div>
-
-              <div className="row m-t-40">
-                <div className="col-md-4 wrap-feature2-box">
-                  <div
-                    className="card card-shadow"
-                    data-aos="flip-left"
-                    data-aos-duration="1200"
-                  >
-                    <img
-                      className="card-img-top"
-                      src="images/features/feature2/img1.jpg"
-                      alt="wrappixel kit"
-                    />
-                    <div className="card-body text-center">
-                      <h5 className="font-medium">Elon Musk</h5>
-                      <p className="m-t-20">
-                        You can relay on our amazing features list and also our
-                        customer services will be great experience.
-                      </p>
-                      <a href="javascript:void(0)" className="linking">
-                        Learn More <i className="ti-arrow-right"></i>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-
-                <div className="col-md-4 wrap-feature2-box">
-                  <div
-                    className="card card-shadow"
-                    data-aos="flip-up"
-                    data-aos-duration="1200"
-                  >
-                    <img
-                      className="card-img-top"
-                      src="/images/features/feature2/img2.jpg"
-                      alt="wrappixel kit"
-                    />
-                    <div className="card-body text-center">
-                      <h5 className="font-medium">Sundar Pichai</h5>
-                      <p className="m-t-20">
-                        You can relay on our amazing features list and also our
-                        customer services will be great experience.
-                      </p>
-                      <a href="javascript:void(0)" className="linking">
-                        Learn More <i className="ti-arrow-right"></i>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-
-                <div className="col-md-4 wrap-feature2-box">
-                  <div
-                    className="card card-shadow"
-                    data-aos="flip-right"
-                    data-aos-duration="1200"
-                  >
-                    <img
-                      className="card-img-top"
-                      src="/images/features/feature2/img3.jpg"
-                      alt="wrappixel kit"
-                    />
-                    <div className="card-body text-center">
-                      <h5 className="font-medium">Steve Jobs</h5>
-                      <p className="m-t-20">
-                        You can relay on our amazing features list and also our
-                        customer services will be great experience.
-                      </p>
-                      <a href="javascript:void(0)" className="linking">
-                        Learn More <i className="ti-arrow-right"></i>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div> */}
 
           <div className="testimonial2 spacer">
             <div className="container">
@@ -1522,11 +1460,11 @@ const aboutus = () => {
                       </button>
                       <h3 className="m-t-20 m-b-20">Elon Musk</h3>
                       <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing
-                        elit, sed do eiusmod tempor incididunt ut labore et
-                        dolore magna aliqua. Ut enim ad minim veniam, quis
-                        nostrud exercitation ullamco laboris nisi ut aliquip ex
-                        ea commodo consequat.
+                        I was deeply impressed by how quickly they worked and
+                        how high the quality was. It was built well and they
+                        delivered as expected. A lot of this was able to happen
+                        with a high degree of autonomy and minimal feedback
+                        through technical and website reviews.
                       </p>
                       <h5 className="m-t-30">Elon Musk</h5>
                       <h6 className="subtitle">CEO</h6>
@@ -2285,4 +2223,4 @@ const aboutus = () => {
   );
 };
 
-export default aboutus;
+export default Aboutus;

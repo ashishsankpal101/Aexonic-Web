@@ -1,9 +1,75 @@
 import Head from "next/head";
-import React from "react";
+import { React, useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faCode,
+  faMobileAndroid,
+  faServer,
+  faBug,
+  faChartLine,
+  faRobot,
+} from "@fortawesome/free-solid-svg-icons";
 
 const Technology = () => {
+  useEffect(() => {
+    $(function () {
+      "use strict";
+      $(function () {
+        $(".preloader").fadeOut();
+      });
+      jQuery(document).on("click", ".mega-dropdown", function (e) {
+        e.stopPropagation();
+      });
+      jQuery(document).on("click", ".navbar-nav > .dropdown", function (e) {
+        e.stopPropagation();
+      });
+      $(".dropdown-submenu").click(function () {
+        $(".dropdown-submenu > .dropdown-menu").toggleClass("show");
+      });
+
+      $("body").trigger("resize");
+      // ==============================================================
+      //Fix header while scroll
+      // ==============================================================
+      var wind = $(window);
+      wind.on("load", function () {
+        var bodyScroll = wind.scrollTop(),
+          navbar = $(".topbar");
+        if (bodyScroll > 100) {
+          navbar.addClass("fixed-header animated slideInDown");
+        } else {
+          navbar.removeClass("fixed-header animated slideInDown");
+        }
+      });
+      $(window).scroll(function () {
+        if ($(window).scrollTop() >= 100) {
+          $(".topbar").addClass("fixed-header animated slideInDown");
+          $(".bt-top").addClass("visible");
+        } else {
+          $(".topbar").removeClass("fixed-header animated slideInDown");
+          $(".bt-top").removeClass("visible");
+        }
+      });
+      // ==============================================================
+      // Animation initialized
+      // ==============================================================
+      AOS.init();
+      // ==============================================================
+      // Back to top
+      // ==============================================================
+      $(".bt-top").on("click", function (e) {
+        e.preventDefault();
+        $("html,body").animate(
+          {
+            scrollTop: 0,
+          },
+          700
+        );
+      });
+    });
+  });
   return (
     <div>
       <Head>
@@ -249,7 +315,6 @@ const Technology = () => {
                       </div>
                     </li>
                     <li className="nav-item dropdown">
-                      {" "}
                       <Link href="">
                         <a
                           className="nav-link active dropdown-toggle"
@@ -275,7 +340,6 @@ const Technology = () => {
                           </Link>
                         </li>
                         <li>
-                          {" "}
                           <Link href="/industries/hospitality">
                             <a className="dropdown-item">
                               Hospitality and Travel
@@ -283,19 +347,16 @@ const Technology = () => {
                           </Link>
                         </li>
                         <li>
-                          {" "}
                           <Link href="/industries/healthcare">
                             <a className="dropdown-item">Healthcare</a>
                           </Link>
                         </li>
                         <li>
-                          {" "}
                           <Link href="/industries/manifacturing">
                             <a className="dropdown-item">Manufacturing</a>
                           </Link>
                         </li>
                         <li>
-                          {" "}
                           <Link href="/industries/retail">
                             <a className="dropdown-item">
                               Retail and e-commerce
@@ -303,7 +364,6 @@ const Technology = () => {
                           </Link>
                         </li>
                         <li>
-                          {" "}
                           <Link href="/industries/technology">
                             <a className="dropdown-item active_menu">
                               Technology and Software
@@ -311,7 +371,6 @@ const Technology = () => {
                           </Link>
                         </li>
                         <li>
-                          {" "}
                           <Link href="/industries/professional_service">
                             <a className="dropdown-item">
                               Professional Services
@@ -353,7 +412,6 @@ const Technology = () => {
                       </Link>
                     </li>
                     <li className="nav-item dropdown">
-                      {" "}
                       <a
                         className="nav-link dropdown-toggle"
                         href="#"
@@ -376,7 +434,6 @@ const Technology = () => {
                           </Link>
                         </li>
                         <li>
-                          {" "}
                           <Link href="/blog">
                             <a className="dropdown-item">Blogs</a>
                           </Link>
@@ -430,15 +487,14 @@ const Technology = () => {
             <!-- Testimonial 9 -->
             <!-- ============================================================== --> */}
 
-          <div className="spacer feature9">
+          <div className="spacer bg-light feature9">
             <div className="container">
               <div className="row justify-content-center">
                 <div className="col-md-7 text-center">
                   <h2 className="title">Our Services</h2>
                   <h6 className="subtitle">
-                    You can relay on our amazing feat asures list of and also
-                    our customer services will be great experience for you
-                    without doubt and in no-time
+                    We build software solutions with clean code and engage in
+                    all stages of product development.
                   </h6>
                 </div>
               </div>
@@ -452,12 +508,16 @@ const Technology = () => {
                   >
                     <div className="card-body">
                       <div className="icon-space">
-                        <i className="display-5 text-info-gradiant icon-Doctor"></i>
+                        <FontAwesomeIcon
+                          icon={faCode}
+                          className="text-info pr-3"
+                          size="3x"
+                        />
                       </div>
-                      <h5 className="font-medium">Appointments</h5>
+                      <h5 className="font-medium">Web development</h5>
                       <p className="m-t-20">
-                        You can relay on our amazing features list and also our
-                        customer services will be great experience.
+                        Architecture, re-engineering, legacy software migration,
+                        application enhancements, and support.
                       </p>
                     </div>
                   </div>
@@ -471,12 +531,16 @@ const Technology = () => {
                   >
                     <div className="card-body">
                       <div className="icon-space">
-                        <i className="display-5 text-info-gradiant icon-Clock-Forward"></i>
+                        <FontAwesomeIcon
+                          icon={faMobileAndroid}
+                          className="text-info pr-3"
+                          size="3x"
+                        />
                       </div>
-                      <h5 className="font-medium">Working Time</h5>
+                      <h5 className="font-medium">Mobile development</h5>
                       <p className="m-t-20">
-                        You can relay on our amazing features list and also our
-                        customer services will be great experience.
+                        Native Android and iOS app development with strict
+                        compliance with Google and Apple guidelines.
                       </p>
                     </div>
                   </div>
@@ -490,12 +554,17 @@ const Technology = () => {
                   >
                     <div className="card-body">
                       <div className="icon-space">
-                        <i className="display-5 text-info-gradiant icon-First-Aid"></i>
+                        <FontAwesomeIcon
+                          icon={faServer}
+                          className="text-info pr-3"
+                          size="3x"
+                        />
                       </div>
-                      <h5 className="font-medium">Emergency</h5>
+                      <h5 className="font-medium">DevOps services</h5>
                       <p className="m-t-20">
-                        You can relay on our amazing features list and also our
-                        customer services will be great experience.
+                        Infrastructure and CI/CD pipeline setup, monitoring,
+                        infra-level security solutions by certified cloud
+                        engineers
                       </p>
                     </div>
                   </div>
@@ -510,9 +579,13 @@ const Technology = () => {
                   >
                     <div className="card-body">
                       <div className="icon-space">
-                        <i className="display-5 text-info-gradiant icon-Doctor"></i>
+                        <FontAwesomeIcon
+                          icon={faBug}
+                          className="text-info pr-3"
+                          size="3x"
+                        />
                       </div>
-                      <h5 className="font-medium">Appointments</h5>
+                      <h5 className="font-medium">Testing services</h5>
                       <p className="m-t-20">
                         You can relay on our amazing features list and also our
                         customer services will be great experience.
@@ -529,12 +602,16 @@ const Technology = () => {
                   >
                     <div className="card-body">
                       <div className="icon-space">
-                        <i className="display-5 text-info-gradiant icon-Clock-Forward"></i>
+                        <FontAwesomeIcon
+                          icon={faChartLine}
+                          className="text-info pr-3"
+                          size="3x"
+                        />
                       </div>
-                      <h5 className="font-medium">Working Time</h5>
+                      <h5 className="font-medium">Data analytics</h5>
                       <p className="m-t-20">
-                        You can relay on our amazing features list and also our
-                        customer services will be great experience.
+                        Data analytics, modeling, and visualization,
+                        development, maintenance of large-scale products.
                       </p>
                     </div>
                   </div>
@@ -548,12 +625,16 @@ const Technology = () => {
                   >
                     <div className="card-body">
                       <div className="icon-space">
-                        <i className="display-5 text-info-gradiant icon-First-Aid"></i>
+                        <FontAwesomeIcon
+                          icon={faRobot}
+                          className="text-info pr-3"
+                          size="3x"
+                        />
                       </div>
-                      <h5 className="font-medium">Emergency</h5>
+                      <h5 className="font-medium">Big data and ML</h5>
                       <p className="m-t-20">
-                        You can relay on our amazing features list and also our
-                        customer services will be great experience.
+                        Embedded analytics in mobile and web service models,
+                        actionable business insights, Agile solutions.
                       </p>
                     </div>
                   </div>
@@ -561,98 +642,29 @@ const Technology = () => {
               </div>
             </div>
           </div>
-
-          <div className="bg-light spacer feature15">
+          <div
+            className="spacer feature21 wrap-feature21-box"
+            style={{
+              backgroundImage:
+                "linear-gradient(90deg, #000000b5, transparent), url(https://img.freepik.com/free-photo/focus-software-developer-hands-typing-source-code-keyboard-while-looking-computer-screens-with-programming-interface-programer-sitting-desk-with-clipboard-writing-algorithm_482257-43990.jpg?w=1060&t=st=1669184222~exp=1669184822~hmac=764626c71e5c99fa0543a9dc214de195307f0ce4dac2c63e8c3b8b73638e1d99)",
+            }}
+          >
             <div className="container">
-              <div className="row justify-content-center">
-                <div className="col-md-7 text-center">
-                  <h2 className="title">Our Focus</h2>
-                  <h6 className="subtitle">
-                    You can relay on our amazing features list and also our
-                    customer services will be great experience for you without
-                    doubt and in no-time
-                  </h6>
-                </div>
-              </div>
-
-              <div className="row m-t-40">
-                <div className="col-lg-7 wrap-feature15-box">
-                  <div className="row">
-                    <div className="col-md-6 wrap-feature11-box">
-                      <div
-                        className="card card-shadow"
-                        data-aos="fade-left"
-                        data-aos-duration="1200"
-                      >
-                        <div className="card-body">
-                          <div>
-                            <h3>1.</h3>
-                          </div>
-                          <h5 className="font-medium">Appointments</h5>
-                          <p>You can relay on our amazing features</p>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div className="col-md-6 wrap-feature11-box">
-                      <div
-                        className="card card-shadow"
-                        data-aos="fade-left"
-                        data-aos-duration="1200"
-                      >
-                        <div className="card-body">
-                          <div>
-                            <h3>2.</h3>
-                          </div>
-                          <h5 className="font-medium">Working Time</h5>
-                          <p>You can relay on our amazing features</p>
-                        </div>
-                      </div>
-                    </div>
-                    <div className="col-md-6 wrap-feature11-box">
-                      <div
-                        className="card card-shadow"
-                        data-aos="fade-left"
-                        data-aos-duration="1200"
-                      >
-                        <div className="card-body">
-                          <div>
-                            <h3>3.</h3>
-                          </div>
-                          <h5 className="font-medium">Appointments</h5>
-                          <p>You can relay on our amazing features</p>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div className="col-md-6 wrap-feature11-box">
-                      <div
-                        className="card card-shadow"
-                        data-aos="fade-left"
-                        data-aos-duration="1200"
-                      >
-                        <div className="card-body">
-                          <div>
-                            <h3>4.</h3>
-                          </div>
-                          <h5 className="font-medium">Working Time</h5>
-                          <p>You can relay on our amazing features</p>
-                        </div>
-                      </div>
-                    </div>
+              <div className="row text-white">
+                <div className="col-md-5 both-space">
+                  <div
+                    className=""
+                    data-aos="fade-right"
+                    data-aos-duration="1200"
+                  >
+                    <h2 className="text-white m-t-20 m-b-30">
+                      Our vision about Technology and Software
+                    </h2>
+                    <p>
+                      Our principal focus is to convert a real-world problem
+                      into data and use a computer to solve it more efficiently.
+                    </p>
                   </div>
-                </div>
-
-                <div
-                  className="col-lg-5 wrap-feature15-box"
-                  data-aos="flip-left"
-                  data-aos-duration="1200"
-                >
-                  <img
-                    src="/images/features/img3.png"
-                    className="img-responsive"
-                    alt="wrapkit"
-                  />
                 </div>
               </div>
             </div>
@@ -662,11 +674,10 @@ const Technology = () => {
             <div className="container">
               <div className="row justify-content-center">
                 <div className="col-md-7 text-center">
-                  <h2 className="title">Services you can Relay Upon</h2>
+                  <h2 className="title">Technologies and frameworks</h2>
                   <h6 className="subtitle">
-                    You can relay on our amazing features list and also our
-                    customer services will be great experience for you without
-                    doubt and in no-time
+                    We work with over 20 different technologies, including few
+                    of the latest.
                   </h6>
                 </div>
               </div>
@@ -674,120 +685,222 @@ const Technology = () => {
               <div className="row wrap-feature-24">
                 <div className="col-lg-3 col-md-6">
                   <div className="card card-shadow">
-                    <a className="service-24">
-                      {" "}
-                      <i className="icon-Target"></i>
-                      <h6 className="ser-title">Retargeting Market</h6>
-                    </a>
+                    <img
+                      style={{ height: "22vh" }}
+                      className="card-img-top"
+                      src="https://usemobile.com.br/wp-content/uploads/2022/08/react-native-logo.png"
+                      alt="wrappixel kit"
+                    ></img>
                   </div>
                 </div>
 
                 <div className="col-lg-3 col-md-6">
                   <div className="card card-shadow">
-                    <a className="service-24">
-                      {" "}
-                      <i className="icon-Car-Wheel"></i>
-                      <h6 className="ser-title">Digital Marketing</h6>
-                    </a>
+                    <img
+                      style={{ height: "22vh" }}
+                      className="card-img-top"
+                      src="/images/api-ecosystem/api-tech-6.png"
+                      alt="wrappixel kit"
+                    ></img>
                   </div>
                 </div>
 
                 <div className="col-lg-3 col-md-6">
                   <div className="card card-shadow">
-                    <a className="service-24">
-                      {" "}
-                      <i className="icon-Mouse-3"></i>
-                      <h6 className="ser-title">SEO Techniques</h6>
-                    </a>
+                    <img
+                      style={{ height: "22vh" }}
+                      className="card-img-top"
+                      src="/images/api-ecosystem/api-tech-7.png"
+                      alt="wrappixel kit"
+                    ></img>
                   </div>
                 </div>
 
                 <div className="col-lg-3 col-md-6">
                   <div className="card card-shadow">
-                    <a className="service-24">
-                      {" "}
-                      <i className="icon-Eyeglasses-Smiley"></i>
-                      <h6 className="ser-title">Client Management</h6>
-                    </a>
+                    <img
+                      style={{ height: "22vh" }}
+                      className="card-img-top"
+                      src="https://smartmania.cz/wp-content/uploads/2020/05/Android.jpg"
+                      alt="wrappixel kit"
+                    ></img>
                   </div>
                 </div>
 
                 <div className="col-lg-3 col-md-6">
                   <div className="card card-shadow">
-                    <a className="service-24">
-                      {" "}
-                      <i className="icon-Target-Market"></i>
-                      <h6 className="ser-title">Email Campaign</h6>
-                    </a>
+                    <img
+                      style={{ height: "22vh" }}
+                      className="card-img-top"
+                      src="https://pluralsight2.imgix.net/paths/images/angular-14a0f6532f.png"
+                      alt="wrappixel kit"
+                    ></img>
                   </div>
                 </div>
 
                 <div className="col-lg-3 col-md-6">
                   <div className="card card-shadow">
-                    <a className="service-24">
-                      {" "}
-                      <i className="icon-Laptop-Phone"></i>
-                      <h6 className="ser-title">Website Strategy</h6>
-                    </a>
+                    <img
+                      style={{ height: "22vh" }}
+                      className="card-img-top"
+                      src="/images/api-ecosystem/api-tech-1.png"
+                      alt="wrappixel kit"
+                    ></img>
                   </div>
                 </div>
 
                 <div className="col-lg-3 col-md-6">
                   <div className="card card-shadow">
-                    <a className="service-24">
-                      {" "}
-                      <i className="icon-Full-Bag"></i>
-                      <h6 className="ser-title">eCommerce Shop</h6>
-                    </a>
+                    <img
+                      style={{ height: "22vh" }}
+                      className="card-img-top"
+                      src="/images/api-ecosystem/api-tech-2.png"
+                      alt="wrappixel kit"
+                    ></img>
                   </div>
                 </div>
 
                 <div className="col-lg-3 col-md-6">
                   <div className="card card-shadow">
-                    <a className="service-24">
-                      {" "}
-                      <i className="icon-Eyeglasses-Smiley"></i>
-                      <h6 className="ser-title">Cloud Hosting</h6>
-                    </a>
+                    <img
+                      style={{ height: "22vh" }}
+                      className="card-img-top"
+                      src="/images/api-ecosystem/api-tech-3.png"
+                      alt="wrappixel kit"
+                    ></img>
                   </div>
                 </div>
               </div>
             </div>
           </div>
 
-          <div
-            className="spacer feature46 bg-light"
-            style={{ backgroundImage: "url(/images/tech_1.jpg)" }}
-          >
+          <div className="spacer bg-light">
             <div className="container">
-              <div className="row">
-                <div className="col-lg-5 col-md-6">
-                  <h2 className="title">
-                    We have covered everything for you to get desire results
-                    with WrapKit
-                  </h2>
-                  <h6 className="subtitle m-b-40 m-t-20">
-                    You can relay on our amazing features list and also our
-                    customer services will be great experience for you without
-                    doubt and in no-time
+              {/* <!-- Row  --> */}
+              <div className="row justify-content-center">
+                <div className="col-md-7 text-center">
+                  <h2 className="title">Our work</h2>
+                  <h6 className="subtitle">
+                    We have built over 200+ mobile and web applications in the
+                    past 10+ years.
                   </h6>
+                </div>
+              </div>
+              {/* <!-- Row  --> */}
+              <div className="row m-t-40">
+                {/* <!-- Column --> */}
+                <div className="col-md-4">
                   <div
-                    className="card card-shadow "
-                    data-aos="fade-right"
+                    className="card card-shadow"
+                    data-aos="flip-left"
                     data-aos-duration="1200"
                   >
-                    <div className="card-body p-30">
-                      <h6 className="font-medium">
-                        Build your site in Record Time!
-                      </h6>
-                      <p className="m-t-20">
-                        Lorem ipsum dolor sit amet, consecte tuam porttitor,
-                        nunc et fringilla.
-                      </p>
-                      <a href="#f46" className="linking">
-                        Learn More{" "}
-                        <i className="ti-arrow-right text-success"></i>
-                      </a>
+                    <a href="#" className="img-ho">
+                      <img
+                        className="card-img-top"
+                        src="https://coditas.com/static/media/1.bf1b3dfa.PNG"
+                        alt="wrappixel kit"
+                      />
+                    </a>
+                    <div className="card-body">
+                      <h5 className="font-medium m-b-0">E-Seal</h5>
+                    </div>
+                  </div>
+                </div>
+                {/* <!-- Column --> */}
+                <div className="col-md-4">
+                  <div
+                    className="card card-shadow"
+                    data-aos="flip-up"
+                    data-aos-duration="1200"
+                  >
+                    <a href="#" className="img-ho">
+                      <img
+                        className="card-img-top"
+                        src="https://coditas.com/static/media/2.5961d0f3.PNG"
+                        alt="wrappixel kit"
+                      />
+                    </a>
+                    <div className="card-body">
+                      <h5 className="font-medium m-b-0">TGI</h5>
+                    </div>
+                  </div>
+                </div>
+                {/* <!-- Column --> */}
+                <div className="col-md-4">
+                  <div
+                    className="card card-shadow"
+                    data-aos="flip-right"
+                    data-aos-duration="1200"
+                  >
+                    <a href="#" className="img-ho">
+                      <img
+                        className="card-img-top"
+                        src="https://coditas.com/static/media/3.71876206.PNG"
+                        alt="wrappixel kit"
+                      />
+                    </a>
+                    <div className="card-body">
+                      <h5 className="font-medium m-b-0">Sepio SaaS</h5>
+                    </div>
+                  </div>
+                </div>
+                {/* <!-- Column --> */}
+                <div className="col-md-4">
+                  <div
+                    className="card card-shadow"
+                    data-aos="flip-left"
+                    data-aos-duration="1200"
+                  >
+                    <a href="#" className="img-ho">
+                      <img
+                        className="card-img-top"
+                        src="https://coditas.com/static/media/4.545861f1.PNG"
+                        alt="wrappixel kit"
+                      />
+                    </a>
+                    <div className="card-body">
+                      <h5 className="font-medium m-b-0">Vistamoney</h5>
+                    </div>
+                  </div>
+                </div>
+                {/* <!-- Column --> */}
+                <div className="col-md-4">
+                  <div
+                    className="card card-shadow"
+                    data-aos="flip-up"
+                    data-aos-duration="1200"
+                  >
+                    <a href="#" className="img-ho">
+                      <img
+                        className="card-img-top"
+                        src="https://coditas.com/static/media/5.a397ffb9.PNG"
+                        alt="wrappixel kit"
+                      />
+                    </a>
+                    <div className="card-body">
+                      <h5 className="font-medium m-b-0">Sionage Mokcup</h5>
+                    </div>
+                  </div>
+                </div>
+                {/* <!-- Column --> */}
+                <div className="col-md-4">
+                  <div
+                    className="card card-shadow"
+                    data-aos="flip-right"
+                    data-aos-duration="1200"
+                  >
+                    <a href="#" className="img-ho">
+                      <img
+                        className="card-img-top"
+                        src="https://coditas.com/static/media/6.84f03ba9.PNG"
+                        alt="wrappixel kit"
+                      />
+                    </a>
+                    <div className="card-body">
+                      <h5 className="font-medium m-b-0">
+                        Hard Cover Book Mock
+                      </h5>
                     </div>
                   </div>
                 </div>

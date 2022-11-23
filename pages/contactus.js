@@ -1,9 +1,8 @@
 import Head from "next/head";
-import React from "react";
+import { React, useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import ReCAPTCHA from "react-google-recaptcha";
-
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faUsers,
@@ -11,9 +10,68 @@ import {
   faClock,
   faBuilding,
   faArrowUpRightDots,
+  faThumbsUp,
+  faCheckDouble,
 } from "@fortawesome/free-solid-svg-icons";
 
-const contactus = () => {
+const Contactus = () => {
+  useEffect(() => {
+    $(function () {
+      "use strict";
+      $(function () {
+        $(".preloader").fadeOut();
+      });
+      jQuery(document).on("click", ".mega-dropdown", function (e) {
+        e.stopPropagation();
+      });
+      jQuery(document).on("click", ".navbar-nav > .dropdown", function (e) {
+        e.stopPropagation();
+      });
+      $(".dropdown-submenu").click(function () {
+        $(".dropdown-submenu > .dropdown-menu").toggleClass("show");
+      });
+
+      $("body").trigger("resize");
+      // ==============================================================
+      //Fix header while scroll
+      // ==============================================================
+      var wind = $(window);
+      wind.on("load", function () {
+        var bodyScroll = wind.scrollTop(),
+          navbar = $(".topbar");
+        if (bodyScroll > 100) {
+          navbar.addClass("fixed-header animated slideInDown");
+        } else {
+          navbar.removeClass("fixed-header animated slideInDown");
+        }
+      });
+      $(window).scroll(function () {
+        if ($(window).scrollTop() >= 100) {
+          $(".topbar").addClass("fixed-header animated slideInDown");
+          $(".bt-top").addClass("visible");
+        } else {
+          $(".topbar").removeClass("fixed-header animated slideInDown");
+          $(".bt-top").removeClass("visible");
+        }
+      });
+      // ==============================================================
+      // Animation initialized
+      // ==============================================================
+      AOS.init();
+      // ==============================================================
+      // Back to top
+      // ==============================================================
+      $(".bt-top").on("click", function (e) {
+        e.preventDefault();
+        $("html,body").animate(
+          {
+            scrollTop: 0,
+          },
+          700
+        );
+      });
+    });
+  });
   function onChange(value) {
     console.log("Captcha value:", value);
   }
@@ -456,12 +514,8 @@ const contactus = () => {
               <div className="row contact-container m-t-30 ">
                 <div className="col-lg-5 align-self-center">
                   <div className="max-500 m-auto p-20">
-                    {/* <!-- <span className="label label-success label-rounded">Feature 47</span> --> */}
-                    {/* <h2 className="title">Why Companies Choose Us</h2> */}
-                    {/* <h6 className="subtitle">You can relay on our amazing features list and also our customer services will be great experience for you without doubt and in no-time</h6> */}
                     <ul className="list-block with-underline font-medium m-t-30 m-b-20 text-dark">
                       <li>
-                        {/* <i className="fa fa-user-o text-info"></i> */}
                         <FontAwesomeIcon
                           icon={faUsers}
                           className="text-info pr-3"
@@ -471,7 +525,6 @@ const contactus = () => {
                         <span>200+ Happy Clients </span>
                       </li>
                       <li>
-                        {/* <i className="fa fa-line-chart text-info"></i> */}
                         <FontAwesomeIcon
                           icon={faArrowUpRightDots}
                           className="text-info pr-3"
@@ -479,12 +532,8 @@ const contactus = () => {
                         />
                         <span>10+ Years of Experience </span>
                       </li>
-                      {/* <li>
-                        <i className="fa fa-map-marker text-info"></i>
-                        <span>Presence in 2 Countries </span>
-                      </li> */}
+
                       <li>
-                        {/* <i className="fa fa-angle-right  text-info"></i> */}
                         <FontAwesomeIcon
                           icon={faClock}
                           className="text-info pr-3"
@@ -493,12 +542,8 @@ const contactus = () => {
 
                         <span>300+ Projects Delivered</span>
                       </li>
-                      {/* <li>
-                        <i className="fa fa-certificate text-info"></i>
-                        <span>ISO 27001 Certified</span>
-                      </li> */}
+
                       <li>
-                        {/* <i className="fa fa-cog text-info"></i> */}
                         <FontAwesomeIcon
                           icon={faBuilding}
                           className="text-info pr-3"
@@ -507,7 +552,6 @@ const contactus = () => {
                         <span>5+ Industries Served</span>
                       </li>
                     </ul>
-                    {/* <!-- <a className="btn btn-info-gradiant btn-md btn-arrow m-t-20 m-b-20" data-toggle="collapse" href="#f47"><span>Get Code <i className="ti-arrow-right"></i></span></a> --> */}
                   </div>
                 </div>
                 <div className="col-lg-7 ">
@@ -520,7 +564,6 @@ const contactus = () => {
                     <div className="row ">
                       <div className="col-lg-12 ">
                         <div className="contact-box p-40 ">
-                          {/* <!-- <h4 className=" ">Contact Us</h4> --> */}
                           <form>
                             <div className="row ">
                               <div className="col-lg-6 ">
@@ -602,61 +645,58 @@ const contactus = () => {
               <div className="col-lg-4 bg-megna">
                 <div className="wrap-feature10-box text-center">
                   <div className="display-4 m-b-20">
-                    <i className="icon-Talk-Man"></i>
+                    <FontAwesomeIcon
+                      icon={faCheckDouble}
+                      className="pr-3"
+                      size="1x"
+                    />
                   </div>
-                  <small className="op-8">Methodologies &amp; solutions</small>
+
                   <h4 className="box-title">Our Highlights</h4>
-                  <p className="op-8">
+                  <p>
                     With a technology-led and innovation-first approach, we help
                     businesses become a pioneer in their industry by equipping
                     them with technological developments.
                   </p>
-                  <a className="btn btn-outline-light btn-md btn-arrow">
-                    <span>
-                      Read all <i className="ti-arrow-right"></i>
-                    </span>
-                  </a>
                 </div>
               </div>
 
               <div className="col-lg-4 bg-primary">
                 <div className="wrap-feature10-box text-center">
                   <div className="display-4 m-b-20">
-                    <i className="icon-Chrysler-Building"></i>
+                    <FontAwesomeIcon
+                      icon={faBuilding}
+                      className="pr-3"
+                      size="1x"
+                    />
                   </div>
-                  <small className="op-8">And innovate strategically</small>
+
                   <h4 className="box-title">Industries We Serve</h4>
-                  <p className="op-8">
+                  <p>
                     From solving complex industry-specific processes and
                     managing highly-technical solutions, the Aexonic team&apos;s
                     end-to-end vertical approach enables us to serve a diverse
                     clientele.
                   </p>
-                  <a className="btn btn-outline-light btn-md btn-arrow">
-                    <span>
-                      Read all <i className="ti-arrow-right"></i>
-                    </span>
-                  </a>
                 </div>
               </div>
 
               <div className="col-lg-4 bg-orange">
                 <div className="wrap-feature10-box text-center">
                   <div className="display-4 m-b-20">
-                    <i className="icon-Mouse-3"></i>
+                    <FontAwesomeIcon
+                      icon={faThumbsUp}
+                      className="pr-3"
+                      size="1x"
+                    />
                   </div>
-                  <small className="op-8">Fruits of smart work</small>
+
                   <h4 className="box-title">Success Stories</h4>
-                  <p className="op-8">
+                  <p>
                     Click here to know how our global clients have benefited by
                     deploying technologically advanced tools and software and
                     empowering their businesses dynamically.
                   </p>
-                  <a className="btn btn-outline-light btn-md btn-arrow">
-                    <span>
-                      Read all <i className="ti-arrow-right"></i>
-                    </span>
-                  </a>
                 </div>
               </div>
             </div>
@@ -1148,4 +1188,4 @@ const contactus = () => {
   );
 };
 
-export default contactus;
+export default Contactus;
