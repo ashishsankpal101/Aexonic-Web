@@ -8,6 +8,9 @@ import {
   faHeadset,
   faCashRegister,
   faCartShopping,
+  faWarehouse,
+  faListCheck,
+  faChartSimple,
 } from "@fortawesome/free-solid-svg-icons";
 
 const RetailEcommoerce = () => {
@@ -474,7 +477,8 @@ const RetailEcommoerce = () => {
                 >
                   <h1 className="title banner-text">Retail and e-commerce</h1>
                   <h6 className="subtitle op-8 banner-text">
-                    We are a team of passionate people who love what we do.
+                    We help you transform into a responsive and regenerative
+                    business.
                   </h6>
                 </div>
                 {/* <!-- Column --> */}
@@ -487,7 +491,7 @@ const RetailEcommoerce = () => {
               <div className="row">
                 <div className="col-lg-7">
                   <h2 className="m-b-30 m-t-20">
-                    Retail technology for the evolving consumer landscape
+                    Retail Technology For The Evolving Consumer Landscape
                   </h2>
                   <h6 className="subtitle">
                     Retail technology trends are towards powerful, contactless
@@ -640,11 +644,146 @@ const RetailEcommoerce = () => {
             </div>
           </div>
 
-          <div className="spacer bg-light feature2">
+          <div className="bg-light spacer feature3">
             <div className="container">
               <div className="row justify-content-center">
                 <div className="col-md-7 text-center">
-                  <h2 className="title">We understand your business</h2>
+                  <h2 className="title">Retail Management On The Go!</h2>
+                  <h6 className="subtitle">
+                    We work with global retailers to identify new growth
+                    opportunities and tap into the vast potential of next-gen
+                    technologies.
+                  </h6>
+                </div>
+              </div>
+
+              <div className="row m-t-40">
+                <div className="col-md-6 wrap-feature3-box">
+                  <div
+                    className="card card-shadow"
+                    data-aos="fade-right"
+                    data-aos-duration="1200"
+                  >
+                    <div className="card-body d-flex">
+                      <div className="icon-space align-self-center">
+                        <FontAwesomeIcon
+                          icon={faWarehouse}
+                          className="text-info pr-3"
+                          size="3x"
+                        />
+                      </div>
+                      <div className="align-self-center">
+                        <h5 className="font-medium">
+                          <a href="" className="linking">
+                            Inventory Management
+                          </a>
+                        </h5>
+                        <p className="m-t-20">
+                          Aexonic provide inventory management feature for
+                          retailers because the it helps them increase profits.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="col-md-6 wrap-feature3-box">
+                  <div
+                    className="card card-shadow"
+                    data-aos="fade-left"
+                    data-aos-duration="1200"
+                  >
+                    <div className="card-body d-flex">
+                      <div className="icon-space align-self-center">
+                        <FontAwesomeIcon
+                          icon={faListCheck}
+                          className="text-info pr-3"
+                          size="3x"
+                        />
+                      </div>
+                      <div className="align-self-center">
+                        <h5 className="font-medium">
+                          <a href="" className="linking">
+                            Orders Management
+                          </a>
+                        </h5>
+                        <p className="m-t-20">
+                          Manage sales and purchase orders, create packages and
+                          send delivery updates through a order management
+                          system.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="col-md-6 wrap-feature3-box">
+                  <div
+                    className="card card-shadow"
+                    data-aos="fade-right"
+                    data-aos-duration="1200"
+                  >
+                    <div className="card-body d-flex">
+                      <div className="icon-space align-self-center">
+                        <FontAwesomeIcon
+                          icon={faCropSimple}
+                          className="text-info pr-3"
+                          size="3x"
+                        />
+                      </div>
+                      <div className="align-self-center">
+                        <h5 className="font-medium">
+                          <a href="" className="linking">
+                            Product Sharing On Social Media
+                          </a>
+                        </h5>
+                        <p className="m-t-20">
+                          We will help to build your business on social media
+                          for increase business presence and engage your
+                          audience.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="col-md-6 wrap-feature3-box">
+                  <div
+                    className="card card-shadow"
+                    data-aos="fade-left"
+                    data-aos-duration="1200"
+                  >
+                    <div className="card-body d-flex">
+                      <div className="icon-space align-self-center">
+                        <FontAwesomeIcon
+                          icon={faChartSimple}
+                          className="text-info pr-3"
+                          size="3x"
+                        />
+                      </div>
+                      <div className="align-self-center">
+                        <h5 className="font-medium">
+                          <a href="" className="linking">
+                            Shop Analytics
+                          </a>
+                        </h5>
+                        <p className="m-t-20">
+                          Our retail analytics software provides retailers with
+                          an in-depth look into all aspects of their business.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className="spacer feature2">
+            <div className="container">
+              <div className="row justify-content-center">
+                <div className="col-md-7 text-center">
+                  <h2 className="title">Our Work</h2>
                   <h6 className="subtitle">
                     Platform driven eCommerce and retail solutions for quick
                     turnaround

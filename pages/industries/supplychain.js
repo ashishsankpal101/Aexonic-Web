@@ -476,7 +476,7 @@ const SupplyChain = () => {
                     Supply Chain and Logistics
                   </h1>
                   <h6 className="subtitle op-8 banner-text">
-                    We are a team of passionate people who love what we do.
+                    We plan the optimal solution to make your business smarter
                   </h6>
                 </div>
                 {/* <!-- Column --> */}
@@ -492,7 +492,7 @@ const SupplyChain = () => {
               <div className="row">
                 <div className="col-lg-7">
                   <h2 className="m-b-30 m-t-20">
-                    Supply And Logistics Solutions
+                    Supply Chain Management Solutions
                   </h2>
                   <h6 className="subtitle">
                     With the expanding global trade solutions and the increasing
@@ -516,7 +516,7 @@ const SupplyChain = () => {
                   <div className="row wrap-feature-12">
                     <div className="col-md-12">
                       <img
-                        src="https://img.freepik.com/free-vector/customer-choosing-order-delivery-type-global-distribution-freight-quote-request-best-shipping-proposal-freight-cost-request-form-concept-pinkish-coral-bluevector-isolated-illustration_335657-1755.jpg?w=900&t=st=1669017532~exp=1669018132~hmac=3f9faad23017eb3ee8630f921ebdcf5a5264b899c95dcaa6f7014c3ad3b00e29"
+                        src="https://img.freepik.com/premium-photo/transportation-logistics_37416-176.jpg?w=1060"
                         className="rounded img-responsive m-t-3"
                         alt="wrapkit "
                       />
@@ -531,7 +531,10 @@ const SupplyChain = () => {
             <div className="container">
               <div className="row justify-content-center">
                 <div className="col-md-7 text-center">
-                  <h2 className="title">Mobilizing supply chain management</h2>
+                  {/* <h2 className="title">Mobilizing Supply Chain Management</h2> */}
+                  <h2 className="title">
+                    Supply Chain Management & Logistics Products
+                  </h2>
                   <h6 className="subtitle">
                     We help organizations simplify the logistics process and
                     lower the operational cost, effectively. We systemize
@@ -553,7 +556,7 @@ const SupplyChain = () => {
                       alt="wrappixel kit"
                     />
                     <div className="card-body text-center">
-                      <h5 className="font-medium">Smart shipment tracking</h5>
+                      <h5 className="font-medium">Smart Shipment Tracking</h5>
                       <p className="m-t-20">
                         Empower customers to track their shipments 24/7/365
                         smartly. Collect and update real-time from shipment
@@ -575,7 +578,7 @@ const SupplyChain = () => {
                       alt="wrappixel kit"
                     />
                     <div className="card-body text-center">
-                      <h5 className="font-medium">Product authentication</h5>
+                      <h5 className="font-medium">Product Authentication</h5>
                       <p className="m-t-20">
                         Centrally store, manage and share complex product
                         specifications across the supply chain to streamline
@@ -597,7 +600,7 @@ const SupplyChain = () => {
                       alt="wrappixel kit"
                     />
                     <div className="card-body text-center">
-                      <h5 className="font-medium">Marketing campaign </h5>
+                      <h5 className="font-medium">Marketing Campaign </h5>
                       <p className="m-t-20">
                         Increase efficiency and nurture sustainable
                         relationships with suppliers and stakeholders through
@@ -676,11 +679,12 @@ const SupplyChain = () => {
             <div className="container">
               <div className="row justify-content-center">
                 <div className="col-md-7 text-center">
-                  <h2 className="title">Solutions we provide to client </h2>
+                  <h2 className="title">Our Offerings</h2>
                   <h6 className="subtitle">
-                    You can relay on our amazing features list and also our
-                    customer services will be great experience for you without
-                    doubt and in no-time
+                    We are at the forefront of developing innovative supply
+                    chain solutions fusing our global network with pioneering
+                    digital innovations to enable our customers to stay ahead of
+                    curve
                   </h6>
                 </div>
               </div>

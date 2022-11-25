@@ -470,7 +470,8 @@ const Healthcare = () => {
                 >
                   <h1 className="title banner-text">Healthcare</h1>
                   <h6 className="subtitle op-8 banner-text">
-                    We are a team of passionate people who love what we do.
+                    Consumers today are demanding greater control over their
+                    healthcare
                   </h6>
                 </div>
               </div>
@@ -485,12 +486,10 @@ const Healthcare = () => {
             <div className="container">
               <div className="row justify-content-center">
                 <div className="col-md-7 text-center">
-                  <h2 className="title">
-                    Your challenges are our goals. Let&apos;s work together.
-                  </h2>
+                  <h2 className="title">Your Challenges Are Our Goals</h2>
                   <h6 className="subtitle">
                     We comply with your healthcare facility&apos;s policies and
-                    procedures and build patient-focused apps and solutions
+                    procedures and build healthcare focused apps and solutions
                   </h6>
                 </div>
               </div>
@@ -510,7 +509,7 @@ const Healthcare = () => {
                           size="3x"
                         />
                       </div>
-                      <h5 className="font-medium">Business operation</h5>
+                      <h5 className="font-medium">Business Operations</h5>
                       <p className="m-t-20">
                         We implement the right processes and practices across
                         your organization. We streamline your entire department
@@ -534,7 +533,7 @@ const Healthcare = () => {
                           size="3x"
                         />
                       </div>
-                      <h5 className="font-medium">Caregiver management</h5>
+                      <h5 className="font-medium">Caregiver Management</h5>
                       <p className="m-t-20">
                         Everything you need to supervise the best caregiver
                         solutions with improved support that follows all the
@@ -559,7 +558,7 @@ const Healthcare = () => {
                           size="3x"
                         />
                       </div>
-                      <h5 className="font-medium">Client service management</h5>
+                      <h5 className="font-medium">Client Service Management</h5>
                       <p className="m-t-20">
                         Provide the best possible care to your patients and
                         patrons. We help you build intelligent solutions that
@@ -571,44 +570,31 @@ const Healthcare = () => {
               </div>
             </div>
           </div>
-          <div className="feature16">
-            <div className="row wrap-feature-16">
-              <div
-                className="col-lg-6 with-bg"
-                data-aos="fade-up"
-                data-aos-duration="1200"
-                style={{
-                  backgroundImage: "url(/images/features/hospital_service.jpg)",
-                }}
-              ></div>
-              <div className="col-lg-6 bg-info-gradiant text-white">
-                <div className="with-text">
-                  <h2 className="text-white m-t-30 m-b-30">Our Offerings</h2>
-                  <ul className="list-block m-b-30">
-                    <li>
-                      <i className="icon-Yes"></i>
-                      <span>
-                        Business Consulting and Healthcare Intelligence
-                      </span>
-                    </li>
-                    <li>
-                      <i className="icon-Yes"></i>
-                      <span>
-                        Application Customization & Enhancement, Implementation,
-                        Support & Maintenance
-                      </span>
-                    </li>
-                    <li>
-                      <i className="icon-Yes"></i>
-                      <span>Data Integration & Serialization</span>
-                    </li>
-                    <li>
-                      <i className="icon-Yes"></i>
-                      <span>
-                        Mobility Application Development & Maintenance
-                      </span>
-                    </li>
-                  </ul>
+
+          <div
+            className="spacer feature21 wrap-feature21-box"
+            style={{
+              backgroundImage:
+                " linear-gradient(90deg, #000000b5, transparent),url(https://img.freepik.com/premium-photo/medicine-doctor-team-meeting-analysis_34200-351.jpg?w=996)",
+            }}
+          >
+            <div className="container">
+              <div className="row text-white">
+                <div className="col-md-5 both-space">
+                  <div
+                    className=""
+                    data-aos="fade-right"
+                    data-aos-duration="1200"
+                  >
+                    <h2 className="text-white m-t-20 m-b-30">
+                      Empowering healthcare organization with the help of
+                      digital technology solution to address the challenges
+                    </h2>
+                    <p>
+                      Aexonic care is modernizing the health and social care
+                      sector with modular, open, and interoperable software.
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>
@@ -650,7 +636,7 @@ const Healthcare = () => {
                         </div>
                         <div className="p-20">
                           <h5 className="font-medium">
-                            <a className="linking">Deliver high-quality care</a>
+                            <a className="linking">Deliver High-Quality Care</a>
                           </h5>
                           <p className="m-t-20">
                             Harnessing the power of data and digital technology,
@@ -676,7 +662,7 @@ const Healthcare = () => {
                         </div>
                         <div className="p-20">
                           <h5 className="font-medium">
-                            <a className="linking">Process-oriented approach</a>
+                            <a className="linking">Process-Oriented Approach</a>
                           </h5>
                           <p className="m-t-20">
                             We work to become your partner to provide full-stack
@@ -702,7 +688,7 @@ const Healthcare = () => {
                         </div>
                         <div className="p-20">
                           <h5 className="font-medium">
-                            <a className="linking">Unlock opportunities</a>
+                            <a className="linking">Unlock Opportunities</a>
                           </h5>
                           <p className="m-t-20">
                             Through advanced tech, we help you lay a strong
@@ -733,9 +719,7 @@ const Healthcare = () => {
             <div className="container">
               <div className="row justify-content-center">
                 <div className="col-md-7 text-center">
-                  <h2 className="title">
-                    Powering digital-first Life Sciences & Healthcare
-                  </h2>
+                  <h2 className="title">Our Work</h2>
                   <h6 className="subtitle">
                     Envisioning a reliable patient-centered healthcare system by
                     maximizing value for patients and achieving the best
@@ -753,15 +737,15 @@ const Healthcare = () => {
                   >
                     <img
                       className="card-img-top"
-                      src="https://img.freepik.com/premium-photo/business-man-hand-touching-digital-brain-artificial-intelligence-learning-network-business-technology-internet-network-concept_590401-47.jpg?w=900"
+                      src="https://img.freepik.com/free-photo/asian-young-caregiver-caring-her-elderly-patient-senior-daycare-handicap-patient-wheelchair-hospital-talking-friendly-nurse-looking-cheerful-nurse-wheeling-senior-patient_609648-3125.jpg?w=900&t=st=1669273046~exp=1669273646~hmac=ae06bda814d947445b3bc3fb19db4f4cfd9bad389cecb6a0c0b75f8704b52f134"
                       alt="wrappixel kit"
                     />
                     <div className="card-body text-center">
-                      <h5 className="font-medium">Deep knowledge of systems</h5>
+                      <h5 className="font-medium">Care Daily</h5>
                       <p className="m-t-20">
-                        With our experience within the healthcare space, we
-                        understand these systems and build solutions that
-                        improve every aspect of your company.
+                        Care Daily is a SaaS product for home care agencies
+                        designed to streamline their business operation,
+                        caregiver management, and client service management.
                       </p>
                     </div>
                   </div>
@@ -780,7 +764,7 @@ const Healthcare = () => {
                     />
                     <div className="card-body text-center">
                       <h5 className="font-medium">
-                        Specialists in Healthcare IT
+                        Specialists In Healthcare IT
                       </h5>
                       <p className="m-t-20">
                         We develop customized & secure technologies so that you
@@ -804,11 +788,12 @@ const Healthcare = () => {
                       alt="wrappixel kit"
                     />
                     <div className="card-body text-center">
-                      <h5 className="font-medium">Innovating for the future</h5>
+                      <h5 className="font-medium">Innovating For The Future</h5>
                       <p className="m-t-20">
                         We leverage cutting-edge tech solutions like cloud, AI,
-                        blockchain, analytics and IoT to build mission-critical
-                        solutions and higher patient fulfilment.
+                        blockchain, data and analytics and IoT to build
+                        mission-critical solutions and higher patient
+                        fulfilment.
                       </p>
                     </div>
                   </div>

@@ -497,7 +497,7 @@ const Banking = (props) => {
               <div className="row">
                 <div className="col-lg-7">
                   <h2 className="m-b-30 m-t-20">
-                    Do more for your customers with banking technology
+                    Do More For Your Customers With Banking Technology
                   </h2>
                   <h6 className="subtitle">
                     Banking is moving beyond banks. As banking services become
@@ -519,7 +519,7 @@ const Banking = (props) => {
                   <div className="row wrap-feature-12">
                     <div className="col-md-12">
                       <img
-                        src="https://img.freepik.com/premium-vector/illustration-vector-graphic-cartoon-character-bank_516790-1103.jpg?w=826"
+                        src="https://img.freepik.com/premium-photo/attractive-young-european-busiessman-holding-laptop-with-creative-glowing-forex-chart-blurry-office-interior-background-trade-financial-investment-technology-concept-double-exposure_670147-8442.jpg?w=900"
                         className="rounded img-responsive m-t-3"
                         alt="wrapkit "
                       />
@@ -748,8 +748,9 @@ const Banking = (props) => {
                 <div className="col-md-7 text-center">
                   <h2 className="title">Our Offerings</h2>
                   <h6 className="subtitle">
-                    We use new technologies to help banks and payment providers
-                    take bold steps to thrive and be future-ready.
+                    We have built stable, scalable cutting-edge technology
+                    solutions that helped banking domain and achieve better
+                    growth
                   </h6>
                 </div>
               </div>
@@ -774,7 +775,7 @@ const Banking = (props) => {
                           />
                         </div>
                         <div>
-                          <h5 className="m-b-0">Retail and corporate banks</h5>
+                          <h5 className="m-b-0">Retail & Corporate Banks</h5>
                         </div>
                       </a>
                     </li>
@@ -916,369 +917,6 @@ const Banking = (props) => {
               </div>
             </div>
           </div>
-
-          {/* <!-- ============================================================== -->
-                        <!-- Testimonial 9 -->
-                        <!-- ============================================================== --> */}
-
-          {/* <div className="spacer feature9">
-            <div className="container">
-              <div className="row justify-content-center">
-                <div className="col-md-7 text-center">
-                  <h2 className="title">How can we help you?</h2>
-                  <h6 className="subtitle">
-                    Through our extensive experience in serving Fintech
-                    companies, we build robust systems that make your
-                    customers&apos; lives easier.
-                  </h6>
-                </div>
-              </div>
-
-              <div className="row m-t-40">
-                <div className="col-md-6 wrap-feature9-box b-r b-b">
-                  <div
-                    className="card"
-                    data-aos="fade-left"
-                    data-aos-duration="1200"
-                  >
-                    <div className="card-body d-flex">
-                      <div className="icon-space align-self-center">
-                        <i className=" icon-Code-Window display-4 text-info-gradiant"></i>
-                      </div>
-                      <div className="align-self-center">
-                        <h5 className="font-medium">
-                          <a className="linking">Legacy modernization </a>
-                        </h5>
-                        <p className="m-t-20">
-                          We provide next-gen application lifecycle management
-                          through integrated services, enterprise architecture
-                          and consulting.
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div className="col-md-6 wrap-feature9-box b-b">
-                  <div
-                    className="card"
-                    data-aos="fade-left"
-                    data-aos-duration="1200"
-                  >
-                    <div className="card-body d-flex">
-                      <div className="icon-space align-self-center">
-                        <i className="icon-Consulting display-4 text-info-gradiant"></i>
-                      </div>
-                      <div className="align-self-center">
-                        <h5 className="font-medium">
-                          <a className="linking">Digital foundation</a>
-                        </h5>
-                        <p className="m-t-20">
-                          We manage and optimize the technology infrastructure
-                          responsible for delivering business outcomes.
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div className="col-md-6 wrap-feature9-box b-r">
-                  <div
-                    className="card"
-                    data-aos="fade-right"
-                    data-aos-duration="1200"
-                  >
-                    <div className="card-body d-flex">
-                      <div className="icon-space align-self-center">
-                        <i className="icon-Computer-Secure display-4 text-info-gradiant"></i>
-                      </div>
-                      <div className="align-self-center">
-                        <h5 className="font-medium">
-                          <a className="linking">
-                            Experience-led transformation
-                          </a>
-                        </h5>
-                        <p className="m-t-20">
-                          We provide services for data quality, governance,
-                          visualisation, master data management and applied AI.
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div className="col-md-6 wrap-feature9-box">
-                  <div
-                    className="card"
-                    data-aos="fade-left"
-                    data-aos-duration="1200"
-                  >
-                    <div className="card-body d-flex">
-                      <div className="icon-space align-self-center">
-                        <i
-                          className="icon-Cloud-Settings
- display-4 text-info-gradiant"
-                        ></i>
-                      </div>
-                      <div className="align-self-center">
-                        <h5 className="font-medium">
-                          <a className="linking">Streamline operations </a>
-                        </h5>
-                        <p className="m-t-20">
-                          We enable enhanced customer experience across
-                          touchpoints through personalised experience solutions
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div> */}
-
-          <div className="testimonial9 spacer">
-            <div className="container">
-              <div className="row">
-                <div className="col-lg-5 col-md-6">
-                  <h2 className="m-t-40 title">What Our Customers Say</h2>
-
-                  <h6 className="subtitle ">
-                    Why do financial services organizations choose Aexonic?
-                    They&apos;ve chosen Aexonic to support their vision of a
-                    more secure, highly-performant tech infrastructure that
-                    delivers personalized experiences to provide customers with
-                    a truly unique banking experience.
-                  </h6>
-                </div>
-                <div className="col-lg-6 col-md-6 ml-auto">
-                  <div className="owl-carousel owl-theme testi9">
-                    {/* <!-- item --> */}
-                    <div className="item">
-                      <div className="card card-shadow testimonial-color">
-                        <div className="p-40">
-                          <p>
-                            We care what our customers think of us and so should
-                            you. We are partners in your business and your
-                            success is ours in your business.
-                          </p>
-                        </div>
-                      </div>
-                      <div className="d-flex no-block align-items-center">
-                        <div className="customer-thumb">
-                          <img
-                            src="/images/1.jpg"
-                            alt="wrapkit"
-                            className="circle"
-                          />
-                        </div>
-                        <div className="">
-                          <h6 className="font-bold m-b-0">Michael Anderson</h6>
-                          <span className="font-13">Project client</span>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          {/* <div className="spacer feature17">
-            <div className="container">
-              <div className="row justify-content-center">
-                <div className="col-md-7 text-center">
-                  <h2 className="title">
-                    Creating Stronger And More Secure Financial Assets{" "}
-                  </h2>
-                  <h6 className="subtitle">
-                    We&apos;re proud to have worked on different solutions and
-                    systems for our BFSI clients that have strengthened their
-                    business.{" "}
-                  </h6>
-                </div>
-              </div>
-
-              <div className="card-group m-t-30 wrap-feature-17-box">
-                <div className="card m-b-0">
-                  <div className="card-body text-center">
-                    <div className="p-20">
-                      <div className="icon-space">
-                        <i className="display-5 text-info-gradiant icon-Paypal"></i>
-                      </div>
-                      <h4 className="font-medium">Payment Gateway</h4>
-                      <p>
-                        Bridged the gap between merchant's website and payment
-                        provider to facilitate a robust mechanism.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-
-                <div className="card m-b-0 custom_container">
-                  <img
-                    src="/images/features/feature17/img4.png"
-                    className="image"
-                    alt="wrapkit"
-                  />
-                  <div className="overlay">
-                    <div className="text">E-Pin System</div>
-                  </div>
-                </div>
-
-                <div className="card m-b-0">
-                  <div className="card-body text-center">
-                    <div className="p-20">
-                      <div className="icon-space">
-                        <i className="display-5 text-info-gradiant icon-Credit-Card"></i>
-                      </div>
-                      <h4 className="font-medium">Virtual Card Issuance</h4>
-                      <p>
-                        Simplified customers&apos; lives by fulfilling their
-                        demands to transact securely.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="card-group wrap-feature-17-box">
-                <div className="card custom_container">
-                  <img
-                    src="/images/features/feature17/img5.png"
-                    className="image"
-                    alt="wrapkit"
-                  />
-                  <div className="overlay">
-                    <div className="text">Payment Gateway</div>
-                  </div>
-                </div>
-
-                <div className="card">
-                  <div className="card-body text-center">
-                    <div className="p-20">
-                      <div className="icon-space">
-                        <i className="display-5 text-info-gradiant icon-Gift-Box"></i>
-                      </div>
-                      <h4 className="font-medium">Gift Cards Exchange</h4>
-                      <p>
-                        {" "}
-                        Empowered our customers freedom at convenience to
-                        convert cash or card into a choice and redeem the value.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-
-                <div className="card custom_container">
-                  <img
-                    src="/images/features/feature17/img6.png"
-                    className="image"
-                    alt="wrapkit"
-                  />
-                  <div className="overlay">
-                    <div className="text">Gift Card System</div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div> */}
-
-          {/* <div className="blog-home1 spacer bg-light ">
-            <div className="container ">
-              <div className="row justify-content-center ">
-                <div className="col-md-8 text-center ">
-                  <h2 className="title ">News</h2>
-                  <h6 className="subtitle ">
-                    You can relay on our amazing features list and also our
-                    customer services will be great experience for you without
-                    doubt and in no-time
-                  </h6>
-                </div>
-              </div>
-              <div className="row m-t-40 ">
-                <div className="col-md-4 ">
-                  <div
-                    className="card card-shadow "
-                    data-aos="flip-left "
-                    data-aos-duration="1200 "
-                  >
-                    <a href="# ">
-                      <img
-                        className="card-img-top "
-                        src="/images/blog/img3.jpg "
-                        alt="wrappixel kit "
-                      />
-                    </a>
-                    <div className="p-30 ">
-                      <div className="d-flex no-block font-14 ">
-                        <a href="# ">Digital Marketing</a>
-                        <span className="ml-auto ">Sept 18, 2017</span>
-                      </div>
-                      <h5 className="font-medium m-t-20 ">
-                        <a href="# " className="link ">
-                          Digital Marketing becomes very Essential for any site
-                        </a>
-                      </h5>
-                    </div>
-                  </div>
-                </div>
-
-                <div className="col-md-4 ">
-                  <div
-                    className="card card-shadow "
-                    data-aos="flip-up "
-                    data-aos-duration="1200 "
-                  >
-                    <a href="# ">
-                      <img
-                        className="card-img-top "
-                        src="/images/blog/img2.jpg "
-                        alt="wrappixel kit "
-                      />
-                    </a>
-                    <div className="p-30 ">
-                      <div className="d-flex no-block font-14 ">
-                        <a href="# ">Search Engine </a>
-                        <span className="ml-auto ">Sept 18, 2017</span>
-                      </div>
-                      <h5 className="font-medium m-t-20 ">
-                        <a href="# " className="link ">
-                          Rank your site on First Page of Google seems easier
-                          now
-                        </a>
-                      </h5>
-                    </div>
-                  </div>
-                </div>
-
-                <div className="col-md-4 ">
-                  <div
-                    className="card card-shadow "
-                    data-aos="flip-right "
-                    data-aos-duration="1200 "
-                  >
-                    <a href="# ">
-                      <img
-                        className="card-img-top "
-                        src="/images/blog/img1.jpg "
-                        alt="wrappixel kit "
-                      />
-                    </a>
-                    <div className="p-30 ">
-                      <div className="d-flex no-block font-14 ">
-                        <a href="# ">Search Engine</a>
-                        <span className="ml-auto ">Sept 18, 2017</span>
-                      </div>
-                      <h5 className="font-medium m-t-20 ">
-                        <a href="# " className="link ">
-                          We have just launched our new Admin template
-                        </a>
-                      </h5>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div> */}
 
           {/*  <!-- ============================================================== -->
                          <!-- footer 4  -->

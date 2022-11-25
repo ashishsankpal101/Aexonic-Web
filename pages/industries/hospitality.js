@@ -457,9 +457,7 @@ const Hospitality = () => {
             }}
           >
             <div className="container">
-              {/* <!-- Row  --> */}
               <div className="row justify-content-center ">
-                {/* <!-- Column --> */}
                 <div
                   className="col-md-6 align-self-center text-center"
                   data-aos="fade-down"
@@ -467,10 +465,9 @@ const Hospitality = () => {
                 >
                   <h1 className="title banner-text">Hospitality</h1>
                   <h6 className="subtitle op-8 banner-text">
-                    We are a team of passionate people who love what we do.
+                    We help you create safe, flexible, and frictionless journeys
                   </h6>
                 </div>
-                {/* <!-- Column --> */}
               </div>
             </div>
           </div>
@@ -492,9 +489,9 @@ const Hospitality = () => {
                     We understand the growing needs of this industry sector and
                     strive to drive operational excellence by offering effective
                     business solutions.
-                    <br></br> <br></br> In a disruptive digital world, your At
-                    Aexonic, we&apos;re extremely mindful of this and are
-                    already helping our clients acclimate to the situation.
+                    <br></br> <br></br>At Aexonic, we&apos;re extremely mindful
+                    of this and are already helping our clients acclimate to the
+                    situation.
                   </h6>
                 </div>
                 <div className="col-lg-5">
@@ -516,7 +513,7 @@ const Hospitality = () => {
             className="spacer feature21 wrap-feature21-box"
             style={{
               backgroundImage:
-                " linear-gradient(90deg, #000000b5, transparent),url(https://images.unsplash.com/photo-1483375801503-374c5f660610?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80)",
+                " linear-gradient(90deg, #000000b5, transparent),url(https://img.freepik.com/premium-photo/picture-guests-getting-key-card-hotel_109285-738.jpg?w=900)",
             }}
           >
             <div className="container">
@@ -528,11 +525,11 @@ const Hospitality = () => {
                     data-aos-duration="1200"
                   >
                     <h2 className="text-white m-t-20 m-b-30">
-                      Helped A Travel Platform With Quick Functionality Rollout
+                      A digital reverse bidding platform for travelers.
                     </h2>
                     <p>
-                      Find out how Aexonic ensured quicker functionality rollout
-                      for a travel privilege platform.
+                      Designed and developed a platform that helps the
+                      discerning travelers to book hotels at their chosen price
                     </p>
                   </div>
                 </div>
@@ -544,7 +541,7 @@ const Hospitality = () => {
             <div className="container">
               <div className="row">
                 <div className="col-lg-6">
-                  <h2 className="m-b-30 m-t-20">Our offerings</h2>
+                  <h2 className="m-b-30 m-t-20">Our Offerings</h2>
                   <h4 className="text-muted font-light">
                     Taking the hospitality industry towards digitization with
                     our offerings
@@ -637,7 +634,7 @@ const Hospitality = () => {
             <div className="container">
               <div className="row justify-content-center">
                 <div className="col-md-7 text-center">
-                  <h2 className="title">Explore Our Key Solutions</h2>
+                  <h2 className="title">Our Work</h2>
                   <h6 className="subtitle">
                     Increased operational efficiencies and user-friendly
                     experience across entire internal business processes.

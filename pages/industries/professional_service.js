@@ -534,7 +534,7 @@ const Professional = () => {
                 data-aos="fade-up"
               >
                 <h2 className="title text-white">
-                  Our roles in the professional services sector
+                  Our Roles In The Professional Services Sector
                 </h2>
                 <div className="row wrap-feature43-box">
                   <div
@@ -697,7 +697,7 @@ const Professional = () => {
             <div className="container">
               <div className="row justify-content-center">
                 <div className="col-md-7 text-center">
-                  <h2 className="title">Our offerings</h2>
+                  <h2 className="title">Our Offerings</h2>
                   <h6 className="subtitle">
                     Our offerings for professional services organizations are
                     based on three principles:
@@ -719,7 +719,7 @@ const Professional = () => {
                     />
                     <div className="card-body text-center">
                       <h5 className="font-medium">
-                        Artificial intelligence (AI)
+                        Artificial Intelligence (AI)
                       </h5>
                       <p className="m-t-20">
                         Processes a huge volume of structured and unstructured
@@ -743,7 +743,7 @@ const Professional = () => {
                       alt="wrappixel kit"
                     />
                     <div className="card-body text-center">
-                      <h5 className="font-medium">Always-on learning</h5>
+                      <h5 className="font-medium">Always-On Learning</h5>
                       <p className="m-t-20">
                         Enables continuous assimilation and sharing of knowledge
                         with an immersive learning platform. Learning is the
@@ -766,7 +766,7 @@ const Professional = () => {
                       alt="wrappixel kit"
                     />
                     <div className="card-body text-center">
-                      <h5 className="font-medium">Agile digital at scale</h5>
+                      <h5 className="font-medium">Agile Digital At Scale</h5>
                       <p className="m-t-20">
                         Enhances performance through microservices-based
                         integration, blockchain networks, and real-time data

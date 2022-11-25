@@ -997,7 +997,7 @@ const Contactus = () => {
                       tabIndex="0"
                     ></iframe> */}
                     {/* <img src="./images/contact_us/map.png" alt="" /> */}
-                    <img src="./images/contact_us/map2.png" alt="" />
+                    <img src="/images/contact_us/map2.png" alt="" />
                   </div>
                 </div>
                 {/* <!-- Column --> */}

@@ -476,7 +476,8 @@ const Technology = () => {
                 >
                   <h1 className="title banner-text">Technology and Software</h1>
                   <h6 className="subtitle op-8 banner-text">
-                    We are a team of passionate people who love what we do.
+                    We build greater futures through innovation and collective
+                    knowledge
                   </h6>
                 </div>
                 {/* <!-- Column --> */}
@@ -514,7 +515,7 @@ const Technology = () => {
                           size="3x"
                         />
                       </div>
-                      <h5 className="font-medium">Web development</h5>
+                      <h5 className="font-medium">Web Development</h5>
                       <p className="m-t-20">
                         Architecture, re-engineering, legacy software migration,
                         application enhancements, and support.
@@ -537,7 +538,7 @@ const Technology = () => {
                           size="3x"
                         />
                       </div>
-                      <h5 className="font-medium">Mobile development</h5>
+                      <h5 className="font-medium">Mobile Development</h5>
                       <p className="m-t-20">
                         Native Android and iOS app development with strict
                         compliance with Google and Apple guidelines.
@@ -560,7 +561,7 @@ const Technology = () => {
                           size="3x"
                         />
                       </div>
-                      <h5 className="font-medium">DevOps services</h5>
+                      <h5 className="font-medium">DevOps Services</h5>
                       <p className="m-t-20">
                         Infrastructure and CI/CD pipeline setup, monitoring,
                         infra-level security solutions by certified cloud
@@ -585,7 +586,7 @@ const Technology = () => {
                           size="3x"
                         />
                       </div>
-                      <h5 className="font-medium">Testing services</h5>
+                      <h5 className="font-medium">QA Services</h5>
                       <p className="m-t-20">
                         You can relay on our amazing features list and also our
                         customer services will be great experience.
@@ -608,7 +609,7 @@ const Technology = () => {
                           size="3x"
                         />
                       </div>
-                      <h5 className="font-medium">Data analytics</h5>
+                      <h5 className="font-medium">Data Analytics</h5>
                       <p className="m-t-20">
                         Data analytics, modeling, and visualization,
                         development, maintenance of large-scale products.
@@ -631,7 +632,7 @@ const Technology = () => {
                           size="3x"
                         />
                       </div>
-                      <h5 className="font-medium">Big data and ML</h5>
+                      <h5 className="font-medium">Big Data And ML</h5>
                       <p className="m-t-20">
                         Embedded analytics in mobile and web service models,
                         actionable business insights, Agile solutions.
@@ -674,100 +675,566 @@ const Technology = () => {
             <div className="container">
               <div className="row justify-content-center">
                 <div className="col-md-7 text-center">
-                  <h2 className="title">Technologies and frameworks</h2>
+                  <h2 className="title">Technologies and Frameworks</h2>
                   <h6 className="subtitle">
                     We work with over 20 different technologies, including few
                     of the latest.
                   </h6>
                 </div>
               </div>
+              <div className="row m-t-40">
+                <div className=" col-md-6 wrap-feature3-box">
+                  <div
+                    className="card card-shadow pl-3 pr-3"
+                    data-aos="fade-left"
+                    data-aos-duration="1200"
+                  >
+                    <h3 className="font-medium">FrontEnd</h3>
+                    <div className="row tech-feature-24">
+                      <div className="col-lg-3 col-md-6">
+                        <div className="card card-shadow">
+                          <img
+                            className="card-img-top"
+                            src="/images/technology/fronend-2.png"
+                            alt="wrappixel kit"
+                          ></img>
+                        </div>
+                      </div>
 
-              <div className="row wrap-feature-24">
-                <div className="col-lg-3 col-md-6">
-                  <div className="card card-shadow">
-                    <img
-                      style={{ height: "22vh" }}
-                      className="card-img-top"
-                      src="https://usemobile.com.br/wp-content/uploads/2022/08/react-native-logo.png"
-                      alt="wrappixel kit"
-                    ></img>
+                      <div className="col-lg-3 col-md-6">
+                        <div className="card card-shadow">
+                          <img
+                            className="card-img-top"
+                            src="/images/technology/fronend-3.png"
+                            alt="wrappixel kit"
+                          ></img>
+                        </div>
+                      </div>
+
+                      <div className="col-lg-3 col-md-6">
+                        <div className="card card-shadow">
+                          <img
+                            className="card-img-top"
+                            src="/images/technology/fronend-4.png"
+                            alt="wrappixel kit"
+                          ></img>
+                        </div>
+                      </div>
+
+                      <div className="col-lg-3 col-md-6">
+                        <div className="card card-shadow">
+                          <img
+                            className="card-img-top"
+                            src="/images/technology/fronend-5.png"
+                            alt="wrappixel kit"
+                          ></img>
+                        </div>
+                      </div>
+
+                      <div className="col-lg-3 col-md-6">
+                        <div className="card card-shadow">
+                          <img
+                            className="card-img-top"
+                            src="/images/technology/fronend-1.png"
+                            alt="wrappixel kit"
+                          ></img>
+                        </div>
+                      </div>
+
+                      <div className="col-lg-3 col-md-6">
+                        <div className="card card-shadow">
+                          <img
+                            className="card-img-top"
+                            src="/images/technology/fronend-6.png"
+                            alt="wrappixel kit"
+                          ></img>
+                        </div>
+                      </div>
+
+                      <div className="col-lg-3 col-md-6">
+                        <div className="card card-shadow">
+                          <img
+                            className="card-img-top"
+                            src="/images/technology/fronend-7.png"
+                            alt="wrappixel kit"
+                          ></img>
+                        </div>
+                      </div>
+
+                      <div className="col-lg-3 col-md-6">
+                        <div className="card card-shadow">
+                          <img
+                            className="card-img-top"
+                            src="/images/technology/fronend-8.png"
+                            alt="wrappixel kit"
+                          ></img>
+                        </div>
+                      </div>
+                    </div>
                   </div>
                 </div>
 
-                <div className="col-lg-3 col-md-6">
-                  <div className="card card-shadow">
-                    <img
-                      style={{ height: "22vh" }}
-                      className="card-img-top"
-                      src="/images/api-ecosystem/api-tech-6.png"
-                      alt="wrappixel kit"
-                    ></img>
+                <div className="col-md-6 wrap-feature3-box">
+                  <div
+                    className="card card-shadow pl-3 pr-3"
+                    data-aos="fade-left"
+                    data-aos-duration="1200"
+                  >
+                    <h3 className="font-medium">BackEnd</h3>
+                    <div className="row tech-feature-24">
+                      <div className="col-lg-3 col-md-6">
+                        <div className="card card-shadow">
+                          <img
+                            className="card-img-top"
+                            src="/images/technology/backend-1.png"
+                            alt="wrappixel kit"
+                          ></img>
+                        </div>
+                      </div>
+
+                      <div className="col-lg-3 col-md-6">
+                        <div className="card card-shadow">
+                          <img
+                            className="card-img-top"
+                            src="/images/api-ecosystem/api-tech-7.png"
+                            alt="wrappixel kit"
+                          ></img>
+                        </div>
+                      </div>
+                      <div className="col-lg-3 col-md-6">
+                        <div className="card card-shadow">
+                          <img
+                            className="card-img-top"
+                            src="/images/api-ecosystem/api-tech-3.png"
+                            alt="wrappixel kit"
+                          ></img>
+                        </div>
+                      </div>
+
+                      <div className="col-lg-3 col-md-6">
+                        <div className="card card-shadow">
+                          <img
+                            className="card-img-top"
+                            src="/images/technology/backend-2.png"
+                            alt="wrappixel kit"
+                          ></img>
+                        </div>
+                      </div>
+
+                      <div className="col-lg-3 col-md-6">
+                        <div className="card card-shadow">
+                          <img
+                            className="card-img-top"
+                            src="/images/technology/backend-3.png"
+                            alt="wrappixel kit"
+                          ></img>
+                        </div>
+                      </div>
+
+                      <div className="col-lg-3 col-md-6">
+                        <div className="card card-shadow">
+                          <img
+                            className="card-img-top"
+                            src="/images/technology/backend-5.png"
+                            alt="wrappixel kit"
+                          ></img>
+                        </div>
+                      </div>
+
+                      <div className="col-lg-3 col-md-6">
+                        <div className="card card-shadow">
+                          <img
+                            className="card-img-top"
+                            src="/images/technology/backend-6.png"
+                            alt="wrappixel kit"
+                          ></img>
+                        </div>
+                      </div>
+                    </div>
                   </div>
                 </div>
 
-                <div className="col-lg-3 col-md-6">
-                  <div className="card card-shadow">
-                    <img
-                      style={{ height: "22vh" }}
-                      className="card-img-top"
-                      src="/images/api-ecosystem/api-tech-7.png"
-                      alt="wrappixel kit"
-                    ></img>
+                <div className=" col-md-6 wrap-feature3-box">
+                  <div
+                    className="card card-shadow  pl-3 pr-3"
+                    data-aos="fade-left"
+                    data-aos-duration="1200"
+                  >
+                    <h3 className="font-medium">Database</h3>
+                    <div className="row tech-feature-24">
+                      <div className="col-lg-3 col-md-6">
+                        <div className="card card-shadow">
+                          <img
+                            className="card-img-top"
+                            src="/images/technology/database-1.png"
+                            alt="wrappixel kit"
+                          ></img>
+                        </div>
+                      </div>
+
+                      <div className="col-lg-3 col-md-6">
+                        <div className="card card-shadow">
+                          <img
+                            className="card-img-top"
+                            src="/images/api-ecosystem/api-tech-6.png"
+                            alt="wrappixel kit"
+                          ></img>
+                        </div>
+                      </div>
+
+                      <div className="col-lg-3 col-md-6">
+                        <div className="card card-shadow">
+                          <img
+                            className="card-img-top"
+                            src="/images/technology/database-2.png"
+                            alt="wrappixel kit"
+                          ></img>
+                        </div>
+                      </div>
+
+                      <div className="col-lg-3 col-md-6">
+                        <div className="card card-shadow">
+                          <img
+                            className="card-img-top"
+                            src="/images/technology/database-3.png"
+                            alt="wrappixel kit"
+                          ></img>
+                        </div>
+                      </div>
+
+                      <div className="col-lg-3 col-md-6">
+                        <div className="card card-shadow">
+                          <img
+                            className="card-img-top"
+                            src="/images/technology/database-4.png"
+                            alt="wrappixel kit"
+                          ></img>
+                        </div>
+                      </div>
+
+                      <div className="col-lg-3 col-md-6">
+                        <div className="card card-shadow">
+                          <img
+                            className="card-img-top"
+                            src="/images/technology/database-5.png"
+                            alt="wrappixel kit"
+                          ></img>
+                        </div>
+                      </div>
+                    </div>
                   </div>
                 </div>
 
-                <div className="col-lg-3 col-md-6">
-                  <div className="card card-shadow">
-                    <img
-                      style={{ height: "22vh" }}
-                      className="card-img-top"
-                      src="https://smartmania.cz/wp-content/uploads/2020/05/Android.jpg"
-                      alt="wrappixel kit"
-                    ></img>
+                <div className="col-md-6 wrap-feature3-box">
+                  <div
+                    className="card card-shadow pl-3 pr-3"
+                    data-aos="fade-left"
+                    data-aos-duration="1200"
+                  >
+                    <h3 className="font-medium">Mobile</h3>
+                    <div className="row tech-feature-24">
+                      <div className="col-lg-3 col-md-6">
+                        <div className="card card-shadow">
+                          <img
+                            className="card-img-top"
+                            src="https://usemobile.com.br/wp-content/uploads/2022/08/react-native-logo.png"
+                            alt="wrappixel kit"
+                          ></img>
+                        </div>
+                      </div>
+
+                      <div className="col-lg-3 col-md-6">
+                        <div className="card card-shadow">
+                          <img
+                            className="card-img-top"
+                            src="/images/technology/mobile-1.png"
+                            alt="wrappixel kit"
+                          ></img>
+                        </div>
+                      </div>
+
+                      <div className="col-lg-3 col-md-6">
+                        <div className="card card-shadow">
+                          <img
+                            className="card-img-top"
+                            src="/images/technology/mobile-2.png"
+                            alt="wrappixel kit"
+                          ></img>
+                        </div>
+                      </div>
+
+                      <div className="col-lg-3 col-md-6">
+                        <div className="card card-shadow">
+                          <img
+                            className="card-img-top"
+                            src="https://smartmania.cz/wp-content/uploads/2020/05/Android.jpg"
+                            alt="wrappixel kit"
+                          ></img>
+                        </div>
+                      </div>
+
+                      <div className="col-lg-3 col-md-6">
+                        <div className="card card-shadow">
+                          <img
+                            className="card-img-top"
+                            src="/images/technology/mobile-3.png"
+                            alt="wrappixel kit"
+                          ></img>
+                        </div>
+                      </div>
+                    </div>
                   </div>
                 </div>
 
-                <div className="col-lg-3 col-md-6">
-                  <div className="card card-shadow">
-                    <img
-                      style={{ height: "22vh" }}
-                      className="card-img-top"
-                      src="https://pluralsight2.imgix.net/paths/images/angular-14a0f6532f.png"
-                      alt="wrappixel kit"
-                    ></img>
+                <div className=" col-md-6 wrap-feature3-box">
+                  <div
+                    className="card card-shadow pl-3 pr-3"
+                    data-aos="fade-left"
+                    data-aos-duration="1200"
+                  >
+                    <h3 className="font-medium">DevOps</h3>
+                    <div className="row tech-feature-24">
+                      <div className="col-lg-3 col-md-6">
+                        <div className="card card-shadow">
+                          <img
+                            className="card-img-top"
+                            src="/images/api-ecosystem/api-tech-1.png"
+                            alt="wrappixel kit"
+                          ></img>
+                        </div>
+                      </div>
+
+                      <div className="col-lg-3 col-md-6">
+                        <div className="card card-shadow">
+                          <img
+                            className="card-img-top"
+                            src="/images/api-ecosystem/api-tech-4.png"
+                            alt="wrappixel kit"
+                          ></img>
+                        </div>
+                      </div>
+
+                      <div className="col-lg-3 col-md-6">
+                        <div className="card card-shadow">
+                          <img
+                            className="card-img-top"
+                            src="/images/technology/devOps-1.png"
+                            alt="wrappixel kit"
+                          ></img>
+                        </div>
+                      </div>
+
+                      <div className="col-lg-3 col-md-6">
+                        <div className="card card-shadow">
+                          <img
+                            className="card-img-top"
+                            src="/images/technology/devOps-2.png"
+                            alt="wrappixel kit"
+                          ></img>
+                        </div>
+                      </div>
+
+                      <div className="col-lg-3 col-md-6">
+                        <div className="card card-shadow">
+                          <img
+                            className="card-img-top"
+                            src="/images/technology/devOps-3.png"
+                            alt="wrappixel kit"
+                          ></img>
+                        </div>
+                      </div>
+
+                      <div className="col-lg-3 col-md-6">
+                        <div className="card card-shadow">
+                          <img
+                            className="card-img-top"
+                            src="/images/technology/devOps-4.png"
+                            alt="wrappixel kit"
+                          ></img>
+                        </div>
+                      </div>
+                    </div>
                   </div>
                 </div>
 
-                <div className="col-lg-3 col-md-6">
-                  <div className="card card-shadow">
-                    <img
-                      style={{ height: "22vh" }}
-                      className="card-img-top"
-                      src="/images/api-ecosystem/api-tech-1.png"
-                      alt="wrappixel kit"
-                    ></img>
+                <div className="col-md-6 wrap-feature3-box">
+                  <div
+                    className="card card-shadow pl-3 pr-3"
+                    data-aos="fade-left"
+                    data-aos-duration="1200"
+                  >
+                    <h3 className="font-medium">AI/ML</h3>
+                    <div className="row tech-feature-24">
+                      <div className="col-lg-3 col-md-6">
+                        <div className="card card-shadow">
+                          <img
+                            className="card-img-top"
+                            src="/images/technology/AI-ML-1.png"
+                            alt="wrappixel kit"
+                          ></img>
+                        </div>
+                      </div>
+
+                      <div className="col-lg-3 col-md-6">
+                        <div className="card card-shadow">
+                          <img
+                            className="card-img-top"
+                            src="/images/technology/AI-ML-2.png"
+                            alt="wrappixel kit"
+                          ></img>
+                        </div>
+                      </div>
+
+                      <div className="col-lg-3 col-md-6">
+                        <div className="card card-shadow">
+                          <img
+                            className="card-img-top"
+                            src="/images/technology/AI-ML-3.png"
+                            alt="wrappixel kit"
+                          ></img>
+                        </div>
+                      </div>
+
+                      <div className="col-lg-3 col-md-6">
+                        <div className="card card-shadow">
+                          <img
+                            className="card-img-top"
+                            src="/images/technology/AI-ML-4.png"
+                            alt="wrappixel kit"
+                          ></img>
+                        </div>
+                      </div>
+
+                      <div className="col-lg-3 col-md-6">
+                        <div className="card card-shadow">
+                          <img
+                            className="card-img-top"
+                            src="/images/technology/AI-ML-5.png"
+                            alt="wrappixel kit"
+                          ></img>
+                        </div>
+                      </div>
+                    </div>
                   </div>
                 </div>
+                <div className="col-md-6 wrap-feature3-box">
+                  <div
+                    className="card card-shadow pl-3 pr-3"
+                    data-aos="fade-left"
+                    data-aos-duration="1200"
+                  >
+                    <h3 className="font-medium">Analytics</h3>
+                    <div className="row tech-feature-24">
+                      <div className="col-lg-3 col-md-6">
+                        <div className="card card-shadow">
+                          <img
+                            className="card-img-top"
+                            src="/images/technology/analytics-1.png"
+                            alt="wrappixel kit"
+                          ></img>
+                        </div>
+                      </div>
 
-                <div className="col-lg-3 col-md-6">
-                  <div className="card card-shadow">
-                    <img
-                      style={{ height: "22vh" }}
-                      className="card-img-top"
-                      src="/images/api-ecosystem/api-tech-2.png"
-                      alt="wrappixel kit"
-                    ></img>
+                      <div className="col-lg-3 col-md-6">
+                        <div className="card card-shadow">
+                          <img
+                            className="card-img-top"
+                            src="/images/technology/analytics-2.png"
+                            alt="wrappixel kit"
+                          ></img>
+                        </div>
+                      </div>
+
+                      <div className="col-lg-3 col-md-6">
+                        <div className="card card-shadow">
+                          <img
+                            className="card-img-top"
+                            src="/images/technology/analytics-3.png"
+                            alt="wrappixel kit"
+                          ></img>
+                        </div>
+                      </div>
+
+                      <div className="col-lg-3 col-md-6">
+                        <div className="card card-shadow">
+                          <img
+                            className="card-img-top"
+                            src="/images/technology/analytics-4.png"
+                            alt="wrappixel kit"
+                          ></img>
+                        </div>
+                      </div>
+
+                      <div className="col-lg-3 col-md-6">
+                        <div className="card card-shadow">
+                          <img
+                            className="card-img-top"
+                            src="/images/technology/analytics-5.png"
+                            alt="wrappixel kit"
+                          ></img>
+                        </div>
+                      </div>
+                    </div>
                   </div>
                 </div>
+                <div className="col-md-6 wrap-feature3-box">
+                  <div
+                    className="card card-shadow pl-3 pr-3"
+                    data-aos="fade-left"
+                    data-aos-duration="1200"
+                  >
+                    <h3 className="font-medium">QA</h3>
+                    <div className="row tech-feature-24">
+                      <div className="col-lg-3 col-md-6">
+                        <div className="card card-shadow">
+                          <img
+                            className="card-img-top"
+                            src="/images/technology/QA-1.png"
+                            alt="wrappixel kit"
+                          ></img>
+                        </div>
+                      </div>
 
-                <div className="col-lg-3 col-md-6">
-                  <div className="card card-shadow">
-                    <img
-                      style={{ height: "22vh" }}
-                      className="card-img-top"
-                      src="/images/api-ecosystem/api-tech-3.png"
-                      alt="wrappixel kit"
-                    ></img>
+                      <div className="col-lg-3 col-md-6">
+                        <div className="card card-shadow">
+                          <img
+                            className="card-img-top"
+                            src="/images/technology/QA-2.png"
+                            alt="wrappixel kit"
+                          ></img>
+                        </div>
+                      </div>
+
+                      <div className="col-lg-3 col-md-6">
+                        <div className="card card-shadow">
+                          <img
+                            className="card-img-top"
+                            src="/images/technology/QA-3.png"
+                            alt="wrappixel kit"
+                          ></img>
+                        </div>
+                      </div>
+
+                      <div className="col-lg-3 col-md-6">
+                        <div className="card card-shadow">
+                          <img
+                            className="card-img-top"
+                            src="/images/technology/QA-4.png"
+                            alt="wrappixel kit"
+                          ></img>
+                        </div>
+                      </div>
+
+                      <div className="col-lg-3 col-md-6">
+                        <div className="card card-shadow">
+                          <img
+                            className="card-img-top"
+                            src="/images/technology/QA-5.png"
+                            alt="wrappixel kit"
+                          ></img>
+                        </div>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -779,7 +1246,7 @@ const Technology = () => {
               {/* <!-- Row  --> */}
               <div className="row justify-content-center">
                 <div className="col-md-7 text-center">
-                  <h2 className="title">Our work</h2>
+                  <h2 className="title">Our Work</h2>
                   <h6 className="subtitle">
                     We have built over 200+ mobile and web applications in the
                     past 10+ years.

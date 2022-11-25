@@ -469,7 +469,8 @@ const Manufacturing = () => {
                 >
                   <h1 className="title banner-text">Manufacturing</h1>
                   <h6 className="subtitle op-8 banner-text">
-                    We are a team of passionate people who love what we do.
+                    Our expert, committed team put our shared beliefs into
+                    action - every day.
                   </h6>
                 </div>
                 {/* <!-- Column --> */}
@@ -552,7 +553,7 @@ const Manufacturing = () => {
               <div className="row">
                 <div className="col-lg-6">
                   <h2 className="m-b-30 m-t-20">
-                    Digital manufacturing technology solutions
+                    Digital Manufacturing Technology Solutions
                   </h2>
                   <h4 className="text-muted font-light">
                     Taking the hospitality industry towards digitization with
