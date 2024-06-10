@@ -458,6 +458,7 @@ position
 
 .mega-dropdown {
   position: static;
+  cursor: pointer;
   .dropdown-menu {
     width: 100%;
     padding: 30px;
@@ -1484,4 +1485,8 @@ icons path
 @font-face {
   font-family: "FontAwesome";
   src: url("fonts/fontawesome-webfont.ttf?v=4.7.0") format("truetype");
+}
+
+.header-icon {
+  height: 50px !important;
 }

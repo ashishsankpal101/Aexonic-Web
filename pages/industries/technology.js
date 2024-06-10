@@ -116,7 +116,7 @@ const Technology = () => {
                 <a className="navbar-brand">
                   <img
                     className="header-icon"
-                    src="/images/aexonic-logo_8.png"
+                    src="/images/aexonic-logo_9.png"
                     alt="Aexonic"
                   />
                 </a>
@@ -156,7 +156,7 @@ const Technology = () => {
                         Services <i className="fa fa-angle-down m-l-5"></i>
                       </a>
                       <div
-                        className="dropdown-menu b-none font-14 animated fadeInUp"
+                        className="dropdown-menu b-none font-14 animated "
                         aria-labelledby="h6-mega-dropdown1"
                       >
                         <div className="row">
@@ -326,7 +326,7 @@ const Technology = () => {
                           Industries <i className="fa fa-angle-down m-l-5"></i>
                         </a>
                       </Link>
-                      <ul className="b-none dropdown-menu font-14 animated fadeInUp">
+                      <ul className="b-none dropdown-menu font-14 animated ">
                         <li>
                           <Link href="/industries/banking">
                             <a className="dropdown-item">Banking and FinTech</a>
@@ -422,7 +422,7 @@ const Technology = () => {
                       >
                         More <i className="fa fa-angle-down m-l-5"></i>
                       </a>
-                      <ul className="b-none dropdown-menu font-14 animated fadeInUp">
+                      <ul className="b-none dropdown-menu font-14 animated ">
                         <li>
                           <Link href="/life-at-aexonic">
                             <a className="dropdown-item">Life@aexonic</a>
