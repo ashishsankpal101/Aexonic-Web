@@ -400,7 +400,7 @@ const Aboutus = () => {
                     <li className="nav-item dropdown">
                       <Link href="/careers">
                         <a
-                          className="nav-link dropdown-toggle "
+                          className="nav-link dropdown-toggle"
                           id="h6-dropdown"
                           data-toggle="dropdown"
                           aria-haspopup="true"
