@@ -366,7 +366,7 @@ const BlogDetails = () => {
                       >
                         More <i className="fa fa-angle-down m-l-5"></i>
                       </a>
-                      <ul className="b-none dropdown-menu font-14 animated ">
+                      <ul className="b-none dropdown-menu font-14 animated">
                         <li>
                           <Link href="/life-at-aexonic">
                             <a className="dropdown-item">Life@aexonic</a>
