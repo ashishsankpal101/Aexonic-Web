@@ -498,7 +498,7 @@ const Contactus = () => {
             </div>
           </div>
 
-          <div className="spacer feature1 ">
+          <div className="spacer feature1 bg-light">
             <div className="container">
               <div className="row justify-content-center">
                 <div className="col-md-7 text-center">
@@ -705,7 +705,7 @@ const Contactus = () => {
           {/* <!-- ============================================================== -->
                 <!-- Testimonial 9 -->
                 <!-- ============================================================== --> */}
-          <div className="testimonial9 spacer bg-light">
+          <div className="testimonial9 spacer">
             <div className="container">
               <div className="row">
                 <div className="col-lg-5 col-md-6">
@@ -762,7 +762,7 @@ const Contactus = () => {
                 <!-- End Testimonial 9 -->
                 <!-- ============================================================== --> */}
 
-          <div className="client2 spacer ">
+          <div className="client2 spacer bg-light">
             <div className="container ">
               <div className="row justify-content-center ">
                 <div className="col-md-7 text-center ">
@@ -912,13 +912,12 @@ const Contactus = () => {
                 <!-- End Feature 1  -->
                 <!-- ============================================================== --> */}
 
-          <div className=" spacer bg-light feature15">
+          {/* <div className=" spacer bg-light feature15">
             <div className="container">
-              {/* <!-- Row  --> */}
               <div className="row justify-content-center">
                 <div className="col-md-7 text-center">
                   <h2 className="title">Our Global Presence</h2>
-                  {/* <h6 className="subtitle">You can relay on our amazing features list and also our customer services will be great experience for you without doubt and in no-time</h6> */}
+
                   <h6 className="subtitle">
                     We have served 200+ clients globally. Our portfolio of
                     extensive projects has impacted millions and this makes us
@@ -926,9 +925,8 @@ const Contactus = () => {
                   </h6>
                 </div>
               </div>
-              {/* <!-- Row  --> */}
+
               <div className="row m-t-40">
-                {/* <!-- Column --> */}
                 <div className="col-lg-5 wrap-feature15-box">
                   <div className="row">
                     <div
@@ -979,25 +977,99 @@ const Contactus = () => {
                     </div>
                   </div>
                 </div>
-                {/* <!-- Column --> */}
                 <div className="col-lg-7 ml-auto">
                   <div
                     className="card card-shadow aos-init aos-animate"
                     data-aos="flip-left"
                     data-aos-duration="1200"
                   >
-                    {/* <iframe
-                      src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15130.709280079906!2d73.9359377!3d18.5434784!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xf37df2d7acdb1d82!2sAexonic%20Technologies!5e0!3m2!1sen!2sin!4v1601548568796!5m2!1sen!2sin"
-                      width="650"
-                      height="350"
-                      frameBorder="0"
-                      style={{ border: "0px" }}
-                      allowFullScreen=""
-                      aria-hidden="false"
-                      tabIndex="0"
-                    ></iframe> */}
-                    {/* <img src="./images/contact_us/map.png" alt="" /> */}
                     <img src="/images/contact_us/map2.png" alt="" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div> */}
+
+          <div className="spacer feature15">
+            <div className="pl-5 pr-5">
+              {/* <!-- Row  --> */}
+              <div className="row justify-content-center">
+                <div className="col-md-7 text-center">
+                  <h2 className="title">Our Global Presence</h2>
+                  {/* <h6 className="subtitle">You can relay on our amazing features list and also our customer services will be great experience for you without doubt and in no-time</h6> */}
+                  <h6 className="subtitle">
+                    We have served 200+ clients globally. Our portfolio of
+                    extensive projects has impacted millions and this makes us
+                    confident to aim for the zenith.
+                  </h6>
+                </div>
+              </div>
+              {/* <!-- Row  --> */}
+              <div className="row m-t-40">
+                {/* <!-- Column --> */}
+                <div className="col-lg-4 wrap-feature15-box">
+                  <div className="row">
+                    <div
+                      className="col-md-12 m-b-30"
+                      data-aos="fade-down"
+                      data-aos-duration="1000"
+                    >
+                      <div className="d-flex no-block">
+                        <div className="no-shrink">
+                          <span className="icon-round display-5 text-info ">
+                            <i className="icon-Map-Marker"></i>
+                          </span>
+                        </div>
+                        <div className="p-20">
+                          <h5 className="font-medium">
+                            <a className="linking">
+                              India Office <i className="ti-arrow-right"></i>
+                            </a>
+                          </h5>
+                          <p className="m-t-20">
+                            504, Stellar Spaces, Kharadi, Pune, India – 411014.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      className="col-md-12 m-b-30"
+                      data-aos="fade-down"
+                      data-aos-duration="2000"
+                    >
+                      <div className="d-flex no-block">
+                        <div className="no-shrink">
+                          <span className="icon-round display-5 text-info ">
+                            <i className="icon-Map-Marker"></i>
+                          </span>
+                        </div>
+                        <div className="p-20">
+                          <h5 className="font-medium">
+                            <a className="linking">
+                              US Office <i className="ti-arrow-right"></i>
+                            </a>
+                          </h5>
+                          <p className="m-t-20">
+                            2107 N 1st Street #205, San Jose, CA – 95131.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                {/* <!-- Column --> */}
+                <div className="col-lg-8 ml-auto">
+                  <div
+                    className="card aos-init aos-animate"
+                    data-aos="flip-left"
+                    data-aos-duration="1200"
+                    style={{ height: "100%", width: "100%" }}
+                  >
+                    <img
+                      src="/images/map.png"
+                      alt=""
+                      style={{ height: "100%" }}
+                    />
                   </div>
                 </div>
                 {/* <!-- Column --> */}
