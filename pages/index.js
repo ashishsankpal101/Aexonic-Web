@@ -655,7 +655,7 @@ export default function Home() {
                   Aexonic provides turnkey IT solutions to preparing you for
                   future.
                 </h2>
-                <p className="m-t-30">
+                <p className="m-t-30 subtitle">
                   We are a passionate, energized team who has honed our skills
                   across different verticals in several years. We&apos;re doing
                   stuff that really matters. It&apos;s no fun being "yet

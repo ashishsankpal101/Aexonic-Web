@@ -45,7 +45,7 @@ Header 5
   color: #06a7fd;
 }
 
-.h5-nav-bar .navbar-nav .nav-item>.nav-link {
+.h5-nav-bar .navbar-nav .nav-item > .nav-link {
   text-transform: uppercase;
 }
 
@@ -167,7 +167,7 @@ slide 4
 
 .slider4 label {
   font-style: italic;
-  font-family: 'PlayFairDisplay', sans-sarif;
+  font-family: "PlayFairDisplay", sans-sarif;
   -webkit-animation-delay: 0.5s;
   animation-delay: 0.5s;
 }
@@ -349,7 +349,7 @@ Testimonial 9
   position: absolute;
   bottom: -15px;
   left: 20;
-  content: '';
+  content: "";
   border-left: 15px solid transparent;
   border-right: 15px solid transparent;
   border-top: 15px solid #ffffff;
@@ -398,13 +398,13 @@ Testimonial 9
 /*******************
 Blog homepage 1
 *******************/
-.blog-home1 [class*=col-] {
+.blog-home1 [class*="col-"] {
   -webkit-transition: 0.2s ease-in;
   -o-transition: 0.2s ease-in;
   transition: 0.2s ease-in;
 }
 
-.blog-home1 [class*=col-]:hover {
+.blog-home1 [class*="col-"]:hover {
   -webkit-transform: translateY(-10px);
   -ms-transform: translateY(-10px);
   transform: translateY(-10px);

@@ -54,7 +54,7 @@ File: scss
 Preloader
 ********************/
 
-@import url("https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700,800");
+@import url("https://fonts.googleapis.com/css?family=Space+Grotesk:300,400,500,600,700,800&display=swap");
 
 .preloader {
   width: 100%;
@@ -291,7 +291,7 @@ Global Styles
 
 body {
   background: #ffffff;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Space Grotesk", sans-serif;
   margin: 0;
   overflow-x: hidden;
   color: #8d97ad;
@@ -357,7 +357,7 @@ h4,
 h5,
 h6 {
   color: #3e4555;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Space Grotesk", sans-serif;
 }
 
 h1 {

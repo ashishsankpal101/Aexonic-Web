@@ -2158,7 +2158,7 @@ const Aboutus = () => {
                       <i className="icon-Phone-2"></i>
                     </div>
                     <div className="info">
-                      <span className=" db  m-t-5"> +207 235 7890</span>
+                      <span className="db m-t-5"> +207 235 7890</span>
                     </div>
                   </div>
                   <div className="d-flex no-block m-b-30">
