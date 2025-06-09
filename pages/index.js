@@ -442,7 +442,8 @@ export default function Home() {
                               data-animation="animated fadeInLeft"
                               className="title font-bold m-0 p-b-40"
                             >
-                              Navigate the Power of Disruption
+                             // Navigate the Power of Disruption
+                             this is Aexonic 
                             </h1>
                             <p>
                               Whether you&apos;re a startup or an industry
